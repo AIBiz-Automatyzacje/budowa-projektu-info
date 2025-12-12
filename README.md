@@ -14,8 +14,10 @@ Znalezienie pomysłu na aplikację do zmonetyzowania poprzez analizę danych z g
 ## Plan działania
 
 ### Faza 1: Zbieranie danych
-- [ ] Scraping 130 grup Facebook (od początku 2025)
-- [ ] Scraping 65 subredditów (dłuższy okres)
+- [x] Research 139 grup Facebook (8 segmentów)
+- [x] Research 163 subredditów (8 segmentów)
+- [ ] Scraping danych z grup (od początku 2025)
+- [ ] Scraping danych z subredditów (dłuższy okres)
 
 ### Faza 2: Analiza AI
 - [ ] Analiza problemów i wyzwań użytkowników
@@ -36,11 +38,15 @@ Znalezienie pomysłu na aplikację do zmonetyzowania poprzez analizę danych z g
 
 ```
 live/
-├── README.md                      # Ten plik
+├── README.md                           # Ten plik
+├── PLAYBOOK-OD-POMYSLU-DO-SCALE.md     # Kompletny playbook budowy projektu
 ├── facebook-groups-research/
-│   └── groups.md                  # 130 polskich grup FB (8 segmentów)
-└── reddit-research/
-    └── subreddits.md              # 65 subredditów (8 segmentów)
+│   ├── groups.md                       # 139 polskich grup FB (8 segmentów)
+│   └── plan.md                         # Plan researchu
+├── reddit-research/
+│   ├── subreddits.md                   # 163 subredditów (8 segmentów)
+│   └── plan.md                         # Plan researchu
+└── RESEARCH/                           # Dodatkowe materiały badawcze
 ```
 
 ## Segmenty badawcze
@@ -58,8 +64,8 @@ live/
 
 | Źródło | Liczba | Status |
 |--------|--------|--------|
-| Grupy Facebook | 130 | Do scrapowania |
-| Subreddity | 65 | Do scrapowania |
+| Grupy Facebook | 139 | ✅ Research gotowy, do scrapowania |
+| Subreddity | 163 | ✅ Research gotowy, do scrapowania |
 
 ## Następne kroki
 
@@ -69,4 +75,4 @@ live/
 
 ---
 
-*Ostatnia aktualizacja: 2025-12-09*
+*Ostatnia aktualizacja: 2025-12-12*
