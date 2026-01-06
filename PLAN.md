@@ -41,8 +41,35 @@ Znalezienie pomysłu na aplikację do zmonetyzowania poprzez analizę danych z g
 - [x] **Faza 3:** White space scoring (40 MVP → 4 modele, 106s) ✅
 - [x] **Merge:** `gap-hunter-lite-results.json` ✅
 
-### Faza 2C: Dashboard
-- [ ] Budowa dashboardu wizualizacyjnego (po Gap Hunter Lite)
+### Faza 2C: Low-Code Product Finder (multi-model consensus) ✅ UKOŃCZONY
+> Szczegóły: `docs/faza-2-analiza/framework-lowcode-product-finder.md`
+
+- [x] **Krok 1:** Przygotowanie danych (weryfikacja all-problems.json) ✅
+- [x] **Krok 2:** Napisanie skryptu `lowcode-product-finder.mjs` ✅
+- [x] **Krok 3:** Uruchomienie analizy (4 modele AI, 1026 problemów, 21 chunków) ✅
+- [x] **Krok 4:** Interpretacja wyników (consensus scoring) ✅
+- [x] **Krok 5:** Wybór TOP okazji do walidacji ✅
+
+**Wzorce produktów:**
+| Wzorzec | Opis |
+|---------|------|
+| Monitor & Alert | Śledź X, powiadom gdy Y (jak LeadScout) |
+| AI Generator | Generuj X za pomocą AI (tekst, grafiki) |
+| AI Assistant | Pomóż użytkownikowi z X (chatbot, copilot) |
+| Template Pack | Gotowe szablony do X |
+| Simplifier | Uprość skomplikowany proces X |
+| Aggregator | Zbierz X z wielu źródeł w jedno |
+
+**Kryteria oceny (max 100 pkt):**
+- Problem Clarity (0-20)
+- MVP Simplicity (0-20)
+- AI Leverage (0-20)
+- Mobile Fit (0-15)
+- Monetization (0-15)
+- Competition Gap (0-10)
+
+### Faza 2D: Dashboard
+- [ ] Budowa dashboardu wizualizacyjnego (po Low-Code Product Finder)
 
 ### Faza 3: Wybór pomysłu
 - [ ] Ocena pomysłów pod kątem wykonalności
@@ -254,7 +281,62 @@ Wyniki zapisane w: `docs/faza-2-analiza/output/community-fit.json`
 
 ---
 
-## 🚨 Gap Hunter Lite — W TRAKCIE
+## Low-Code Product Finder — WYNIKI ✅
+
+**Cel:** Znaleźć okazje produktowe pasujące do wzorców low-code (AI Generator, Simplifier, itp.)
+
+**Wyniki zapisane w:** `docs/faza-2-analiza/output/lowcode-opportunities.json`
+
+**4 modele:** Claude Opus 4, Gemini 2.5 Pro, Grok 3, O3 Mini High
+**Analizowane problemy:** 1026 (filtr: intensywność ≥3 AND sygnał ≥3)
+**Czas przetwarzania:** 61 minut (84 wywołania API)
+
+### Statystyki agregacji
+
+| Metryka | Wartość |
+|---------|---------|
+| Okazji przed agregacją | 697 |
+| **Unikalne okazje** | **402** |
+| 4/4 modeli zgodnych | **17** |
+| 3/4 modeli zgodnych | 64 |
+| 2/4 modeli zgodnych | 116 |
+| 1 model | 205 |
+
+### Rozkład po wzorcach
+
+| Wzorzec | Count | Avg Score |
+|---------|-------|-----------|
+| AI_ASSISTANT | 101 | 81 |
+| SIMPLIFIER | 105 | 72 |
+| AGGREGATOR | 73 | 74 |
+| MONITOR_ALERT | 50 | 76 |
+| **AI_GENERATOR** | 49 | **82** |
+| TEMPLATE_PACK | 24 | 75 |
+
+### TOP 10 OKAZJI (wszystkie EXCELLENT)
+
+| # | Score | Produkt | Wzorzec | Models |
+|---|-------|---------|---------|--------|
+| 1 | **95** | **ProductBG Pro** — AI wymiana tła produktów | AI_GENERATOR | 4/4 |
+| 2 | **95** | **PrintifyBoost** — AI mockupy/opisy dla Printify | AI_GENERATOR | 4/4 |
+| 3 | **95** | **ThumbGenius** — AI miniatury YouTube + A/B testy | AI_GENERATOR | 4/4 |
+| 4 | **94** | **Screenshot2Excel** — AI ekstrakcja danych do Excel | SIMPLIFIER | 4/4 |
+| 5 | 92 | ThumbCTR AI — Generator miniatur YouTube | AI_GENERATOR | 3/4 |
+| 6 | 92 | ReelsAutoCut — Automatyczny montaż rolek | SIMPLIFIER | 3/4 |
+| 7 | **92** | **DealFlow AI** — Agregator startupów dla VC | AGGREGATOR | 4/4 |
+| 8 | **92** | **ContentSpark** — AI generator pomysłów na content | AI_GENERATOR | 4/4 |
+| 9 | 92 | InboxAI Tagger — AI tagowanie emaili | AI_ASSISTANT | 3/4 |
+| 10 | 92 | DM Pilot — AI asystent do DM sprzedażowych | AI_ASSISTANT | 3/4 |
+
+**Kluczowe wnioski:**
+- **AI_GENERATOR** ma najwyższy średni score (82) — generowanie grafik/treści to najsilniejszy wzorzec
+- **7 produktów z konsensusem 4/4 modeli** w TOP 10 — bardzo silny sygnał
+- Dominują rozwiązania dla **twórców contentu** (miniatury, reelsy, mockupy)
+- **Screenshot2Excel** — unikalny produkt z bardzo silnym consensusem
+
+---
+
+## Gap Hunter Lite — WYNIKI ✅
 
 **Cel:** Uzupełnić Pain Radar o analizę luk rynkowych i konkurencji.
 
@@ -409,51 +491,63 @@ live/
 ├── PLAN.md                             # Ten plik
 ├── CLAUDE.md                           # Konfiguracja Airtable
 ├── package.json                        # Node.js dependencies
-├── .env                                # API keys (ANTHROPIC_API_KEY)
+├── .env                                # API keys (OPENROUTER_API_KEY)
 ├── scripts/
 │   ├── extract-categories.mjs          # Ekstrakcja surowych kategorii
+│   ├── extract-all-problems.mjs        # Ekstrakcja wszystkich problemów ✅
 │   ├── aggregate-problems.mjs          # Agregacja z normalizacją ✅
 │   ├── ai-mapping-planner.mjs          # AI mapowanie kategorii/branż ✅
 │   ├── fix-nieznana.mjs                # Poprawka branż "Nieznana" ✅
+│   ├── check-nieznana.mjs              # Sprawdzenie "Nieznana"
 │   ├── diagnose-unmapped.mjs           # Diagnostyka niemapowanych
 │   ├── diagnose-deep.mjs               # Głęboka diagnostyka
-│   ├── check-nieznana.mjs              # Sprawdzenie "Nieznana"
 │   ├── calculate-pps.mjs               # Pain Priority Score ✅
-│   ├── extract-all-problems.mjs        # Ekstrakcja wszystkich problemów ✅
 │   ├── detect-patterns.mjs             # Wykrywanie ukrytych wzorców ✅
+│   ├── community-fit.mjs               # Community Fit scoring ✅
+│   ├── deep-dive.mjs                   # Deep dive na top kategorie ✅
+│   ├── solution-discovery.mjs          # Solution Discovery ✅
 │   ├── gap-hunter-phase1.mjs           # Gap Hunter: klasyfikacja typów luk ✅
 │   ├── gap-hunter-phase3.mjs           # Gap Hunter: white space scoring ✅
-│   └── merge-gap-hunter-results.mjs    # Gap Hunter: merge wyników ✅
+│   ├── merge-gap-hunter-results.mjs    # Gap Hunter: merge wyników ✅
+│   ├── lowcode-product-finder.mjs      # Low-Code Product Finder ✅
+│   └── temp-analyze.mjs                # Tymczasowe analizy
 ├── docs/
-│   ├── PLAYBOOK-OD-POMYSLU-DO-SCALE.md # Playbook budowy projektu
-│   ├── faza-1-zbieranie-danych/
-│   │   ├── facebook-groups-research/
-│   │   │   ├── groups.md               # 105 polskich grup FB
-│   │   │   └── plan.md
-│   │   └── reddit-research/
-│   │       ├── subreddits.md           # 154 subredditów
-│   │       └── plan.md
+│   ├── ukonczone-etapy/
+│   │   └── faza-1-zbieranie-danych/
+│   │       ├── facebook-groups-research/
+│   │       │   ├── groups.md           # 105 polskich grup FB
+│   │       │   └── plan.md
+│   │       └── reddit-research/
+│   │           ├── subreddits.md       # 154 subredditów
+│   │           └── plan.md
 │   └── faza-2-analiza/
+│       ├── raport-analityczny.md       # Pełny raport Gap Hunter + Pain Radar
+│       ├── raport-executive.md         # Executive summary — 5 pomysłów
 │       ├── framework-pain-radar.md     # Bottom-up: agregacja problemów
 │       ├── framework-gap-hunter.md     # Top-down: analiza luk
-│       ├── extracted-categories.json   # Surowe kategorie/branże
-│       ├── normalization-mapping.json  # Mapowanie v1 (stare)
-│       ├── normalization-mapping-v2.json # Mapowanie v2
-│       ├── normalization-mapping-v3.json # Mapowanie v3 ✅ AKTUALNE
-│       ├── mapping-plans.json          # Plany AI mapowania
-│       ├── aggregates.json             # Agregaty krok 3.1 ✅
-│       ├── all-problems.json           # Wszystkie 4003 problemy ✅
-│       ├── output/
-│       │   ├── pps-rankings.json            # Pain Priority Score ✅
-│       │   ├── hidden-patterns.json         # Ukryte wzorce ✅
-│       │   ├── community-fit.json           # Community Fit scoring ✅
-│       │   ├── deep-dive.json               # 40 MVP proposals ✅
-│       │   ├── gap-types-analysis.json      # Gap Hunter: typy luk ✅
-│       │   ├── competitor-map.json          # Gap Hunter: mapa konkurencji ✅
-│       │   ├── white-space-scoring.json     # Gap Hunter: white space ✅
-│       │   └── gap-hunter-lite-results.json # Gap Hunter: FINALNE WYNIKI ✅
-│       └── context/
-│           └── community-profile.md    # Profil AA (zasoby, kompetencje)
+│       ├── gap-hunter-lite-spec.md     # Specyfikacja Gap Hunter Lite
+│       ├── framework-lowcode-product-finder.md  # Low-Code Product Finder
+│       ├── dashboard-implementation-plan.md     # Plan dashboardu
+│       ├── context/
+│       │   └── community-profile.md    # Profil AA (zasoby, kompetencje)
+│       └── output/
+│           ├── extracted-categories.json        # Surowe kategorie/branże
+│           ├── normalization-mapping-v3.json    # Mapowanie kategorii ✅
+│           ├── mapping-plans.json               # Plany AI mapowania
+│           ├── aggregates.json                  # Agregaty krok 3.1 ✅
+│           ├── all-problems.json                # Wszystkie 4003 problemy ✅
+│           ├── pps-rankings.json                # Pain Priority Score ✅
+│           ├── hidden-patterns.json             # Ukryte wzorce ✅
+│           ├── community-fit.json               # Community Fit scoring ✅
+│           ├── deep-dive.json                   # 40 MVP proposals ✅
+│           ├── solution-discovery.json          # Solution Discovery ✅
+│           ├── gap-types-analysis.json          # Gap Hunter: typy luk ✅
+│           ├── competitor-map.json              # Gap Hunter: mapa konkurencji ✅
+│           ├── white-space-scoring.json         # Gap Hunter: white space ✅
+│           ├── gap-hunter-lite-results.json     # Gap Hunter: FINALNE WYNIKI ✅
+│           ├── lowcode-opportunities.json       # Low-Code Product Finder: 402 okazje ✅
+│           ├── problems-with-tools.json         # Problemy z narzędziami
+│           └── sample-100-for-gap-types.json    # Sample do klasyfikacji
 ```
 
 ## Dane w Airtable
@@ -480,4 +574,4 @@ live/
 
 ---
 
-*Ostatnia aktualizacja: 2026-01-06 (Gap Hunter Lite UKOŃCZONY — 7 STRONG_GO MVP, następny: Faza 2C Dashboard lub Faza 3 Wybór pomysłu)*
+*Ostatnia aktualizacja: 2026-01-06 (Low-Code Product Finder UKOŃCZONY — 402 okazje, 17 z consensusem 4/4, TOP: ProductBG Pro, PrintifyBoost, ThumbGenius. Następny krok: Faza 3 Wybór pomysłu lub Faza 2D Dashboard)*

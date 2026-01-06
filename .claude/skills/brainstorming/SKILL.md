@@ -5,14 +5,13 @@ description: Kompleksowy framework myślenia twórczego i strategicznego. Używa
 
 # Brainstorming: Od pomysłu do decyzji
 
-## Proces (4 etapy)
+## Proces (3 etapy)
 
 **Nie musisz przejść przez wszystkie** - skocz do etapu, którego potrzebujesz:
 
 1. **GENEROWANIE** - Stwórz 5-10 opcji (gdy nie masz pomysłów)
-2. **EKSPLORACJA** - Rozwiń top 2-3 w konkretne podejścia
-3. **WALIDACJA** - Systematycznie oceń (2-3 techniki z tabel poniżej)
-4. **DECYZJA** - Rekomendacja + ryzyka + next steps
+2. **WALIDACJA** - Systematycznie oceń najlepsze (2-3 techniki z tabel poniżej)
+3. **DECYZJA** - Rekomendacja + ryzyka + next steps
 
 ---
 
@@ -51,19 +50,20 @@ description: Kompleksowy framework myślenia twórczego i strategicznego. Używa
 
 ## Quick Guide
 
-**Mam pomysł do oceny** → Etap 3: WALIDACJA (2-3 techniki z tabeli)
+**Mam pomysł do oceny** → Etap 2: WALIDACJA (2-3 techniki z tabeli)
 
-**Nie mam pomysłów** → Etap 1: GENEROWANIE (wybierz technikę z tabeli)
+**Nie mam pomysłów** → Etap 1: GENEROWANIE (wybierz technikę z tabeli) → Etap 2: WALIDACJA najlepszych
 
-**Którą opcję wybrać?** → Etap 2: EKSPLORACJA → Etap 3: WALIDACJA (Matryca + Pre-mortem)
+**Którą opcję wybrać?** → Etap 2: WALIDACJA (Matryca Decyzyjna + Pre-mortem) → Etap 3: DECYZJA
 
-**Utknąłem** → Etap 1: GENEROWANIE (Lateral Thinking / Random Input) → Etap 3: WALIDACJA
+**Utknąłem** → Etap 1: GENEROWANIE (Lateral Thinking / Random Input) → Etap 2: WALIDACJA
 
 ---
 
 ## Zasady ogólne
 
-- Używaj 2-3 technik, nie wszystkich
-- Zacznij od szybkich (Test Windy) → głębsze (Pre-mortem)
-- Kończ zawsze decyzją i next steps
+- Generuj 5-10 pomysłów przed walidacją (ilość przed jakością)
+- Waliduj 2-3 najlepsze pomysły używając 2-3 technik
+- Zacznij od szybkich technik (Test Windy) → głębsze (Pre-mortem)
+- Kończ zawsze rekomendacją, ryzykami i next steps
 - Dokumentuj wnioski z każdej techniki

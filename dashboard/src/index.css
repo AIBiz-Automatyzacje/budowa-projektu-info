@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-slate-950 text-gray-100 antialiased;
+}
+
+/* Pattern badge colors - nowa paleta */
+.badge-AI_GENERATOR { @apply bg-teal-500/20 text-teal-400 border-teal-500/30; }
+.badge-SIMPLIFIER { @apply bg-emerald-500/20 text-emerald-400 border-emerald-500/30; }
+.badge-AI_ASSISTANT { @apply bg-sky-500/20 text-sky-400 border-sky-500/30; }
+.badge-AGGREGATOR { @apply bg-amber-500/20 text-amber-400 border-amber-500/30; }
+.badge-MONITOR_ALERT { @apply bg-rose-500/20 text-rose-400 border-rose-500/30; }
+.badge-TEMPLATE_PACK { @apply bg-slate-500/20 text-slate-400 border-slate-500/30; }
+
+/* Animations */
+@keyframes funnel-flow {
+  0% { transform: translateY(-10px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.funnel-animate {
+  animation: funnel-flow 0.5s ease-out forwards;
+}
+
+/* Score bar gradient - teal to amber */
+.score-bar {
+  @apply h-2 rounded-full;
+  background: linear-gradient(90deg, #14B8A6 0%, #F59E0B 100%);
+}
