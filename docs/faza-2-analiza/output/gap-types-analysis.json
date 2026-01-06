@@ -1,0 +1,2709 @@
+{
+  "meta": {
+    "generated": "2026-01-05T23:35:24.194Z",
+    "phase": "Gap Hunter Lite - Phase 1: Gap Types Classification",
+    "model": "anthropic/claude-haiku-4.5",
+    "total_analyzed": 370,
+    "total_input": 370,
+    "batch_size": 100,
+    "batches_count": 4
+  },
+  "gap_types_reference": [
+    {
+      "id": "BRAK_ROZWIAZANIA",
+      "desc": "nie istnieje żadne narzędzie/usługa rozwiązujące ten problem"
+    },
+    {
+      "id": "ZA_DROGIE",
+      "desc": "rozwiązania istnieją ale są poza budżetem użytkownika"
+    },
+    {
+      "id": "ZA_TRUDNE",
+      "desc": "rozwiązania wymagają umiejętności których użytkownik nie ma"
+    },
+    {
+      "id": "ZA_WOLNE",
+      "desc": "rozwiązania zajmują zbyt dużo czasu użytkownika"
+    },
+    {
+      "id": "ZA_SLABA_JAKOSC",
+      "desc": "rozwiązania działają ale wyniki są niezadowalające"
+    },
+    {
+      "id": "NIEDOSTEPNE",
+      "desc": "rozwiązanie nie jest dostępne (region, język, nisza)"
+    },
+    {
+      "id": "BRAK_ZAUFANIA",
+      "desc": "użytkownik nie ufa dostępnym rozwiązaniom"
+    },
+    {
+      "id": "FRAGMENTACJA",
+      "desc": "trzeba używać wielu narzędzi zamiast jednego"
+    }
+  ],
+  "summary": {
+    "by_gap_type": {
+      "NIEDOSTEPNE": {
+        "count": 25,
+        "percent": 6.8
+      },
+      "BRAK_ROZWIAZANIA": {
+        "count": 45,
+        "percent": 12.2
+      },
+      "FRAGMENTACJA": {
+        "count": 19,
+        "percent": 5.1
+      },
+      "ZA_TRUDNE": {
+        "count": 40,
+        "percent": 10.8
+      },
+      "ZA_WOLNE": {
+        "count": 33,
+        "percent": 8.9
+      },
+      "ZA_SLABA_JAKOSC": {
+        "count": 148,
+        "percent": 40
+      },
+      "BRAK_ZAUFANIA": {
+        "count": 29,
+        "percent": 7.8
+      },
+      "ZA_DROGIE": {
+        "count": 31,
+        "percent": 8.4
+      }
+    },
+    "by_secondary": {
+      "BRAK_ROZWIAZANIA": {
+        "count": 1,
+        "percent": 0.3
+      },
+      "ZA_TRUDNE": {
+        "count": 9,
+        "percent": 2.4
+      },
+      "BRAK_ZAUFANIA": {
+        "count": 18,
+        "percent": 4.9
+      },
+      "FRAGMENTACJA": {
+        "count": 27,
+        "percent": 7.3
+      },
+      "ZA_DROGIE": {
+        "count": 11,
+        "percent": 3
+      },
+      "NIEDOSTEPNE": {
+        "count": 3,
+        "percent": 0.8
+      },
+      "ZA_SLABA_JAKOSC": {
+        "count": 11,
+        "percent": 3
+      },
+      "ZA_WOLNE": {
+        "count": 6,
+        "percent": 1.6
+      }
+    },
+    "avg_confidence": 0.85,
+    "total": 370
+  },
+  "problems": [
+    {
+      "id": "SHPF_20251127_009",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": "BRAK_ROZWIAZANIA",
+      "confidence": 0.8,
+      "reasoning": "Metody płatności dla osób bez działalności gospodarczej są niedostępne w ofercie PayPal/przelewów."
+    },
+    {
+      "id": "SHPF_20250907_024",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.9,
+      "reasoning": "Shopify Basic nie pozwala na modyfikację pól, a użytkownik nie ma umiejętności obejścia tego ograniczenia."
+    },
+    {
+      "id": "SHPF_20250614_036",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Użytkownik rozważa dywersyfikację między Shopify a Marketplace, potrzebując porównania możliwości."
+    },
+    {
+      "id": "SHPF_20250311_054",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.85,
+      "reasoning": "Shopify Payments wymaga autoryzacji marki, którą reseller nie posiada, co blokuje dostęp."
+    },
+    {
+      "id": "SHPF_20250308_055",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.7,
+      "reasoning": "Integracja aplikacji mobilnej ze Shopify wymaga umiejętności technicznych, których użytkownik szuka."
+    },
+    {
+      "id": "YT_20251110_023",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Ręczny montaż 60-80 rolek zajmuje zbyt dużo czasu, szukanie montażysty to problem wydajności."
+    },
+    {
+      "id": "CGPTP_20251128_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT nie rozpoznał polskiego wiersza, wykazując ubytki w jakości rozpoznawania literatury."
+    },
+    {
+      "id": "CGPTP_20250804_006",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.85,
+      "reasoning": "Zmiana tła 200 zdjęć w ChatGPT Plus jest wolna i natrafia na limity użytkownika."
+    },
+    {
+      "id": "CGPTP_20250712_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT odmawia wykonania zadania pokolorowania zdjęcia, twierdząc że to niemożliwe."
+    },
+    {
+      "id": "CGPTP_20250621_009",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": "NIEDOSTEPNE",
+      "confidence": 0.8,
+      "reasoning": "Filtry cenzury ChatGPT blokują generowanie realistycznego otoczenia, użytkownik nie ufa możliwościom."
+    },
+    {
+      "id": "AIEvol_20250228_078",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT daje słabe wyniki, użytkownik szuka lepszego modelu do zastąpienia."
+    },
+    {
+      "id": "YTP_20250904_002",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.8,
+      "reasoning": "Przeniesienie kanałów na firmę wymaga zmian kont Google i jest niedostępne dla osób prywatnych."
+    },
+    {
+      "id": "ALLEGR_WSP_20250924_001",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": "NIEDOSTEPNE",
+      "confidence": 0.8,
+      "reasoning": "Allegro odrzuca markę bez jasnych przyczyn, użytkownik nie ufa procesowi i nie ma dostępu."
+    },
+    {
+      "id": "poczat_20251208_015",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT wprowadza w błędy, użytkownik szuka wiarygodnych źródeł zamiast AI."
+    },
+    {
+      "id": "poczat_20251103_079",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.6,
+      "reasoning": "Brak konkretnego rozwiązania dla znalezienia pierwszej pracy po powrocie z USA."
+    },
+    {
+      "id": "poczat_20250811_175",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Użytkownik nie ma umiejętności budowania aplikacji iOS/Android, szuka wykonawcy."
+    },
+    {
+      "id": "allegro_20251028_024",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": "NIEDOSTEPNE",
+      "confidence": 0.8,
+      "reasoning": "Allegro nie chce usunąć komentarza, użytkownik nie ufa procesowi i nie ma dostępu do zmiany."
+    },
+    {
+      "id": "allegro_20250927_029",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Brak integracji cross-platformowej wymaga używania wielu narzędzi zamiast jednego."
+    },
+    {
+      "id": "allegro_20250727_047",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Allegro Analytics nie dostarcza wystarczających informacji do zdiagnozowania spadku sprzedaży."
+    },
+    {
+      "id": "allegro_20250724_049",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Konwersja XLSM na CSV UFG-8 nie ma prostego rozwiązania w dostępnych narzędziach."
+    },
+    {
+      "id": "allegro_20250616_056",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Allegro wymusza parytet cen, co blokuje dywersyfikację cenową na innych kanałach."
+    },
+    {
+      "id": "allegro_20250611_057",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Import z Allegro do WooCommerce pobiera tylko część danych lub puste pola."
+    },
+    {
+      "id": "chatgptpl_20251212_011",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT nie tworzy PDF-ów z wizualną oprawą, brakuje narzędzia do tego zadania."
+    },
+    {
+      "id": "chatgptpl_20251211_016",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.8,
+      "reasoning": "Blokada generowania obrazów w Gemini jest niedostępna, brak wsparcia supportu."
+    },
+    {
+      "id": "chatgptpl_20251208_035",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Gemini nie potrafi poprawnie ułożyć liter w portret typograficzny."
+    },
+    {
+      "id": "chatgptpl_20251207_041",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT generuje błędy w grafice (powielanie imion, błędy ilości)."
+    },
+    {
+      "id": "chatgptpl_20251206_048",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Jakość grafik w ChatGPT Plus spadła mimo tych samych promptów."
+    },
+    {
+      "id": "chatgptpl_20251205_053",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT nie radzi sobie z generowaniem skomplikowanego wideo."
+    },
+    {
+      "id": "chatgptpl_20251205_055",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT 4o generuje bełkot i błędy językowe, model uległ degradacji."
+    },
+    {
+      "id": "chatgptpl_20251204_057",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Deevid generuje bez dźwięku, ChatGPT daje tylko prompty, brak kompleksowego rozwiązania."
+    },
+    {
+      "id": "chatgptpl_20251204_058",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Cenzura w narzędziach AI blokuje edycję zdjęć +18."
+    },
+    {
+      "id": "chatgptpl_20251204_062",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Wszystkie narzędzia AI zmieniają twarz przy edycji, to jest niedostępne."
+    },
+    {
+      "id": "chatgptpl_20251203_068",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Polityka ochrony wizerunku dziecka blokuje edycję zdjęcia w ChatGPT."
+    },
+    {
+      "id": "chatgptpl_20251203_071",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Gemini Plus ma słabą wydajność w porównaniu do ChatGPT przy pracy z serwerami."
+    },
+    {
+      "id": "chatgptpl_20251202_073",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT generuje przeskalowane postacie i sztuczny efekt."
+    },
+    {
+      "id": "chatgptpl_20251202_074",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT ignoruje polecenia o konkretnej rozdzielczości."
+    },
+    {
+      "id": "chatgptpl_20251201_076",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "AI nie radzi sobie z precyzyjnym nałożeniem projektu na szablon bluzy."
+    },
+    {
+      "id": "chatgptpl_20251201_079",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT nie rozumie polecenia o anatomii i deformuje ręce."
+    },
+    {
+      "id": "chatgptpl_20251130_086",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT 5.1 ma nadmierną cenzurę, blokując proste zadania z powodów bezpieczeństwa."
+    },
+    {
+      "id": "chatgptpl_20251129_088",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "ChatGPT dał dziwną odpowiedź na proste zapytanie."
+    },
+    {
+      "id": "ecompl_20251208_001",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.9,
+      "reasoning": "BaseLinker + Fakturownia + WooCommerce nie obsługują zaawansowanych procesów magazynowych."
+    },
+    {
+      "id": "ecompl_20251028_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "BaseLinker jest mało czytelny i nie ma opcji wystawiania na empik/emag."
+    },
+    {
+      "id": "ecompl_20251024_009",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "ZA_WOLNE",
+      "confidence": 0.8,
+      "reasoning": "WordPress jest wolny, Shoper drogi przy 10 sklepach, brakuje taniego rozwiązania."
+    },
+    {
+      "id": "ecompl_20251002_013",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brak jasnego rozwiązania dla małej skali między SaaS a OpenSource."
+    },
+    {
+      "id": "ecompl_20250916_014",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.9,
+      "reasoning": "wFirma + BaseLinker + iDoSell Printer powodują zdublowanie i wysokie koszty."
+    },
+    {
+      "id": "ecompl_20250819_019",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "BaseLinker przeciąża serwer tysiącami zapytań w ciągu godziny."
+    },
+    {
+      "id": "ecompl_20250808_021",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak sprawnej logistyki i metod płatności na rynki CZ/SK/HU."
+    },
+    {
+      "id": "ecompl_20250724_023",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.9,
+      "reasoning": "woo&allegro - apilo - wfirma nie obsługują prawidłowo jednostek miary i zestawów."
+    },
+    {
+      "id": "ecompl_20250625_029",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "BaseLinker ma niewystarczające możliwości PIM dla wariantów i języków."
+    },
+    {
+      "id": "ecompl_20250513_041",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Firma integratorska brakuje kompetencji sprzedażowych/marketingowych do B2C."
+    },
+    {
+      "id": "ecompl_20250509_042",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Magento 2 ma problemy z cookies, koszykiem, analityką i UX mobile."
+    },
+    {
+      "id": "ecompl_20250506_045",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.6,
+      "reasoning": "Brak pewności czy darmowy BaseLinker to dobry wybór dla małego sklepu."
+    },
+    {
+      "id": "ecompl_20250428_047",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Brak platformy B2B/B2C z obsługą wielu walut i stref podatkowych."
+    },
+    {
+      "id": "mkt_20251215_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT pisze czasami głupoty zamiast sensownych treści."
+    },
+    {
+      "id": "mkt_20251208_010",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT wprowadza w błędy przy nauce Pythona, użytkownik szuka wiarygodnych źródeł."
+    },
+    {
+      "id": "mkt_20251103_061",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brak pracy dla Flutter Developera bez komercyjnego doświadczenia."
+    },
+    {
+      "id": "mkt_20250926_090",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.6,
+      "reasoning": "Brak jasnego rozwiązania dla dylematu edukacyjnego nauki dwóch języków."
+    },
+    {
+      "id": "mkt_20250912_102",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.65,
+      "reasoning": "Brak feedbacku na projekt i CV Web Devlopera."
+    },
+    {
+      "id": "mkt_20250902_109",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brak pracy dla Junior .NET Developera."
+    },
+    {
+      "id": "freela_20251215_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "ChatGPT pisze głupoty i ubarwia, użytkownik nie ufa jego informacjom."
+    },
+    {
+      "id": "freela_20251208_011",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT wprowadza w błędy przy nauce Data Science, brakuje wiarygodnych źródeł."
+    },
+    {
+      "id": "PSS_20251215_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "ChatGPT pisze głupoty i halucynuje, użytkownik szuka wiarygodnych informacji."
+    },
+    {
+      "id": "PSS_20251208_002",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT wprowadza w błędy, W3SCHOOL to tylko podstawy, brakuje zaawansowanych źródeł."
+    },
+    {
+      "id": "PSS_20250926_001",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.65,
+      "reasoning": "Brak jasnego rozwiązania dla strategii nauki dwóch języków vs specjalizacja."
+    },
+    {
+      "id": "PSS_20250913_001",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brak rezultatów w szukaniu pracy jako junior przez ponad rok."
+    },
+    {
+      "id": "PSS_20250811_001",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak umiejętności pełnego wdrożenia aplikacji mobilnej."
+    },
+    {
+      "id": "PSS_20250806_001",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brak zatrudnienia w cyberbezpieczeństwie mimo kwalifikacji."
+    },
+    {
+      "id": "inf_pl_20251215_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "ChatGPT pisze głupoty i rzeczy oderwane od dokumentacji."
+    },
+    {
+      "id": "inf_pl_20251103_061",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Brak pracy dla Flutter Developera bez doświadczenia komercyjnego."
+    },
+    {
+      "id": "inf_pl_20250926_090",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.65,
+      "reasoning": "Brak jasnego rozwiązania dla wyboru między Embedded a Pythonem."
+    },
+    {
+      "id": "inf_pl_20250811_132",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak umiejętności budowania aplikacji iOS/Android, potrzeba specjalisty."
+    },
+    {
+      "id": "inf_pl_20250806_133",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brak zatrudnienia w cyberbezpieczeństwie na stanowisku juniorskim."
+    },
+    {
+      "id": "inf_pl_20250803_136",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "ChatGPT daje sprzeczne informacje o rynku Data Science."
+    },
+    {
+      "id": "IM_20251215_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "ChatGPT pisze głupoty i rzeczy oderwane od dokumentacji."
+    },
+    {
+      "id": "IM_20251208_009",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT generuje błędy przy nauce zaawansowanego Pythona."
+    },
+    {
+      "id": "prograf_20251215_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "ChatGPT pisze głupoty i halucynuje zamiast rzetelnych odpowiedzi."
+    },
+    {
+      "id": "prograf_20251208_010",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT wprowadza w błędy przy nauce Pythona do predykcji."
+    },
+    {
+      "id": "prograf_20250926_091",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.65,
+      "reasoning": "Brak jasnego rozwiązania dla strategii nauki C i Python jednocześnie."
+    },
+    {
+      "id": "prograf_20250803_134",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "ChatGPT nie jest wiarygodnym źródłem do weryfikacji popytu na Data Analyst."
+    },
+    {
+      "id": "MLMPolska_20251215_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "ChatGPT pisze głupoty i rzeczy oderwane od opisu na stronach www."
+    },
+    {
+      "id": "MLMPolska_20251208_010",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT popełnia błędy, W3School to tylko podstawy, brakuje zaawansowanych źródeł."
+    },
+    {
+      "id": "MLMPolska_20250926_085",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.65,
+      "reasoning": "Brak jasnego rozwiązania dla wyboru specjalizacji Embedded vs Python."
+    },
+    {
+      "id": "MLMPolska_20250811_0126",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak umiejętności wdrożenia aplikacji mobilnej, potrzeba developera."
+    },
+    {
+      "id": "MLMPolska_20250806_0127",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brak ofert pracy dla Junior w cyberbezpieczeństwie."
+    },
+    {
+      "id": "it_20251208_009",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT wprowadza w błędy przy nauce predykcji w Pythonie."
+    },
+    {
+      "id": "it_20250902_104",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brak pracy dla Junior .NET Developera."
+    },
+    {
+      "id": "it_20250819_119",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Brak backendowca do projektu, użytkownik nie ma umiejętności."
+    },
+    {
+      "id": "it_20250811_126",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Brak umiejętności budowania aplikacji mobilnej."
+    },
+    {
+      "id": "it_20250803_129",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "ChatGPT daje sprzeczne informacje o rynku Data Science."
+    },
+    {
+      "id": "drop_20251215_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "ChatGPT pisze głupoty i konfabuluje zamiast poprawnych odpowiedzi."
+    },
+    {
+      "id": "drop_20251208_010",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT wprowadza w błędy przy nauce zaawansowanego Pythona."
+    },
+    {
+      "id": "smm_20250626_023",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.8,
+      "reasoning": "Budowanie własnego sklepu online wymaga umiejętności, które użytkownik nie posiada."
+    },
+    {
+      "id": "AA_20251212_004",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak możliwości odzyskania kodu usuniętego przez błąd wtyczki."
+    },
+    {
+      "id": "AA_20251206_008",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Brak prostego rozwiązania do automatyzacji dzwonienia voicebot."
+    },
+    {
+      "id": "AA_20251201_011",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.85,
+      "reasoning": "ChatGPT i Gemini się mylą i podają błędne dane przy budowie bazy danych."
+    },
+    {
+      "id": "AA_20251126_013",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Ręczne przepisywanie danych między Excelem, Symfonią i dokumentami zajmuje zbyt dużo czasu."
+    },
+    {
+      "id": "AA_20251117_029",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak dostępu do API customowego modelu GPT w N8N."
+    },
+    {
+      "id": "AA_20251115_032",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "ZA_WOLNE",
+      "confidence": 0.85,
+      "reasoning": "AI do kodowania ma drogie limity i szybko się je zużywa."
+    },
+    {
+      "id": "AA_20251114_034",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "Brakuje dobrych źródeł nauki n8n dla początkujących."
+    },
+    {
+      "id": "AA_20251112_036",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.8,
+      "reasoning": "Arkusze Google nie mają wystarczających funkcji do automatyzacji zarządzania stanami i zamówieniami."
+    },
+    {
+      "id": "AA_20251108_040",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Facebook oficjalnie zabronił publikowania na grupach przez API, rozwiązanie jest niedostępne niezależnie od narzędzia."
+    },
+    {
+      "id": "AA_20251107_041",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.9,
+      "reasoning": "Claude ma limity i halucynacje mimo płatnego planu, jakość nie odpowiada cenie."
+    },
+    {
+      "id": "AA_20251106_045",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Użytkownik nie chce tracić czasu na naukę n8n, brakuje mu umiejętności lub motywacji do przejścia."
+    },
+    {
+      "id": "AA_20251023_051",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Agent AI nie radzi sobie z utrzymaniem kontekstu wątkowego, wyniki są niezadowalające."
+    },
+    {
+      "id": "AA_20251005_060",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Claude Pro ma limity czasowe, które blokują pracę, wymuszając szukanie droższych alternatyw."
+    },
+    {
+      "id": "AA_20250917_072",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Numer telefonu nie przenosi się poprawnie między systemami, integracja działa źle."
+    },
+    {
+      "id": "AA_20250827_075",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Excel nie obsługuje osadzania obrazów z Make, wklejają się tylko linki zamiast grafik."
+    },
+    {
+      "id": "AA_20250826_076",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Claude nie potrafi wygenerować poprawnego kodu XML/Java, halucynuje i zapętla się."
+    },
+    {
+      "id": "AA_20250707_077",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Użytkownik nie wie jak skonfigurować zmianę produktu w Make, brakuje mu wiedzy technicznej."
+    },
+    {
+      "id": "base_20251125_004",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Konieczność integracji trzech systemów (Presta, BL, Fakturownia) zamiast jednego rozwiązania."
+    },
+    {
+      "id": "base_20251027_010",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.85,
+      "reasoning": "Subiekt GT i WordPress nie synchronizują się poprawnie, stany magazynowe się rozjeżdżają."
+    },
+    {
+      "id": "base_20251026_011",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "WMS Baselinkera nie obsługuje tagów serii/daty ważności w szablonach wydruku."
+    },
+    {
+      "id": "base_20250521_058",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Obecne rozwiązanie (Allegro jako magazyn) jest nieoptymalne po wznowieniu sklepu."
+    },
+    {
+      "id": "base_20250429_072",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Użytkownik rozważa migrację z BaseLinker z powodu kosztów i szuka lepszej wartości."
+    },
+    {
+      "id": "base_20250107_145",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak ERP współpracującego z BL i działającego na Macu, rozwiązanie nie istnieje dla tej kombinacji."
+    },
+    {
+      "id": "base_20250103_147",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Masowe wystawianie 100k produktów wymaga specjalistycznej wiedzy, którą użytkownik nie posiada."
+    },
+    {
+      "id": "AI_PL_20250530_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT Premium daje takie same błędy jak wersja darmowa, jakość nie wzrosła."
+    },
+    {
+      "id": "AI_PL_20250530_016",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.7,
+      "reasoning": "ChatGPT nie jest dedykowanym narzędziem do planowania harmonogramów, brakuje specjalistycznego rozwiązania."
+    },
+    {
+      "id": "AI_PL_20250530_018",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT czyta tylko początek tekstu i streszcza resztę zamiast pełnej analizy."
+    },
+    {
+      "id": "AI_PL_20250530_021",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT generuje sztuczne i nierealistyczne opowiadania, wyniki nie spełniają oczekiwań."
+    },
+    {
+      "id": "AI_PL_20250530_022",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "ChatGPT nie potrafi wrócić do poprzedniego formatu, generuje obrazki zamiast Excela."
+    },
+    {
+      "id": "AI_PL_20250530_023",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "n8n wymaga wiedzy technicznej, Sava działa tylko na komputerze, brakuje prostej alternatywy."
+    },
+    {
+      "id": "AI_PL_20250530_024",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "GPT myli się w 30% przypadków przy skomplikowanych projektach, nie jest niezawodny."
+    },
+    {
+      "id": "AI_PL_20250530_026",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Użytkownik nie ufa ChatGPT Plus z powodu braku prywatności i uczenia się na danych."
+    },
+    {
+      "id": "AI_PL_20250530_028",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "ChatGPT średnio radzi sobie z generowaniem list e-maili firm, wyniki są niezadowalające."
+    },
+    {
+      "id": "AI_PL_20250530_031",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Żaden z testowanych modeli AI nie potrafił przekonwertować ręcznego projektu na DXF."
+    },
+    {
+      "id": "AI_PL_20250530_033",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "ChatGPT halucynuje dane firm (wymyślone numery REGON) po kilkunastu wpisach."
+    },
+    {
+      "id": "AI_PL_20250530_036",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT tworzy nowy obraz zamiast edytować istniejący, funkcja nie działa poprawnie."
+    },
+    {
+      "id": "AI_PL_20250530_039",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Użytkownik szuka mniej cenzurowanego modelu, nie ufa ograniczeniom ChatGPT."
+    },
+    {
+      "id": "AI_PL_20250530_042",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Błąd eksportu prezentacji z ChatGPT, linki nie działają, pliki się nie pobierają."
+    },
+    {
+      "id": "AI_PL_20250530_049",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Timeout i niska jakość kodu przy analizie, usługa nie działa niezawodnie."
+    },
+    {
+      "id": "AI_PL_20250530_050",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "ChatGPT generuje błędy, literówki i urwane zdania, jakość jest niezadowalająca."
+    },
+    {
+      "id": "AI_PL_20250530_051",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Modele AI nie rozwiązują prostych zadań logicznych mimo podpowiedzi."
+    },
+    {
+      "id": "AI_PL_20250530_052",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Użytkownik obawia się wykrycia plagiatu przy użyciu ChatGPT w pracy dyplomowej."
+    },
+    {
+      "id": "AI_PL_20250530_053",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Użytkownik nie ma pewności czy Grok 3 jest lepszy od GPT-4o przed zmianą subskrypcji."
+    },
+    {
+      "id": "AI_PL_20250530_055",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT ma limity znaków i halucynuje co do długości tekstu, nie nadaje się do długich tekstów akademickich."
+    },
+    {
+      "id": "AI_PL_20250530_058",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT DALL-E robi odwrotnie do polecenia (pogrubia zamiast zwężać)."
+    },
+    {
+      "id": "AI_PL_20250530_061",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.85,
+      "reasoning": "Modele AI odmawiają rozpoznawania osób lub podają błędne wyniki, nie można na nich polegać."
+    },
+    {
+      "id": "AI_PL_20250530_068",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Bing/Copilot nie uwzględnia polskich znaków w generowanych plakatach."
+    },
+    {
+      "id": "reddit_VideoEditing_002",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "CapCut wprowadził paywall za kluczowe funkcje, zmuszając do szukania alternatyw."
+    },
+    {
+      "id": "reddit_PartneredYouTube_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Stare miniatury przestają działać, ChatGPT jest słaby w tworzeniu miniatur, brakuje lepszego narzędzia."
+    },
+    {
+      "id": "reddit_youtubers_005",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "CapCut wprowadza paywall, Windows Editor laguje, brakuje dobrej darmowej alternatywy."
+    },
+    {
+      "id": "reddit_youtubers_014",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT nie daje dobrych rezultatów wizualnych do miniatur, wyniki spadają."
+    },
+    {
+      "id": "reddit_shopify_005",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Koszty wielu aplikacji sumują się do wysokich kwot, wymuszając szukanie tańszych rozwiązań."
+    },
+    {
+      "id": "reddit_shopify_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Natywny edytor e-maili Shopify jest zbyt ograniczony designersko, trudno uzyskać profesjonalny wygląd."
+    },
+    {
+      "id": "reddit_twitch_014",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Serwery Discord mają martwe kanały i spam, trudno znaleźć rzetelnych partnerów do współpracy."
+    },
+    {
+      "id": "reddit_cpp_001",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Zarządzanie zależnościami wymaga wiedzy o CMake, vcpkg, Conan, brakuje prostego rozwiązania."
+    },
+    {
+      "id": "reddit_zapier_002",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Zapier nie obsługuje loopingu pojedynczych wierszy z Google Sheets, zwraca dane jako text blob."
+    },
+    {
+      "id": "reddit_zapier_003",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Implementacja Human in the Loop w Zapier wymaga skomplikowanej logiki, brakuje natywnego wsparcia."
+    },
+    {
+      "id": "reddit_zapier_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Webhooki PayPal działają niespójnie, opóźnienia i brak danych, integracja jest zawodna."
+    },
+    {
+      "id": "reddit_zapier_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Trigger Vidyard spamuje powiadomieniami przy każdym postępie, brak logiki filtrującej."
+    },
+    {
+      "id": "reddit_zapier_009",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Integracja Canva w Zapier nie wspiera dynamicznego uzupełniania szablonów danymi z HubSpot."
+    },
+    {
+      "id": "reddit_zapier_011",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Publiczne webhooki są zalewane przez boty, co zużywa limity zadań, Zapier nie filtruje tego."
+    },
+    {
+      "id": "reddit_node_003",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Migracja złożonej logiki biznesowej z Excela do Node.js wymaga specjalistycznej wiedzy."
+    },
+    {
+      "id": "reddit_AskMarketing_001",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Klienci nie ufają reklamom płatnym, preferują opinie i konkurencję, rozwiązanie istnieje ale nie działa."
+    },
+    {
+      "id": "reddit_AskMarketing_003",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Pisanie 45 artykułów miesięcznie samodzielnie zajmuje zbyt dużo czasu, ChatGPT nie skaluje."
+    },
+    {
+      "id": "reddit_AskMarketing_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Systemy backendowe e-commerce zawodzą przy skalowaniu, sync zamówień i inventory nie działa."
+    },
+    {
+      "id": "reddit_AskMarketing_009",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Ręczne łączenie danych SEO z wielu narzędzi zajmuje godziny, brakuje zintegrowanego rozwiązania."
+    },
+    {
+      "id": "reddit_smallbusiness_004",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Zarządzanie księgowością w Excelu jest zbyt skomplikowane, brakuje dedykowanego oprogramowania."
+    },
+    {
+      "id": "reddit_smallbusiness_014",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "QuickBooks i Google Sheets nie są zintegrowane, brakuje jednego systemu do zarządzania finansami."
+    },
+    {
+      "id": "reddit_NewTubers_002",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "CapCut staje się droższy, funkcje są paywallowane, szukanie tańszej alternatywy."
+    },
+    {
+      "id": "reddit_nocode_007",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Logika biznesowa rozproszona między Google Docs i Make/n8n, brakuje centralnego źródła prawdy."
+    },
+    {
+      "id": "reddit_nocode_008",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Wysokie koszty wielu narzędzi no-code i brak integracji, subscription fatigue."
+    },
+    {
+      "id": "reddit_nocode_012",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Ręczne kopiowanie profili z LinkedIn do ChatGPT nie skaluje, proces jest zbyt wolny."
+    },
+    {
+      "id": "reddit_Airtable_001",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Airtable Page Designer nie obsługuje wielostronicowych dokumentów PDF z zagnieżdżonymi danymi."
+    },
+    {
+      "id": "reddit_Airtable_002",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Koszt $20+/msc za użytkownika tylko do odczytu jest nieuzasadniony biznesowo."
+    },
+    {
+      "id": "reddit_Airtable_004",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Limit 50 automatyzacji wymusza drastyczny skok kosztowy do Enterprise, rozwiązanie jest za drogie."
+    },
+    {
+      "id": "reddit_Airtable_005",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Airtable nie obsługuje masowego importu z Excela z zachowaniem osadzonych obrazów."
+    },
+    {
+      "id": "reddit_Airtable_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Aplikacja mobilna Airtable jest powolna, zbugowana i ma gorszą funkcjonalność powiadomień."
+    },
+    {
+      "id": "reddit_Airtable_008",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Dokumentacja skomplikowanych baz szybko się dezaktualizuje, ręczne notatki zajmują dużo czasu."
+    },
+    {
+      "id": "reddit_Printify_009",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Grafiki DPI z narzędzi AI są niskiej jakości, wydruki wychodzą rozmazane, Printify odrzuca pliki."
+    },
+    {
+      "id": "reddit_tiktokads_004",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.85,
+      "reasoning": "Narzędzia AI generujące kreacje są drogie i słabej jakości, brakuje niezawodnego rozwiązania."
+    },
+    {
+      "id": "reddit_venturecapital_009",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Ręczna weryfikacja metryk finansowych jest procesem manualnym i powolnym, zajmuje wiele godzin."
+    },
+    {
+      "id": "reddit_venturecapital_058",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Wiedza o spółkach rozproszona między Notion, Airtable i Affinity bez synchronizacji."
+    },
+    {
+      "id": "reddit_venturecapital_062",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.85,
+      "reasoning": "Data roomy i modele finansowe founderów są słabej jakości, brakuje bezpieczeństwa i logów."
+    },
+    {
+      "id": "reddit_remotework_043",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Ręczne przepisywanie danych ze zrzutów ekranu do Excela zajmuje zbyt dużo czasu."
+    },
+    {
+      "id": "reddit_remotework_051",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Systemy ATS odrzucają CV, nawet dostosowane przez ChatGPT, proces poszukiwania pracy trwa miesiące."
+    },
+    {
+      "id": "reddit_remotejobs_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Onboarding pracowników zdalnych jest chaotyczny, dokumentacja rozproszona, brakuje centralnego systemu."
+    },
+    {
+      "id": "reddit_remotejobs_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Systemy ATS filtrują CV bez idealnego dopasowania słów kluczowych, nawet dobre kandydatury nie przechodzą."
+    },
+    {
+      "id": "reddit_remotejobs_009",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Śledzenie setek aplikacji o pracę i brak informacji zwrotnej zajmuje zbyt dużo czasu."
+    },
+    {
+      "id": "reddit_Python_009",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Działy IT blokują instalację IDE, rozwiązanie nie jest dostępne w korporacyjnym środowisku."
+    },
+    {
+      "id": "reddit_Python_012",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Brak reaktywnych narzędzi do obliczeń inżynierskich z real-time output, Jupyter Notebooks nie wystarczają."
+    },
+    {
+      "id": "reddit_sidehustle_038",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Użytkownik jest przytłoczony procesem startu biznesu, brakuje mu umiejętności i wiedzy."
+    },
+    {
+      "id": "reddit_ChatGPTPro_003",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "GPT-5 ma halucynacje, błędne obliczenia i słabą jakość kodu, model stał się nieprzewidywalny."
+    },
+    {
+      "id": "reddit_ChatGPTPro_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Interfejs webowy ChatGPT zacina się przy długich konwersacjach, wydajność spada."
+    },
+    {
+      "id": "reddit_ChatGPTPro_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Custom GPT pomija treści i gubi strukturę przy reorganizacji dużych zbiorów notatek."
+    },
+    {
+      "id": "reddit_ChatGPTPro_009",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Zarządzanie wieloma subskrypcjami AI jest kosztowne i nieefektywne, brakuje jednego narzędzia."
+    },
+    {
+      "id": "reddit_SocialMediaMarketing_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "ChatGPT generuje generyczne pomysły na treści, ideacja jest słaba."
+    },
+    {
+      "id": "reddit_SocialMediaMarketing_003",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Klient ma nierealistyczne oczekiwania (codzienne publikacje przy połowicznym budżecie), brakuje zaufania do planu."
+    },
+    {
+      "id": "reddit_SocialMediaMarketing_010",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Workflow agencji short-form jest chaotyczny, assety rozproszone między Google Drive, WhatsApp, Email, IG."
+    },
+    {
+      "id": "reddit_SocialMediaMarketing_012",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Meta i TikTok banują treści związane z 'addiction' i 'sex', rozwiązanie nie jest dostępne."
+    },
+    {
+      "id": "reddit_ecommercemarketing_001",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Rosnące koszty reklam Meta/Google i spadek ROAS, rozwiązania stają się zbyt drogie."
+    },
+    {
+      "id": "reddit_ecommercemarketing_006",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Zarządzanie księgowością e-commerce jest zbyt skomplikowane dla AI i samodzielnej pracy."
+    },
+    {
+      "id": "reddit_marketing_007",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Google Sheets jest nieefektywny do zarządzania kontaktami, trudno śledzić historię i przypomnienia."
+    },
+    {
+      "id": "reddit_marketing_010",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT pogorszył się po aktualizacji, jakość odpowiedzi spadła, szukanie alternatywy."
+    },
+    {
+      "id": "reddit_DigitalMarketing_004",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Ręczne sprawdzanie cytowań w ChatGPT/Perplexity zajmuje 5-6h tygodniowo, proces jest zbyt wolny."
+    },
+    {
+      "id": "reddit_DigitalMarketing_018",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Ręczne łączenie danych z GA4, Looker, Sheets zajmuje zbyt dużo czasu, brakuje zintegrowanego rozwiązania."
+    },
+    {
+      "id": "reddit_DigitalMarketing_047",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Last-click attribution w Google Ads jest wadliwy, błędnie ocenia kanały budujące świadomość."
+    },
+    {
+      "id": "reddit_dalle2_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Midjourney 'cref' nie zachowuje spójności postaci w seriach, proces w ChatGPT jest wolny."
+    },
+    {
+      "id": "reddit_dalle2_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "ChatGPT nie rozumie niuansów stylistycznych bez precyzyjnego opisu, inżynieria wsteczna promptów jest trudna."
+    },
+    {
+      "id": "reddit_AmazonMerch_003",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.9,
+      "reasoning": "Merch Informer jest drogi i przestarzały, alternatywy są drogie lub mają słabe opinie."
+    },
+    {
+      "id": "reddit_AmazonMerch_007",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Mockupy cyfrowe nie odwzorowują rzeczywistych wyników druku DTG z powodu podkładu white base."
+    },
+    {
+      "id": "reddit_microsaas_003",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Nie istnieją narzędzia monitorujące widoczność marki w outputach LLM (ChatGPT, Perplexity, Gemini)."
+    },
+    {
+      "id": "reddit_ClaudeAI_004",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Brak centralnego systemu do zarządzania aktualizacjami wymusza ręczne sprawdzanie repozytoriów."
+    },
+    {
+      "id": "reddit_ClaudeAI_007",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Model halucynuje i ignoruje instrukcje przy dużych plikach kontekstowych z powodu szumu informacyjnego."
+    },
+    {
+      "id": "reddit_novelai_005",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Generowanie spójnych scen wymaga czasochłonnego inpaintingu i pracy w Photoshopie zamiast jednego narzędzia."
+    },
+    {
+      "id": "reddit_swift_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "LLM generuje przestarzały kod Swift/SwiftUI z powodu cut-off dates i szybkiego tempa zmian w frameworku."
+    },
+    {
+      "id": "reddit_swift_007",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.85,
+      "reasoning": "AI nie wspiera AppKit, a SwiftUI na macOS jest niedojrzałe, brak niezawodnego rozwiązania."
+    },
+    {
+      "id": "reddit_selfhosted_003",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Filtry antyspamowe blokują domeny Protona i Google zjada maile na custom domenach."
+    },
+    {
+      "id": "reddit_dropship_007",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Koszty reklamy (50% przychodów) pożerają całą marżę (45%), uniemożliwiając zysk netto."
+    },
+    {
+      "id": "reddit_typescript_029",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Użytkownik nie ma umiejętności do otypowania skomplikowanych bibliotek zewnętrznych (Mixinów)."
+    },
+    {
+      "id": "reddit_cursor_002",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Model on-demand w Cursorze jest droższy niż bezpośrednia subskrypcja u Anthropic, limity wyczerpują się szybko."
+    },
+    {
+      "id": "reddit_cursor_003",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "Agenci AI ignorują instrukcje i niszczą pliki konfiguracyjne, co stanowi zagrożenie bezpieczeństwa."
+    },
+    {
+      "id": "reddit_cursor_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Gemini 3 Pro w Cursorze ignoruje instrukcje i generuje gorszy kod niż w natywnym środowisku Google."
+    },
+    {
+      "id": "reddit_cursor_010",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Model Sonnet 4.5 ma silną tendencję do tworzenia podsumowań mimo instrukcji negatywnych."
+    },
+    {
+      "id": "reddit_startups_002",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.9,
+      "reasoning": "Brak wiedzy technicznej i bezpieczeństwa przy vibe coding prowadzi do luk bezpieczeństwa i ataków ransomware."
+    },
+    {
+      "id": "reddit_startups_015",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.85,
+      "reasoning": "Istniejące platformy (Reddit, Discord) nie zapewniają głębokich relacji i zaufania z powodu anonimowości i spamu."
+    },
+    {
+      "id": "reddit_startups_016",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.85,
+      "reasoning": "Dostępne API OCR mają problemy z formatowaniem, brak wyjścia PDF, długi czas przetwarzania i wysokie koszty."
+    },
+    {
+      "id": "reddit_startups_020",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Wix ($29/mc) + Google Workspace ($25/mc) są zbyt drogie dla małej firmy."
+    },
+    {
+      "id": "reddit_saas_013",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.9,
+      "reasoning": "Ręczne wypełnianie ankiet bezpieczeństwa (SOC2, ISO) zajmuje 6h/dzień, co jest nieefektywne dla małego zespołu."
+    },
+    {
+      "id": "reddit_saas_030",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Vibe coding generuje kod trudny do utrzymania, z błędami w produkcji i niemożliwością onboardingu nowych ludzi."
+    },
+    {
+      "id": "reddit_saas_065",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Brak automatyzacji w procesie offboardingu wymusza ręczne śledzenie sprzętu w arkuszach kalkulacyjnych."
+    },
+    {
+      "id": "reddit_saas_066",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Narzędzie SMTP jest technicznie poprawne, ale brak Product-Market Fit (0 paying customers mimo zainteresowania)."
+    },
+    {
+      "id": "reddit_saas_106",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.85,
+      "reasoning": "Zdezorganizowana dokumentacja procedur w Notion powoduje błędy VA i wymaga lepszej struktury."
+    },
+    {
+      "id": "reddit_Affiliatemarketing_026",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Google AI Overviews eliminują potrzebę klikania w linki afiliacyjne, zmienia się fundamentalny model biznesu."
+    },
+    {
+      "id": "reddit_webdev_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "WordPress jest sztywny i trudny dla developerów chcących pisać własny kod frontend, brak elastycznego CMS."
+    },
+    {
+      "id": "reddit_webdev_010",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Narzędzia AI (Cursor, Copilot) mogą wysyłać sekrety na zewnątrz lub wprowadzać luki bezpieczeństwa."
+    },
+    {
+      "id": "reddit_integromat_001",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak natywnego modułu 'Text to Binary' w Make wymaga zaawansowanej wiedzy technicznej."
+    },
+    {
+      "id": "reddit_integromat_003",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Koszty Make ($5000/rok) są zbyt wysokie przy skalowaniu biznesu."
+    },
+    {
+      "id": "reddit_integromat_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Narzędzia do generowania PDF w Make (Google Docs, HTML builder) wyglądają jak wydrukowana strona www, brak profesjonalizmu."
+    },
+    {
+      "id": "reddit_integromat_007",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Migracja z Zapier do Make wymaga zrozumienia OAuth, scopes i logiki programistycznej, które user Zapiera nie posiada."
+    },
+    {
+      "id": "reddit_integromat_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Wyzwalacz Shopify 'Watch Abandoned Checkouts' nie wychwytuje użytkowników, którzy nie przeszli do checkoutu."
+    },
+    {
+      "id": "reddit_integromat_009",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Budowanie automatyzacji w Make wymaga eksperckiej wiedzy, którą mały zespół nie posiada."
+    },
+    {
+      "id": "reddit_forhire_046",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Czyszczenie danych HTML/CSS do trenowania bota wymaga zaawansowanej wiedzy, której user nie posiada."
+    },
+    {
+      "id": "reddit_midjourney_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Edytor Midjourney nie radzi sobie z naprawą dłoni, wymuszając użycie zewnętrznych narzędzi."
+    },
+    {
+      "id": "reddit_midjourney_032",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": "ZA_WOLNE",
+      "confidence": 0.85,
+      "reasoning": "Brak wiedzy jak skalować produkcję do setek obrazów przy zachowaniu spójnego stylu w Midjourney lub ComfyUI."
+    },
+    {
+      "id": "reddit_midjourney_007",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Midjourney wymusza styl artystyczny i nie radzi sobie z generowaniem wiarygodnych zdjęć stockowych."
+    },
+    {
+      "id": "reddit_ppc_003",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Landing page niskiej jakości i brak trust signals powodują brak konwersji mimo budżetu $3k/3mc."
+    },
+    {
+      "id": "reddit_ppc_009",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Skrypty PMax są zawodne przy dużej skali (60 sklepów) z powodu opóźnień w danych i niespójności."
+    },
+    {
+      "id": "reddit_ppc_025",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "reCAPTCHA v3 jest omijane przez boty, a HubSpot nie wspiera natywnie Turnstile."
+    },
+    {
+      "id": "reddit_ppc_027",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Rynek 'website creation' jest nasycony, frazy niszowe mają znikomy wolumen, brak efektywnego kanału."
+    },
+    {
+      "id": "reddit_ppc_032",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Opcja edycji Custom Label 0 dla produktów w Shopify nie jest dostępna w interfejsie."
+    },
+    {
+      "id": "reddit_ppc_035",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Rozbieżności w śledzeniu konwersji spowodowane duplikacją Order ID między sklepami."
+    },
+    {
+      "id": "reddit_ppc_038",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Produkt luksusowy ($15k) wymaga budowania zaufania, a Google Ads z małym budżetem nie jest efektywny na start."
+    },
+    {
+      "id": "reddit_agi_001",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.9,
+      "reasoning": "OpenAI usunęło dostęp do starszych modeli, a nowy model (GPT-5) jest gorszym zamiennikiem dla specjalistycznych zadań."
+    },
+    {
+      "id": "reddit_agi_003",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.9,
+      "reasoning": "AI generuje kod trudny do utrzymania ('slop'), gubi kontekst i halucynuje przy rzadkich bibliotekach."
+    },
+    {
+      "id": "reddit_agi_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Agenci AI nie radzą sobie z długoterminowym planowaniem, zarządzaniem zapasami i niepewnością biznesową."
+    },
+    {
+      "id": "reddit_AmazonFBATips_011",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.85,
+      "reasoning": "Brak fizycznej przestrzeni do FBA Prep w USA, większość firm ma wysokie MOQ lub opłaty setup."
+    },
+    {
+      "id": "reddit_automation_001",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Brak jednego narzędzia do automatyzacji Customer Service i Project Management, wymusza używanie wielu narzędzi."
+    },
+    {
+      "id": "reddit_sweatystartup_016",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak widoczności w Google/Nextdoor i brak strategii offline uniemożliwia pozyskanie pierwszych klientów."
+    },
+    {
+      "id": "reddit_ruby_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.85,
+      "reasoning": "Ruby LSP/Solargraph mają problemy z wydajnością, wolnym indeksowaniem i brakiem wsparcia dla starszych wersji Ruby."
+    },
+    {
+      "id": "reddit_ChatGPTPromptGenius_003",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "LLM halucynuje i błędnie kategoryzuje e-maile (reklamy jako powiadomienia o przetargach)."
+    },
+    {
+      "id": "reddit_ChatGPTPromptGenius_007",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Dostosowywanie CV i listów motywacyjnych pod każde ogłoszenie jest czasochłonne i wyczerpujące."
+    },
+    {
+      "id": "reddit_automation_007",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Koszty subskrypcji narzędzi (Zapier, Make, OpenAI) skalują się szybciej niż przychody startupów."
+    },
+    {
+      "id": "reddit_automation_009",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Brak walidacji danych w Excelu powoduje błędy z powodu ręcznego wprowadzania przez zespół."
+    },
+    {
+      "id": "reddit_aipromptprogramming_001",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Narzędzia no-code/low-code są zbyt skomplikowane dla nietechnicznych użytkowników, prowadząc do błędów."
+    },
+    {
+      "id": "reddit_aipromptprogramming_002",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": "ZA_WOLNE",
+      "confidence": 0.85,
+      "reasoning": "Zarządzanie wersjami promptów wymaga wielu narzędzi (Google Docs, Sheets), brak centralnego systemu."
+    },
+    {
+      "id": "reddit_aipromptprogramming_003",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": "ZA_WOLNE",
+      "confidence": 0.9,
+      "reasoning": "Tworzenie treści wymaga przełączania między ChatGPT, Nano Banana, DomoAI, brak spójności i efektywności."
+    },
+    {
+      "id": "reddit_aipromptprogramming_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "AI jest zbyt uległa i sycofantyczna, priorytetyzuje uprzejmość nad prawdę, dając fałszywe poczucie walidacji."
+    },
+    {
+      "id": "reddit_aipromptprogramming_007",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.9,
+      "reasoning": "Kod generowany przez AI ('Vibe Coding') jest trudny do utrzymania, skalowania i naprawy bez głębokiej wiedzy."
+    },
+    {
+      "id": "reddit_Frontend_005",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Junior developerzy bez mentorów seniorów popełniają błędy architektoniczne i nie mają feedbacku."
+    },
+    {
+      "id": "reddit_Frontend_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Handoff Design -> Dev powoduje niespójności wizualne, brak automatycznej walidacji detali."
+    },
+    {
+      "id": "reddit_Frontend_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Narzędzia AI do generowania kodu frontendowego generują 'mess code' wymagający dużo poprawek."
+    },
+    {
+      "id": "reddit_SmallYTChannel_007",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Gry bez trybu fotograficznego lub czystego interfejsu uniemożliwiają tworzenie miniatur, obawy o prawa autorskie."
+    },
+    {
+      "id": "reddit_agency_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Agencja marketingowa nie potrafi pozyskać własnych klientów (300 kontaktów bez efektu), brak wiarygodności."
+    },
+    {
+      "id": "reddit_startups_003",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Google Ads są zbyt drogie dla produktu Conversational AI, niski zwrot z inwestycji."
+    },
+    {
+      "id": "reddit_smallbusiness_006",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "ZA_TRUDNE",
+      "confidence": 0.9,
+      "reasoning": "Systemy CRM są zbyt skomplikowane i drogie dla jednoosobowej firmy, zbyt wiele funkcji."
+    },
+    {
+      "id": "reddit_sales_013",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Źródła leadów (LinkedIn, Apollo) są wyczerpane, brak nowych leadów w niszy."
+    },
+    {
+      "id": "reddit_freelance_015",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.9,
+      "reasoning": "Płatności międzynarodowe mają wysokie opłaty, losowe blokady środków, brak dostępu do ACH."
+    },
+    {
+      "id": "reddit_content_marketing_019",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": "ZA_WOLNE",
+      "confidence": 0.9,
+      "reasoning": "Zarządzanie wieloma kontami społecznościowymi wymusza przełączanie kart i używanie wielu narzędzi."
+    },
+    {
+      "id": "reddit_printful_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Problemy z odwzorowaniem kolorów (zbyt ciemne wydruki) mimo korekty w Photoshopie."
+    },
+    {
+      "id": "reddit_cscareerquestions_002",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.85,
+      "reasoning": "Ryzyko drastycznego wzrostu cen licencji AI po fazie subsydiowania, uzależnienie od vendorów."
+    },
+    {
+      "id": "reddit_cscareerquestions_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Problemy z pamięcią roboczą (ADHD) powodują wielokrotne zwolnienia, narzędzia AI nie rozwiązują problemu."
+    },
+    {
+      "id": "reddit_solopreneur_001",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak widoczności wydatków na subskrypcje SaaS wymaga ręcznego śledzenia w Google Sheets."
+    },
+    {
+      "id": "reddit_solopreneur_069",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Interfejs HubSpot jest zbyt skomplikowany dla prostego śledzenia kontaktów (overkill)."
+    },
+    {
+      "id": "reddit_solopreneur_078",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Narzędzia Project Management (Notion, Jira, Clickup) są zbyt skomplikowane w konfiguracji dla freelancerów."
+    },
+    {
+      "id": "reddit_solopreneur_121",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Przeciążenie zadaniami administracyjnymi wymusza ręczne śledzenie danych zamiast pracy nad core business."
+    },
+    {
+      "id": "reddit_solopreneur_142",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Model darmowy przyciąga oszustów z fałszywymi kartami, model $1 obniżył wolumen leadów."
+    },
+    {
+      "id": "reddit_datascience_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "Narzędzia AI (Microsoft Copilot) nie mają kontekstu danych firmowych, halucynują i naruszają regulacje."
+    },
+    {
+      "id": "reddit_GoogleOne_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Google One AI Premium po cichu przełącza na tańszy model przy dużych dokumentach, generując słabe podsumowania."
+    },
+    {
+      "id": "reddit_Copilot_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "Microsoft Copilot halucynuje, zwraca błędne dokumenty z SharePoint i gubi kontekst."
+    },
+    {
+      "id": "reddit_ChatGPT_Ads_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Wprowadzenie reklam do płatnych planów degraduje doświadczenie profesjonalistów."
+    },
+    {
+      "id": "reddit_ChatGPT_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Aplikacja webowa zawiesza się przy długich konwersacjach, brak natywnego lazy loadingu."
+    },
+    {
+      "id": "reddit_OpenAI_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Restrykcyjne limity wiadomości w Claude Pro (nawet 5x free) hamują pracę z danymi."
+    },
+    {
+      "id": "reddit_OpenAI_009",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Generowane obrazy wyglądają zbyt sztucznie, brak realizmu i słabe detale tła."
+    },
+    {
+      "id": "reddit_n8n_006",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Agencje muszą przepisywać workflowy n8n na Python/Code dla klientów, co jest czasochłonne i podatne na błędy."
+    },
+    {
+      "id": "reddit_n8n_030",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.9,
+      "reasoning": "Krytyczna awaria bazy SQLite w Dockerze prowadzi do całkowitej utraty workflows, brak backupu."
+    },
+    {
+      "id": "reddit_n8n_032",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak widoczności błędów i ciche awarie workflow niszczą reputację agencji u klientów."
+    },
+    {
+      "id": "reddit_n8n_014",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Interfejs n8n jest zbyt skomplikowany dla klientów końcowych, uniemożliwia samodzielną obsługę."
+    },
+    {
+      "id": "reddit_n8n_011",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "BRAK_ZAUFANIA",
+      "confidence": 0.85,
+      "reasoning": "Istniejące rozwiązania OCR są drogie (GPT-4) lub naruszają prywatność (API firm trzecich)."
+    },
+    {
+      "id": "reddit_computervision_106",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Niezawodne zliczanie wierszy i kolumn w nieregularnych siatkach jest trudne, modele zgadują lub wykrywają szum."
+    },
+    {
+      "id": "reddit_marketing_004",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.9,
+      "reasoning": "Proces projektowania maili (Canva -> Klaviyo) zajmuje cały dzień, wymaga podwójnej pracy."
+    },
+    {
+      "id": "reddit_marketing_009",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.85,
+      "reasoning": "Darmowy plan Mailchimp ma drakonskie cięcia funkcjonalności i limitów."
+    },
+    {
+      "id": "reddit_letsplay_051",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Tworzenie miniatur wideo zajmuje 30-45 min na jedną, wymaga manualne edycji w Photoshopie."
+    },
+    {
+      "id": "reddit_googleads_004",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.95,
+      "reasoning": "Budżet $500/mc na konkurencyjną frazę (Kredyty Hipoteczne) jest niewystarczający, CPC to $20-30."
+    },
+    {
+      "id": "reddit_googleads_007",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Brak efektywnych narzędzi do tworzenia i monitorowania kampanii, szuka optymalizacji czasu."
+    },
+    {
+      "id": "reddit_googleads_014",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Performance Max przyciąga błędne zapytania (spam, usługi seksualne) z powodu rozszerzenia zasięgu."
+    },
+    {
+      "id": "reddit_LanguageTechnology_001",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.85,
+      "reasoning": "Analiza sentymentu jest wolna i podatna na błędy, ChatGPT halucynuje przy literówkach."
+    },
+    {
+      "id": "reddit_LanguageTechnology_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Narzędzia tłumaczenia niszczą formatowanie dokumentów (PDF, PPT, Word), tabele i układ slajdów."
+    },
+    {
+      "id": "reddit_LanguageTechnology_004",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "OpenAI o1 Pro traci kontekst, nie radzi sobie z długimi dokumentami, jakość recenzji kodu spadła drastycznie."
+    },
+    {
+      "id": "reddit_freelance_097",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Nie istnieje narzędzie do transparentnego śledzenia salda lekcji widocznego dla uczniów w systemie edukacyjnym."
+    },
+    {
+      "id": "reddit_upwork_015",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Użytkownik nie ufa algorytmowi JSS, który bezlitośnie obniża status na podstawie prywatnych opinii."
+    },
+    {
+      "id": "reddit_learnmachinelearning_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Dostępne roadmapy są zbyt ogólne i optymistyczne, nie odzwierciedlają rzeczywistości (3-4 miesiące vs 1-2 lata)."
+    },
+    {
+      "id": "reddit_learnmachinelearning_007",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak dostępnego rozwiązania do trenowania własnych modeli AI dla startupów bez dużych zasobów."
+    },
+    {
+      "id": "reddit_aws_040",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Dokumentacja SQS FIFO jest niejasna, a AI (ChatGPT) podaje błędne informacje o kolejkowaniu."
+    },
+    {
+      "id": "reddit_localllama_002",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.85,
+      "reasoning": "Płatne asystenty mają limity użycia przerywające pracę, a lokalne modele są zbyt wolne na słabym sprzęcie."
+    },
+    {
+      "id": "reddit_localllama_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Otwartoźródłowe agenty kodowania brakuje funkcji i poleru UX w porównaniu do Claude Code."
+    },
+    {
+      "id": "reddit_ChatGPTCoding_002",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Google Antigravity jest niestabilne, psuje pliki i ma restrykcyjne limity, co czyni je nieprzydatnym."
+    },
+    {
+      "id": "reddit_ChatGPTCoding_004",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Narzędzia AI Code Review nie rozumieją kontekstu biznesowego i pomijają błędy logiki biznesowej."
+    },
+    {
+      "id": "reddit_ChatGPTCoding_005",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Limity użycia w płatnych planach są zbyt niskie dla intensywnej pracy deweloperskiej, a modele premium są zbyt drogie."
+    },
+    {
+      "id": "reddit_ChatGPTCoding_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Poleganie na AI powoduje erozję umiejętności programistycznych i zrozumienia kodu."
+    },
+    {
+      "id": "reddit_ChatGPTCoding_009",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Żadne pojedyncze narzędzie nie radzi sobie ze wszystkimi aspektami pracy, wymuszając używanie wielu narzędzi."
+    },
+    {
+      "id": "reddit_ChatGPTCoding_010",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak automatycznego routingu do tańszych modeli powoduje przepalanie budżetu na proste zadania."
+    },
+    {
+      "id": "reddit_GrowthHacking_008",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.85,
+      "reasoning": "Google Ads dla SaaS ma niski conversion rate i wysoki koszt, co czyni je nieopłacalnym."
+    },
+    {
+      "id": "reddit_GrowthHacking_012",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "LinkedIn nie generuje zaangażowania pomimo regularności i płatnych narzędzi (shadowban, niski response rate)."
+    },
+    {
+      "id": "reddit_GrowthHacking_018",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak narzędzia do śledzenia i atrybucji ruchu pochodzącego z ChatGPT, ręczne metody nie skalują się."
+    },
+    {
+      "id": "reddit_GrowthHacking_027",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.8,
+      "reasoning": "Narzędzia nie generują wzrostu przychodów, a ich koszty ($400/mc) nie zwracają się."
+    },
+    {
+      "id": "reddit_javascript_046",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Użytkownik nie ufa kodowi generowanemu przez AI ze względu na błędy logiczne i brak spójności stylu."
+    },
+    {
+      "id": "reddit_javascript_068",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Testy generowane przez AI dają fałszywe poczucie bezpieczeństwa, testując tylko happy path."
+    },
+    {
+      "id": "reddit_juststart_001",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": "ZA_SLABA_JAKOSC",
+      "confidence": 0.8,
+      "reasoning": "Kod generowany przez AI ma krytyczne luki bezpieczeństwa i brak audytu, co budzi nieufność."
+    },
+    {
+      "id": "reddit_EntrepreneurRideAlong_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "AI-generated code tworzy nieskalowalną architekturę z błędami (podwójne API calls, brak obsługi błędów)."
+    },
+    {
+      "id": "reddit_discord_001",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Rozwiązanie istnieje ale jest trudne do znalezienia, wymaga przeszukiwania niejasnych źródeł."
+    },
+    {
+      "id": "reddit_ai_tools_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Filtry NSFW w modelach AI są zbyt restrykcyjne dla specyficznych potrzeb marketingowych."
+    },
+    {
+      "id": "reddit_ai_tools_002",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": "FRAGMENTACJA",
+      "confidence": 0.85,
+      "reasoning": "Konieczność opłacania wielu subskrypcji AI z pokrywającymi się funkcjonalnościami jest zbyt droga."
+    },
+    {
+      "id": "reddit_ai_tools_004",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "AI odmawia współpracy i przerywa sesje z powodu limitów lub filtrów bezpieczeństwa."
+    },
+    {
+      "id": "reddit_ai_tools_005",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Generatory obrazów AI nie utrzymują spójności postaci i obiektów między generowaniami."
+    },
+    {
+      "id": "reddit_ai_tools_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "ChatGPT generuje ogólnikowe, nieprzydatne informacje (slop) zamiast konkretnych porad."
+    },
+    {
+      "id": "reddit_ai_tools_010",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "AI do generowania leadów tworzy duplikaty i halucynuje dane (zmyślone strony www)."
+    },
+    {
+      "id": "reddit_ai_tools_013",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Filtry NSFW blokują generowanie zdjęć produktów (bielizna) dla e-commerce."
+    },
+    {
+      "id": "reddit_ai_tools_022",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.75,
+      "reasoning": "Niepewność kosztów narzędzi vibe coding (pay-as-you-go) zniechęca hobbystów do ich używania."
+    },
+    {
+      "id": "reddit_supabase_002",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Wytyczne App Store wymagają Apple Sign In, co ogranicza dostępność rozwiązania dla iOS."
+    },
+    {
+      "id": "reddit_aiArt_002",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Brak budżetu na tradycyjnych grafików, AI jest alternatywą, ale problemem wyjściowym był koszt."
+    },
+    {
+      "id": "reddit_aiArt_004",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Utrzymanie spójności postaci wymaga zaawansowanej wiedzy (LoRA), która jest trudna dla użytkowników."
+    },
+    {
+      "id": "reddit_aiArt_012",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Guardrails błędnie interpretują niewinne idiomy jako rasistowskie, blokując generowanie."
+    },
+    {
+      "id": "reddit_indiehackers_003",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Kod generowany przez AI nie radzi sobie z problemami produkcyjnymi (webhooks, rate limits)."
+    },
+    {
+      "id": "reddit_dev_013",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Brak narzędzia do znalezienia dobrych first issues w Open Source dla początkujących."
+    },
+    {
+      "id": "reddit_FacebookAds_014",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Shopify Shop App przekierowuje na domenę gdzie Pixel nie działa, uniemożliwiając śledzenie."
+    },
+    {
+      "id": "reddit_antiwork_001",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak systemu do separacji prywatnego numeru od firmowego bez narażenia prywatności pracownika."
+    },
+    {
+      "id": "reddit_sideproject_005",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Aplikacje notatkowe wymagają zbyt wiele kategoryzacji przed zapisaniem, co jest zbyt trudne dla użytkownika."
+    },
+    {
+      "id": "reddit_sideproject_006",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Powiadomienia o datach są ignorowane lub giną w tłumie, brakuje kontekstu i sugestii."
+    },
+    {
+      "id": "reddit_sideproject_008",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Kod generowany przez AI jest trudny do utrzymania dla laika, gdy pojawią się błędy logiczne."
+    },
+    {
+      "id": "reddit_sideproject_010",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Ręczne przepisywanie danych z paragonów zajmuje zbyt dużo czasu przy długich listach."
+    },
+    {
+      "id": "reddit_sideproject_011",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Ręczny import CSV do Google Sheets wymaga zbyt wiele kliknięć dla powtarzalnego procesu."
+    },
+    {
+      "id": "reddit_sideproject_017",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Ręczne tworzenie screenshotów do App Store w Figmie jest zbyt czasochłonne i powtarzalne."
+    },
+    {
+      "id": "reddit_ML_006",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak bezpiecznego rozwiązania do generowania dokumentacji bez ryzyka wycieku prywatnego kodu do chmury."
+    },
+    {
+      "id": "reddit_woocommerce_003",
+      "primary_gap_type": "BRAK_ZAUFANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Shopify blokuje konta bez jasnego powodu, co powoduje utratę zaufania do platformy."
+    },
+    {
+      "id": "reddit_woocommerce_005",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Ręczne wprowadzanie danych z PDF i Excel jest czasochłonne, ChatGPT gubi się przy tabelach."
+    },
+    {
+      "id": "reddit_adops_020",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Większość sieci reklamowych wymaga SDK dla formatów rewarded, nie wspierając czystego web."
+    },
+    {
+      "id": "reddit_singularity_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Limity zapytań w nowych IDE AI blokują pracę nad złożonymi projektami, a modele low-tier są mniej skuteczne."
+    },
+    {
+      "id": "reddit_singularity_004",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Modele LLM nie rozwijają się w jakości pisania kreatywnego, wymagając ciężkiego promptingu."
+    },
+    {
+      "id": "reddit_contentcreation_001",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Wstyd i lęk przed kamerą wymagają umiejętności psychicznych, które użytkownik nie ma."
+    },
+    {
+      "id": "reddit_contentcreation_003",
+      "primary_gap_type": "FRAGMENTACJA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Chaos organizacyjny wynika z używania wielu aplikacji zamiast jednego zintegrowanego narzędzia."
+    },
+    {
+      "id": "reddit_dropship_004",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Bramki płatnicze nie są dostępne w krajach trzeciego świata, ograniczając dostęp do usług."
+    },
+    {
+      "id": "reddit_analytics_001",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Brak efektywnego sposobu na wyróżnienie się w nasyconym rynku pracy dla entry-level Data Analysts."
+    },
+    {
+      "id": "reddit_analytics_003",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Model atrybucji Last-Click ignoruje wpływ górnej części lejka, dając błędne decyzje marketingowe."
+    },
+    {
+      "id": "reddit_analytics_004",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak narzędzi analitycznych no-code dla nietechnicznych zespołów, zmuszając do czekania na IT."
+    },
+    {
+      "id": "reddit_analytics_008",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Ręczne tworzenie raportów ad-hoc z dużych tabel danych jest czasochłonne i wymaga SQL."
+    },
+    {
+      "id": "reddit_analytics_012",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Dashboardy pokazują co się stało, ale nie dlaczego i co robić dalej (brak insights)."
+    },
+    {
+      "id": "reddit_ecommerce_011",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Zarządzanie zapasami w Excelu przy 100 dostawcach jest zbyt skomplikowane i czasochłonne."
+    },
+    {
+      "id": "reddit_ChatGPT_001",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Agresywne filtry bezpieczeństwa w GPT-5.2 uniemożliwiają kreatywne pisanie i pracę twórczą."
+    },
+    {
+      "id": "reddit_ChatGPT_007",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Model AI stał się arogancki i odmawia wykonywania prostych zadań, argumentując przeciwko użytkownikowi."
+    },
+    {
+      "id": "reddit_retool_006",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Obsługa wielu języków wymaga zaawansowanej wiedzy technicznej, którą Excel nie zapewnia."
+    },
+    {
+      "id": "reddit_FulfillmentByAmazon_005",
+      "primary_gap_type": "ZA_DROGIE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Malejące marże na Amazon wymagają migracji na DTC, co wymaga dużej inwestycji."
+    },
+    {
+      "id": "reddit_SmallYoutubers_053",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Brak umiejętności projektowania miniatur wymaga nauki nowych narzędzi (Canva/Photoshop)."
+    },
+    {
+      "id": "reddit_thread_001",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": "ZA_DROGIE",
+      "confidence": 0.85,
+      "reasoning": "Istniejące CRM są zbyt skomplikowane i drogie dla freelancerów, brakuje prostych rozwiązań mobilnych."
+    },
+    {
+      "id": "reddit_thread_016",
+      "primary_gap_type": "BRAK_ROZWIAZANIA",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak granularnych, wiarygodnych danych o bezpieczeństwie konkretnych ulic dla samotnie podróżujących kobiet."
+    },
+    {
+      "id": "reddit_thread_091",
+      "primary_gap_type": "ZA_WOLNE",
+      "secondary_gap_type": null,
+      "confidence": 0.9,
+      "reasoning": "Ręczne testowanie regresyjne zajmuje godziny i blokuje rozwój produktu, jest nieskalowalne."
+    },
+    {
+      "id": "reddit_thread_106",
+      "primary_gap_type": "NIEDOSTEPNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Marki nie są widoczne w odpowiedziach AI, które działają inaczej niż tradycyjne wyszukiwarki."
+    },
+    {
+      "id": "reddit_thread_126",
+      "primary_gap_type": "ZA_SLABA_JAKOSC",
+      "secondary_gap_type": null,
+      "confidence": 0.8,
+      "reasoning": "Systemy antyfraudowe flagują transakcje transgraniczne jako ryzykowne, odrzucając płatności."
+    },
+    {
+      "id": "reddit_thread_127",
+      "primary_gap_type": "ZA_TRUDNE",
+      "secondary_gap_type": null,
+      "confidence": 0.85,
+      "reasoning": "Brak wiedzy technicznej po odejściu CTO powoduje, że naprawianie infrastruktury jest zbyt trudne."
+    }
+  ]
+}

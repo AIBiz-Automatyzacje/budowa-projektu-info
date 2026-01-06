@@ -1,0 +1,2481 @@
+{
+  "meta": {
+    "generated": "2026-01-05T11:26:54.218Z",
+    "step": "4. Community Fit Scoring (Multi-Model)",
+    "models_used": [
+      "anthropic/claude-opus-4.5",
+      "google/gemini-3-pro-preview",
+      "x-ai/grok-4",
+      "openai/gpt-5.2-chat"
+    ],
+    "models_count": 4,
+    "categories_analyzed": 13,
+    "patterns_analyzed": 15
+  },
+  "scoring_criteria": {
+    "target_fit": "0-30 pkt - dopasowanie do branż i person AA",
+    "capability_fit": "0-25 pkt - czy umiemy zbudować",
+    "monetization_fit": "0-25 pkt - czy zapłacą i jak",
+    "distribution_fit": "0-20 pkt - kanały dystrybucji",
+    "quick_win_bonus": "0-23 pkt - dodatkowe atuty",
+    "max_total": 123
+  },
+  "thresholds": {
+    "strong_fit": "80+ (priorytet do walidacji)",
+    "good_fit": "60-79 (warto rozważyć)",
+    "partial_fit": "40-59 (wymaga pivotu)",
+    "poor_fit": "0-39 (odrzucić)"
+  },
+  "category_rankings": [
+    {
+      "name": "Automatyzacja",
+      "consensus_score": 114,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 118,
+          "target_fit": 28,
+          "capability_fit": 25,
+          "monetization_fit": 22,
+          "distribution_fit": 20,
+          "bonus": 23
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 100,
+          "target_fit": 30,
+          "capability_fit": 25,
+          "monetization_fit": 25,
+          "distribution_fit": 20,
+          "bonus": 23
+        },
+        {
+          "model": "Grok 4",
+          "total": 123,
+          "target_fit": 30,
+          "capability_fit": 25,
+          "monetization_fit": 25,
+          "distribution_fit": 20,
+          "bonus": 23
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 120,
+          "target_fit": 30,
+          "capability_fit": 25,
+          "monetization_fit": 22,
+          "distribution_fit": 20,
+          "bonus": 23
+        }
+      ],
+      "score_spread": 23,
+      "avg_score": 115.3,
+      "breakdown": {
+        "target_fit": 30,
+        "capability_fit": 25,
+        "monetization_fit": 24,
+        "distribution_fit": 20,
+        "bonus": 23
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "To jest CORE biznesu AA - eksperci od Make/n8n, cała społeczność szuka automatyzacji. Idealnie pasuje do wszystkich person (SMB chce oszczędzać czas, freelancerzy skalować). Mamy 200+ lekcji w tym temacie, grupy FB o tym mówią codziennie."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Absolutny core działalności AA. Idealne dopasowanie do persony SMB i Freelancera, pełna zgodność z kompetencjami (Make/n8n) i gotowość rynku do płacenia za oszczędność czasu."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Idealnie pasuje do wszystkich branż i person AA, jako core kompetencja. Jesteśmy ekspertami w no-code automatyzacji, budowa MVP w 1-2 tygodnie. Społeczność płaci za takie rozwiązania, pasuje do afiliacji i jednorazowej płatności, z istniejącym contentem i kanałami dystrybucji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "To absolutne core AA – dokładnie te branże, dokładnie ci ludzie. Kompetencje, content i dystrybucja są już na miejscu. Najniższe ryzyko i najwyższa zgodność DNA."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Marketplace gotowych szablonów automatyzacji dla polskich firm - jednorazowa płatność za sprawdzone workflow (np. 'Automatyzacja fakturowania dla e-commerce', 'Lead nurturing dla agencji'). Sprzedaż przez Skool + grupy FB."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Biblioteka 'Plug & Play' - zestaw 50 gotowych, przetestowanych scenariuszy n8n/Make dla polskich firm (faktury, leady, social media) sprzedawana jako jednorazowy produkt cyfrowy."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Biblioteka gotowych szablonów automatyzacji w Make/n8n z afiliacją do narzędzi, sprzedawana jednorazowo z customizacją."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Marketplace gotowych automatyzacji Make/n8n dla polskich firm (jednorazowa płatność)"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "mamy content",
+        "case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 1
+    },
+    {
+      "name": "Wdrożenia/Integracje",
+      "consensus_score": 100,
+      "model_scores": [
+        {
+          "model": "Gemini 3 Pro",
+          "total": 100,
+          "target_fit": 25,
+          "capability_fit": 25,
+          "monetization_fit": 20,
+          "distribution_fit": 15,
+          "bonus": 23
+        }
+      ],
+      "score_spread": 0,
+      "avg_score": 100,
+      "breakdown": {
+        "target_fit": 25,
+        "capability_fit": 25,
+        "monetization_fit": 20,
+        "distribution_fit": 15,
+        "bonus": 23
+      },
+      "rationales": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Rozwiązuje problem 'chaosu narzędziowego'. Wysokie kompetencje zespołu w łączeniu API. Model jednorazowej sprzedaży konektorów lub szablonów jest bezpieczniejszy niż usługi wdrożeniowe."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Polski Connector Pack - zestaw niestandardowych integracji (custom apps) do Make/n8n dla polskich systemów (Fakturownia, BaseLinker, Allegro) niedostępnych natywnie."
+        }
+      ],
+      "quick_wins": [
+        "Możemy zbudować w no-code",
+        "Mamy już content w tym temacie",
+        "Możemy użyć jako case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 2
+    },
+    {
+      "name": "Marketing",
+      "consensus_score": 99,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 102,
+          "target_fit": 26,
+          "capability_fit": 20,
+          "monetization_fit": 20,
+          "distribution_fit": 18,
+          "bonus": 18
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 98,
+          "target_fit": 25,
+          "capability_fit": 20,
+          "monetization_fit": 20,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "Grok 4",
+          "total": 101,
+          "target_fit": 28,
+          "capability_fit": 20,
+          "monetization_fit": 20,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 95,
+          "target_fit": 26,
+          "capability_fit": 19,
+          "monetization_fit": 20,
+          "distribution_fit": 17,
+          "bonus": 13
+        }
+      ],
+      "score_spread": 7,
+      "avg_score": 99,
+      "breakdown": {
+        "target_fit": 26,
+        "capability_fit": 20,
+        "monetization_fit": 20,
+        "distribution_fit": 16,
+        "bonus": 17
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "30% członków to marketerzy/agencje - to nasza druga największa grupa. Umiemy budować automatyzacje marketingowe (Make + AI). Mamy content o AI w marketingu. Firmy płacą za marketing bo widzą ROI."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Duża grupa odbiorców (agencje/marketerzy). Możliwość wykorzystania AI do generowania treści lub analizy, co jest zgodne z 'AI integration expert'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Silne dopasowanie do marketerów/agencji (20-30% społeczności) i branż marketingowych. Możemy zbudować narzędzia AI w vibe coding w 2-4 tygodnie, bez wykluczeń. Grupa ma budżet na ROI, pasuje do freemium, z częściowym contentem w AI marketingu i dobrymi kanałami."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Marketing jest ważny dla członków, ale AA wygrywa głównie tam, gdzie marketing łączy się z automatyzacją i AI. Czyste narzędzia marketingowe są bardziej konkurencyjne."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Narzędzie do automatycznego generowania raportów marketingowych dla agencji - łączy dane z Meta Ads, Google Ads, Analytics przez Make/n8n, generuje raporty przez Claude API. Jednorazowa płatność + szablony."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Content Repurposing Engine - narzędzie, które z jednego wideo YouTube generuje posty na LinkedIn, newsletter i wątek na X, zachowując styl autora (Claude)."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "AI tool do automatyzacji kampanii marketingowych z integracją Claude, freemium z jednorazową płatnością za premium szablony."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "AI marketing ops: automatyczne raporty kampanii + rekomendacje (Make + Claude)"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "mamy content",
+        "case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 3
+    },
+    {
+      "name": "Wdrozenia/Integracje",
+      "consensus_score": 97,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 90,
+          "target_fit": 22,
+          "capability_fit": 22,
+          "monetization_fit": 19,
+          "distribution_fit": 14,
+          "bonus": 13
+        },
+        {
+          "model": "Grok 4",
+          "total": 96,
+          "target_fit": 22,
+          "capability_fit": 22,
+          "monetization_fit": 18,
+          "distribution_fit": 16,
+          "bonus": 18
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 107,
+          "target_fit": 27,
+          "capability_fit": 23,
+          "monetization_fit": 21,
+          "distribution_fit": 18,
+          "bonus": 18
+        }
+      ],
+      "score_spread": 17,
+      "avg_score": 97.7,
+      "breakdown": {
+        "target_fit": 24,
+        "capability_fit": 22,
+        "monetization_fit": 19,
+        "distribution_fit": 16,
+        "bonus": 16
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Problem realny dla naszych odbiorców (chaos narzędziowy). Umiemy integrować przez Make/n8n. Firmy płacą za działające integracje. Mniej contentu stricte o integracjach polskich systemów, ale kompetencje są."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do IT i e-commerce (30%), ale mniej do freelancerów; to problem techniczny dla naszych ludzi. Eksperci w integracjach no-code, budowa w 1-2 tygodnie. Płacą za oszczędności, pasuje do jednorazowej, z contentem w automatyzacji i kanałami FB/Skool."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Chaos integracyjny to częsty ból SMB i e-commerce. AA ma dokładnie kompetencje i narzędzia, by to adresować. Trzeba unikać ciężkich wdrożeń 1:1."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Gotowe konektory Make/n8n dla polskich systemów (Fakturownia, InFakt, Subiekt GT) - pakiety integracji z dokumentacją. Jednorazowa płatność za pakiet branżowy."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "No-code integrator dla polskich systemów jak BaseLinker z Make, jednorazowa płatność za szablony."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Płatne konektory Make/n8n do polskich systemów (BaseLinker, Subiekt)"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "case study dla AA",
+        "integracja z narzędziami"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 4
+    },
+    {
+      "name": "E-commerce",
+      "consensus_score": 92,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 101,
+          "target_fit": 24,
+          "capability_fit": 22,
+          "monetization_fit": 21,
+          "distribution_fit": 16,
+          "bonus": 18
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 89,
+          "target_fit": 20,
+          "capability_fit": 20,
+          "monetization_fit": 22,
+          "distribution_fit": 12,
+          "bonus": 15
+        },
+        {
+          "model": "Grok 4",
+          "total": 91,
+          "target_fit": 26,
+          "capability_fit": 18,
+          "monetization_fit": 20,
+          "distribution_fit": 14,
+          "bonus": 13
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 89,
+          "target_fit": 24,
+          "capability_fit": 18,
+          "monetization_fit": 21,
+          "distribution_fit": 16,
+          "bonus": 10
+        }
+      ],
+      "score_spread": 12,
+      "avg_score": 92.5,
+      "breakdown": {
+        "target_fit": 24,
+        "capability_fit": 20,
+        "monetization_fit": 21,
+        "distribution_fit": 15,
+        "bonus": 14
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "20% członków to e-commerce - solidna baza. Problemy operacyjne (multichannel, logistyka) idealnie rozwiązuje automatyzacja. E-commerce przyzwyczajony do płacenia za narzędzia z ROI. Mamy mniej contentu stricte e-commerce, ale automatyzacje pasują."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Silna grupa płacąca (ROI), ale konkurencja narzędziowa jest duża. Szansa w niszowych automatyzacjach operacyjnych (nie marketingowych), np. obsługa zwrotów czy opisów produktów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Dobrze pasuje do branż e-commerce (20%) i SMB (35%). Możemy zbudować w vibe coding w 2-4 tygodnie, ale nie native apps. Budżet na ROI, pasuje do freemium, ale mniej contentu specyficznego, kanały ogólne."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Duża część społeczności działa w e-commerce i myśli ROI. Jednak pełne narzędzia e-commerce bywają zbyt ciężkie – lepiej skupić się na ops i automatyzacji."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Pakiet automatyzacji dla BaseLinker/Allegro - synchronizacja stanów, automatyczne odpowiedzi na pytania klientów przez AI, alerty o niskich stanach. Szablony Make + n8n, jednorazowa płatność."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "SEO Description Bulk Generator - aplikacja dla sklepów, która masowo poprawia opisy produktów pod SEO używając modelu Claude i danych z Google Search Console."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Automatyzator multichannel sprzedaży w n8n z afiliacją do narzędzi, freemium model."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Automatyzacja obsługi zwrotów i reklamacji dla małych sklepów"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "case study dla AA",
+        "seria budowa biznesu"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 5
+    },
+    {
+      "name": "Content/Tworzenie tresci",
+      "consensus_score": 92,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 99,
+          "target_fit": 23,
+          "capability_fit": 23,
+          "monetization_fit": 18,
+          "distribution_fit": 17,
+          "bonus": 18
+        },
+        {
+          "model": "Grok 4",
+          "total": 88,
+          "target_fit": 20,
+          "capability_fit": 20,
+          "monetization_fit": 15,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 91,
+          "target_fit": 22,
+          "capability_fit": 20,
+          "monetization_fit": 17,
+          "distribution_fit": 17,
+          "bonus": 15
+        }
+      ],
+      "score_spread": 11,
+      "avg_score": 92.7,
+      "breakdown": {
+        "target_fit": 22,
+        "capability_fit": 21,
+        "monetization_fit": 17,
+        "distribution_fit": 16,
+        "bonus": 17
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "15% to twórcy contentu, ale WSZYSCY potrzebują contentu. AI content to nasz core (Claude, ChatGPT). Możemy zbudować narzędzia w no-code + AI. Mamy dużo contentu o promptach i AI. Monetyzacja trudniejsza - twórcy mają mniejsze budżety."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do content creators (15%) i marketerów, ale nie core. Eksperci w AI content, budowa w no-code/AI w 1-2 tygodnie. Średnia gotowość do płacenia, pasuje do afiliacji, z contentem w Claude/ChatGPT i kanałami YouTube."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Twórcy i marketerzy są obecni w AA, a AI-content to naturalny temat. Ryzykiem jest niska skłonność do płacenia bez jasnego ROI."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Generator contentu dla polskich firm - szablony promptów + automatyzacja publikacji (Make → social media). Pakiet 'Content Machine' - jednorazowa płatność za system + szablony promptów dla konkretnych branż."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "AI generator contentu po polsku z Claude integration, afiliacja do API, jednorazowa płatność za zaawansowane prompty."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Automatyczny system repurpose contentu (YouTube → Shorts → LinkedIn)"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "mamy content",
+        "case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 6
+    },
+    {
+      "name": "Zlecenia/Freelance",
+      "consensus_score": 88,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 81,
+          "target_fit": 25,
+          "capability_fit": 15,
+          "monetization_fit": 16,
+          "distribution_fit": 15,
+          "bonus": 10
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 100,
+          "target_fit": 28,
+          "capability_fit": 20,
+          "monetization_fit": 20,
+          "distribution_fit": 18,
+          "bonus": 23
+        },
+        {
+          "model": "Grok 4",
+          "total": 83,
+          "target_fit": 25,
+          "capability_fit": 15,
+          "monetization_fit": 18,
+          "distribution_fit": 12,
+          "bonus": 13
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 93,
+          "target_fit": 28,
+          "capability_fit": 18,
+          "monetization_fit": 16,
+          "distribution_fit": 18,
+          "bonus": 13
+        }
+      ],
+      "score_spread": 19,
+      "avg_score": 89.3,
+      "breakdown": {
+        "target_fit": 27,
+        "capability_fit": 17,
+        "monetization_fit": 18,
+        "distribution_fit": 16,
+        "bonus": 15
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "30% to freelancerzy - duża grupa z realnym bólem. ALE: marketplace wymaga obu stron naraz (wykluczenie w profilu), długi czas do MVP, trudna monetyzacja (freelancerzy wrażliwi cenowo). Możemy zbudować narzędzia wspierające, nie sam marketplace."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Freelancerzy to 30% społeczności. Budowa marketplace'u jest ryzykowna (network effects), ale narzędzia dla freelancerów (lead gen) to 'strong fit' z wykorzystaniem scrapingu i AI."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Kategoria silnie pasuje do freelancerów (30% społeczności) i branż usługowych (20%), ale mniej do SMB. Możemy zbudować marketplace w no-code, ale wymagałoby to custom dev na escrow, co mieści się w 4-8 tygodniach. Grupa płaci za rozwiązania oszczędzające czas, pasuje do jednorazowej płatności, ale kanały AA skupiają się na automatyzacji, nie na zleceniach."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Freelancerzy i SMB to rdzeń społeczności AA, a problem pozyskiwania zleceń jest egzystencjalny. Technicznie możliwe do zbudowania, ale marketplace i escrow zwiększają złożoność. Najlepiej działać niszowo i automatyzacyjnie."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Automatyzacja pozyskiwania leadów dla freelancerów - scraping (Apify) + AI kwalifikacja + automatyczne outreach. Narzędzie, nie marketplace. Jednorazowa płatność za setup + szablony."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "AI Lead Hunter - narzędzie monitorujące grupy FB/portale i wysyłające powiadomienie o idealnym zleceniu w 3 minuty od publikacji (wykorzystuje Apify + AI analysis)."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Marketplace dla automatyzacji zleceń z integracją Make/n8n, gdzie freelancerzy sprzedają szablony workflow za jednorazową opłatą."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Automatyczny system lead generation dla freelancerów (LinkedIn/Email scraping + AI personalizacja + CRM w Make)"
+        }
+      ],
+      "quick_wins": [
+        "case study dla AA",
+        "seria budowa biznesu",
+        "Możemy zbudować w no-code"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 7
+    },
+    {
+      "name": "Analityka/BI",
+      "consensus_score": 70,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 67,
+          "target_fit": 17,
+          "capability_fit": 16,
+          "monetization_fit": 16,
+          "distribution_fit": 10,
+          "bonus": 8
+        },
+        {
+          "model": "Grok 4",
+          "total": 72,
+          "target_fit": 18,
+          "capability_fit": 18,
+          "monetization_fit": 15,
+          "distribution_fit": 10,
+          "bonus": 11
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 73,
+          "target_fit": 19,
+          "capability_fit": 17,
+          "monetization_fit": 16,
+          "distribution_fit": 13,
+          "bonus": 8
+        }
+      ],
+      "score_spread": 6,
+      "avg_score": 70.7,
+      "breakdown": {
+        "target_fit": 18,
+        "capability_fit": 17,
+        "monetization_fit": 16,
+        "distribution_fit": 11,
+        "bonus": 9
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy potrzebują wniosków z danych, ale BI to specjalistyczna nisza. Możemy budować dashboardy przez no-code (Retool, Softr), ale to nie nasz główny content. Analityka wymaga głębszej wiedzy domenowej."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do marketingu i e-commerce (50%), techniczni ludzie. Możemy zbudować dashboardy w vibe coding, 2-4 tygodnie. Średnia monetyzacja, pasuje do jednorazowej, ale mało contentu specyficznego."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "SMB chcą wniosków, nie dashboardów. AA może wygrać prostotą i AI interpretacją, nie ciężkim BI."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Prosty dashboard KPI dla solopreneurów - łączy dane z Stripe, GA4, social media przez Make, pokazuje 5 kluczowych metryk. Szablon + setup, jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "AI dashboard dla MŚP z Claude analizą, jednorazowa płatność za setup."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Decyzyjny dashboard ROI (marketing + sprzedaż)"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "integracja z narzędziami",
+        "Możemy użyć jako case study dla AA"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 8
+    },
+    {
+      "name": "Strategia/Biznes",
+      "consensus_score": 68,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 71,
+          "target_fit": 21,
+          "capability_fit": 14,
+          "monetization_fit": 15,
+          "distribution_fit": 13,
+          "bonus": 8
+        },
+        {
+          "model": "Grok 4",
+          "total": 62,
+          "target_fit": 18,
+          "capability_fit": 12,
+          "monetization_fit": 12,
+          "distribution_fit": 10,
+          "bonus": 10
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 72,
+          "target_fit": 21,
+          "capability_fit": 14,
+          "monetization_fit": 14,
+          "distribution_fit": 15,
+          "bonus": 8
+        }
+      ],
+      "score_spread": 10,
+      "avg_score": 68.3,
+      "breakdown": {
+        "target_fit": 20,
+        "capability_fit": 13,
+        "monetization_fit": 14,
+        "distribution_fit": 13,
+        "bonus": 9
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Przedsiębiorcy SMB to nasza grupa, ale strategia/consulting to nie nasz core. Nie skaluje się (wykluczenie 1:1). Możemy zbudować narzędzia wspierające decyzje, ale to wymaga więcej researchu. Mniej contentu strategicznego."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do SMB (35%), ale mniej techniczne, bardziej consultingowe. Nie core kompetencja, wymaga custom dev, blisko wykluczenia consulting. Niski LTV na strategie, nie pasuje idealnie do modeli, mało contentu specyficznego."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Problem realny, ale trudny do produktowania bez wchodzenia w consulting. Najlepiej sprawdza się jako warstwa AI nad danymi operacyjnymi."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "AI Business Validator - narzędzie do szybkiej walidacji pomysłów biznesowych przez Claude API. Analiza konkurencji, szacowanie rynku, identyfikacja ryzyk. Jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "AI copilot do walidacji pomysłów biznesowych z Claude, freemium z jednorazową płatnością za raporty."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "AI business copilot analizujący dane z narzędzi i sugerujący decyzje"
+        }
+      ],
+      "quick_wins": [
+        "case study dla AA",
+        "integracja z narzędziami",
+        "Możemy użyć jako case study dla AA"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 9
+    },
+    {
+      "name": "Zarządzanie Projektami",
+      "consensus_score": 68,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 68,
+          "target_fit": 18,
+          "capability_fit": 17,
+          "monetization_fit": 14,
+          "distribution_fit": 11,
+          "bonus": 8
+        },
+        {
+          "model": "Grok 4",
+          "total": 68,
+          "target_fit": 15,
+          "capability_fit": 15,
+          "monetization_fit": 15,
+          "distribution_fit": 12,
+          "bonus": 11
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 68,
+          "target_fit": 20,
+          "capability_fit": 15,
+          "monetization_fit": 14,
+          "distribution_fit": 14,
+          "bonus": 5
+        }
+      ],
+      "score_spread": 0,
+      "avg_score": 68,
+      "breakdown": {
+        "target_fit": 18,
+        "capability_fit": 16,
+        "monetization_fit": 14,
+        "distribution_fit": 12,
+        "bonus": 8
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Problem realny, ale nie nasz core. Narzędzia PM są dojrzałe (Asana, Monday, Notion) - trudno konkurować. Możemy robić integracje/automatyzacje dla PM, nie same narzędzia PM. Mało contentu o zarządzaniu projektami."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Średnio pasuje do freelancerów i SMB, ale nie core. Możemy integrować w no-code, 1-2 tygodnie. Płacą za efektywność, pasuje do freemium, częściowy content w automatyzacji procesów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Problem bardziej procesowy niż narzędziowy. Trudno sprzedać kolejne PM-tool, ale integracje i QA mają sens."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Automatyzacje dla Notion/Asana - szablony workflow (task → Slack notification → time tracking → raport). Pakiet integracji, jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "No-code PM hub z n8n integracjami, freemium z jednorazową za custom workflows."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "System SOP + automatyczne QA tasków w Make"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "integracja z narzędziami",
+        "Możemy zbudować w no-code (Make/n8n)"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 10
+    },
+    {
+      "name": "Programowanie",
+      "consensus_score": 61,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 60,
+          "target_fit": 12,
+          "capability_fit": 18,
+          "monetization_fit": 10,
+          "distribution_fit": 12,
+          "bonus": 8
+        },
+        {
+          "model": "Grok 4",
+          "total": 80,
+          "target_fit": 15,
+          "capability_fit": 20,
+          "monetization_fit": 12,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 49,
+          "target_fit": 12,
+          "capability_fit": 14,
+          "monetization_fit": 8,
+          "distribution_fit": 10,
+          "bonus": 5
+        }
+      ],
+      "score_spread": 31,
+      "avg_score": 63,
+      "breakdown": {
+        "target_fit": 13,
+        "capability_fit": 17,
+        "monetization_fit": 10,
+        "distribution_fit": 12,
+        "bonus": 10
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Mamy kurs Claude Code (w budowie) - to nasza nisza w programowaniu. ALE: programiści rzadko płacą za rozwiązania (kultura open source). Vibe coding to nasz angle, nie tradycyjne programowanie. Wąska monetyzacja."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do technicznych (15%) i IT. Jesteśmy zaawansowani w vibe coding, budowa w 2-4 tygodnie. Niska gotowość do płacenia, ale pasuje do kursów jednorazowych, z contentem w Claude Code."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Programiści są mniejszością i rzadko płacą. Dobre jako wsparcie (Claude Code), nie jako główny produkt."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Rozszerzenie kursu Claude Code o gotowe projekty/szablony - 'Zbuduj SaaS w weekend'. Jednorazowa płatność za pakiet projektów z kodem startowym."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Kurs Claude Code z toolami AI do code review, jednorazowa płatność."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Claude Code templates dla automatyzacji"
+        }
+      ],
+      "quick_wins": [
+        "mamy content",
+        "case study dla AA",
+        "Mamy już content w tym temacie"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 11
+    },
+    {
+      "name": "Finanse/Ksiegowosc",
+      "consensus_score": 59,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 78,
+          "target_fit": 20,
+          "capability_fit": 18,
+          "monetization_fit": 18,
+          "distribution_fit": 12,
+          "bonus": 10
+        },
+        {
+          "model": "Grok 4",
+          "total": 46,
+          "target_fit": 10,
+          "capability_fit": 10,
+          "monetization_fit": 10,
+          "distribution_fit": 8,
+          "bonus": 8
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 58,
+          "target_fit": 18,
+          "capability_fit": 10,
+          "monetization_fit": 15,
+          "distribution_fit": 12,
+          "bonus": 3
+        }
+      ],
+      "score_spread": 32,
+      "avg_score": 60.7,
+      "breakdown": {
+        "target_fit": 16,
+        "capability_fit": 13,
+        "monetization_fit": 14,
+        "distribution_fit": 11,
+        "bonus": 7
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Przedsiębiorcy mają ten ból, ale to nie jest nasz core content. Możemy automatyzować procesy księgowe (faktury, raporty), ale nie doradzać podatkowo. Strach przed błędami = gotowość do płacenia. Mało contentu w tym temacie."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Słabo pasuje do branż AA, wykluczenie finansów wymagających licencji. Możemy automatyzować w no-code, ale blisko regulacji. Średnia gotowość, ale ryzyko subskrypcji, mało contentu i kanały nie pasują."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Silny ból, ale wysoka regulacja i ryzyko. Kompetencyjnie i wizerunkowo to nie jest core AA."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Automatyzacja obiegu faktur - OCR + kategoryzacja AI + eksport do księgowości. Integracja z polskimi systemami przez Make. Jednorazowa płatność za setup."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Automatyzator faktur w Make dla JDG, jednorazowa płatność za setup."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Lekka automatyzacja obiegu faktur (bez doradztwa podatkowego)"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "case study dla AA",
+        "Możemy zbudować w no-code (Make/n8n)"
+      ],
+      "recommendation": "PARTIAL FIT - wymaga pivotu",
+      "rank": 12
+    },
+    {
+      "name": "DevOps/Infrastruktura",
+      "consensus_score": 37,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 45,
+          "target_fit": 10,
+          "capability_fit": 12,
+          "monetization_fit": 12,
+          "distribution_fit": 8,
+          "bonus": 3
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 25,
+          "target_fit": 5,
+          "capability_fit": 5,
+          "monetization_fit": 10,
+          "distribution_fit": 5,
+          "bonus": 0
+        },
+        {
+          "model": "Grok 4",
+          "total": 43,
+          "target_fit": 12,
+          "capability_fit": 10,
+          "monetization_fit": 10,
+          "distribution_fit": 8,
+          "bonus": 3
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 38,
+          "target_fit": 10,
+          "capability_fit": 8,
+          "monetization_fit": 12,
+          "distribution_fit": 8,
+          "bonus": 0
+        }
+      ],
+      "score_spread": 20,
+      "avg_score": 37.8,
+      "breakdown": {
+        "target_fit": 9,
+        "capability_fit": 9,
+        "monetization_fit": 11,
+        "distribution_fit": 7,
+        "bonus": 2
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Tylko 10% członków to IT/dev - mała grupa. DevOps wymaga głębokiej wiedzy technicznej poza no-code. Nie mamy contentu o infrastrukturze. To nie jest nasz target - zbyt techniczne, zbyt enterprise."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "POOR FIT. Zbyt techniczne, wymaga SLA, supportu 24/7 i wiedzy spoza core competencies (hardware, cloud infra). Ryzykowne i trudne do sprzedania w modelu AA."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Słabo pasuje do IT (10%), bardziej enterprise. Blisko wykluczeń custom ML/enterprise, dłuższy czas budowy. Niski fit monetyzacyjny, mało contentu i kanały nie pasują."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Zbyt techniczne i bliżej enterprise. Nie pasuje do większości społeczności ani kompetencji AA."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "SKIP - nie pasuje do AA. Ewentualnie: podstawowe szkolenie o deploymencie aplikacji no-code, ale niski priorytet."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Brak rekomendacji - kategoria do odrzucenia."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "No-code monitoring tool z n8n, afiliacja do hostingu."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "—"
+        }
+      ],
+      "quick_wins": [
+        "integracja z narzędziami",
+        "Integruje się z narzędziami które uczymy"
+      ],
+      "recommendation": "POOR FIT - odrzucic",
+      "rank": 13
+    }
+  ],
+  "pattern_rankings": [
+    {
+      "name": "Automatyzacja manualnych zadań",
+      "consensus_score": 111,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 102,
+          "target_fit": 26,
+          "capability_fit": 23,
+          "monetization_fit": 18,
+          "distribution_fit": 17,
+          "bonus": 18
+        },
+        {
+          "model": "Grok 4",
+          "total": 116,
+          "target_fit": 28,
+          "capability_fit": 25,
+          "monetization_fit": 22,
+          "distribution_fit": 18,
+          "bonus": 23
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 116,
+          "target_fit": 28,
+          "capability_fit": 25,
+          "monetization_fit": 21,
+          "distribution_fit": 19,
+          "bonus": 23
+        }
+      ],
+      "score_spread": 14,
+      "avg_score": 111.3,
+      "breakdown": {
+        "target_fit": 27,
+        "capability_fit": 24,
+        "monetization_fit": 20,
+        "distribution_fit": 18,
+        "bonus": 21
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Core value proposition AA. Każda persona ma manualne zadania do zautomatyzowania. Umiemy to robić w Make/n8n. Mamy setki lekcji o tym. Monetyzacja przez szablony i kursy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Silnie pasuje do automatyzacji w e-commerce/marketingu (70%). Eksperci w no-code botach, budowa w 1-2 tygodnie. Wysoka gotowość za uwolnienie czasu, pasuje do SaaS jednorazowego, z contentem core."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "To esencja Akademii Automatyzacji. Najprostszy do wytłumaczenia ROI i najszybszy time-to-value."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Automation Recipe Book - biblioteka 50+ gotowych automatyzacji dla konkretnych zadań (invoice processing, lead capture, content scheduling). Jednorazowa płatność za dostęp."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "SaaS do custom botów w Make/n8n, jednorazowa płatność za buildery."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Generator custom botów Make/n8n dla SMB"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "mamy content",
+        "case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 1
+    },
+    {
+      "name": "Kruchość automatyzacji",
+      "consensus_score": 104,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 103,
+          "target_fit": 24,
+          "capability_fit": 24,
+          "monetization_fit": 19,
+          "distribution_fit": 18,
+          "bonus": 18
+        },
+        {
+          "model": "Grok 4",
+          "total": 108,
+          "target_fit": 25,
+          "capability_fit": 22,
+          "monetization_fit": 20,
+          "distribution_fit": 18,
+          "bonus": 23
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 102,
+          "target_fit": 25,
+          "capability_fit": 23,
+          "monetization_fit": 19,
+          "distribution_fit": 17,
+          "bonus": 18
+        }
+      ],
+      "score_spread": 6,
+      "avg_score": 104.3,
+      "breakdown": {
+        "target_fit": 25,
+        "capability_fit": 23,
+        "monetization_fit": 19,
+        "distribution_fit": 18,
+        "bonus": 20
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Problem który znamy z pierwszej ręki - automatyzacje się psują gdy API się zmienia. Nasi członkowie to przeżywają. Możemy zbudować monitoring + auto-recovery w Make/n8n. Mamy content o debugowaniu."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Idealnie pasuje do automatyzacji (core). Eksperci, budowa platformy w no-code z monitoringiem, 1-2 tygodnie. Wysoka gotowość, pasuje do jednorazowej, z contentem core."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Bardzo dojrzały problem wśród użytkowników Make/n8n. Monitoring i auto-recovery to naturalny upsell."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Automation Guardian - system monitoringu automatyzacji z alertami i auto-recovery. Szablony Make/n8n do monitorowania innych automatyzacji + dashboard. Jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Automatyzacja platforma z auto-recovery w n8n, jednorazowa za premium."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Monitoring & auto-recovery dla automatyzacji"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "mamy content",
+        "case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 2
+    },
+    {
+      "name": "Pułapka fragmentacji narzędzi",
+      "consensus_score": 103,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 115,
+          "target_fit": 28,
+          "capability_fit": 24,
+          "monetization_fit": 21,
+          "distribution_fit": 19,
+          "bonus": 23
+        },
+        {
+          "model": "Grok 4",
+          "total": 96,
+          "target_fit": 25,
+          "capability_fit": 20,
+          "monetization_fit": 18,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 101,
+          "target_fit": 26,
+          "capability_fit": 22,
+          "monetization_fit": 17,
+          "distribution_fit": 18,
+          "bonus": 18
+        }
+      ],
+      "score_spread": 19,
+      "avg_score": 104,
+      "breakdown": {
+        "target_fit": 26,
+        "capability_fit": 22,
+        "monetization_fit": 19,
+        "distribution_fit": 17,
+        "bonus": 20
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "To jest DOKŁADNIE problem który rozwiązujemy - ludzie mają 10 narzędzi które nie gadają ze sobą. Make/n8n to 'klej' między narzędziami. Cała nasza społeczność to czuje. Mamy ekspertyzę i content."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Silne dopasowanie do automatyzacji i contentu (65%), core problem. Możemy zbudować super-app w vibe coding, 2-4 tygodnie. Płacą za integracje, pasuje do freemium, z contentem w narzędziach."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Bardzo podobne do chaosu narzędziowego, silnie obecne w AA. Trzeba uważać, by nie budować 'kolejnej appki'."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Workflow Hub dla solopreneurów - gotowe pakiety integracji (CRM + email + social + AI) z jednym dashboardem. Szablony Make/n8n + dokumentacja + support. Jednorazowa płatność za pakiet branżowy."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Uniwersalny hub z AI integracjami w n8n, freemium z paid features."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "AI orchestrator procesów w Make/n8n"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "mamy content",
+        "case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 3
+    },
+    {
+      "name": "Przeciążenie czasowe",
+      "consensus_score": 102,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 104,
+          "target_fit": 26,
+          "capability_fit": 23,
+          "monetization_fit": 20,
+          "distribution_fit": 17,
+          "bonus": 18
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 100,
+          "target_fit": 30,
+          "capability_fit": 25,
+          "monetization_fit": 25,
+          "distribution_fit": 20,
+          "bonus": 23
+        },
+        {
+          "model": "Grok 4",
+          "total": 101,
+          "target_fit": 25,
+          "capability_fit": 22,
+          "monetization_fit": 20,
+          "distribution_fit": 16,
+          "bonus": 18
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 104,
+          "target_fit": 25,
+          "capability_fit": 23,
+          "monetization_fit": 20,
+          "distribution_fit": 18,
+          "bonus": 18
+        }
+      ],
+      "score_spread": 4,
+      "avg_score": 102.3,
+      "breakdown": {
+        "target_fit": 27,
+        "capability_fit": 23,
+        "monetization_fit": 21,
+        "distribution_fit": 18,
+        "bonus": 19
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Główny driver zakupów w AA - ludzie chcą odzyskać czas. Automatyzacja = oszczędność czasu. Freelancerzy i SMB to czują najbardziej. Mamy content o produktywności i automatyzacji."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Uniwersalny problem SMB. Wzorzec ten najlepiej adresować gotowymi 'paczkami automatyzacji', które dają natychmiastowy zwrot czasu. To jest DNA Akademii."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Silnie pasuje do marketerów, e-commerce i freelancerów (70%). Eksperci w automatyzacji, budowa done-for-you w no-code, 1-2 tygodnie. Wysoka gotowość za oszczędność czasu, pasuje do jednorazowej, z contentem core."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Odzyskanie czasu to główny motyw zakupu w AA. Automatyzacje DFY idealnie trafiają w potrzebę."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Time Reclaim System - pakiet automatyzacji dla powtarzalnych zadań (email sorting, scheduling, follow-upy, raportowanie). Gotowe szablony + kurs wdrożenia. Jednorazowa płatność."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Asystent Spotkań 2.0 - system, który nie tylko robi transkrypcję, ale sam wyciąga zadania, wrzuca je do ClickUp/Asana i wysyła maile z podsumowaniem do klientów."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Usługa automatyzacji procesów w Make, jednorazowa płatność z monitoringiem."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Pakiety gotowych automatyzacji DFY + monitoring"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "mamy content",
+        "case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 4
+    },
+    {
+      "name": "Chaos narzędziowy",
+      "consensus_score": 99,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 112,
+          "target_fit": 27,
+          "capability_fit": 24,
+          "monetization_fit": 20,
+          "distribution_fit": 18,
+          "bonus": 23
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 88,
+          "target_fit": 25,
+          "capability_fit": 15,
+          "monetization_fit": 15,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "Grok 4",
+          "total": 95,
+          "target_fit": 24,
+          "capability_fit": 20,
+          "monetization_fit": 18,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 106,
+          "target_fit": 27,
+          "capability_fit": 24,
+          "monetization_fit": 19,
+          "distribution_fit": 18,
+          "bonus": 18
+        }
+      ],
+      "score_spread": 24,
+      "avg_score": 100.3,
+      "breakdown": {
+        "target_fit": 26,
+        "capability_fit": 21,
+        "monetization_fit": 18,
+        "distribution_fit": 17,
+        "bonus": 19
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Synonim fragmentacji - ten sam core problem. Ludzie płacą za 15 SaaS-ów i nie wiedzą co z czym połączyć. Nasze kompetencje (Make, n8n, AI) idealnie to adresują. Możemy być 'architektem' ich stacku."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Problem jest ogromny, ale ryzyko budowy 'kolejnego narzędzia do zarządzania narzędziami' jest wysokie (capability fit niższy). Lepiej rozwiązać to integracjami niż nowym dashboardem."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do automatyzacji i marketingu (50%), problem integracji. Możemy zbudować hub w vibe coding, 2-4 tygodnie. Płacą za spójność, pasuje do freemium, z contentem w narzędziach."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Jedno z najlepszych dopasowań do AA. Make/n8n jako 'klej' to dokładnie to, czego uczą."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Stack Audit + Setup Service - audyt narzędzi klienta + rekomendacja + gotowe automatyzacje łączące. Productized service z szablonem, jednorazowa płatność."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Unified Inbox for Solopreneurs - jeden interfejs w Make/Streamlit zbierający wiadomości z Gmail, LinkedIn, Messenger i pozwalający odpisać z jednego miejsca (z pomocą AI)."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Workflow hub integrujący AI i PM w n8n, freemium model."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Lekki AI workflow hub spinający narzędzia"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "mamy content",
+        "case study dla AA"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 5
+    },
+    {
+      "name": "Kryzys Zaufania do Agencji",
+      "consensus_score": 86,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 86,
+          "target_fit": 21,
+          "capability_fit": 19,
+          "monetization_fit": 19,
+          "distribution_fit": 14,
+          "bonus": 13
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 100,
+          "target_fit": 25,
+          "capability_fit": 20,
+          "monetization_fit": 22,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "Grok 4",
+          "total": 78,
+          "target_fit": 20,
+          "capability_fit": 18,
+          "monetization_fit": 15,
+          "distribution_fit": 12,
+          "bonus": 13
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 83,
+          "target_fit": 22,
+          "capability_fit": 20,
+          "monetization_fit": 18,
+          "distribution_fit": 15,
+          "bonus": 8
+        }
+      ],
+      "score_spread": 22,
+      "avg_score": 86.8,
+      "breakdown": {
+        "target_fit": 22,
+        "capability_fit": 19,
+        "monetization_fit": 19,
+        "distribution_fit": 14,
+        "bonus": 13
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Marketerzy i SMB to czują - płacą agencjom i nie wiedzą czy działają. Możemy zbudować audytora w no-code + AI. Mamy content o marketingu. Monetyzacja przez narzędzie audytowe."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Bardzo mocny 'pain point' dla właścicieli firm. Możliwość stworzenia narzędzia 'Audytora', który używa AI do oceny wyników bez emocji. Świetny potencjał wiralowy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Dotyczy marketingu i zleceń (50%), nasi marketerzy. Możemy zbudować auditor w no-code/AI, 1-2 tygodnie. Płacą za transparentność, pasuje do freemium, częściowy content."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Audyt oparty na danych i AI pasuje do pozycji eksperckiej AA. Jasny ROI dla klientów."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Agency Auditor - narzędzie do automatycznego audytu kont reklamowych (Meta, Google) przez API + AI analiza. Raport 'czy agencja pracuje'. Jednorazowa płatność za audyt."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Marketing Bullshit Detector - podpinasz raport PDF lub dostęp 'read-only' do konta reklamowego, a AI tłumaczy na prosty język co się dzieje i czy agencja dowozi wyniki."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Agency Auditor tool z Claude, freemium z jednorazową za audyty."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Agency Auditor (ads + automation audit)"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "case study dla AA",
+        "integracja z narzędziami"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 6
+    },
+    {
+      "name": "Deficyt zaufania",
+      "consensus_score": 83,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 85,
+          "target_fit": 22,
+          "capability_fit": 18,
+          "monetization_fit": 18,
+          "distribution_fit": 14,
+          "bonus": 13
+        },
+        {
+          "model": "Grok 4",
+          "total": 85,
+          "target_fit": 22,
+          "capability_fit": 18,
+          "monetization_fit": 18,
+          "distribution_fit": 14,
+          "bonus": 13
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 81,
+          "target_fit": 24,
+          "capability_fit": 17,
+          "monetization_fit": 16,
+          "distribution_fit": 16,
+          "bonus": 8
+        }
+      ],
+      "score_spread": 4,
+      "avg_score": 83.7,
+      "breakdown": {
+        "target_fit": 23,
+        "capability_fit": 18,
+        "monetization_fit": 17,
+        "distribution_fit": 15,
+        "bonus": 11
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Realny problem przy outsourcingu - ludzie boją się że freelancer nie dowiezie. Możemy zbudować narzędzia do trackingu/QA, ale marketplace z escrow to za duży projekt (wykluczenie). Częściowe dopasowanie."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Dotyczy freelancerów i automatyzacji (50%), nasi ludzie. Możemy zbudować platformę z QA w no-code, 1-2 tygodnie. Płacą za zaufanie, pasuje do jednorazowej, z contentem w automatyzacji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Zaufanie jest kluczowe przy automatyzacjach i freelancerach. Pełne platformy escrow są ciężkie, ale QA jest realne."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Project Tracker dla klientów freelancerów - prosty dashboard pokazujący postęp projektu, checkpointy, deliverables. Szablon Notion + automatyzacje. Jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Platforma freelance z AI QA w n8n, jednorazowa opłata za matching."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "AI QA checker dla automatyzacji i pracy freelancerów"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "case study dla AA",
+        "integracja z narzędziami"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 7
+    },
+    {
+      "name": "Wypalenie prospectingowe",
+      "consensus_score": 83,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 80,
+          "target_fit": 23,
+          "capability_fit": 17,
+          "monetization_fit": 16,
+          "distribution_fit": 14,
+          "bonus": 10
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 100,
+          "target_fit": 28,
+          "capability_fit": 25,
+          "monetization_fit": 25,
+          "distribution_fit": 18,
+          "bonus": 23
+        },
+        {
+          "model": "Grok 4",
+          "total": 74,
+          "target_fit": 22,
+          "capability_fit": 15,
+          "monetization_fit": 15,
+          "distribution_fit": 12,
+          "bonus": 10
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 82,
+          "target_fit": 23,
+          "capability_fit": 18,
+          "monetization_fit": 15,
+          "distribution_fit": 16,
+          "bonus": 10
+        }
+      ],
+      "score_spread": 26,
+      "avg_score": 84,
+      "breakdown": {
+        "target_fit": 24,
+        "capability_fit": 19,
+        "monetization_fit": 18,
+        "distribution_fit": 15,
+        "bonus": 13
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Freelancerzy i SMB to czują - ciągłe szukanie klientów wyczerpuje. ALE: reverse job board to marketplace (wykluczenie). Możemy zbudować narzędzia do automatyzacji outreach, nie platformę."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Idealnie trafia w ból freelancerów i agencji (50% bazy). Rozwiązanie techniczne (scraping + AI enrichment) leży w centrum kompetencji zespołu i jest łatwe do pokazania na live."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do freelancerów i marketingu (50%), problem leadów. Możemy zbudować reverse board w vibe coding, 2-4 tygodnie. Średnia monetyzacja, pasuje do jednorazowej, ale mniej contentu specyficznego."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Ból realny, ale marketplace to ryzyko. Lepiej automatyzować inbound niż budować giełdę."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Lead Autopilot - automatyzacja prospectingu (scraping LinkedIn/Google przez Apify + AI kwalifikacja + personalizowany outreach). Szablon + kurs. Jednorazowa płatność."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Hyper-Personalizer - wklejasz URL firmy, a AI (Apify + Claude) robi research i pisze 3 wersje 'warm email' nawiązujące do ich aktualnych problemów/rekrutacji."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Reverse job board z AI matchingiem, jednorazowa opłata za listingi."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Inbound machine dla freelancerów (content + automatyzacje)"
+        }
+      ],
+      "quick_wins": [
+        "case study dla AA",
+        "seria budowa biznesu",
+        "Możemy zbudować w no-code"
+      ],
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "rank": 8
+    },
+    {
+      "name": "Luka kompetencyjna founder-technik",
+      "consensus_score": 78,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 70,
+          "target_fit": 20,
+          "capability_fit": 15,
+          "monetization_fit": 14,
+          "distribution_fit": 13,
+          "bonus": 8
+        },
+        {
+          "model": "Grok 4",
+          "total": 72,
+          "target_fit": 20,
+          "capability_fit": 15,
+          "monetization_fit": 15,
+          "distribution_fit": 12,
+          "bonus": 10
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 96,
+          "target_fit": 26,
+          "capability_fit": 22,
+          "monetization_fit": 18,
+          "distribution_fit": 17,
+          "bonus": 13
+        }
+      ],
+      "score_spread": 26,
+      "avg_score": 79.3,
+      "breakdown": {
+        "target_fit": 22,
+        "capability_fit": 17,
+        "monetization_fit": 16,
+        "distribution_fit": 14,
+        "bonus": 10
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Realny problem, ale rozwiązanie (co-founder matching) to marketplace - wykluczenie. Możemy edukować founderów o tech lub techników o biznesie, ale to kurs, nie produkt SaaS. Częściowe dopasowanie."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do SMB i technicznych (50%), problem founderów. Możemy zbudować matching w vibe coding, 2-4 tygodnie. Średnia monetyzacja, pasuje do freemium, ale kanały bardziej na tech niż biznes matching."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Bardzo silny wzorzec w społeczności AA. AI jako 'tłumacz' biznes–technologia to naturalna przewaga."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Tech Literacy for Founders - mini-kurs 'jak rozmawiać z developerami' + checklist do oceny pracy technicznej. Jednorazowa płatność, niska cena."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "AI copilot do oceny konfiguracji z Claude, freemium z paid trial."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "AI Technical Due Diligence Copilot dla founderów"
+        }
+      ],
+      "quick_wins": [
+        "case study dla AA",
+        "integracja z narzędziami",
+        "Możemy użyć jako case study dla AA"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 9
+    },
+    {
+      "name": "Brak widoczności efektów",
+      "consensus_score": 77,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 81,
+          "target_fit": 20,
+          "capability_fit": 18,
+          "monetization_fit": 17,
+          "distribution_fit": 13,
+          "bonus": 13
+        },
+        {
+          "model": "Grok 4",
+          "total": 68,
+          "target_fit": 20,
+          "capability_fit": 15,
+          "monetization_fit": 15,
+          "distribution_fit": 10,
+          "bonus": 8
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 85,
+          "target_fit": 22,
+          "capability_fit": 20,
+          "monetization_fit": 18,
+          "distribution_fit": 15,
+          "bonus": 10
+        }
+      ],
+      "score_spread": 17,
+      "avg_score": 78,
+      "breakdown": {
+        "target_fit": 21,
+        "capability_fit": 18,
+        "monetization_fit": 17,
+        "distribution_fit": 13,
+        "bonus": 10
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy nie wiedzą co działa - zbierają dane bez wniosków. Możemy zbudować prosty dashboard łączący źródła. Mamy content o analityce marketingowej. Wymaga integracji z wieloma API."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do analityki w marketingu/e-commerce (50%). Możemy zbudować dashboard w vibe coding, 2-4 tygodnie. Średnia gotowość, pasuje do jednorazowej, ale mało contentu specyficznego."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Łączenie danych z wynikiem finansowym to silny trigger zakupowy. AA ma techniczne know-how."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Revenue Attribution Dashboard - prosty dashboard pokazujący 'skąd przyszły pieniądze'. Łączy Stripe + GA4 + CRM przez Make. Szablon + setup, jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Decyzyjny dashboard z AI insights, jednorazowa płatność."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Revenue-first dashboard dla SMB"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "case study dla AA",
+        "integracja z narzędziami"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 10
+    },
+    {
+      "name": "Strach przed ekspozycją",
+      "consensus_score": 75,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 72,
+          "target_fit": 18,
+          "capability_fit": 16,
+          "monetization_fit": 14,
+          "distribution_fit": 14,
+          "bonus": 10
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "total": 88,
+          "target_fit": 20,
+          "capability_fit": 20,
+          "monetization_fit": 15,
+          "distribution_fit": 15,
+          "bonus": 18
+        },
+        {
+          "model": "Grok 4",
+          "total": 78,
+          "target_fit": 18,
+          "capability_fit": 18,
+          "monetization_fit": 15,
+          "distribution_fit": 14,
+          "bonus": 13
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 67,
+          "target_fit": 18,
+          "capability_fit": 16,
+          "monetization_fit": 14,
+          "distribution_fit": 14,
+          "bonus": 5
+        }
+      ],
+      "score_spread": 21,
+      "avg_score": 76.3,
+      "breakdown": {
+        "target_fit": 19,
+        "capability_fit": 18,
+        "monetization_fit": 15,
+        "distribution_fit": 14,
+        "bonus": 12
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Twórcy contentu to 15% - mniejsza grupa. Problem realny (strach przed kamerą), ale rozwiązanie (AI avatary, faceless brand) wymaga narzędzi których nie uczymy. Możemy zrobić kurs, nie narzędzie."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Dotyczy introwertycznych founderów i techników. Technologie AI (voice cloning, avatary) są teraz łatwo dostępne przez API, co pozwala zbudować 'Faceless Brand Kit'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do content i marketingu (45%), problem twórców. Możemy zbudować tool z AI avatars w no-code, 1-2 tygodnie. Średnia monetyzacja, pasuje do kursu jednorazowego, z contentem w AI."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Interesujące dla twórców, ale poboczne wobec core automatyzacji. Raczej niszowy produkt."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Faceless Content System - kurs + szablony do tworzenia contentu bez pokazywania twarzy (AI voice, animacje, screen recording). Jednorazowa płatność."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "idea": "Faceless Video Maker - narzędzie zamieniające tekst/artykuł w wideo (Reels/TikTok) z wykorzystaniem stocków i AI Voiceover, bez pokazywania twarzy."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Faceless Brand tool z Claude voice-over, jednorazowa płatność za kurs + narzędzia."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Faceless content automation kit"
+        }
+      ],
+      "quick_wins": [
+        "case study dla AA",
+        "seria budowa biznesu",
+        "Możemy zbudować w no-code"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 11
+    },
+    {
+      "name": "Problemy delegowania",
+      "consensus_score": 69,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 73,
+          "target_fit": 19,
+          "capability_fit": 17,
+          "monetization_fit": 15,
+          "distribution_fit": 12,
+          "bonus": 10
+        },
+        {
+          "model": "Grok 4",
+          "total": 60,
+          "target_fit": 15,
+          "capability_fit": 15,
+          "monetization_fit": 12,
+          "distribution_fit": 10,
+          "bonus": 8
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 76,
+          "target_fit": 20,
+          "capability_fit": 18,
+          "monetization_fit": 16,
+          "distribution_fit": 14,
+          "bonus": 8
+        }
+      ],
+      "score_spread": 16,
+      "avg_score": 69.7,
+      "breakdown": {
+        "target_fit": 18,
+        "capability_fit": 17,
+        "monetization_fit": 14,
+        "distribution_fit": 12,
+        "bonus": 9
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "SMB i freelancerzy chcą delegować ale nie umieją. Możemy zbudować system SOP + task management w no-code. Mamy trochę contentu o procesach. Wymaga więcej pracy nad dokumentacją."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do zarządzania i zleceń (35%), SMB. Możemy zbudować SOP system w no-code, 1-2 tygodnie. Średnia monetyzacja, pasuje do freemium, częściowy content."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Delegowanie łączy ludzi i automatyzacje. Dobre jako system wspierający, nie pełna platforma."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Delegation OS - system Notion + automatyzacje do tworzenia SOP, delegowania zadań i automatycznego QA. Szablon + kurs wdrożenia. Jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "SOP tool z AI QA w n8n, freemium model."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Automatyczny system delegowania z QA"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "case study dla AA",
+        "Możemy zbudować w no-code (Make/n8n)"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 12
+    },
+    {
+      "name": "Problemy skali",
+      "consensus_score": 65,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 65,
+          "target_fit": 16,
+          "capability_fit": 15,
+          "monetization_fit": 15,
+          "distribution_fit": 11,
+          "bonus": 8
+        },
+        {
+          "model": "Grok 4",
+          "total": 68,
+          "target_fit": 18,
+          "capability_fit": 15,
+          "monetization_fit": 15,
+          "distribution_fit": 12,
+          "bonus": 8
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 62,
+          "target_fit": 18,
+          "capability_fit": 14,
+          "monetization_fit": 15,
+          "distribution_fit": 12,
+          "bonus": 3
+        }
+      ],
+      "score_spread": 6,
+      "avg_score": 65,
+      "breakdown": {
+        "target_fit": 17,
+        "capability_fit": 15,
+        "monetization_fit": 15,
+        "distribution_fit": 12,
+        "bonus": 6
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "E-commerce z 10k+ SKU to większe firmy niż nasz typowy target (SMB). Narzędzia do skali wymagają bardziej zaawansowanej infrastruktury. Możemy pomóc z automatyzacją, ale nie z architekturą skali."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do e-commerce i automatyzacji (40%). Możemy optymalizować w vibe coding, 2-4 tygodnie. Płacą za skalę, pasuje do jednorazowej, częściowy content."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Dotyczy mniejszej części społeczności (większe e-commerce). Ryzyko zbyt dużej złożoności."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "E-commerce Ops Automations - pakiet automatyzacji dla średnich sklepów (pricing sync, inventory alerts, listing updates). Szablony Make + BaseLinker. Jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Scaling tool dla e-commerce ops w Make, jednorazowa płatność."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "Skalowalne automatyzacje ops dla e-commerce"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "integracja z narzędziami",
+        "Możemy użyć jako case study dla AA"
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 13
+    },
+    {
+      "name": "Lęk decyzyjny",
+      "consensus_score": 61,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 59,
+          "target_fit": 17,
+          "capability_fit": 14,
+          "monetization_fit": 13,
+          "distribution_fit": 10,
+          "bonus": 5
+        },
+        {
+          "model": "Grok 4",
+          "total": 62,
+          "target_fit": 15,
+          "capability_fit": 15,
+          "monetization_fit": 12,
+          "distribution_fit": 10,
+          "bonus": 10
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 63,
+          "target_fit": 17,
+          "capability_fit": 15,
+          "monetization_fit": 13,
+          "distribution_fit": 13,
+          "bonus": 5
+        }
+      ],
+      "score_spread": 4,
+      "avg_score": 61.3,
+      "breakdown": {
+        "target_fit": 16,
+        "capability_fit": 15,
+        "monetization_fit": 13,
+        "distribution_fit": 11,
+        "bonus": 7
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Problem psychologiczny, nie techniczny. AI doradca to ciekawy koncept, ale wymaga głębokiej wiedzy o strategii biznesowej. Nie mamy contentu o podejmowaniu decyzji. Ryzyko niskiej wartości."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Pasuje do strategii dla SMB (35%), ale mniej tech. Możemy zbudować AI symulator w Claude, 2-4 tygodnie. Średnia monetyzacja, pasuje do freemium, mało contentu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Realny, ale miękki problem. Trudny do sprzedaży bez twardych danych wejściowych."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Decision Framework Templates - zestaw frameworków decyzyjnych w Notion + prompty do Claude dla analizy opcji. Niska cena, jednorazowa płatność."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "AI doradca decyzyjny z symulacjami, freemium model."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "AI decision copilot oparty o dane operacyjne"
+        }
+      ],
+      "quick_wins": [
+        "integracja z narzędziami",
+        "Możemy użyć jako case study dla AA",
+        "Pasuje do serii \"Budowa biznesu od zera\""
+      ],
+      "recommendation": "GOOD FIT - warto rozwazyc",
+      "rank": 14
+    },
+    {
+      "name": "Niepewny cashflow",
+      "consensus_score": 50,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "total": 63,
+          "target_fit": 18,
+          "capability_fit": 14,
+          "monetization_fit": 16,
+          "distribution_fit": 10,
+          "bonus": 5
+        },
+        {
+          "model": "Grok 4",
+          "total": 43,
+          "target_fit": 12,
+          "capability_fit": 10,
+          "monetization_fit": 10,
+          "distribution_fit": 8,
+          "bonus": 3
+        },
+        {
+          "model": "GPT-5.2",
+          "total": 47,
+          "target_fit": 15,
+          "capability_fit": 8,
+          "monetization_fit": 14,
+          "distribution_fit": 10,
+          "bonus": 0
+        }
+      ],
+      "score_spread": 20,
+      "avg_score": 51,
+      "breakdown": {
+        "target_fit": 15,
+        "capability_fit": 11,
+        "monetization_fit": 13,
+        "distribution_fit": 9,
+        "bonus": 3
+      },
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Problem realny dla SMB, ale fintech wymaga regulacji i głębokiej wiedzy domenowej. Możemy zbudować alerty cashflow, ale nie pożyczki czy zaawansowane prognozy. Mało contentu o finansach."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Słabo pasuje, blisko wykluczeń finansowych. Możemy automatyzować alerty w no-code, ale ryzyko regulacji. Niski fit monetyzacyjny, kanały nie pasują."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Fintech i cashflow to obszar regulowany i ryzykowny. Poza strefą komfortu AA."
+        }
+      ],
+      "product_ideas": [
+        {
+          "model": "Claude Opus 4.5",
+          "idea": "Cashflow Alert System - prosty monitoring przychodów/wydatków z alertami. Integracja z bankiem/Stripe przez Make. Jednorazowa płatność za setup."
+        },
+        {
+          "model": "Grok 4",
+          "idea": "Cashflow alert tool w Make, afiliacja do fintech."
+        },
+        {
+          "model": "GPT-5.2",
+          "idea": "—"
+        }
+      ],
+      "quick_wins": [
+        "no-code build",
+        "Integruje się z narzędziami które uczymy"
+      ],
+      "recommendation": "PARTIAL FIT - wymaga pivotu",
+      "rank": 15
+    }
+  ],
+  "top_opportunities": [
+    {
+      "type": "category",
+      "name": "Automatyzacja",
+      "score": 114,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Marketplace gotowych szablonów automatyzacji dla polskich firm - jednorazowa płatność za sprawdzone workflow (np. 'Automatyzacja fakturowania dla e-commerce', 'Lead nurturing dla agencji'). Sprzedaż przez Skool + grupy FB.",
+      "strengths": [
+        "silny target fit",
+        "łatwe do zbudowania",
+        "dobra monetyzacja",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "pattern",
+      "name": "Automatyzacja manualnych zadań",
+      "score": 111,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Automation Recipe Book - biblioteka 50+ gotowych automatyzacji dla konkretnych zadań (invoice processing, lead capture, content scheduling). Jednorazowa płatność za dostęp.",
+      "strengths": [
+        "silny target fit",
+        "łatwe do zbudowania",
+        "dobra monetyzacja",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "pattern",
+      "name": "Kruchość automatyzacji",
+      "score": 104,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Automation Guardian - system monitoringu automatyzacji z alertami i auto-recovery. Szablony Make/n8n do monitorowania innych automatyzacji + dashboard. Jednorazowa płatność.",
+      "strengths": [
+        "silny target fit",
+        "łatwe do zbudowania",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "pattern",
+      "name": "Pułapka fragmentacji narzędzi",
+      "score": 103,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Workflow Hub dla solopreneurów - gotowe pakiety integracji (CRM + email + social + AI) z jednym dashboardem. Szablony Make/n8n + dokumentacja + support. Jednorazowa płatność za pakiet branżowy.",
+      "strengths": [
+        "silny target fit",
+        "łatwe do zbudowania",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "pattern",
+      "name": "Przeciążenie czasowe",
+      "score": 102,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Time Reclaim System - pakiet automatyzacji dla powtarzalnych zadań (email sorting, scheduling, follow-upy, raportowanie). Gotowe szablony + kurs wdrożenia. Jednorazowa płatność.",
+      "strengths": [
+        "silny target fit",
+        "łatwe do zbudowania",
+        "dobra monetyzacja",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "category",
+      "name": "Wdrożenia/Integracje",
+      "score": 100,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Polski Connector Pack - zestaw niestandardowych integracji (custom apps) do Make/n8n dla polskich systemów (Fakturownia, BaseLinker, Allegro) niedostępnych natywnie.",
+      "strengths": [
+        "silny target fit",
+        "łatwe do zbudowania",
+        "dobra monetyzacja",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "category",
+      "name": "Marketing",
+      "score": 99,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Narzędzie do automatycznego generowania raportów marketingowych dla agencji - łączy dane z Meta Ads, Google Ads, Analytics przez Make/n8n, generuje raporty przez Claude API. Jednorazowa płatność + szablony.",
+      "strengths": [
+        "silny target fit",
+        "łatwe do zbudowania",
+        "dobra monetyzacja",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "pattern",
+      "name": "Chaos narzędziowy",
+      "score": 99,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Stack Audit + Setup Service - audyt narzędzi klienta + rekomendacja + gotowe automatyzacje łączące. Productized service z szablonem, jednorazowa płatność.",
+      "strengths": [
+        "silny target fit",
+        "łatwe do zbudowania",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "category",
+      "name": "Wdrozenia/Integracje",
+      "score": 97,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Gotowe konektory Make/n8n dla polskich systemów (Fakturownia, InFakt, Subiekt GT) - pakiety integracji z dokumentacją. Jednorazowa płatność za pakiet branżowy.",
+      "strengths": [
+        "łatwe do zbudowania",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    },
+    {
+      "type": "category",
+      "name": "E-commerce",
+      "score": 92,
+      "recommendation": "STRONG FIT - priorytet do walidacji",
+      "top_product_idea": "Pakiet automatyzacji dla BaseLinker/Allegro - synchronizacja stanów, automatyczne odpowiedzi na pytania klientów przez AI, alerty o niskich stanach. Szablony Make + n8n, jednorazowa płatność.",
+      "strengths": [
+        "łatwe do zbudowania",
+        "dobra monetyzacja",
+        "łatwa dystrybucja",
+        "quick wins"
+      ]
+    }
+  ],
+  "raw_model_responses": [
+    {
+      "model": "Claude Opus 4.5",
+      "categories_count": 12,
+      "patterns_count": 15
+    },
+    {
+      "model": "Gemini 3 Pro",
+      "categories_count": 6,
+      "patterns_count": 5
+    },
+    {
+      "model": "Grok 4",
+      "categories_count": 12,
+      "patterns_count": 15
+    },
+    {
+      "model": "GPT-5.2",
+      "categories_count": 12,
+      "patterns_count": 15
+    }
+  ]
+}

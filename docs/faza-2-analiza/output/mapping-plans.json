@@ -1,0 +1,709 @@
+{
+  "kategorie": {
+    "analysis": "Niemapowane kategorie wskazują na luki w klasyfikacji dotyczące obsługi klienta, zarządzania projektami i HR-u. Wiele kategorii to kombinacje istniejących klas (np. Marketing/SEO, Edukacja/AI) lub specyficzne narzędzia/funkcjonalności. Rekomendujemy dodanie 3-4 nowych kategorii kanonicznych i agresywne mapowanie kombinacji na istniejące klasy.",
+    "new_canonical": [
+      "Obsługa Klienta/CRM",
+      "Zarządzanie Projektami",
+      "HR/Rekrutacja",
+      "Analityka/BI"
+    ],
+    "mapping_strategy": [
+      {
+        "canonical": "Obsługa Klienta/CRM",
+        "patterns": [
+          "obsługa klienta",
+          "obsługa klienta",
+          "relacje z klientem",
+          "pozyskiwanie klientów",
+          "customer",
+          "CRM"
+        ],
+        "examples": [
+          "Obsługa Klienta",
+          "Relacje z Klientem",
+          "Pozyskiwanie Klientów",
+          "Reputacja i Recenzje"
+        ]
+      },
+      {
+        "canonical": "Zarządzanie Projektami",
+        "patterns": [
+          "zarządzanie projektami",
+          "zarządzanie czasem",
+          "zarządzanie zasobami",
+          "workflow",
+          "project",
+          "task"
+        ],
+        "examples": [
+          "Zarządzanie Projektami",
+          "Zarządzanie czasem",
+          "Workflow Automation",
+          "Zarządzanie zasobami"
+        ]
+      },
+      {
+        "canonical": "HR/Rekrutacja",
+        "patterns": [
+          "rekrutacja",
+          "hr",
+          "hiring",
+          "kariera",
+          "cv",
+          "mentoring",
+          "rozwój"
+        ],
+        "examples": [
+          "Rekrutacja / HR",
+          "Hiring / HR",
+          "Rekrutacja / Czas",
+          "Rynek Pracy / Rekrutacja",
+          "Kariera / CV",
+          "Kariera / Mentoring",
+          "Rozwój Kariery"
+        ]
+      },
+      {
+        "canonical": "Analityka/BI",
+        "patterns": [
+          "analityka",
+          "analiza",
+          "data",
+          "performance",
+          "metrics",
+          "insights"
+        ],
+        "examples": [
+          "Analityka",
+          "Analiza danych",
+          "Performance Optimization",
+          "Kontrola Jakości"
+        ]
+      },
+      {
+        "canonical": "Marketing",
+        "patterns": [
+          "marketing",
+          "seo",
+          "reklama",
+          "ppc",
+          "kampania",
+          "content",
+          "social media",
+          "sprzedaż"
+        ],
+        "examples": [
+          "Marketing / Content",
+          "Reklama i PPC",
+          "Marketing / SEO",
+          "Narzędzia Marketingowe",
+          "Strategia Contentowa",
+          "Sprzedaż B2B",
+          "Social Media Marketing",
+          "Sprzedaż Social Media"
+        ]
+      },
+      {
+        "canonical": "Programowanie",
+        "patterns": [
+          "developer",
+          "web",
+          "architektura",
+          "techniczne",
+          "backend",
+          "frontend",
+          "kod",
+          "framework"
+        ],
+        "examples": [
+          "Architektura",
+          "Developer Tools",
+          "Web Dev",
+          "Wybór technologii",
+          "Developer Experience / Tooling"
+        ]
+      },
+      {
+        "canonical": "DevOps/Infrastruktura",
+        "patterns": [
+          "devops",
+          "tooling",
+          "infrastruktura",
+          "deployment",
+          "tools"
+        ],
+        "examples": [
+          "DevOps / Tooling",
+          "Zarządzanie IT"
+        ]
+      },
+      {
+        "canonical": "Content/Tworzenie tresci",
+        "patterns": [
+          "wideo",
+          "montaż",
+          "audio",
+          "produkcja",
+          "grafika",
+          "content",
+          "treść"
+        ],
+        "examples": [
+          "Wideo/Montaż",
+          "Produkcja Wideo",
+          "Jakość Audio",
+          "Generowanie grafik",
+          "Audio/Wideo",
+          "Sprzęt wideo",
+          "Stylistyka contentu"
+        ]
+      },
+      {
+        "canonical": "Finanse/Ksiegowosc",
+        "patterns": [
+          "finanse",
+          "płatności",
+          "wycena",
+          "cena",
+          "budżet",
+          "koszty",
+          "rentowność",
+          "podatki",
+          "księgowość"
+        ],
+        "examples": [
+          "Finanse / Płatności",
+          "Płatności i Finanse",
+          "Wycena Usług",
+          "Budżetowanie",
+          "Rentowność i Opłaty",
+          "Płatności i Bezpieczeństwo",
+          "Płatności i Oszustwa",
+          "Podatki/Prawne"
+        ]
+      },
+      {
+        "canonical": "Narzedzia AI",
+        "patterns": [
+          "ai",
+          "sztuczna inteligencja",
+          "machine learning",
+          "automation",
+          "bot",
+          "suno"
+        ],
+        "examples": [
+          "Funkcjonalnosci Suno",
+          "Content/AI",
+          "Edukacja/AI",
+          "Zlecenie / Bot",
+          "Zlecenie / AI"
+        ]
+      },
+      {
+        "canonical": "Bezpieczenstwo",
+        "patterns": [
+          "bezpieczeństwo",
+          "security",
+          "oszustwa",
+          "ochrona",
+          "veryfikacja"
+        ],
+        "examples": [
+          "Security",
+          "Płatności i Oszustwa",
+          "Weryfikacja influencerów"
+        ]
+      },
+      {
+        "canonical": "Prawo/Regulacje",
+        "patterns": [
+          "prawo",
+          "regulacje",
+          "prawne",
+          "własność intelektalna",
+          "autorskie",
+          "konkurencja"
+        ],
+        "examples": [
+          "Prawo i Księgowość",
+          "Ochrona Własności Intelektualnej",
+          "Prawa Autorskie",
+          "Nieuczciwa konkurencja"
+        ]
+      },
+      {
+        "canonical": "Strategia/Biznes",
+        "patterns": [
+          "strategia",
+          "biznes",
+          "expansion",
+          "launch",
+          "walidacja",
+          "ekspansja"
+        ],
+        "examples": [
+          "Strategia Biznesowa",
+          "Ekspansja zagraniczna",
+          "Launch Produktu",
+          "Walidacja Produktu",
+          "Zarządzanie kryzysowe",
+          "Wiarygodność Marki"
+        ]
+      },
+      {
+        "canonical": "E-commerce",
+        "patterns": [
+          "e-commerce",
+          "amazon",
+          "ecommerce",
+          "katalog",
+          "marketplace",
+          "baselinker",
+          "sourcing",
+          "logistyka"
+        ],
+        "examples": [
+          "Techniczne / Katalog Amazon",
+          "Logistyka/Księgowość",
+          "Logistyka/WMS",
+          "BaseLinker",
+          "Sourcing",
+          "Zarządzanie ofertami"
+        ]
+      },
+      {
+        "canonical": "Wdrozenia/Integracje",
+        "patterns": [
+          "integracja",
+          "wdrożenie",
+          "dostęp",
+          "obsługa www",
+          "dostępność"
+        ],
+        "examples": [
+          "Dostęp do usługi",
+          "Obsługa WWW",
+          "Dostępność terminów"
+        ]
+      },
+      {
+        "canonical": "Edukacja",
+        "patterns": [
+          "edukacja",
+          "kurs",
+          "nauka",
+          "szkolenie",
+          "praktyki",
+          "sql",
+          "dane"
+        ],
+        "examples": [
+          "Edukacja/Narzędzia",
+          "Edukacja / SQL",
+          "Edukacja / Dane",
+          "Edukacja / Praktyki",
+          "Edukacja/Rynek Pracy"
+        ]
+      },
+      {
+        "canonical": "Zlecenia/Freelance",
+        "patterns": [
+          "zlecenie",
+          "freelance",
+          "mobile"
+        ],
+        "examples": [
+          "Zlecenie / Mobile",
+          "Zlecenia / Edukacja"
+        ]
+      },
+      {
+        "canonical": "Produktywność",
+        "patterns": [
+          "produktywność",
+          "productivity",
+          "efektywność",
+          "organizacja",
+          "rozwój osobisty"
+        ],
+        "examples": [
+          "Produktywność",
+          "Rozwój osobisty"
+        ]
+      },
+      {
+        "canonical": "Logistyka",
+        "patterns": [
+          "logistyka",
+          "wms",
+          "dostawa",
+          "event"
+        ],
+        "examples": [
+          "Obsługa eventu",
+          "Event marketing"
+        ]
+      }
+    ],
+    "to_other": [
+      "Erli",
+      "Software House",
+      "Współpraca"
+    ]
+  },
+  "branze": {
+    "analysis": "Niemapowane branże zawierają w dużej mierze duplikaty i warianty istniejących kategorii (np. 'Software', 'Mobile Apps', 'SaaS / Tech'), specjalizacje techniczne (języki programowania, AI, Frontend), kombinacje istniejących branż oraz nowe domeny biznesowe (motoryzacja, moda, nieruchomości, OZE). Konieczne jest wprowadzenie 3-5 nowych kategorii kanonicznych oraz wystandaryzowanie mapowania dla wariantów nazw.",
+    "new_canonical": [
+      "AI/Machine Learning",
+      "Fashion/Retail",
+      "Real Estate",
+      "Renewable Energy",
+      "Healthcare/Wellness"
+    ],
+    "mapping_strategy": [
+      {
+        "canonical": "IT/Software",
+        "patterns": [
+          "Software",
+          "IT",
+          "IT/Software Development",
+          "IT / Tech"
+        ],
+        "examples": [
+          "Software",
+          "IT Support",
+          "IT (.NET)",
+          "IT / Software Development"
+        ]
+      },
+      {
+        "canonical": "Web Dev",
+        "patterns": [
+          "Web Dev",
+          "Web Design",
+          "Frontend",
+          "Mobile Dev",
+          "Mobile Apps"
+        ],
+        "examples": [
+          "IT (Frontend)",
+          "Mobile App Development",
+          "Mobile Apps",
+          "Web Design"
+        ]
+      },
+      {
+        "canonical": "AI/Machine Learning",
+        "patterns": [
+          "AI",
+          "AI Engineering",
+          "AI Research",
+          "Generative AI",
+          "AI Text Generation",
+          "IT/AI"
+        ],
+        "examples": [
+          "AI",
+          "Generative AI",
+          "AI Engineering",
+          "AI Research",
+          "AI Text Generation"
+        ]
+      },
+      {
+        "canonical": "Data/Analityka",
+        "patterns": [
+          "Data",
+          "Analytics",
+          "Data Analytics"
+        ],
+        "examples": [
+          "Data Analytics",
+          "Data/Analityka"
+        ]
+      },
+      {
+        "canonical": "Marketing/Agencje",
+        "patterns": [
+          "Marketing",
+          "Digital Marketing",
+          "Content Marketing",
+          "Social Media Marketing",
+          "Marketing cyfrowy",
+          "Marketing Internetowy"
+        ],
+        "examples": [
+          "Social Media Marketing",
+          "Digital Marketing",
+          "Content Marketing",
+          "Marketing / Social Media",
+          "Marketing cyfrowy"
+        ]
+      },
+      {
+        "canonical": "SaaS",
+        "patterns": [
+          "SaaS",
+          "B2B SaaS",
+          "Enterprise",
+          "Enterprise Software"
+        ],
+        "examples": [
+          "SaaS / Tech",
+          "B2B SaaS",
+          "Enterprise Software",
+          "SaaS / B2B"
+        ]
+      },
+      {
+        "canonical": "E-commerce",
+        "patterns": [
+          "E-commerce",
+          "Retail",
+          "E-commerce / Retail"
+        ],
+        "examples": [
+          "E-commerce / Retail",
+          "Retail",
+          "retail"
+        ]
+      },
+      {
+        "canonical": "Fashion/Retail",
+        "patterns": [
+          "moda",
+          "odzież",
+          "biżuteria",
+          "fashion"
+        ],
+        "examples": [
+          "moda",
+          "odzieżowa",
+          "biżuteria",
+          "Odzież"
+        ]
+      },
+      {
+        "canonical": "Edukacja",
+        "patterns": [
+          "Edukacja",
+          "Edukacja IT",
+          "Edukacja / Tech"
+        ],
+        "examples": [
+          "Edukacja IT",
+          "Edukacja / Tech",
+          "Edukacja / Nauka"
+        ]
+      },
+      {
+        "canonical": "Content/Social Media",
+        "patterns": [
+          "Content",
+          "Creator Economy",
+          "Media internetowe"
+        ],
+        "examples": [
+          "Creator Economy",
+          "Media internetowe"
+        ]
+      },
+      {
+        "canonical": "Finanse/Fintech",
+        "patterns": [
+          "Finanse",
+          "Venture Capital",
+          "B2B Sales"
+        ],
+        "examples": [
+          "Venture Capital",
+          "Finanse/IT",
+          "Finanse osobiste"
+        ]
+      },
+      {
+        "canonical": "Hardware/Embedded",
+        "patterns": [
+          "C++",
+          "Hardware",
+          "Embedded",
+          "Elektronika"
+        ],
+        "examples": [
+          "C++",
+          "Elektronika",
+          "Automatyka/Elektryka"
+        ]
+      },
+      {
+        "canonical": "Real Estate",
+        "patterns": [
+          "nieruchomości",
+          "Real Estate"
+        ],
+        "examples": [
+          "nieruchomości"
+        ]
+      },
+      {
+        "canonical": "Renewable Energy",
+        "patterns": [
+          "OZE",
+          "energia"
+        ],
+        "examples": [
+          "OZE"
+        ]
+      },
+      {
+        "canonical": "Healthcare/Wellness",
+        "patterns": [
+          "Psychologia",
+          "psychologia",
+          "Medyczna",
+          "Healthcare",
+          "Zdrowie",
+          "Fitness"
+        ],
+        "examples": [
+          "Psychologia",
+          "Medyczna / Healthcare",
+          "Fitness",
+          "Zdrowie/Food"
+        ]
+      },
+      {
+        "canonical": "Food/Gastronomia",
+        "patterns": [
+          "Food",
+          "Gastronomia",
+          "alkoholowa"
+        ],
+        "examples": [
+          "Food/Gastronomia",
+          "Zdrowie/Food"
+        ]
+      },
+      {
+        "canonical": "Automatyzacja",
+        "patterns": [
+          "Automatyzacja",
+          "Automatyka",
+          "Automation"
+        ],
+        "examples": [
+          "Agencja Automatyzacji",
+          "Automatyka/Elektryka"
+        ]
+      },
+      {
+        "canonical": "Uslugi B2B",
+        "patterns": [
+          "B2B",
+          "Consulting",
+          "Agency Services",
+          "Usługi",
+          "Usługi Lokalne"
+        ],
+        "examples": [
+          "B2B",
+          "Consulting",
+          "Agency Services",
+          "Usługi Lokalne"
+        ]
+      },
+      {
+        "canonical": "Praca zdalna",
+        "patterns": [
+          "Freelancing",
+          "Gig Economy"
+        ],
+        "examples": [
+          "Freelancing",
+          "Gig Economy"
+        ]
+      },
+      {
+        "canonical": "Design",
+        "patterns": [
+          "Design",
+          "Grafika",
+          "Web Design",
+          "UX"
+        ],
+        "examples": [
+          "Design",
+          "Grafika"
+        ]
+      },
+      {
+        "canonical": "Media/Video",
+        "patterns": [
+          "Media",
+          "Video",
+          "Rozrywka"
+        ],
+        "examples": [
+          "Rozrywka"
+        ]
+      },
+      {
+        "canonical": "Handel/Logistyka",
+        "patterns": [
+          "Logistyka",
+          "Import",
+          "Motoryzacja",
+          "Telekomunikacja"
+        ],
+        "examples": [
+          "motoryzacja",
+          "Import",
+          "Telekomunikacja"
+        ]
+      },
+      {
+        "canonical": "Startup",
+        "patterns": [
+          "Startup",
+          "Startups",
+          "Digital Products"
+        ],
+        "examples": [
+          "Startups",
+          "Digital Products"
+        ]
+      }
+    ],
+    "to_other": [
+      "Różne",
+      "Ogólna",
+      "Korporacyjna",
+      "Korporacyjna / Biurowa",
+      "Kreatywna",
+      "Hobby",
+      "domowa",
+      "dziecięca",
+      "slubna",
+      "wnętrzarska",
+      "rękodzieło",
+      "Geodezja",
+      "Kanalizacja",
+      "Budownictwo",
+      "Usługi elektryczne",
+      "AGD",
+      "Turystyka",
+      "Turystyka/Kultura",
+      "turystyka",
+      "Wywóz śmieci (Junk Removal)",
+      "IT (wejście)",
+      "Marketing/IT",
+      "Finanse/IT",
+      "IT/AI",
+      "Marketing / E-commerce",
+      "E-commerce / SaaS",
+      "SaaS / Mobile Apps",
+      "ekologia/dom"
+    ]
+  }
+}

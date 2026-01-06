@@ -1,0 +1,2903 @@
+{
+  "meta": {
+    "generated": "2026-01-06T08:19:08.136Z",
+    "phase": "Gap Hunter Lite - Phase 3: White Space Scoring",
+    "models_used": [
+      "Claude Opus 4.5",
+      "Gemini 3 Pro",
+      "Grok 4",
+      "GPT-5.2"
+    ],
+    "total_mvps": 40,
+    "execution_time_seconds": 106.2
+  },
+  "classifications": {
+    "WHITE_SPACE": {
+      "min": 90,
+      "max": 100,
+      "desc": "Zero konkurencji, nikt tego nie robi"
+    },
+    "BLUE_OCEAN": {
+      "min": 70,
+      "max": 89,
+      "desc": "Słaba konkurencja, łatwo wygrać"
+    },
+    "RED_OCEAN": {
+      "min": 40,
+      "max": 69,
+      "desc": "Silna konkurencja, trzeba się wyróżnić"
+    },
+    "BLOODY_OCEAN": {
+      "min": 0,
+      "max": 39,
+      "desc": "Zdominowany rynek, nie wchodź"
+    }
+  },
+  "summary": {
+    "by_classification": {
+      "BLUE_OCEAN": 11,
+      "RED_OCEAN": 25,
+      "BLOODY_OCEAN": 4
+    },
+    "avg_score": 55,
+    "avg_spread": 20
+  },
+  "mvps": [
+    {
+      "mvp_id": "mvp_24",
+      "mvp_name": "DevRescue - Platforma ratunkowa dla porzuconych projektów IT",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Zleceniodawca po traumie",
+      "core_value_prop": "Dokończymy Twój porzucony projekt w 14 dni lub zwrócimy pieniądze. Zweryfikowani programiści, escrow, gwarancja realizacji.",
+      "white_space_score": 87,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 10,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 82
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 88
+        },
+        {
+          "model": "Grok 4",
+          "score": 92
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 88
+        }
+      ],
+      "main_competitors": [
+        "Upwork",
+        "Useme",
+        "Software house'y",
+        "Software House",
+        "Freelancerzy"
+      ],
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Gwarancja dokończenia w 14 dni lub zwrot + escrow"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Pozycjonowanie jako 'pogotowie ratunkowe' a nie kolejny software house. Silny trigger emocjonalny."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Gwarancja dokończenia porzuconych projektów w 14 dni z escrow i zweryfikowanymi programistami."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Fokus wyłącznie na ratowanie porzuconych projektów."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Grupy startupowe, SEO 'freelancer nie dokończył projektu'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Reklamy na frazy 'programista mnie oszukał', 'niedokończona aplikacja'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Targetuj ofiary freelancerów poprzez fora jak Upwork complaints."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Content SEO + historie horrorów IT."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_9",
+      "mvp_name": "TrustSignal - AI Search & Reputation Optimizer",
+      "category": "Marketing",
+      "target_persona": "Techniczny Solopreneur / SaaS Founder oraz Agencje Marketingowe",
+      "core_value_prop": "Spraw, by Twój produkt był polecany przez ChatGPT, Perplexity i Gemini, zamiast walczyć o umierające pozycje w Google. Monitoruj i optymalizuj, jak AI 'widzi' Twoją markę.",
+      "white_space_score": 83,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 14,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 78
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 92
+        },
+        {
+          "model": "Grok 4",
+          "score": 82
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 82
+        }
+      ],
+      "main_competitors": [
+        "Semrush",
+        "Ahrefs",
+        "Agencje PR",
+        "ChatGPT/GPT"
+      ],
+      "gap_type_addressed": "BRAK_ROZWIAZANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Optymalizacja pod AI search engines (ChatGPT, Perplexity) - nowa kategoria"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Pierwsze narzędzie do SEO wewnątrz LLM (GEO - Generative Engine Optimization)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Optymalizacja reputacji w AI jak ChatGPT czy Perplexity, zamiast tradycyjnego SEO."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Optymalizacja widoczności w AI search zamiast klasycznego SEO."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Twitter/X thought leadership o 'AI SEO', early adopter SaaS founders"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Content marketing: 'Co ChatGPT mówi o Twojej firmie? Sprawdź zanim klient zapyta'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Oferuj darmowe audyty na forach dla founderów SaaS."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Early adopters: SaaS founders via Twitter/LinkedIn."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_36",
+      "mvp_name": "CreatorOnCall - Emergency Staffing dla Eventów",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "Event Manager / Brand Manager",
+      "core_value_prop": "Znajdź zweryfikowanego twórcę UGC/content creatora na event w 24h - z gwarancją realizacji",
+      "white_space_score": 82,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 20,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 71
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 91
+        },
+        {
+          "model": "Grok 4",
+          "score": 85
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 85
+        }
+      ],
+      "main_competitors": [
+        "Agencje eventowe",
+        "Fiverr",
+        "Lokalni freelancerzy",
+        "Grupy na FB",
+        "Agencje hostess"
+      ],
+      "gap_type_addressed": "ZA_WOLNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "24h gwarancja znalezienia z weryfikacją vs tygodnie szukania"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "'Uber dla twórców contentu' na eventy - rozwiązuje palący problem 'na wczoraj'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Znajdowanie zweryfikowanych UGC creatorów na eventy w 24h z gwarancją realizacji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Twórcy dostępni awaryjnie w 24h."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Event manager communities, LinkedIn ads, partnerstwa z agencjami PR"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Partnerstwo z organizatorami konferencji i targów branżowych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Prowizje pay-per-use na event management groups."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Event agencies + brand managers."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_27",
+      "mvp_name": "ProjectRescue.dev",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Nietechniczny Founder / Właściciel MŚP",
+      "core_value_prop": "Ratujemy niedokończone projekty IT – audyt, plan i dowiezienie albo zwrot pieniędzy.",
+      "white_space_score": 81,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 7,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 78
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 82
+        },
+        {
+          "model": "Grok 4",
+          "score": 85
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 82
+        }
+      ],
+      "main_competitors": [
+        "Software house'y",
+        "Freelancerzy",
+        "Consulting IT"
+      ],
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Audyt + fixed price + gwarancja zwrotu - produktyzowana usługa"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Usługa audytu i planu naprawczego dla nietechnicznych founderów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Ratunek niedokończonych projektów IT z audytem, planem i gwarancją zwrotu pieniędzy."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Audyt + delivery albo zwrot pieniędzy."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "SEO 'ratowanie projektu IT', LinkedIn thought leadership"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "LinkedIn outreach do founderów, którzy mają w statusie 'building X' od 2 lat."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Oferuj audyty na LinkedIn dla właścicieli MŚP."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Outbound + referral od VC/inkubatorów."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_25",
+      "mvp_name": "TrustCode / DevRescue",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Nietechniczny Founder",
+      "core_value_prop": "Bezpieczne zlecanie IT. Weryfikujemy kod, trzymamy pieniądze w depozycie i gwarantujemy, że jeśli freelancer zniknie, inny dokończy projekt w tej samej cenie.",
+      "white_space_score": 80,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 13,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 80
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 75
+        },
+        {
+          "model": "Grok 4",
+          "score": 88
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 80
+        }
+      ],
+      "main_competitors": [
+        "Upwork",
+        "Toptal",
+        "Useme",
+        "Upwork Escrow",
+        "GitStart"
+      ],
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Gwarancja kontynuacji przez innego dev'a w tej samej cenie"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Gwarancja dokończenia projektu przez innego deva w tej samej cenie (ubezpieczenie kodu)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Bezpieczne zlecanie IT z weryfikacją kodu, depozytem i gwarancją dokończenia przez innego freelancera."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Gwarancja dokończenia projektu w tej samej cenie."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Founder communities, content o 'IT project failures'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Partnerstwo z inkubatorami startupów, gdzie founderzy często tracą pieniądze."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Reklamy na platformach freelance jak Fiverr dla nietechnicznych founderów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Founder communities + LinkedIn."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_33",
+      "mvp_name": "NativeLaunch.io",
+      "category": "Strategia/Biznes",
+      "target_persona": "Lokalny Bohater / Globalny Przegryw (E-commerce)",
+      "core_value_prop": "Przestań przepalać budżet w Niemczech/USA. Dostarczamy zweryfikowanych, natywnych twórców contentu i strategów, którzy dostosują Twój polski sukces do lokalnych realiów w 14 dni.",
+      "white_space_score": 79,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 12,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 73
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 85
+        },
+        {
+          "model": "Grok 4",
+          "score": 82
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 78
+        }
+      ],
+      "main_competitors": [
+        "Fiverr",
+        "Upwork",
+        "Lokalne agencje",
+        "Agencje tłumaczeń",
+        "Agencje ekspansji"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Zweryfikowani natywni twórcy + strategia lokalizacji w 14 dni"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Kulturowa adaptacja (lokalni twórcy), a nie tylko tłumaczenie językowe."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Zweryfikowani natywni twórcy contentu dla adaptacji polskiego sukcesu na rynki zagraniczne w 14 dni."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Natywni twórcy zamiast tłumaczonych kampanii."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Polskie e-commerce ekspandujące za granicę, grupy cross-border"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Polskie marki D2C próbujące sił w Niemczech/USA."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Partnerstwa z e-commerce eksporterami i reklamy na LinkedIn."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Outbound do e-commerce scale-upów."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_12",
+      "mvp_name": "SyncPilot - Stabilna synchronizacja magazynowa dla polskiego e-commerce",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Rosnący sklep (scale-up)",
+      "core_value_prop": "Synchronizacja stanów magazynowych między Subiekt GT a Twoim sklepem, która DZIAŁA. Bez rozjazdów. Bez sprzedaży niedostępnego towaru. Gwarancja stabilności lub zwrot pieniędzy.",
+      "white_space_score": 75,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 12,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 72
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 82
+        },
+        {
+          "model": "Grok 4",
+          "score": 70
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 78
+        }
+      ],
+      "main_competitors": [
+        "BaseLinker",
+        "Sellasist",
+        "Sellintegro",
+        "Wtyczki PrestaShop",
+        "Shopify"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Gwarancja stabilności lub zwrot pieniędzy - polski rynek Subiekt GT"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Skupienie na polskim legacy (Subiekt GT) i gwarancja braku 'oversellingu'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Gwarantowana stabilność synchronizacji między Subiekt GT a sklepem bez rozjazdów, z gwarancją zwrotu pieniędzy."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Gwarancja stabilności synchronizacji Subiekt–sklep."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Grupy e-commerce PL, partnerstwa z wdrożeniowcami Subiekt"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Partnerstwo z wdrożeniowcami Subiekta, którzy nienawidzą integrować go ze sklepami."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Targetuj polskie sklepy e-commerce poprzez fora jak Shopify Polska."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Partnerstwa z integratorami e-commerce w PL."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_21",
+      "mvp_name": "AuthenticAds Marketplace",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "The E-commerce Performance Marketer",
+      "core_value_prop": "Dostarczamy wideo reklamowe, które wyglądają jak nagrane przez sąsiada, ale są zoptymalizowane pod konwersję. Znajdujemy ludzi z 'Lidlomixem', na stoku, w biurze.",
+      "white_space_score": 75,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 15,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 76
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 70
+        },
+        {
+          "model": "Grok 4",
+          "score": 85
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 72
+        }
+      ],
+      "main_competitors": [
+        "Billo",
+        "Insense",
+        "Fiverr",
+        "Vidsy",
+        "Trend.io"
+      ],
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Baza 'zweryfikowanych posiadaczy sprzętu' dla autentycznego UGC"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Dostęp do 'zwykłych ludzi' (nie influencerów) z konkretnymi przedmiotami (np. Lidlomix)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Marketplace dostarczający autentyczne wideo reklamowe od zweryfikowanych posiadaczy sprzętu, zoptymalizowane pod konwersję."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Twórcy z realnym sprzętem i kontekstem życia."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "E-commerce marketing managers, case study 'UGC z prawdziwym produktem'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Agencje performance szukające 'brzydkich' reklam, które konwertują."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Partnerstwa z e-commerce platformami i reklamy na LinkedIn dla marketerów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Performance marketer communities."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_17",
+      "mvp_name": "BaseLinker Logic Booster (SaaS / Plugin)",
+      "category": "E-commerce",
+      "target_persona": "Multichannel Operator",
+      "core_value_prop": "Zautomatyzuj to, czego BaseLinker nie potrafi: dynamiczne ceny wielowalutowe, masowe opisy AI pod konkretne marketplace'y i warunkowa edycja zamówień.",
+      "white_space_score": 74,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 20,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 74
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 85
+        },
+        {
+          "model": "Grok 4",
+          "score": 75
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 65
+        }
+      ],
+      "main_competitors": [
+        "BaseLinker (natywnie)",
+        "Własne skrypty",
+        "Własne skrypty PHP",
+        "Brak",
+        "Shopify"
+      ],
+      "gap_type_addressed": "NIEDOSTEPNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Plugin rozszerzający BaseLinker o brakujące funkcje bez kodowania"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Łatanie dziur w najpopularniejszym w Polsce systemie (BaseLinker) - pasożytnicza nisza."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Rozszerzenie BaseLinker o dynamiczne ceny wielowalutowe i AI opisy pod marketplace'y."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Rozszerza BaseLinkera bez migracji."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Społeczność BaseLinker, marketplace dodatków, grupy FB e-commerce"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Grupa 'BaseLinker - pomoc i konfiguracja' na FB."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Integracja jako plugin w ekosystemie BaseLinker i promocja na forach e-commerce."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Społeczności BaseLinker i partnerzy wdrożeniowi."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_13",
+      "mvp_name": "E-com Sync Stabilizer (Audit & Fix Service)",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Skalujący się E-commerce Manager",
+      "core_value_prop": "Gwarantujemy zgodność stanów magazynowych między Subiektem, BaseLinkerem i Shopify w 7 dni, albo zwrot pieniędzy. Koniec ze sprzedawaniem towaru, którego nie masz.",
+      "white_space_score": 73,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 20,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 70
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 75
+        },
+        {
+          "model": "Grok 4",
+          "score": 65
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 85
+        }
+      ],
+      "main_competitors": [
+        "BaseLinker",
+        "Freelancerzy IT",
+        "Software House",
+        "Freelancerzy",
+        "Shopify"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Produktyzowana usługa z gwarancją 7 dni vs projekt bez deadline'u"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Usługa 'naprawcza' z gwarancją, zamiast ogólnego 'wdrażania'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Gwarancja zgodności stanów w 7 dni z audytem i naprawą, lub zwrot pieniędzy."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Productized service z gwarancją efektu w 7 dni."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Grupy Shopify Polska, case study 'naprawiliśmy chaos w 7 dni'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Audyt 'Czy Twój sklep sprzedaje towar, którego nie masz?'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Oferuj usługi poprzez LinkedIn do managerów e-commerce."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Outbound do e-commerce managerów + case studies."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_32",
+      "mvp_name": "StrategyPilot - Diagnoza i Roadmapa dla Stuck Biznesów",
+      "category": "Strategia/Biznes",
+      "target_persona": "Właściciel e-commerce w fazie skalowania + Solopreneur bez zespołu technicznego",
+      "core_value_prop": "W 48h otrzymujesz diagnozę dlaczego Twój biznes utknął + konkretną roadmapę 90-dniową z priorytetami działań",
+      "white_space_score": 70,
+      "classification": "BLUE_OCEAN",
+      "consensus_spread": 13,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 65
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 65
+        },
+        {
+          "model": "Grok 4",
+          "score": 78
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 75
+        }
+      ],
+      "main_competitors": [
+        "Konsultanci",
+        "Clarity.fm",
+        "GrowthMentor",
+        "Konsultanci biznesowi",
+        "ChatGPT"
+      ],
+      "gap_type_addressed": "ZA_DROGIE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "48h delivery + konkretna roadmapa vs open-ended consulting"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Produktyzacja consultingu - stała cena za diagnozę zamiast stawki godzinowej."
+        },
+        {
+          "model": "Grok 4",
+          "text": "48-godzinna diagnoza i 90-dniowa roadmapa dla utkniętych biznesów e-commerce."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Szybka, tania diagnoza zamiast długich konsultingów."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Founder communities, LinkedIn ads do 'stuck' biznesów"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Webinary 'Dlaczego Twój e-commerce przestał rosnąć'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Oferuj jednorazowe diagnozy na forach dla solopreneurów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Personal brand + LinkedIn."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_1",
+      "mvp_name": "LeadScout.io",
+      "category": "Automatyzacja",
+      "target_persona": "The Lead Hunter (Elektrycy, Budowlańcy, Handlarze)",
+      "core_value_prop": "Bądź pierwszy przy każdym zleceniu. Monitoruj dowolną stronę (OLX, Oferteo, Fixly) i otrzymuj powiadomienie SMS w 3 sekundy po pojawieniu się ogłoszenia.",
+      "white_space_score": 64,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 8,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 68
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 60
+        },
+        {
+          "model": "Grok 4",
+          "score": 68
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 60
+        }
+      ],
+      "main_competitors": [
+        "Visualping",
+        "Distill.io",
+        "Brand24",
+        "VisualPing",
+        "Własne skrypty"
+      ],
+      "gap_type_addressed": "ZA_WOLNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "SMS w 3 sekundy vs konkurencja z opóźnieniem 15-60 min"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Szybkość (SMS w 3 sekundy) - kluczowa w walce o 'pierwszy telefon'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Natychmiastowe powiadomienia SMS w 3 sekundy po pojawieniu się ogłoszenia na specyficznych platformach jak OLX czy Oferteo."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Ekstremalnie szybkie powiadomienia SMS dla ogłoszeń lokalnych."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "YouTube tutorials dla elektryków, case study 'pierwszy przy zleceniu'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Case study: 'Jak zdobyłem zlecenie na OLX w 45 sekund'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Promuj na forach dla elektryków i budowlańców oraz poprzez partnerstwa z platformami zleceń."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Sprzedaż bezpośrednia wśród ekip budowlanych i rzemieślników."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_7",
+      "mvp_name": "Integration Health & Setup Manager",
+      "category": "Wdrożenia/Integracje",
+      "target_persona": "CTO / Operations Manager",
+      "core_value_prop": "Szybkie wdrożenie i ciągła kontrola nad integracjami bez konieczności budowania wszystkiego in-house.",
+      "white_space_score": 64,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 20,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 58
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 78
+        },
+        {
+          "model": "Grok 4",
+          "score": 60
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 65
+        }
+      ],
+      "main_competitors": [
+        "Workato",
+        "Tray.io",
+        "Boomi",
+        "Datadog",
+        "Sentry"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Monitoring zdrowia integracji z alertami zamiast tylko setup"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Monitoring 'cichych awarii' w no-code (Make/Zapier), czego standardowe narzędzia nie widzą."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Szybkie wdrożenie i ciągła kontrola integracji bez budowania in-house, z fokusem na zdrowie systemów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Monitoring i SLA dla integracji zamiast tylko budowy flow."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Partnerstwa z software housami, content o 'integration debt'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Targetowanie użytkowników Make/n8n narzekających na forach na błędy API."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Targetuj CTO poprzez LinkedIn Ads i konferencje tech."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Outbound do CTO/Head of Ops w SMB."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_35",
+      "mvp_name": "PMF Sprint",
+      "category": "Strategia/Biznes",
+      "target_persona": "Solo Founder / Non-technical Founder",
+      "core_value_prop": "W 14 dni dowiedz się, czy Twój pomysł ma sens biznesowy — zanim przepalisz czas i pieniądze.",
+      "white_space_score": 64,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 15,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 62
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 60
+        },
+        {
+          "model": "Grok 4",
+          "score": 75
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 60
+        }
+      ],
+      "main_competitors": [
+        "Konsultanci",
+        "Acceleratory",
+        "GrowthMentor",
+        "Akceleratory",
+        "Agencje innowacji"
+      ],
+      "gap_type_addressed": "ZA_WOLNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "14 dni do odpowiedzi vs miesiące eksperymentowania"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Usługa sprintu walidacyjnego - model agencyjny."
+        },
+        {
+          "model": "Grok 4",
+          "text": "14-dniowa walidacja pomysłu biznesowego zanim przepalisz zasoby, dla non-technical founderów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Krótki, intensywny sprint zamiast długich programów."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Pre-seed founders, startup events, LinkedIn content"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Współpraca z funduszami VC (pre-seed)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Jednorazowe oferty na Twitterze i LinkedIn dla solo founderów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Founder communities."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_37",
+      "mvp_name": "ScopeGuard / ClientFlow",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "The Chaos-Drowning Agency Owner",
+      "core_value_prop": "Centralny hub komunikacji z klientem, który eliminuje 'zaginione maile' i blokuje pracę nad zadaniami bez zaakceptowanego budżetu (Stop Scope Creep).",
+      "white_space_score": 63,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 14,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 58
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 72
+        },
+        {
+          "model": "Grok 4",
+          "score": 65
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 58
+        }
+      ],
+      "main_competitors": [
+        "Basecamp",
+        "Monday.com",
+        "ClickUp",
+        "Email",
+        "Asana (źle używana)"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Blokada pracy bez zaakceptowanego budżetu - scope creep prevention"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Narzędzie psychologiczne blokujące pracę bez akceptacji budżetu (anti-scope creep)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Hub komunikacji eliminujący scope creep poprzez blokadę zadań bez budżetu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Blokowanie pracy bez zatwierdzonego budżetu."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Agency owner podcasts, content o 'scope creep horror stories'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Content dla właścicieli agencji o 'klientach z piekła rodem'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Freemium dla agencji poprzez AppSumo-like deals."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Agencje digitalowe."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_15",
+      "mvp_name": "Integration Rescue Kit",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Skalujący się e-commerce / Head of Operations",
+      "core_value_prop": "Stabilne, monitorowane integracje sprzedaży bez chaosu i ręcznej kontroli.",
+      "white_space_score": 62,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 15,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 65
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 60
+        },
+        {
+          "model": "Grok 4",
+          "score": 55
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 70
+        }
+      ],
+      "main_competitors": [
+        "Software house'y",
+        "Freelancerzy",
+        "Agencje E-commerce",
+        "Zapier",
+        "n8n"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Monitoring + SLA zamiast jednorazowego setup"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Monitoring integracji jako usługa abonamentowa."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Stabilne, monitorowane integracje sprzedaży z setupem i abonamentem na ratunek chaosu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Stały monitoring + odpowiedzialność za integracje."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Referrale od firm wdrożeniowych ERP, LinkedIn outreach"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Direct outreach do Head of E-com w firmach >10mln przychodu."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Webinary dla head of operations w skalujących e-commerce."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Direct sales do skalujących e-commerce."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_0",
+      "mvp_name": "LeadHunter.pl - Bot do automatycznego wyszukiwania zleceń",
+      "category": "Automatyzacja",
+      "target_persona": "Firma usługowa B2B (elektrycy, budowlańcy, freelancerzy)",
+      "core_value_prop": "Automatycznie znajduje zlecenia z Twojej branży w internecie i wysyła Ci je na maila/Slacka - bez kodowania, bez własnego serwera",
+      "white_space_score": 60,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 17,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 62
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 55
+        },
+        {
+          "model": "Grok 4",
+          "score": 72
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 55
+        }
+      ],
+      "main_competitors": [
+        "Oferteo",
+        "Fixly",
+        "Useme",
+        "n8n",
+        "Zapier"
+      ],
+      "gap_type_addressed": "ZA_TRUDNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Automatyczna agregacja z wielu źródeł zamiast ręcznego przeglądania platform"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Agregacja z wielu źródeł w jedno powiadomienie, zamiast sprawdzania 5 portali ręcznie."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Bez kodowania i własnego serwera, skupione wyłącznie na wyszukiwaniu zleceń branżowych z automatycznymi powiadomieniami."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Automatyczne agregowanie leadów bez ręcznego przeszukiwania portali."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Grupy Facebook dla rzemieślników i budowlańców, SEO na 'jak znaleźć zlecenia'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Grupy na Facebooku dla elektryków/hydraulików z demo 'znalazłem Ci zlecenie 5 min temu'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Targetuj firmy usługowe B2B poprzez reklamy na Facebooku i grupy branżowe na LinkedIn."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Reklamy FB/Google kierowane do lokalnych firm usługowych + partnerstwa branżowe."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_16",
+      "mvp_name": "PriceSync Pro - Automatyczna aktualizacja cen wielowalutowych dla multi-marketplace",
+      "category": "E-commerce",
+      "target_persona": "Scaling E-commerce Business",
+      "core_value_prop": "Zaoszczędź 2 tygodnie miesięcznie na ręcznej aktualizacji cen. Ustaw raz marże i kursy walut - reszta dzieje się automatycznie na wszystkich platformach.",
+      "white_space_score": 59,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 28,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 67
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 68
+        },
+        {
+          "model": "Grok 4",
+          "score": 68
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 40
+        }
+      ],
+      "main_competitors": [
+        "BaseLinker",
+        "Pricefx",
+        "Prisync",
+        "Dealavo",
+        "Shopify"
+      ],
+      "gap_type_addressed": "ZA_WOLNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wielowalutowość + multi-marketplace w jednym dla polskiego rynku"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Specjalizacja w cross-border (waluty + marże), gdzie BaseLinker bywa toporny."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Automatyczna aktualizacja cen i marż na wszystkich platformach, oszczędzająca 2 tygodnie pracy miesięcznie."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Prosta konfiguracja marż i walut."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Grupy sprzedawców Amazon/eBay PL, content o ekspansji zagranicznej"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Targetowanie sprzedawców Allegro wchodzących na Amazon DE."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Partnerstwa z marketplace'ami jak Allegro i Amazon."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "App marketplaces + SEO long-tail."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_20",
+      "mvp_name": "ClipForge - AI Montażysta ze Storytellingiem",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "Solo Creator / Mały YouTuber",
+      "core_value_prop": "Zamień 5 godzin montażu w 15 minut - AI, które rozumie storytelling, nie tylko tnie",
+      "white_space_score": 59,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 30,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 58
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 55
+        },
+        {
+          "model": "Grok 4",
+          "score": 80
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 50
+        }
+      ],
+      "main_competitors": [
+        "Descript",
+        "Opus Clip",
+        "CapCut",
+        "OpusClip",
+        "Munch"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Storytelling-aware AI vs tylko automatyczne cięcie"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Fokus na storytelling i strukturę filmu, a nie tylko wycinanie ciszy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "AI rozumiejące storytelling, redukujące montaż z 5 godzin do 15 minut dla YouTuberów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "AI rozumiejące storytelling, nie tylko cięcia."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "YouTube creator communities, TikTok o 'AI editing hacks'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Współpraca z twórcami kursów 'Jak zostać YouTuberem'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Promuj na subredditach dla creatorów i YouTube communities."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "YouTube creators + influencer partnerships."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_26",
+      "mvp_name": "FreelanceGuard",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Ofiara złego freelancera",
+      "core_value_prop": "Platforma weryfikująca freelancerów i gwarantująca dokończenie projektów z escrow i wsparciem post-launch.",
+      "white_space_score": 57,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 45,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 75
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 30
+        },
+        {
+          "model": "Grok 4",
+          "score": 65
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 65
+        }
+      ],
+      "main_competitors": [
+        "Upwork",
+        "Useme",
+        "Fiverr"
+      ],
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Escrow + wsparcie post-launch jako standard"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Trudno konkurować z network effect gigantów samą weryfikacją."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Weryfikacja freelancerów z escrow i wsparciem post-launch dla ofiar złych zleceń."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Większy nacisk na escrow i post-launch support."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Horror stories o freelancerach jako content, grupy founderów"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Tylko jako bardzo niszowa platforma (np. tylko dla ekspertów AI)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Darmowe matching na Reddit freelance groups."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "SEO + startup communities."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_8",
+      "mvp_name": "InfluVerify - Weryfikator Autentyczności Influencerów",
+      "category": "Marketing",
+      "target_persona": "Właściciel małego e-commerce / dropshippingu oraz Właściciel lokalnego biznesu usługowego",
+      "core_value_prop": "Sprawdź w 30 sekund czy influencer ma prawdziwych followersów, zanim zmarnujesz budżet na fake engagement",
+      "white_space_score": 55,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 38,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 52
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 40
+        },
+        {
+          "model": "Grok 4",
+          "score": 78
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 58
+        }
+      ],
+      "main_competitors": [
+        "HypeAuditor",
+        "Modash",
+        "Upfluence",
+        "SocialBlade"
+      ],
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "30-sekundowa weryfikacja dla małych budżetów vs enterprise tools"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Model pay-per-report (15 PLN) zamiast drogich subskrypcji enterprise."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Szybka weryfikacja autentyczności followersów w 30 sekund, zapobiegająca marnowaniu budżetu na fake engagement."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Prosty i tani audyt influencerów dla małych firm."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Grupy e-commerce na FB, influencer marketing fail stories jako content"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Reklamy na grupach dropshippingowych 'Nie przepalaj kasy na fake influencerów'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Promuj na grupach e-commerce na Facebooku i poprzez influencer marketing tools."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Influencer marketing communities + e-commerce content."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_23",
+      "mvp_name": "UGC Factory",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "E-commerce Owner / Marketing Manager",
+      "core_value_prop": "Stały dopływ autentycznych, konwertujących wideo bez koordynowania twórców.",
+      "white_space_score": 55,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 10,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 60
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 50
+        },
+        {
+          "model": "Grok 4",
+          "score": 58
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 55
+        }
+      ],
+      "main_competitors": [
+        "Billo",
+        "Insense",
+        "Trend.io",
+        "Agencje UGC",
+        "Midjourney"
+      ],
+      "gap_type_addressed": "ZA_TRUDNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Subskrypcja na stały dopływ vs jednorazowe zlecenia"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Model subskrypcyjny na wideo, ale niska bariera wejścia dla konkurencji."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Stały dopływ autentycznych wideo bez koordynacji twórców, dla e-commerce."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Subskrypcyjny, przewidywalny dopływ UGC."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "DTC brands, LinkedIn ads do marketing managerów"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Cold mail do marek D2C z darmową próbką wideo."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Subskrypcje poprzez email campaigns do marketing managers."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Direct sales do e-commerce brandów."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_10",
+      "mvp_name": "AI UGC Optimizer",
+      "category": "Marketing",
+      "target_persona": "Small Business Owner",
+      "core_value_prop": "Automatyczne generowanie i optymalizacja autentycznego UGC pod algorytmy SM i ads, bez fake contentu, z gwarancją zasięgów.",
+      "white_space_score": 53,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 23,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 48
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 65
+        },
+        {
+          "model": "Grok 4",
+          "score": 62
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 42
+        }
+      ],
+      "main_competitors": [
+        "Canva",
+        "Jasper",
+        "Copy.ai",
+        "Arcads",
+        "Creatify"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Gwarancja zasięgów zamiast tylko generowania contentu"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Generowanie twarzy i głosu bez konieczności wysyłania produktu do twórcy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Generowanie autentycznego UGC zoptymalizowanego pod algorytmy SM bez fake contentu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Fokus na autentyczność zamiast generycznego AI contentu."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Case studies z ROI, partnerstwa z agencjami social media"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Oferta dla dropshippingu: 'Reklama wideo bez czekania na dostawę z Chin'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Partnerstwa z platformami social media i reklamy na TikToku."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Paid ads do SMB + case studies."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_34",
+      "mvp_name": "BizValidate AI",
+      "category": "Strategia/Biznes",
+      "target_persona": "Founder startupu tech/SaaS",
+      "core_value_prop": "Szybka walidacja pomysłów biznesowych za pomocą AI, bez kodowania, z automatycznym feedbackiem od potencjalnych klientów.",
+      "white_space_score": 53,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 60,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 45
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 50
+        },
+        {
+          "model": "Grok 4",
+          "score": 95
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 35
+        }
+      ],
+      "main_competitors": [
+        "Lean Canvas tools",
+        "SurveyMonkey",
+        "Typeform",
+        "ValidatorAI",
+        "VenturusAI"
+      ],
+      "gap_type_addressed": "ZA_TRUDNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Automatyczny feedback od potencjalnych klientów via AI"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Walidacja pomysłów to często 'zabawka', niska skłonność do płacenia."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Szybka walidacja pomysłów biznesowych z AI feedbackiem od potencjalnych klientów bez kodowania."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Automatyczny feedback od rynku."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Startup communities, Product Hunt launch"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Product Hunt i grupy dla indie hackerów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Darmowe basic plany na startup forums jak Product Hunt."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Indie hacker communities."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_2",
+      "mvp_name": "ScrapBot Builder",
+      "category": "Automatyzacja",
+      "target_persona": "Freelance Automator",
+      "core_value_prop": "Proste narzędzie no-code do budowania botów scrapingowych i monitorujących, z automatycznym obejściem CAPTCHA i tanim hostingiem offline.",
+      "white_space_score": 52,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 20,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 55
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 45
+        },
+        {
+          "model": "Grok 4",
+          "score": 65
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 45
+        }
+      ],
+      "main_competitors": [
+        "Apify",
+        "Octoparse",
+        "ParseHub",
+        "Browse AI",
+        "n8n"
+      ],
+      "gap_type_addressed": "ZA_TRUDNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "No-code z wbudowanym CAPTCHA bypass i tanim hostingiem w jednym"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Hosting offline w cenie i gotowe obejścia Captcha dla nietechnicznych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "No-code budowa botów scrapingowych z automatycznym obejściem CAPTCHA i tanim hostingiem offline."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "No-code scraping z wbudowanym obejściem CAPTCHA i tanim hostingiem."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Społeczności automatyzacji (n8n, Make), content marketing o scrapingu"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Tutoriale na YouTube: 'Jak pobrać ceny konkurencji do Excela'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Reklamuj na Reddit i forach dla freelancerów automatyzujących zadania."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Content marketing i społeczności automatorów/no-code."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_28",
+      "mvp_name": "TrackTruth - Unified Attribution Dashboard",
+      "category": "Analityka/BI",
+      "target_persona": "E-commerce Owner (Shopify/WooCommerce)",
+      "core_value_prop": "Jeden dashboard pokazujący prawdziwy ROI każdej kampanii - koniec z rozbieżnościami między Shopify, Meta i Google. Setup w 10 minut bez developera.",
+      "white_space_score": 52,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 28,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 55
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 45
+        },
+        {
+          "model": "Grok 4",
+          "score": 70
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 42
+        }
+      ],
+      "main_competitors": [
+        "Triple Whale",
+        "Northbeam",
+        "Rockerbox",
+        "Hyros",
+        "Google Analytics"
+      ],
+      "gap_type_addressed": "FRAGMENTACJA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Setup w 10 minut bez developera dla małych sklepów"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Tańsza alternatywa dla Triple Whale dla mniejszych sklepów (<$50k GMV)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Jeden dashboard eliminujący rozbieżności między platformami jak Shopify i Meta, z setupem w 10 minut."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Prostszy setup bez developera."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Shopify app store, e-commerce podcasts, FB ads groups"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Content: 'Dlaczego GA4 kłamie o Twoim ROAS'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Integracje z Shopify App Store i darmowe triale."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Shopify App Store."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_29",
+      "mvp_name": "AgencyFlow: Automated Client Reporting & Attribution",
+      "category": "Analityka/BI",
+      "target_persona": "Zestresowany Marketer Agencyjny",
+      "core_value_prop": "Połącz wszystkie konta reklamowe klienta w 3 minuty i wygeneruj raport, który udowadnia Twoje ROI, bez dotykania Excela.",
+      "white_space_score": 49,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 30,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 52
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 35
+        },
+        {
+          "model": "Grok 4",
+          "score": 65
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 48
+        }
+      ],
+      "main_competitors": [
+        "AgencyAnalytics",
+        "Whatagraph",
+        "DashThis",
+        "Looker Studio",
+        "Swydo"
+      ],
+      "gap_type_addressed": "ZA_WOLNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "3-minutowy setup vs godziny konfiguracji"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Raportowanie to rozwiązany problem, ciężko o innowację."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Automatyczne raporty ROI z połączeniem kont w 3 minuty, bez Excela dla agencji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Raporty ROI bez Excela."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Agency owner communities, partnerstwa z narzędziami ads"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Tylko jeśli raporty są ultra-proste i 'klientoodporne'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Targetuj agencje marketingowe poprzez LinkedIn outreach."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Agencje performance marketingowe."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_18",
+      "mvp_name": "AutoPrice AI",
+      "category": "E-commerce",
+      "target_persona": "Średni Sprzedawca Marketplace",
+      "core_value_prop": "Automatyczna aktualizacja cen wielowalutowych i inwentarza na wielu platformach, oszczędzająca godziny manualnej pracy i zapobiegająca stratom sprzedaży.",
+      "white_space_score": 48,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 22,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 55
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 45
+        },
+        {
+          "model": "Grok 4",
+          "score": 60
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 38
+        }
+      ],
+      "main_competitors": [
+        "Prisync",
+        "Competera",
+        "BaseLinker",
+        "Dealavo",
+        "Shopify"
+      ],
+      "gap_type_addressed": "ZA_WOLNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "AI-driven pricing zamiast rule-based dla małych sprzedawców"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Kolejny repricer, trudny rynek bez unikalnego algorytmu."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Automatyczna aktualizacja cen i inwentarza na wielu platformach, zapobiegająca stratom sprzedaży."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Niższa cena dla małych sprzedawców."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Allegro/Amazon seller communities, porównanie kosztów vs ręczna praca"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Walka ceną z drogimi rozwiązaniami enterprise."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Reklamy targetowane na sprzedawców na Etsy i eBay."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Paid ads + freemium."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_22",
+      "mvp_name": "AI Content Forge",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "Marketing Manager w E-commerce",
+      "core_value_prop": "Automatyczna generacja i edycja wizualów produktowych z zachowaniem realizmu i spójności, redukująca czas produkcji o 80%.",
+      "white_space_score": 48,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 22,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 50
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 40
+        },
+        {
+          "model": "Grok 4",
+          "score": 62
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 45
+        }
+      ],
+      "main_competitors": [
+        "Midjourney",
+        "DALL-E",
+        "Canva AI",
+        "Flair.ai",
+        "Pebblely"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Spójność wizualna produktów między generowaniami"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Automatyzacja zdjęć produktowych - rynek szybko nasycany przez gigantów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Automatyczna generacja wizualów produktowych z realizmem, redukująca czas o 80%."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Spójność i realizm wizualów produktowych."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "E-commerce photography groups, porównanie kosztów vs fotograf"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wtyczka do Shopify/WooCommerce generująca zdjęcia z poziomu panelu."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Integracje z Shopify i reklamy dla e-commerce managerów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "E-commerce SaaS integrations."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_31",
+      "mvp_name": "TrueROI",
+      "category": "Analityka/BI",
+      "target_persona": "Właściciel e‑commerce / Marketing Manager",
+      "core_value_prop": "Jedno miejsce, które pokazuje prawdziwy zysk per kanał – bez bullshitowych atrybucji.",
+      "white_space_score": 46,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 15,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 53
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 40
+        },
+        {
+          "model": "Grok 4",
+          "score": 55
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 40
+        }
+      ],
+      "main_competitors": [
+        "Triple Whale",
+        "Polar Analytics",
+        "Lifetimely",
+        "ProfitWell",
+        "Google Analytics"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Prawdziwy zysk per kanał zamiast revenue attribution"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Kolejny dashboard analityczny."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Prawdziwy zysk per kanał bez bullshitowych atrybucji w jednym miejscu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Brutalnie uproszczony widok zysku."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "E-commerce CFO/finance communities, profit-focused messaging"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Skupienie na edukacji o błędach atrybucji."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Subskrypcje tiered dla e-commerce owners poprzez email newsletters."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Founder-led marketing."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_3",
+      "mvp_name": "AutoFlow OS",
+      "category": "Automatyzacja",
+      "target_persona": "Operacyjny manager w SMB",
+      "core_value_prop": "Zamień chaos PDF/Excel/mail w stabilny, automatyczny proces bez kodowania",
+      "white_space_score": 45,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 20,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 45
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 35
+        },
+        {
+          "model": "Grok 4",
+          "score": 55
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 50
+        }
+      ],
+      "main_competitors": [
+        "Make",
+        "Zapier",
+        "n8n",
+        "Monday.com",
+        "ClickUp"
+      ],
+      "gap_type_addressed": "FRAGMENTACJA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Specjalizacja w PDF/Excel/mail workflow zamiast uniwersalności"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Próba bycia systemem operacyjnym dla SMB, trudne do obrony przed gigantami."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Przekształcanie chaosu z PDF/Excel/mail w stabilne procesy bez kodowania, skierowane na SMB."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Skupienie na PDF/Excel/mail zamiast abstrakcyjnych flow."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "LinkedIn outreach do operations managerów w SMB, webinary o automatyzacji dokumentów"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Niszowe wdrożenia dla konkretnej branży (np. logistyka) zamiast ogólnego OS."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Oferuj darmowe webinary dla managerów operacyjnych w małych firmach."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Sprzedaż consultative do SMB przez LinkedIn i outbound."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_30",
+      "mvp_name": "DataForge AI",
+      "category": "Analityka/BI",
+      "target_persona": "E-commerce Manager",
+      "core_value_prop": "Automatyczna integracja i atrybucja danych z wielu platform (e.g. Meta, Google, Shopify) z AI walidacją, eliminująca rozbieżności i oszczędzająca godziny na raportach.",
+      "white_space_score": 45,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 30,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 50
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 30
+        },
+        {
+          "model": "Grok 4",
+          "score": 60
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 45
+        }
+      ],
+      "main_competitors": [
+        "Supermetrics",
+        "Funnel.io",
+        "Fivetran",
+        "Google Analytics",
+        "Excel/Google Sheets"
+      ],
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "AI walidacja eliminująca rozbieżności danych"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Rynek konektorów danych jest zdominowany przez dużych graczy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Automatyczna integracja danych z AI walidacją, eliminująca rozbieżności w raportach."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "AI walidująca dane zamiast surowych integracji."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Data analytics communities, content o 'data discrepancies'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Nisza: konektory do polskich marketplace (Allegro, Erli) dla globalnych narzędzi."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Reklamy na forach e-commerce i integracje z Meta Ads."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "E-commerce conferences + content."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_11",
+      "mvp_name": "Marketing Copilot",
+      "category": "Marketing",
+      "target_persona": "Właściciel MŚP i founder techniczny",
+      "core_value_prop": "Jedno narzędzie, które mówi co robić w marketingu, robi to razem z Tobą i pokazuje czy to działa.",
+      "white_space_score": 44,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 15,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 42
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 50
+        },
+        {
+          "model": "Grok 4",
+          "score": 50
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 35
+        }
+      ],
+      "main_competitors": [
+        "HubSpot",
+        "Semrush",
+        "ChatGPT",
+        "Jasper",
+        "HubSpot AI"
+      ],
+      "gap_type_addressed": "ZA_TRUDNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Execution + strategy w jednym vs tylko insights lub tylko narzędzia"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Agregacja strategii i egzekucji w jednym, ale rynek 'AI Copilotów' jest przesycony."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Jedno narzędzie integrujące planowanie, wykonanie i analizę marketingu z AI wsparciem."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Jedno narzędzie zamiast stacku marketingowego."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Webinary 'marketing dla founderów technicznych', LinkedIn ads"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Skupienie na jednej wąskiej niszy (np. Copilot dla salonów beauty)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Darmowe triale dla właścicieli MŚP poprzez email marketing."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Inbound marketing + freemium."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_19",
+      "mvp_name": "EcomOps OS",
+      "category": "E-commerce",
+      "target_persona": "Operator e-commerce / Właściciel SMB",
+      "core_value_prop": "Jedno centrum dowodzenia dla automatyzacji, kontroli i ochrony sprzedaży multi-channel.",
+      "white_space_score": 43,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 22,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 48
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 30
+        },
+        {
+          "model": "Grok 4",
+          "score": 52
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 45
+        }
+      ],
+      "main_competitors": [
+        "BaseLinker",
+        "Sellasist",
+        "Linnworks",
+        "Lifetimo",
+        "Metapic"
+      ],
+      "gap_type_addressed": "FRAGMENTACJA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Centrum dowodzenia z ochroną przed fraud i automatyzacją w jednym"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Zbyt ogólna propozycja wartości ('centrum dowodzenia')."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Jedno centrum dowodzenia dla multi-channel e-commerce z automatyzacją i ochroną."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Jedno centrum zamiast wielu narzędzi."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Webinary o operacjach e-commerce, partnerstwa z księgowymi"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Pivot w stronę dashboardu finansowego (profitability)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Darmowe onboarding dla właścicieli SMB poprzez YouTube tutorials."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Founder-led sales do SMB."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_14",
+      "mvp_name": "IntegraEase AI Connector",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Właściciel małego e-commerce",
+      "core_value_prop": "Bez-kodowa platforma do szybkiej, stabilnej integracji e-commerce z marketplace'ami i AI, eliminująca błędy synchronizacji i limity API.",
+      "white_space_score": 41,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 38,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 45
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 20
+        },
+        {
+          "model": "Grok 4",
+          "score": 58
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 48
+        }
+      ],
+      "main_competitors": [
+        "Make",
+        "Zapier",
+        "BaseLinker",
+        "n8n",
+        "Make (Integromat)"
+      ],
+      "gap_type_addressed": "ZA_TRUDNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "AI-powered troubleshooting błędów synchronizacji"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Kolejny iPaaS, bardzo trudno przebić się przez Make/Zapier bez unikalnych integracji."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Bez-kodowa integracja e-commerce z marketplace'ami i AI, eliminująca błędy synchronizacji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Prostsze integracje dla mikro e-commerce."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Content marketing o problemach integracji e-commerce"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Tylko jeśli obsługuje polskie API (Allegro, InPost) lepiej niż giganci."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Reklamy na platformach e-commerce jak WooCommerce forums."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Marketplace app stores (Shopify, Woo)."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_38",
+      "mvp_name": "ProjectFlow AI",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "Agency Owner",
+      "core_value_prop": "Automatyczne centralizowanie i priorytetyzacja zadań w chaotycznych workflow, redukując wypalenie o 50% poprzez AI bez inwazyjnych botów.",
+      "white_space_score": 41,
+      "classification": "RED_OCEAN",
+      "consensus_spread": 35,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 42
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 25
+        },
+        {
+          "model": "Grok 4",
+          "score": 60
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 45
+        }
+      ],
+      "main_competitors": [
+        "Asana",
+        "Monday.com",
+        "ClickUp",
+        "Motion",
+        "Notion"
+      ],
+      "gap_type_addressed": "ZA_TRUDNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "AI priorytetyzacja bez inwazyjnych botów"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Rynek PM tools jest przesycony, AI to teraz standardowa funkcja, nie wyróżnik."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Automatyczna priorytetyzacja zadań w chaotycznych workflow z AI, redukująca wypalenie."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Mniej inwazyjna automatyzacja zadań."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Agency communities, burnout prevention angle"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Nie wchodzić, chyba że dla ultra-wąskiej niszy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Darmowe dla małych zespołów na freelance platforms."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Freemium + content."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_39",
+      "mvp_name": "FlowLess",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "Właściciel agencji i solopreneur",
+      "core_value_prop": "Jedno lekkie miejsce do ogarnięcia projektów bez konfiguracji.",
+      "white_space_score": 33,
+      "classification": "BLOODY_OCEAN",
+      "consensus_spread": 40,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 38
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 15
+        },
+        {
+          "model": "Grok 4",
+          "score": 55
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 30
+        }
+      ],
+      "main_competitors": [
+        "Notion",
+        "Trello",
+        "Todoist",
+        "Basecamp",
+        "HubSpot"
+      ],
+      "gap_type_addressed": "ZA_TRUDNE",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Zero konfiguracji vs skomplikowane setup innych narzędzi"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Prostota to za mało, by wygrać z darmowymi planami gigantów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Lekkie narzędzie do zarządzania projektami bez konfiguracji dla agencji i solopreneurów."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Zero konfiguracji, ultra-prostota."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Solopreneur communities, 'anti-Notion' positioning"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak sensownej strategii."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Subskrypcje poprzez content marketing na blogach PM."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Product Hunt + SEO."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_4",
+      "mvp_name": "Brak rekomendacji",
+      "category": "Wdrożenia/Integracje",
+      "target_persona": "brak danych",
+      "core_value_prop": "Nie można określić bez danych wejściowych",
+      "white_space_score": 0,
+      "classification": "BLOODY_OCEAN",
+      "consensus_spread": 0,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 0
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 0
+        },
+        {
+          "model": "Grok 4",
+          "score": 0
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 0
+        }
+      ],
+      "main_competitors": [],
+      "gap_type_addressed": "BRAK_ROZWIAZANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Brak danych do oceny"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak danych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Brak zdefiniowanego produktu, co uniemożliwia wyróżnienie na rynku."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Brak danych."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Brak danych do oceny"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak danych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Brak strategii ze względu na brak produktu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Brak."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_5",
+      "mvp_name": "N/A",
+      "category": "Wdrożenia/Integracje",
+      "target_persona": "N/A",
+      "core_value_prop": "Brak danych do określenia propozycji wartości",
+      "white_space_score": 0,
+      "classification": "BLOODY_OCEAN",
+      "consensus_spread": 0,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 0
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 0
+        },
+        {
+          "model": "Grok 4",
+          "score": 0
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 0
+        }
+      ],
+      "main_competitors": [],
+      "gap_type_addressed": "BRAK_ROZWIAZANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Brak danych do oceny"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak danych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Brak danych do określenia wyróżnika."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Brak danych."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Brak danych do oceny"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak danych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Brak strategii ze względu na brak produktu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Brak."
+        }
+      ]
+    },
+    {
+      "mvp_id": "mvp_6",
+      "mvp_name": "Brak rekomendacji",
+      "category": "Wdrożenia/Integracje",
+      "target_persona": "Brak",
+      "core_value_prop": "Brak danych do analizy",
+      "white_space_score": 0,
+      "classification": "BLOODY_OCEAN",
+      "consensus_spread": 0,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 0
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 0
+        },
+        {
+          "model": "Grok 4",
+          "score": 0
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 0
+        }
+      ],
+      "main_competitors": [],
+      "gap_type_addressed": "BRAK_ROZWIAZANIA",
+      "differentiations": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Brak danych do oceny"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak danych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Brak danych do analizy wyróżnika."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Brak danych."
+        }
+      ],
+      "go_to_market_hints": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Brak danych do oceny"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak danych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Brak strategii ze względu na brak produktu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Brak."
+        }
+      ]
+    }
+  ]
+}

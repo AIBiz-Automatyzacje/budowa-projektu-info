@@ -1,0 +1,1718 @@
+{
+  "meta": {
+    "generated": "2026-01-05T10:56:04.467Z",
+    "step": "3.2 Pain Priority Score (Multi-Model)",
+    "models_used": [
+      "anthropic/claude-opus-4.5",
+      "google/gemini-3-pro-preview",
+      "x-ai/grok-4",
+      "openai/gpt-5.2-chat"
+    ],
+    "models_count": 4,
+    "total_categories": 23,
+    "source": "aggregates.json"
+  },
+  "global_metrics": {
+    "avg_intensywnosc": 3.06,
+    "avg_sygnal_zakupowy": 2.29
+  },
+  "rankings": [
+    {
+      "kategoria": "Zlecenia/Freelance",
+      "consensus_pps": 87,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 89
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 86
+        },
+        {
+          "model": "Grok 4",
+          "score": 85
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 88
+        }
+      ],
+      "score_spread": 4,
+      "avg_score": 87,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Freelancerzy desperacko szukają stabilnych źródeł zleceń i klientów - to problem egzystencjalny dla ich biznesu"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "To nie jest miejsce na dyskusje o problemach, to rynek wymiany usług. Popyt spotyka podaż."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Ludzie desperacko szukają zleceń lub freelancerów, co wskazuje na ból związany z niestabilnością dochodów i potrzebą szybkich rozwiązań."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Freelancerzy desperacko szukają zleceń i stabilności dochodów."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Najwyższy sygnał zakupowy (3.2) w całym datasecie - ludzie aktywnie szukają i są gotowi płacić za rozwiązania. Mimo niższej intensywności (2.3), sam fakt szukania zleceń oznacza bezpośrednią gotowość do transakcji. 122 problemy i 21 branż pokazują uniwersalność."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Absolutnie najwyższy sygnał zakupowy w zestawieniu (3.20). Mimo niskiej intensywności emocjonalnej, jest to kategoria czysto transakcyjna – tu pieniądze zmieniają ręce najszybciej."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Najwyższy sygnał zakupowy (3.2) wskazuje na silną gotowość do płacenia za rozwiązania, co jest kluczowym czynnikiem, mimo niższej intensywności (2.3) i ograniczonej platform_coverage (0.15). Częstotliwość (122) i cross-branża (21) sugerują uniwersalność, ale niska coverage nieco osłabia walidację. Holistycznie, to problem, za który ludzie aktywnie szukają płatnych usług."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Najwyższy sygnał zakupowy w całym zbiorze pokazuje realną gotowość do płacenia. Problem częsty, ale bardziej skoncentrowany na FB i mniej uniwersalny branżowo."
+        }
+      ],
+      "red_flags": [
+        "Niska cross-platform coverage (0.15) - głównie FB, może być specyfika grupy",
+        "Konkurencja z Useme, Fiverr, Upwork",
+        "Niska lojalność użytkowników (platform hopping)",
+        "Presja cenowa ze strony taniej siły roboczej"
+      ],
+      "opportunities": [
+        "Platforma matchująca zleceniodawców z freelancerami w polskich niszach",
+        "Narzędzie do automatyzacji pozyskiwania leadów dla freelancerów",
+        "Niszowe marketplace'y dla ekspertów",
+        "Usługi escrow i zabezpieczania płatności"
+      ],
+      "rank": 1
+    },
+    {
+      "kategoria": "Automatyzacja",
+      "consensus_pps": 87,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 86
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 94
+        },
+        {
+          "model": "Grok 4",
+          "score": 82
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 92
+        }
+      ],
+      "score_spread": 12,
+      "avg_score": 88.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy wiedzą, że powinny automatyzować, ale nie wiedzą JAK - szukają konkretnych rozwiązań i są gotowe płacić"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Firmy i specjaliści desperacko szukają sposobów na oszczędność czasu i redukcję kosztów operacyjnych poprzez technologię."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Użytkownicy frustrują się ręcznymi procesami i szukają narzędzi do automatyzacji, co boli w codziennej efektywności."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Ludzi boli ręczna, czasochłonna praca i chaos procesowy – chcą realnie oszczędzać czas i pieniądze."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Drugi najwyższy sygnał zakupowy (2.94) plus niemal idealna cross-platform coverage (0.98) - problem walidowany na obu platformach. Intensywność powyżej średniej (3.02). Firmy aktywnie szukają sposobów na oszczędność czasu i kosztów."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Kategoria 'Gwiazda'. Bardzo wysoki sygnał zakupowy (2.94) połączony z niemal idealnym pokryciem platform (0.98). Użytkownicy nie tylko narzekają, ale aktywnie szukają rozwiązań, za które chcą płacić."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoki sygnał zakupowy (2.94) i doskonała platform_coverage (0.98) wskazują na gotowość do inwestycji w rozwiązania, wsparte solidną intensywnością (3.02) i cross-branżą (21). Częstotliwość (125) jest umiarkowana, ale uniwersalność problemu czyni go priorytetowym. Holistycznie, to bolesny, powtarzalny problem z silnym potencjałem monetyzacji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Bardzo wysoki sygnał zakupowy i dobra intensywność wskazują, że użytkownicy aktywnie szukają i kupują rozwiązania. Prawie pełne pokrycie cross-platform i szeroki zakres branż wzmacniają walidację rynkową."
+        }
+      ],
+      "red_flags": [
+        "Średnia liczba problemów (125) - może być niszowe",
+        "Wymaga technicznej wiedzy do wdrożenia rozwiązań",
+        "Wysoka konkurencja narzędzi no-code",
+        "Ryzyko 'słomianego zapału' przy wdrażaniu"
+      ],
+      "opportunities": [
+        "Gotowe szablony automatyzacji dla polskich firm (Zapier/Make po polsku)",
+        "Usługi wdrożeniowe automatyzacji dla MŚP",
+        "Agencje automatyzacji procesów biznesowych",
+        "Dedykowane skrypty/boty integrujące niszowe SaaS"
+      ],
+      "rank": 2
+    },
+    {
+      "kategoria": "Marketing",
+      "consensus_pps": 82,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 77
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 89
+        },
+        {
+          "model": "Grok 4",
+          "score": 80
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 85
+        }
+      ],
+      "score_spread": 12,
+      "avg_score": 82.8,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy nie wiedzą jak skutecznie dotrzeć do klientów w erze AI i zmieniających się algorytmów - przepalają budżety"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Pozyskiwanie klientów to ból nr 1, który nigdy nie znika, a firmy są przyzwyczajone do wydawania tu pieniędzy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Ludzie zmagają się z niską efektywnością kampanii i brakiem leadów, co bezpośrednio wpływa na przychody."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Ludzie nie wiedzą, co realnie działa i gdzie przepalają budżet."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoki sygnał zakupowy (2.63), duża skala (336 problemów), świetna cross-platform coverage (0.64) i aż 30 branż. Marketing to obszar, gdzie firmy MUSZĄ wydawać pieniądze. Intensywność 3.36 powyżej średniej."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potężny wolumen (336) przy wysokiej intensywności (3.36) i silnym sygnale zakupowym (2.63). To 'wiecznie zielony' problem biznesowy, gdzie budżety są zawsze dostępne."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Dobry sygnał zakupowy (2.63) i wysoka intensywność (3.36) łączą się z dużą częstotliwością (336) i cross-branżą (30), co wskazuje na powszechny ból gotowy do monetyzacji. Platform_coverage (0.64) zapewnia walidację z obu źródeł. Holistycznie, to uniwersalny problem, za który firmy chętnie płacą, choć sygnał nie jest najwyższy."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoka intensywność, dobry sygnał zakupowy i duża obecność na obu platformach. Marketing to stały, powracający ból."
+        }
+      ],
+      "red_flags": [
+        "Bardzo konkurencyjny rynek rozwiązań",
+        "Szybko zmieniające się trendy wymagają ciągłej adaptacji",
+        "Przesycenie rynku agencjami",
+        "Rosnące koszty reklam (CPM/CPC)"
+      ],
+      "opportunities": [
+        "Narzędzia marketingowe dostosowane do polskiego rynku i języka",
+        "Edukacja/consulting w zakresie AI w marketingu",
+        "Performance marketing rozliczany za efekt",
+        "Narzędzia do analityki atrybucji"
+      ],
+      "rank": 3
+    },
+    {
+      "kategoria": "Wdrozenia/Integracje",
+      "consensus_pps": 78,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 82
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 81
+        },
+        {
+          "model": "Grok 4",
+          "score": 72
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 81
+        }
+      ],
+      "score_spread": 10,
+      "avg_score": 79,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy kupiły różne narzędzia, ale nie potrafią ich połączyć - płacą za systemy, które nie współpracują"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak komunikacji między systemami to 'wąskie gardło' hamujące rozwój firm."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Firmy frustrują się problemami z integracją systemów, co powoduje przestoje i straty."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Systemy nie gadają ze sobą, a wdrożenia się ciągną."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoki sygnał zakupowy (2.79) i dobra cross-platform coverage (0.59). Firmy mają systemy, które nie gadają ze sobą - to kosztuje ich pieniądze i czas. Intensywność 3.04 pokazuje realny ból."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoki sygnał zakupowy (2.79) i dobra intensywność. Problemy techniczne blokują biznes, więc firmy płacą za ich szybkie usunięcie."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoki sygnał zakupowy (2.79) i platform_coverage (0.59) wspierają gotowość do płacenia, z intensywnością (3.04) i cross-branżą (18). Częstotliwość (102) jest umiarkowana, ale problem jest technicznie bolesny. Holistycznie, to obszar z potencjałem, choć nie najwyższa skala."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoki sygnał zakupowy i dobra intensywność wskazują na realne projekty budżetowe. Problem często blokuje rozwój firm."
+        }
+      ],
+      "red_flags": [
+        "Mniejsza skala (102 problemy)",
+        "Wymaga głębokiej wiedzy technicznej",
+        "Wymagana wysoka ekspertyza techniczna",
+        "Trudna skalowalność usług"
+      ],
+      "opportunities": [
+        "Usługi integracyjne dla popularnych polskich systemów (Subiekt, Comarch, BaseLinker)",
+        "Gotowe konektory między polskimi a zagranicznymi narzędziami",
+        "Konektory API dla polskich systemów księgowych",
+        "Usługi migracji danych"
+      ],
+      "rank": 4
+    },
+    {
+      "kategoria": "E-commerce",
+      "consensus_pps": 78,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 79
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 83
+        },
+        {
+          "model": "Grok 4",
+          "score": 75
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 80
+        }
+      ],
+      "score_spread": 8,
+      "avg_score": 79.3,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Sprzedawcy online walczą z operacyjnym chaosem - zarządzanie wieloma kanałami, logistyka, obsługa zwrotów"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Właściciele e-commerce traktują wydatki na rozwiązania problemów jako inwestycję w ROI, a nie koszt."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Sprzedawcy online walczą z konwersjami i logistyką, co bezpośrednio wpływa na sprzedaż."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Sklepy nie sprzedają tyle, ile powinny."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoki sygnał zakupowy (2.71) w branży, gdzie ludzie już wydają pieniądze na narzędzia. Cross-platform 0.63 waliduje problem. E-commerce to biznes - każde usprawnienie przekłada się na przychody."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Solidny sygnał zakupowy (2.71) i intensywność powyżej średniej. Branża nastawiona na zysk, więc inwestycja w rozwiązanie problemu zwraca się bezpośrednio."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Dobry sygnał zakupowy (2.71) i platform_coverage (0.63) wskazują na gotowość do inwestycji, z intensywnością (3.15) powyżej średniej i częstotliwością (85). Cross-branża (12) jest niższa, ale problem jest specyficzny i bolesny. Holistycznie, to nisza z wysokim potencjałem monetyzacji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Dobry sygnał zakupowy i umiarkowana intensywność przy jasnym kontekście biznesowym. Problemy są bardzo konkretne i mierzalne."
+        }
+      ],
+      "red_flags": [
+        "Mała skala (85 problemów)",
+        "Tylko 12 branż - może być wąska nisza",
+        "Zależność od platform (Allegro/Amazon)",
+        "Wysoki próg wejścia technologicznego"
+      ],
+      "opportunities": [
+        "Narzędzia do zarządzania sprzedażą multichannel dla polskiego rynku",
+        "Automatyzacja obsługi posprzedażowej",
+        "Optymalizacja konwersji (CRO)",
+        "Logistyka i fulfillment dla małych sklepów"
+      ],
+      "rank": 5
+    },
+    {
+      "kategoria": "Content/Tworzenie tresci",
+      "consensus_pps": 77,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 75
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 75
+        },
+        {
+          "model": "Grok 4",
+          "score": 78
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 86
+        }
+      ],
+      "score_spread": 11,
+      "avg_score": 78.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy wiedzą, że potrzebują contentu, ale nie mają czasu/umiejętności - szukają sposobów na skalowanie produkcji"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Presja na ciągłą publikację (social media) tworzy nieustanne zapotrzebowanie na twórców i narzędzia."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Twórcy treści borykają się z brakiem pomysłów i efektywnością produkcji, co hamuje wzrost online."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Twórcy i firmy nie nadążają z produkcją jakościowego contentu, który sprzedaje."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Bardzo wysoki sygnał zakupowy (2.58) i najlepsza cross-platform coverage (0.87) - problem uniwersalnie walidowany. 204 problemy w 24 branżach. Każda firma potrzebuje contentu."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Dobry sygnał zakupowy (2.58) i bardzo wysokie pokrycie platform (0.87). Popyt jest ogromny, ale rynek jest zatłoczony."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Solidny sygnał zakupowy (2.58) i wysoka platform_coverage (0.87) sugerują gotowość do płacenia, wsparte umiarkowaną intensywnością (2.93) i cross-branżą (24). Częstotliwość (204) wskazuje na powszechność, czyniąc to atrakcyjnym. Holistycznie, problem jest bolesny i uniwersalny, z potencjałem dla płatnych narzędzi."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Bardzo dobry sygnał zakupowy i solidna intensywność przy świetnym pokryciu cross-platform. Problem dotyczy wielu branż i modeli biznesowych."
+        }
+      ],
+      "red_flags": [
+        "AI (ChatGPT) już częściowo rozwiązuje ten problem",
+        "Jakość vs ilość - trudno się wyróżnić",
+        "Zagrożenie ze strony Generative AI",
+        "Niskie stawki na wejściu"
+      ],
+      "opportunities": [
+        "Narzędzia do tworzenia contentu po polsku z zachowaniem jakości",
+        "Usługi content-as-a-service dla konkretnych branż",
+        "Content wideo (Reels/TikTok) dla B2B",
+        "Narzędzia AI wspierające (nie zastępujące) twórców"
+      ],
+      "rank": 6
+    },
+    {
+      "kategoria": "Strategia/Biznes",
+      "consensus_pps": 75,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 73
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 78
+        },
+        {
+          "model": "Grok 4",
+          "score": 70
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 83
+        }
+      ],
+      "score_spread": 13,
+      "avg_score": 76,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Przedsiębiorcy czują się zagubieni w zmieniającym się rynku - nie wiedzą gdzie inwestować czas i pieniądze"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Samotność decyzyjna liderów napędza popyt na konsultacje i mastermindy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Przedsiębiorcy zmagają się z brakiem jasnej strategii wzrostu, co powoduje stagnację."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Firmy nie wiedzą, w którą stronę iść ani na czym zarabiać."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoki sygnał zakupowy (2.47), bardzo wysoka intensywność (3.29) i najlepsza cross-platform coverage (0.82). 27 branż pokazuje uniwersalność. Firmy szukają kierunku rozwoju."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoka intensywność i bardzo szerokie pokrycie platform (0.82). Przedsiębiorcy szukają 'mapy drogowej' w trudnych czasach."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Umiarkowany sygnał zakupowy (2.47) jest wsparty wysoką intensywnością (3.29), częstotliwością (216) i platform_coverage (0.82), plus cross-branżą (27). Problem jest uniwersalny, ale sygnał poniżej optimum obniża priorytet. Holistycznie, ludzie szukają rozwiązań, ale nie zawsze płacą chętnie."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Dobry balans intensywności i sygnału zakupowego oraz bardzo wysoka walidacja cross-platform. Problemy strategiczne są kosztowne i bolesne."
+        }
+      ],
+      "red_flags": [
+        "Trudno zmierzyć ROI z usług strategicznych",
+        "Duża konkurencja od konsultantów i coachów",
+        "Trudność w weryfikacji jakości usług",
+        "Długi cykl sprzedażowy"
+      ],
+      "opportunities": [
+        "Narzędzia do walidacji pomysłów biznesowych",
+        "Frameworki strategiczne dostosowane do polskich MŚP",
+        "Mentoring biznesowy",
+        "Narzędzia do planowania strategicznego"
+      ],
+      "rank": 7
+    },
+    {
+      "kategoria": "Finanse/Ksiegowosc",
+      "consensus_pps": 74,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 71
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 79
+        },
+        {
+          "model": "Grok 4",
+          "score": 68
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 82
+        }
+      ],
+      "score_spread": 14,
+      "avg_score": 75,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Przedsiębiorcy toną w papierologii i boją się błędów podatkowych - szukają sposobów na uproszczenie"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Strach przed urzędem i chaosem w papierach jest potężnym motywatorem zakupowym."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Ludzie borykają się z skomplikowaną księgowością i podatkami, co grozi karami."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Ludzie boją się błędów, kar i chaosu finansowego."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoka intensywność (3.47) i przyzwoity sygnał zakupowy (2.48). Duża skala (215) i 30 branż - każda firma ma te problemy. Cross-platform 0.6 waliduje. Finanse to obszar, gdzie błędy kosztują."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoka intensywność (3.47) – błędy tu kosztują realne pieniądze i stres. Sygnał zakupowy bliski progu 2.5. Stabilna, niezbędna kategoria."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Umiarkowany sygnał zakupowy (2.48) łączy się z wysoką intensywnością (3.47) i cross-branżą (30), z częstotliwością (215) i platform_coverage (0.6). To bolesny problem, ale sygnał nie jest wybitny. Holistycznie, potencjał monetyzacji istnieje, ale konkurencja jest wysoka."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoka intensywność i solidny sygnał zakupowy – pieniądze zawsze bolą. Szerokie zastosowanie branżowe."
+        }
+      ],
+      "red_flags": [
+        "Silna konkurencja (inFakt, wFirma, księgowi)",
+        "Regulacje wymagają ciągłej aktualizacji",
+        "Bardzo duża zmienność przepisów (Polski Ład itp.)",
+        "Konserwatyzm grupy docelowej"
+      ],
+      "opportunities": [
+        "Automatyzacja księgowości dla specyficznych branż",
+        "Narzędzia do planowania podatkowego dla JDG",
+        "Automatyzacja obiegu faktur",
+        "Doradztwo podatkowe dla branż cyfrowych"
+      ],
+      "rank": 8
+    },
+    {
+      "kategoria": "Zarządzanie Projektami",
+      "consensus_pps": 69,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 68
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 77
+        },
+        {
+          "model": "Grok 4",
+          "score": 60
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 77
+        }
+      ],
+      "score_spread": 17,
+      "avg_score": 70.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Zespoły mają narzędzia, ale nie potrafią ich efektywnie używać - problem jest w procesach, nie w software"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Zespoły zdalne i hybrydowe wymuszają lepsze procesy i narzędzia."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Zespoły borykają się z opóźnieniami projektów i brakiem koordynacji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Projekty się opóźniają i przekraczają budżet."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoka intensywność (3.55) i dobry sygnał zakupowy (2.56). Problem boli, ale rynek jest nasycony narzędziami (Asana, Monday, Trello). 19 branż i cross-platform 0.35."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoka intensywność (3.55) i sygnał zakupowy powyżej 2.5. Chaos w projektach to bezpośrednia strata pieniędzy, firmy są tego świadome."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Sygnał zakupowy (2.56) jest dobry, z wysoką intensywnością (3.55) i cross-branżą (19), ale częstotliwość (93) i platform_coverage (0.35) są umiarkowane. Problem jest bolesny, ale nie na masową skalę. Holistycznie, potencjał istnieje, ale nie wyróżnia się."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoka intensywność i stabilny sygnał zakupowy. Problem znany, ale rynek mocno nasycony."
+        }
+      ],
+      "red_flags": [
+        "Rynek zdominowany przez globalne narzędzia",
+        "Niska cross-platform coverage sugeruje niszowość",
+        "Dominacja gigantów (Jira, Asana)",
+        "Opór pracowników przed nowymi narzędziami"
+      ],
+      "opportunities": [
+        "Szkolenia/wdrożenia narzędzi PM dla polskich zespołów",
+        "Integracje PM z polskimi systemami",
+        "Szkolenia z metodyk zwinnych",
+        "Wtyczki usprawniające popularne narzędzia"
+      ],
+      "rank": 9
+    },
+    {
+      "kategoria": "Analityka/BI",
+      "consensus_pps": 68,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 66
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 76
+        },
+        {
+          "model": "Grok 4",
+          "score": 58
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 78
+        }
+      ],
+      "score_spread": 20,
+      "avg_score": 69.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy zbierają dane, ale nie wyciągają z nich wniosków - decyzje podejmowane są na przeczuciach"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Firmy mają dane, ale nie mają wniosków – płacą za interpretację, nie za same tabelki."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Firmy nie potrafią wyciągać insights z danych, co hamuje decyzje."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Firmy mają dane, ale nie mają decyzji."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoka intensywność (3.55) i dobry sygnał zakupowy (2.55). Firmy wiedzą, że dane są ważne, ale nie potrafią ich wykorzystać. Mniejsza skala (80) i niska cross-platform (0.19)."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoka intensywność (3.55) i dobry sygnał zakupowy. Dane to nowa waluta, a firmy nie potrafią ich czytać."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Dobry sygnał zakupowy (2.55) i wysoka intensywność (3.55), ale niska częstotliwość (80) i platform_coverage (0.19) osłabiają priorytet. Cross-branża (17) jest solidna, ale problem jest niszowy. Holistycznie, to wartościowy obszar, ale nie dla szerokiej grupy."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Dobra intensywność i sygnał zakupowy, ale mniejsza częstotliwość. Ból dotyczy głównie firm bardziej dojrzałych."
+        }
+      ],
+      "red_flags": [
+        "Wymaga zaawansowanych kompetencji technicznych",
+        "Głównie Reddit - może być specyfika IT",
+        "Wysoki próg wejścia kompetencyjnego",
+        "Problemy z jakością danych u klientów"
+      ],
+      "opportunities": [
+        "Dashboardy dla konkretnych branż (e-commerce, SaaS)",
+        "Usługi analityczne as-a-service dla MŚP",
+        "Dashboardy managerskie jako usługa",
+        "Audyty Google Analytics 4"
+      ],
+      "rank": 10
+    },
+    {
+      "kategoria": "DevOps/Infrastruktura",
+      "consensus_pps": 67,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 61
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 74
+        },
+        {
+          "model": "Grok 4",
+          "score": 62
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 76
+        }
+      ],
+      "score_spread": 15,
+      "avg_score": 68.3,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Zespoły IT walczą z kompleksowością infrastruktury - każda awaria to straty"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Stabilność systemu jest niewidoczna, dopóki nie zniknie – wtedy budżet znajduje się natychmiast."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Firmy walczą z niestabilną infrastrukturą, co powoduje awarie i koszty."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Infrastruktura jest droga, niestabilna i trudna w utrzymaniu."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Bardzo wysoka intensywność (3.47) - problem naprawdę boli. Ale sygnał zakupowy 2.41 i niska cross-platform (0.39) - głównie Reddit. To problemy techniczne, które firmy często rozwiązują wewnętrznie."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoka intensywność (3.47) – awaria to katastrofa. Sygnał zakupowy solidny, ale niższy niż w marketingu. Specjalistyczna nisza."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoka intensywność (3.47) i częstotliwość (196) są atutami, ale sygnał zakupowy (2.41) jest umiarkowany, a platform_coverage (0.39) niska. Cross-branża (20) wskazuje na uniwersalność, ale brak walidacji cross-platform obniża score. Holistycznie, to specjalistyczny ból z potencjałem, ale ograniczoną skalą."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoka intensywność, ale umiarkowany sygnał zakupowy. Bardziej techniczna i węższa grupa odbiorców."
+        }
+      ],
+      "red_flags": [
+        "Bardzo techniczny - wąska grupa odbiorców",
+        "Dominacja Reddita sugeruje specyfikę IT",
+        "Wysokie koszty chmury",
+        "Brak specjalistów na rynku"
+      ],
+      "opportunities": [
+        "Managed services dla polskich firm",
+        "Szkolenia DevOps po polsku",
+        "Optymalizacja kosztów AWS/Azure",
+        "Monitoring i observability"
+      ],
+      "rank": 11
+    },
+    {
+      "kategoria": "Programowanie",
+      "consensus_pps": 63,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 59
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 65
+        },
+        {
+          "model": "Grok 4",
+          "score": 65
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 67
+        }
+      ],
+      "score_spread": 8,
+      "avg_score": 64,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Programiści szukają pomocy z konkretnymi problemami technicznymi - ale rzadko płacą za rozwiązania"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Kultura Open Source i StackOverflow obniża skłonność do płacenia za wiedzę."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Programiści frustrują się bugami i brakiem efektywnych narzędzi, co spowalnia projekty."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Kod jest trudny w utrzymaniu i rozwoju."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Duża skala (308) i dobra cross-platform coverage (0.66). Ale sygnał zakupowy 2.32 - programiści wolą darmowe rozwiązania i open source. Intensywność 3.06 na poziomie średniej."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Duży wolumen, ale średnie wskaźniki intensywności i zakupów. Programiści często rozwiązują problemy sami (DIY) zamiast płacić."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Sygnał zakupowy (2.32) jest blisko średniej, ale wysoka częstotliwość (308), intensywność (3.06) i platform_coverage (0.66) z cross-branżą (27) wskazują na powszechność. Problem jest techniczny i bolesny, ale gotowość do płacenia nie jest najwyższa. Holistycznie, to solidny, ale nie topowy priorytet."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Dobra intensywność i sygnał zakupowy, ale problemy często rozwiązywane darmowo lub wewnętrznie."
+        }
+      ],
+      "red_flags": [
+        "Kultura open source - niechęć do płacenia",
+        "Stack Overflow i GitHub już rozwiązują wiele problemów",
+        "Kultura 'zrobię to sam'",
+        "Ogromna ilość darmowej wiedzy"
+      ],
+      "opportunities": [
+        "Kursy programowania po polsku",
+        "Narzędzia AI do code review",
+        "Zaawansowane kursy architektury",
+        "Narzędzia deweloperskie zwiększające produktywność"
+      ],
+      "rank": 12
+    },
+    {
+      "kategoria": "Logistyka",
+      "consensus_pps": 62,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 64
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 71
+        },
+        {
+          "model": "Grok 4",
+          "score": 52
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 70
+        }
+      ],
+      "score_spread": 19,
+      "avg_score": 64.3,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy z fizycznymi produktami walczą z kosztami i czasem dostaw - to bezpośrednio wpływa na marże"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Problemy z łańcuchem dostaw paraliżują sprzedaż, więc presja na rozwiązanie jest ogromna."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Firmy zmagają się z opóźnieniami dostaw i kosztami logistyki."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Opóźnienia i koszty zjadają marżę."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoka intensywność (3.64) i przyzwoity sygnał zakupowy (2.45). Cross-platform 0.57 waliduje. Ale tylko 11 branż i 77 problemów - nisza."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Bardzo wysoka intensywność (3.64), ale sygnał zakupowy nieco poniżej progu 2.5. Problemy są palące, ale rozwiązania często systemowe/trudne."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoka intensywność (3.64) i platform_coverage (0.57), ale umiarkowany sygnał zakupowy (2.45) i niska cross-branża (11) ograniczają uniwersalność. Częstotliwość (77) jest niska. Holistycznie, to nisza z potencjałem, ale nie priorytetowa."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoka intensywność i solidny sygnał zakupowy, ale mniejsza skala problemów. Branża-specyficzne."
+        }
+      ],
+      "red_flags": [
+        "Wąska nisza - tylko firmy z fizycznymi produktami",
+        "Duzi gracze (InPost, DHL) dominują",
+        "Zależność od czynników geopolitycznych",
+        "Niska marżowość branży"
+      ],
+      "opportunities": [
+        "Narzędzia do optymalizacji kosztów wysyłki",
+        "Integracje z polskimi firmami kurierskimi",
+        "Systemy zarządzania magazynem (WMS) dla MŚP",
+        "Optymalizacja ostatniej mili"
+      ],
+      "rank": 13
+    },
+    {
+      "kategoria": "Prawo/Regulacje",
+      "consensus_pps": 60,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 51
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 69
+        },
+        {
+          "model": "Grok 4",
+          "score": 55
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 71
+        }
+      ],
+      "score_spread": 20,
+      "avg_score": 61.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy boją się regulacji (RODO, prawo pracy), ale traktują compliance jako zło konieczne"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Klienci płacą za 'święty spokój' i bezpieczeństwo prawne, ale dopiero gdy muszą."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Ludzie boją się kar za nieprzestrzeganie regulacji, co paraliżuje biznes."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Strach przed karami i niezgodnością z przepisami."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Bardzo wysoka intensywność (3.97) - regulacje naprawdę bolą. Ale sygnał zakupowy tylko 2.1 - firmy wolą ryzykować niż płacić za compliance. Cross-platform 0.48."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Ekstremalnie wysoka intensywność (3.97) – strach i przymus. Niski sygnał zakupowy (2.1) sugeruje, że ludzie szukają darmowych porad zanim zapłacą prawnikowi."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoka intensywność (3.97) wskazuje na ból, ale niski sygnał zakupowy (2.1) sugeruje opór przed płaceniem, mimo częstotliwości (126) i cross-branży (27). Platform_coverage (0.48) jest umiarkowana. Holistycznie, problem jest poważny, ale monetyzacja trudna."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Najwyższa intensywność bólu, ale niższy sygnał zakupowy. Ludzie reagują dopiero, gdy muszą."
+        }
+      ],
+      "red_flags": [
+        "Niski sygnał zakupowy - niechęć do płacenia",
+        "Konkurencja z kancelariami prawnymi",
+        "Wysoka bariera wejścia (uprawnienia)",
+        "Klient unika wydatku do ostatniej chwili"
+      ],
+      "opportunities": [
+        "Narzędzia do automatyzacji compliance",
+        "Szablony dokumentów prawnych dla branż",
+        "Gotowe wzory umów/regulaminów",
+        "Subskrypcyjna opieka prawna dla firm"
+      ],
+      "rank": 14
+    },
+    {
+      "kategoria": "Bezpieczenstwo",
+      "consensus_pps": 57,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 54
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 62
+        },
+        {
+          "model": "Grok 4",
+          "score": 50
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 72
+        }
+      ],
+      "score_spread": 22,
+      "avg_score": 59.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Bezpieczeństwo to problem 'niewidzialny' - firmy nie płacą za prewencję, tylko za naprawę szkód"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Sprzedaż bezpieczeństwa to sprzedaż ubezpieczenia – trudno sprzedać, dopóki nie ma incydentu."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Użytkownicy obawiają się cyberzagrożeń i utraty danych."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Strach przed atakami i wyciekami danych."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Bardzo wysoka intensywność (3.96) - gdy problem uderza, boli mocno. Ale sygnał zakupowy tylko 2.11 i niska cross-platform (0.32). Firmy nie inwestują w bezpieczeństwo, dopóki nie jest za późno."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Bardzo wysoka intensywność (3.96), ale niski sygnał zakupowy (2.11). Bezpieczeństwo jest często traktowane jako kosztowny obowiązek, a nie wartość."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoka intensywność (3.96) wskazuje na ból, ale niski sygnał zakupowy (2.11) i platform_coverage (0.32) osłabiają. Częstotliwość (121) i cross-branża (22) są solidne, ale brak równowagi platform obniża score. Holistycznie, potencjał monetyzacji jest średni."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Bardzo wysoka intensywność, ale umiarkowany sygnał zakupowy. Ludzie boją się, ale odkładają decyzje."
+        }
+      ],
+      "red_flags": [
+        "Reaktywne podejście firm - trudno sprzedać prewencję",
+        "Wymaga wysokich kompetencji technicznych",
+        "Niewidoczność efektów (brak ataku = sukces)",
+        "Skomplikowany proces sprzedażowy"
+      ],
+      "opportunities": [
+        "Audyty bezpieczeństwa dla MŚP",
+        "Ubezpieczenia cyber po polsku",
+        "Audyty bezpieczeństwa dla e-commerce",
+        "Szkolenia phishingowe dla pracowników"
+      ],
+      "rank": 15
+    },
+    {
+      "kategoria": "Obsługa Klienta/CRM",
+      "consensus_pps": 56,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 58
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 55
+        },
+        {
+          "model": "Grok 4",
+          "score": 48
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 73
+        }
+      ],
+      "score_spread": 25,
+      "avg_score": 58.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy tracą klientów przez słabą obsługę, ale traktują CRM jako koszt, nie inwestycję"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Dyskusje dotyczą głównie złych doświadczeń konsumenckich, a nie wyboru oprogramowania."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Firmy tracą klientów przez słabą obsługę i brak personalizacji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Klienci są niezadowoleni, a zespoły przeciążone."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoka intensywność (3.66) ale niski sygnał zakupowy (2.14). Firmy narzekają na obsługę klienta, ale nie są gotowe inwestować. Cross-platform 0.35 i 22 branże."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoka intensywność (3.66) wynika z narzekania na złą obsługę, a nie z chęci zakupu CRM (sygnał 2.14)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoka intensywność (3.66), ale umiarkowany sygnał zakupowy (2.14) i niska platform_coverage (0.35) z częstotliwością (85). Cross-branża (22) jest dobra, ale problem nie wyróżnia się monetyzacją. Holistycznie, to standardowy ból bez silnego pullu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoka intensywność, ale słabszy sygnał zakupowy. Ból jest realny, lecz budżety ograniczone."
+        }
+      ],
+      "red_flags": [
+        "Niski sygnał zakupowy - trudno sprzedać",
+        "Rynek zdominowany przez Salesforce, HubSpot",
+        "Niski budżet na obsługę klienta w PL",
+        "Trudno zmierzyć ROI"
+      ],
+      "opportunities": [
+        "CRM dla polskich MŚP (prostszy, tańszy)",
+        "Automatyzacja obsługi przez chatboty",
+        "Boty obsługowe AI",
+        "Outsourcing wsparcia klienta"
+      ],
+      "rank": 16
+    },
+    {
+      "kategoria": "Narzedzia AI",
+      "consensus_pps": 54,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 56
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 58
+        },
+        {
+          "model": "Grok 4",
+          "score": 40
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 74
+        }
+      ],
+      "score_spread": 34,
+      "avg_score": 57,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Ludzie chcą używać AI, ale nie wiedzą jak - szukają tutoriali, nie produktów"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Ciekawość dominuje nad realną potrzebą biznesową. Rynek jest na etapie edukacji, nie zakupów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Użytkownicy testują AI, ale frustrują się brakiem integracji lub efektywności."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Ludzie nie wiedzą, jak sensownie użyć AI w pracy."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Dobra skala (215) i cross-platform (0.71). Ale sygnał zakupowy tylko 2.09 i intensywność 2.71 poniżej średniej. Ludzie są ciekawi AI, ale nie desperacko potrzebują rozwiązań."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Duży 'hype' (wolumen), ale niska intensywność (2.71) i bardzo niski sygnał zakupowy (2.09). Ludzie testują darmowe wersje, rzadziej kupują."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Umiarkowana intensywność (2.71) i sygnał zakupowy (2.09) poniżej średniej, mimo częstotliwości (215) i platform_coverage (0.71). Cross-branża (22) jest solidna, ale niski sygnał wskazuje na brak gotowości do płacenia. Holistycznie, to trend, ale nie bolesny priorytet."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Dobry sygnał zakupowy, ale niższa intensywność – często ciekawość zamiast bólu. Duża walidacja cross-platform."
+        }
+      ],
+      "red_flags": [
+        "Niski sygnał zakupowy - FOMO, nie realna potrzeba",
+        "ChatGPT i inne darmowe narzędzia dominują",
+        "Szybka komodytyzacja rozwiązań",
+        "Niepewność prawna"
+      ],
+      "opportunities": [
+        "Edukacja AI dla biznesu po polsku",
+        "Specjalizowane narzędzia AI dla konkretnych branż",
+        "Wdrożenia AI w konkretnych procesach firmowych",
+        "Szkolenia z prompt engineeringu"
+      ],
+      "rank": 17
+    },
+    {
+      "kategoria": "HR/Rekrutacja",
+      "consensus_pps": 51,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 48
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 60
+        },
+        {
+          "model": "Grok 4",
+          "score": 42
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 65
+        }
+      ],
+      "score_spread": 23,
+      "avg_score": 53.8,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Firmy IT mają problemy z rekrutacją, ale to może nie przekładać się na szerszy rynek"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Dużo narzekania na procesy rekrutacyjne, ale mało decyzyjności zakupowej po stronie dyskutujących."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Firmy walczą z brakiem talentów i wysokim churnem."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Trudno znaleźć dobrych ludzi."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoka intensywność (3.91) i przyzwoity sygnał zakupowy (2.29). ALE: dramatycznie niska cross-platform coverage (0.07) - prawie tylko Reddit. To może być specyfika IT, nie uniwersalny problem."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoka intensywność (3.91), ale niski sygnał zakupowy i bardzo słabe pokrycie platform (głównie Reddit)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoka intensywność (3.91), ale umiarkowany sygnał zakupowy (2.29) i bardzo niska platform_coverage (0.07) z częstotliwością (109). Cross-branża (24) jest dobra, ale brak walidacji cross-platform obniża. Holistycznie, potencjał jest ograniczony."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoka intensywność, ale umiarkowany sygnał zakupowy i niska obecność na FB. Rynek zależny od koniunktury."
+        }
+      ],
+      "red_flags": [
+        "Prawie zero na FB - brak walidacji cross-platform",
+        "Może być specyfika branży IT",
+        "Rynek pracownika vs pracodawcy (cykliczność)",
+        "Automatyzacja wypierająca rekruterów"
+      ],
+      "opportunities": [
+        "Narzędzia rekrutacyjne dla polskiego IT",
+        "Employer branding dla firm technologicznych",
+        "Narzędzia do screeningu kandydatów",
+        "Employer branding"
+      ],
+      "rank": 18
+    },
+    {
+      "kategoria": "Monetyzacja",
+      "consensus_pps": 50,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 65
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 42
+        },
+        {
+          "model": "Grok 4",
+          "score": 38
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 68
+        }
+      ],
+      "score_spread": 30,
+      "avg_score": 53.3,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Twórcy i przedsiębiorcy mają produkty/usługi, ale nie potrafią ich skutecznie sprzedawać"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Klienci szukają sposobu na zarobienie pieniędzy, a nie na ich wydawanie."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Twórcy szukają sposobów na monetyzację treści, ale brakuje skutecznych modeli."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Twórcy i startupy nie wiedzą, jak zarabiać."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoka intensywność (3.57) - ludzie desperacko szukają sposobów na zarabianie. Ale sygnał zakupowy tylko 2.06 - paradoksalnie ci, co chcą zarabiać, nie chcą płacić za rozwiązania."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wysoka intensywność (chęć zarobku), ale najniższy sygnał zakupowy (2.06). Grupa, która chce zarobić, zazwyczaj nie ma pieniędzy do wydania."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoka intensywność (3.57), ale niski sygnał zakupowy (2.06) i umiarkowana platform_coverage (0.51) z niską częstotliwością (53). Cross-branża (16) jest OK, ale problem jest niszowy. Holistycznie, ludzie chcą zarabiać, ale nie zawsze płacą za rady."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Wysoka intensywność, ale słabszy sygnał zakupowy – więcej eksperymentów niż decyzji."
+        }
+      ],
+      "red_flags": [
+        "Niski sygnał zakupowy - trudna grupa do monetyzacji",
+        "Mała skala (53 problemy)",
+        "Klienci o niskiej wartości (LTV)",
+        "Ryzyko wizerunkowe (kojarzenie z MLM/scam)"
+      ],
+      "opportunities": [
+        "Edukacja w zakresie modeli biznesowych",
+        "Narzędzia do testowania pricing'u",
+        "Modele rev-share",
+        "Platformy afiliacyjne"
+      ],
+      "rank": 19
+    },
+    {
+      "kategoria": "Inne",
+      "consensus_pps": 45,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 62
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 30
+        },
+        {
+          "model": "Grok 4",
+          "score": 45
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 55
+        }
+      ],
+      "score_spread": 32,
+      "avg_score": 48,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Problemy nie pasujące do innych kategorii - mogą kryć nisze lub być zbyt rozproszone"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Brak konkretnego bólu do zaadresowania."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Różnorodne, niespecyficzne problemy, które frustrują, ale nie skupiają się na jednym bólu."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Różne, niespójne bóle."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Wysoka intensywność (3.49) i dobry sygnał zakupowy (2.56), ale kategoria 'Inne' to czerwona flaga - brak jasnej definicji problemu utrudnia budowanie rozwiązania."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Kategoria zbiorcza. Mimo niezłych wskaźników, brak specyfiki uniemożliwia celowanie biznesowe."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wysoka intensywność (3.49) i umiarkowany sygnał zakupowy (2.56), ale kategoria 'Inne' jest zbyt ogólna, z częstotliwością (93) i platform_coverage (0.43). Cross-branża (21) sugeruje różnorodność, ale brak fokus obniża priorytet. Holistycznie, trudne do monetyzacji."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Rozproszone problemy bez jednego silnego wzorca. Trudne do monetyzacji jako całość."
+        }
+      ],
+      "red_flags": [
+        "Brak jasnej definicji - trudno targetować",
+        "Może zawierać szum danych",
+        "Rozmyta grupa docelowa",
+        "Niemożliwe targetowanie"
+      ],
+      "opportunities": [
+        "Wymaga głębszej analizy - mogą być ukryte nisze",
+        "Potencjał na odkrycie nowych kategorii",
+        "Ogólne narzędzia problem-solving",
+        "Komunity wsparcia biznesowego"
+      ],
+      "rank": 20
+    },
+    {
+      "kategoria": "Edukacja",
+      "consensus_pps": 42,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 45
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 45
+        },
+        {
+          "model": "Grok 4",
+          "score": 30
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 63
+        }
+      ],
+      "score_spread": 33,
+      "avg_score": 45.8,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Ludzie szukają kursów i wiedzy, ale edukacja to 'nice to have', nie 'must have'"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Ludzie chcą się uczyć, ale często szukają darmowych materiałów lub zwlekają z decyzją."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Ludzie szukają wiedzy, ale brak motywacji do głębokiego zaangażowania."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Ludzie nie wiedzą, czego i jak się uczyć."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Duża skala (493) i wysoki sygnał zakupowy (2.31). ALE: niska intensywność (2.24) - ludzie chcą się uczyć, ale to nie jest palący problem. Niska cross-platform (0.14)."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Ogromny wolumen, ale niska intensywność (2.24). Edukacja jest często 'nice-to-have'. Sygnał zakupowy przeciętny."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Umiarkowany sygnał zakupowy (2.31) i wysoka częstotliwość (493), ale niska intensywność (2.24) i platform_coverage (0.14) wskazują na brak pilności. Cross-branża (26) jest wysoka, ale problem nie jest bolesny. Holistycznie, ludzie dyskutują, ale niekoniecznie płacą."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Dobry sygnał zakupowy, ale niższa intensywność bólu. Często potrzeba, nie pilny problem."
+        }
+      ],
+      "red_flags": [
+        "Niska intensywność - brak pilności",
+        "Ogromna konkurencja (Udemy, Coursera, YouTube)",
+        "Ogromna konkurencja darmowych treści",
+        "Niski wskaźnik ukończenia kursów"
+      ],
+      "opportunities": [
+        "Kursy specjalistyczne po polsku",
+        "Edukacja praktyczna dla konkretnych zawodów",
+        "Edukacja z gwarancją pracy",
+        "Certyfikowane szkolenia specjalistyczne"
+      ],
+      "rank": 21
+    },
+    {
+      "kategoria": "Bezpieczeństwo",
+      "consensus_pps": 38,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 52
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 25
+        },
+        {
+          "model": "Grok 4",
+          "score": 35
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 50
+        }
+      ],
+      "score_spread": 27,
+      "avg_score": 40.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Poważne problemy bezpieczeństwa, ale bardzo wąska, techniczna grupa odbiorców"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Zbyt mała próba statystyczna."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Użytkownicy obawiają się zagrożeń, ale skupiają się na specyficznych, technicznych aspektach."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Silny strach, ale mała populacja."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Najwyższa intensywność w datasecie (4.38) i przyzwoity sygnał zakupowy (2.54). ALE: tylko Reddit, zero FB, tylko 24 problemy. To nisza techniczna, nie masowy problem."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Duplikat/błąd danych (mała próba 24, tylko Reddit). Mimo wysokiej intensywności, brak skali dyskwalifikuje jako główny cel."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Bardzo wysoka intensywność (4.38), ale niski sygnał zakupowy (2.54) i zerowa platform_coverage (0) z niską częstotliwością (24). Cross-branża (14) jest umiarkowana, ale brak cross-platform czyni to niszowym. Holistycznie, ból jest silny, ale izolowany na Reddit."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Bardzo wysoka intensywność, ale brak cross-platform i niska skala. Wąska grupa odbiorców."
+        }
+      ],
+      "red_flags": [
+        "Brak cross-platform - tylko Reddit",
+        "Bardzo mała skala (24)",
+        "Błąd statystyczny",
+        "Nisza wewnątrz niszy"
+      ],
+      "opportunities": [
+        "Specjalistyczne usługi security dla firm IT",
+        "Szkolenia z cyberbezpieczeństwa",
+        "Specjalistyczne narzędzia bezpieczeństwa dla Reddit community",
+        "Edukacja w cyberbezpieczeństwie"
+      ],
+      "rank": 22
+    },
+    {
+      "kategoria": "Kariera/Rynek Pracy",
+      "consensus_pps": 36,
+      "model_scores": [
+        {
+          "model": "Claude Opus 4.5",
+          "score": 38
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "score": 35
+        },
+        {
+          "model": "Grok 4",
+          "score": 25
+        },
+        {
+          "model": "GPT-5.2",
+          "score": 60
+        }
+      ],
+      "score_spread": 35,
+      "avg_score": 39.5,
+      "insights": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Frustracja rynkiem pracy jest powszechna, ale ludzie oczekują darmowych rozwiązań (LinkedIn, pracuj.pl)"
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Masowe narzekanie na szefów i rynek pracy nie przekłada się na chęć zakupu usług doradczych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Ludzie narzekają na rynek pracy, ale nie szukają aktywnie płatnych rozwiązań."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Ludzie są zagubieni zawodowo."
+        }
+      ],
+      "rationales": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Największa skala (523), ale najniższy sygnał zakupowy (1.27) i niska intensywność (2.49). Ludzie narzekają na rynek pracy, ale nie są gotowi płacić za rozwiązania. Cross-platform tylko 0.19."
+        },
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Największy wolumen, ale tragiczny sygnał zakupowy (1.27) i niska intensywność. To głównie 'wentyl bezpieczeństwa' do narzekania na pracę."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Najwyższa częstotliwość (523), ale bardzo niski sygnał zakupowy (1.27) i intensywność (2.49), plus niska platform_coverage (0.19). Cross-branża (26) jest wysoka, ale brak gotowości do płacenia obniża priorytet. Holistycznie, to powszechny temat dyskusji, ale nie monetyzowalny ból."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Bardzo częsty problem, ale niski sygnał zakupowy. Dużo frustracji, mało płacenia."
+        }
+      ],
+      "red_flags": [
+        "Bardzo niski sygnał zakupowy - ludzie nie płacą",
+        "Darmowe platformy dominują rynek",
+        "Brak budżetu u osób bezrobotnych",
+        "Roszczeniowa postawa użytkowników"
+      ],
+      "opportunities": [
+        "Premium usługi kariery dla specjalistów",
+        "Coaching kariery dla konkretnych branż",
+        "Pisanie CV/LinkedIn (niska marża)",
+        "Coaching kariery dla kadry executive"
+      ],
+      "rank": 23
+    }
+  ],
+  "raw_model_responses": [
+    {
+      "model": "Claude Opus 4.5",
+      "categories_count": 23
+    },
+    {
+      "model": "Gemini 3 Pro",
+      "categories_count": 23
+    },
+    {
+      "model": "Grok 4",
+      "categories_count": 23
+    },
+    {
+      "model": "GPT-5.2",
+      "categories_count": 23
+    }
+  ]
+}
