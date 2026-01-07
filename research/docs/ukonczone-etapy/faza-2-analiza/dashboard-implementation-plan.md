@@ -1,4 +1,8 @@
-# Plan: Dashboard Wizualizacyjny — TOP 20 Okazji Produktowych
+# Plan: Dashboard Wizualizacyjny — TOP 20 Okazji Produktowych ✅ UKOŃCZONY
+
+## Status: UKOŃCZONY (2026-01-07)
+
+Dashboard zbudowany i gotowy do deploy. Pozostaje tylko wdrożenie na Vercel.
 
 ## Cel
 Zbudować interaktywny dashboard pokazujący podróż od 4003 problemów do TOP 20 okazji produktowych. Dla widzów (~kilkaset osób) śledzących budowę projektu.
@@ -327,11 +331,11 @@ Dla każdego TOP 20 dodaj z innych plików:
 20. [x] `<Phase2Page />` — Faza 2: Analiza
 21. [x] `<Navigation />` — nawigacja między stronami
 
-### Faza E: Polish
-22. [ ] Responsywność (mobile/tablet)
-23. [ ] Animacje (Framer Motion opcjonalnie)
-24. [ ] SEO meta tags
-25. [ ] Deploy na Vercel
+### Faza E: Polish ✅
+22. [x] ~~Responsywność (mobile/tablet)~~ — pominięte (tylko desktop)
+23. [x] Animacje (Framer Motion)
+24. [x] ~~SEO meta tags~~ — pominięte
+25. [ ] Deploy na Vercel — **jedyny pozostały krok**
 
 ---
 
@@ -422,6 +426,145 @@ Slate-700 → Slate-600 → Teal-700 → Teal-600 → Teal-500 → Cyan-500 → 
 
 ---
 
+## Redesign v3: Premium UI/UX (2026-01-07)
+
+### Cel redesignu
+Transformacja z generycznego "AI slop" do wyrafinowanego, production-grade interfejsu z charakterystyczną estetyką.
+
+### 1. Typografia
+
+| Rola | Font | Użycie |
+|------|------|--------|
+| Display | **Clash Display** (Fontshare) | Nagłówki, tytuły sekcji, ranki |
+| Body | **Plus Jakarta Sans** (Google) | Tekst ogólny, opisy, labels |
+| Mono | **JetBrains Mono** (Google) | Liczby, score'y, dane, kod |
+
+```html
+<!-- index.html -->
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+```
+
+### 2. Atmosfera i tło
+
+**Wielowarstwowe tło:**
+- **Gradient mesh:** Radial gradienty (teal/cyan/amber/rose) tworzące atmosferę
+- **Noise overlay:** SVG feTurbulence (3% opacity, mix-blend-mode: overlay)
+- **Grid pattern:** Geometryczna siatka 60×60px (3% opacity teal)
+- **Background attachment:** Fixed dla efektu parallax
+
+```css
+body {
+  background-image:
+    radial-gradient(at 40% 20%, rgba(20, 184, 166, 0.12) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.08) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(245, 158, 11, 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(244, 63, 94, 0.05) 0px, transparent 40%);
+  background-attachment: fixed;
+}
+```
+
+### 3. Glassmorphism
+
+**Dwie klasy efektów szkła:**
+
+```css
+/* Glass podstawowy (nawigacja, tooltips) */
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(71, 85, 105, 0.5);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Glass card (karty produktów, sekcje) */
+.glass-card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(71, 85, 105, 0.4);
+  box-shadow: 0 0 60px -20px rgba(20, 184, 166, 0.15);
+}
+```
+
+### 4. Navigation
+
+**Zmiany:**
+- Glassmorphism zamiast solid bg
+- Większe logo (12×12) z pulsującą ikoną Sparkles
+- Animated underline dla aktywnego linku (layoutId)
+- Entrance animation (slide from top)
+- Font-display dla tytułu, font-mono dla tagline
+
+### 5. ProductCard — Hero Variant
+
+**TOP 3 produkty wyświetlane jako "hero cards":**
+
+| Cecha | Standard Card | Hero Card |
+|-------|---------------|-----------|
+| Rozmiar | 1 kolumna | 1 kolumna (ale większa wysokość) |
+| Border | 0.5px | Animated gradient border |
+| Glow | hover only | Pulsujący (3s cycle) |
+| Rank badge | 10×10 | 14×14 z ikoną (Crown/Zap/Star) |
+| CTA | Text only | Gradient button |
+| Tytuł | text-lg | text-2xl |
+| Score | text-2xl | text-4xl |
+
+**Ikony podium:**
+- #1: Crown (korona)
+- #2: Zap (błyskawica)
+- #3: Star (gwiazda)
+
+### 6. TopGrid — Sekcje
+
+**Podział na dwie sekcje:**
+1. **"Podium TOP 3"** — 3 hero cards w 3-kolumnowym gridzie
+2. **"Pozostałe okazje"** — 17 standardowych kart w 5-kolumnowym gridzie
+
+**Separator:** Gradient line z tekstem "Pozostałe okazje"
+
+### 7. Funnel — Particles Effect
+
+**Nowe elementy:**
+- **Particles:** 20 animowanych cząsteczek płynących przez lejek
+- **Icons:** Każdy etap ma ikonę (Database, Filter, Sparkles, Fingerprint, Trophy)
+- **Glow filter:** SVG feGaussianBlur na ostatnim segmencie (TOP 20)
+- **Highlight edges:** Subtelne białe linie na górnych krawędziach segmentów
+- **Font:** JetBrains Mono dla liczb
+
+### 8. Heatmap — Większe komórki
+
+**Zmiany:**
+- Wysokość komórek: 8→10 (h-10)
+- Wartości widoczne wewnątrz komórek (font-mono)
+- Emoji przy metrykach (🎯⚡🤖📱💰🎪)
+- Pulse animation dla wartości ≥80
+- Glass-card container z headerem
+- TOP 3 wyróżnione kolorem amber w headerze
+
+### 9. HomePage — Hero Header
+
+**Nowy layout:**
+- Badge "Analiza 4 modeli AI" z ikoną Sparkles
+- Gradient text (from-white via-slate-200 to-slate-400)
+- Kolorowe liczby w opisie (teal: 4003, sky: 105, amber: 154)
+- Animated scroll indicator (ArrowDown)
+- Sekcje z fade-in on scroll (whileInView)
+
+### 10. Custom Scrollbar
+
+```css
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+```
+
+---
+
 ## Log Implementacji
 
 | Data | Status | Opis |
@@ -436,7 +579,44 @@ Slate-700 → Slate-600 → Teal-700 → Teal-600 → Teal-500 → Cyan-500 → 
 | 2026-01-06 | 🎨 | **Redesign v2:** Dodano karty informacyjne pod lejkiem (źródła danych + modele AI) |
 | 2026-01-06 | 🎨 | **Redesign v2:** Nowe etykiety lejka: Problemy źródłowe → Zwalidowane → Okazje z 4 modeli AI → Unikalne pomysły → TOP 20 |
 | 2026-01-06 | 🎨 | **Redesign v2:** Zaktualizowane kolory w: Navigation, ProductCard, ProductModal, Heatmap, BubbleChart |
+| 2026-01-07 | ✨ | **Animacje Framer Motion:** Funnel (liczniki, segmenty), TopGrid (staggered), ProductCard (hover, score bar), ProductModal (AnimatePresence), Heatmap (row/cell stagger), BubbleChart (legend, chart entrance) |
+| 2026-01-07 | 🎨 | **Redesign v3:** Typografia premium (Clash Display + Plus Jakarta Sans + JetBrains Mono) |
+| 2026-01-07 | 🎨 | **Redesign v3:** Atmosfera tła (gradient mesh + noise overlay + grid pattern) |
+| 2026-01-07 | 🎨 | **Redesign v3:** Glassmorphism (.glass + .glass-card) |
+| 2026-01-07 | 🎨 | **Redesign v3:** Navigation z animated underline i entrance animation |
+| 2026-01-07 | 🎨 | **Redesign v3:** Hero cards dla TOP 3 (Crown/Zap/Star icons, gradient borders) |
+| 2026-01-07 | 🎨 | **Redesign v3:** TopGrid podział na "Podium TOP 3" + "Pozostałe okazje" |
+| 2026-01-07 | 🎨 | **Redesign v3:** Funnel particles effect + ikony przy labelach |
+| 2026-01-07 | 🎨 | **Redesign v3:** Heatmap większe komórki z wartościami + emoji icons |
+| 2026-01-07 | 🎨 | **Redesign v3:** HomePage hero header z gradient text + scroll indicator |
+| 2026-01-07 | 🎨 | **Redesign v3:** Custom scrollbar styling |
+| 2026-01-07 | 🔧 | Bugfix: @apply font-display nie działa w Tailwind - zmieniono na czysty CSS |
 
 ---
 
-*Plan: 2026-01-06 | Ostatnia aktualizacja: 2026-01-06*
+## Aktualna struktura komponentów
+
+```
+src/
+├── components/
+│   ├── Funnel.jsx         # SVG lejek z particles + animated counters
+│   ├── TopGrid.jsx        # Hero section (TOP 3) + Regular grid
+│   ├── ProductCard.jsx    # Standard + Hero variant
+│   ├── ProductModal.jsx   # Glassmorphism modal z RadarChart
+│   ├── Heatmap.jsx        # Grid z wartościami + emoji icons
+│   ├── Navigation.jsx     # Glassmorphism nav z animated underline
+│   └── Footer.jsx         # Stopka
+├── pages/
+│   ├── HomePage.jsx       # Hero header + Funnel + Grid + Heatmap
+│   ├── Phase1Page.jsx     # Zbieranie danych
+│   └── Phase2Page.jsx     # Analiza
+├── data/
+│   └── dashboard-data.json # TOP 20 (wygenerowane)
+├── index.css              # Custom design system (glass, animations)
+├── App.jsx                # Router
+└── main.jsx               # Entry point
+```
+
+---
+
+*Plan: 2026-01-06 | Ukończony: 2026-01-07*
