@@ -1,0 +1,27 @@
+{
+  "name": "live",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AIBiz-Automatyzacje/budowa-projektu-info.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AIBiz-Automatyzacje/budowa-projektu-info/issues"
+  },
+  "homepage": "https://github.com/AIBiz-Automatyzacje/budowa-projektu-info#readme",
+  "description": "",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "dotenv": "^17.2.3"
+  }
+}

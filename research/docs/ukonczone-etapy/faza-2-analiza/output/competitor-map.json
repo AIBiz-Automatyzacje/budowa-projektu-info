@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "generated": "2026-01-06",
+    "phase": "Gap Hunter Lite - Phase 2: Competitor Mapping",
+    "total_problems": 370,
+    "rounds_completed": 4,
+    "problems_per_round": {
+      "round_1": "0-99 (100 problems)",
+      "round_2": "100-199 (100 problems)",
+      "round_3": "200-299 (100 problems)",
+      "round_4": "300-369 (70 problems)"
+    }
+  },
+  "competitors": [
+    {
+      "name": "ChatGPT/GPT",
+      "mentions": 95,
+      "weaknesses": [
+        {"issue": "Halucynacje - generuje błędne dane, zmyślone strony, duplikaty", "count": 28, "severity": "HIGH"},
+        {"issue": "Limity i cenzura - odmawia zadań, przerywa sesje", "count": 18, "severity": "HIGH"},
+        {"issue": "Degradacja jakości - slop, powtarzalne porady, płaskie odpowiedzi", "count": 15, "severity": "HIGH"},
+        {"issue": "Przestarzała wiedza - cut-off dates, błędne API", "count": 12, "severity": "MEDIUM"},
+        {"issue": "Sycofantyzm - priorytetyzuje uprzejmość nad prawdę", "count": 8, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "MEDIUM",
+      "displacement_angle": "Specjalizacja w konkretnej domenie z wbudowaną walidacją danych"
+    },
+    {
+      "name": "Cursor",
+      "mentions": 32,
+      "weaknesses": [
+        {"issue": "Ignoruje .cursorrules i instrukcje negatywne", "count": 8, "severity": "HIGH"},
+        {"issue": "Wysokie koszty - droższy niż bezpośrednie API", "count": 7, "severity": "HIGH"},
+        {"issue": "Destrukcyjne działania - nadpisuje .env, git operacje", "count": 6, "severity": "HIGH"},
+        {"issue": "Limity wyczerpują się przy intensywnej pracy", "count": 5, "severity": "HIGH"},
+        {"issue": "Brak auto-routingu do tańszych modeli", "count": 3, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "LOW",
+      "displacement_angle": "Trudny do zastąpienia - dominuje rynek AI coding"
+    },
+    {
+      "name": "Make (Integromat)",
+      "mentions": 28,
+      "weaknesses": [
+        {"issue": "Wysokie koszty przy skali ($5000/rok)", "count": 8, "severity": "HIGH"},
+        {"issue": "Brak natywnych modułów (Text to Binary, profesjonalny PDF)", "count": 6, "severity": "HIGH"},
+        {"issue": "API limits Facebook i innych platform", "count": 5, "severity": "HIGH"},
+        {"issue": "Wymaga zrozumienia OAuth i logiki programistycznej", "count": 4, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "MEDIUM",
+      "displacement_angle": "Prostsze/tańsze rozwiązanie dla konkretnych use-case'ów"
+    },
+    {
+      "name": "Claude/Claude Pro",
+      "mentions": 26,
+      "weaknesses": [
+        {"issue": "Limity PRO wyczerpują się po 2-3h intensywnej pracy", "count": 9, "severity": "HIGH"},
+        {"issue": "Halucynacje XML, błędny kod", "count": 6, "severity": "HIGH"},
+        {"issue": "Przestarzała wiedza o API (Swift, AppKit)", "count": 4, "severity": "MEDIUM"},
+        {"issue": "Droższy niż konkurencja przy dużej skali", "count": 3, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "LOW",
+      "displacement_angle": "Trudny do zastąpienia - najlepsza jakość w kategorii"
+    },
+    {
+      "name": "Shopify",
+      "mentions": 24,
+      "weaknesses": [
+        {"issue": "Zamrożenie środków bez wyjaśnienia, słaby support", "count": 6, "severity": "HIGH"},
+        {"issue": "Ograniczenia Basic - brak pól NIP, płatności NDG", "count": 5, "severity": "HIGH"},
+        {"issue": "Accelerated Checkout odcina Pixel tracking", "count": 4, "severity": "HIGH"},
+        {"issue": "Brak Abandoned Cart trigger (tylko Checkout)", "count": 3, "severity": "HIGH"},
+        {"issue": "Custom Labels niewidoczne w interfejsie", "count": 3, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "LOW",
+      "displacement_angle": "Niszowe rozwiązania dla specyficznych problemów (płatności PL, integracje)"
+    },
+    {
+      "name": "HubSpot",
+      "mentions": 22,
+      "weaknesses": [
+        {"issue": "Zbyt skomplikowany i drogi dla JDG/freelancerów", "count": 8, "severity": "HIGH"},
+        {"issue": "Forms nie pozwalają na Turnstile, reCAPTCHA zawodne na botach", "count": 4, "severity": "HIGH"},
+        {"issue": "Overkill dla prostego śledzenia kontaktów", "count": 4, "severity": "MEDIUM"},
+        {"issue": "Data noise - dashboardy bez actionable insights", "count": 3, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "HIGH",
+      "displacement_angle": "Prosty CRM dla solopreneurów i freelancerów"
+    },
+    {
+      "name": "n8n",
+      "mentions": 18,
+      "weaknesses": [
+        {"issue": "UI zbyt skomplikowane dla klientów końcowych", "count": 5, "severity": "HIGH"},
+        {"issue": "Wymaga wiedzy technicznej", "count": 4, "severity": "MEDIUM"},
+        {"issue": "Domyślne logi niewystarczające, ciche awarie", "count": 4, "severity": "HIGH"},
+        {"issue": "Wymaga przepisywania na Python dla klientów", "count": 3, "severity": "MEDIUM"},
+        {"issue": "SQLite w Docker podatne na uszkodzenia", "count": 2, "severity": "HIGH"}
+      ],
+      "displacement_potential": "MEDIUM",
+      "displacement_angle": "Uproszczony interfejs dla nietechnicznych użytkowników"
+    },
+    {
+      "name": "Midjourney",
+      "mentions": 16,
+      "weaknesses": [
+        {"issue": "Brak spójności postaci między generowaniami", "count": 5, "severity": "MEDIUM"},
+        {"issue": "Edytor nieprzewidywalny przy naprawie dłoni", "count": 4, "severity": "HIGH"},
+        {"issue": "Zbyt wolne do masowego generowania (600+)", "count": 3, "severity": "HIGH"},
+        {"issue": "Wymusza styl artystyczny, zamknięte oczy w grupach", "count": 3, "severity": "MEDIUM"},
+        {"issue": "Filtry NSFW blokują legalne produkty (bielizna)", "count": 2, "severity": "HIGH"}
+      ],
+      "displacement_potential": "MEDIUM",
+      "displacement_angle": "Specjalizacja w spójności postaci lub masowej produkcji"
+    },
+    {
+      "name": "Microsoft Copilot",
+      "mentions": 15,
+      "weaknesses": [
+        {"issue": "Halucynuje w enterprise - błędne dokumenty z SharePoint", "count": 5, "severity": "HIGH"},
+        {"issue": "Brak kontekstu danych firmowych", "count": 4, "severity": "HIGH"},
+        {"issue": "Odmawia współpracy po długiej sesji", "count": 3, "severity": "HIGH"},
+        {"issue": "Reklamy w płatnych planach", "count": 2, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "HIGH",
+      "displacement_angle": "Enterprise AI z lepszym kontekstem firmowym"
+    },
+    {
+      "name": "Google Ads",
+      "mentions": 14,
+      "weaknesses": [
+        {"issue": "Zbyt drogie przy niskim budżecie, słaby ROI", "count": 5, "severity": "HIGH"},
+        {"issue": "Performance Max przyciąga spam/błędne zapytania", "count": 3, "severity": "HIGH"},
+        {"issue": "Rozbieżności GA4 vs Google Ads tracking", "count": 3, "severity": "HIGH"},
+        {"issue": "Brak zaawansowanych narzędzi optymalizacji", "count": 2, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "LOW",
+      "displacement_angle": "Narzędzia do optymalizacji kampanii"
+    },
+    {
+      "name": "Excel/Google Sheets",
+      "mentions": 14,
+      "weaknesses": [
+        {"issue": "Brak walidacji, błędy przy wielu użytkownikach", "count": 5, "severity": "HIGH"},
+        {"issue": "Nieskalowalne przy dużych danych (100+ dostawców)", "count": 4, "severity": "HIGH"},
+        {"issue": "Ręczne procesy czasochłonne (ankiety, raporty)", "count": 4, "severity": "HIGH"},
+        {"issue": "Brak automatyzacji i integracji", "count": 3, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "HIGH",
+      "displacement_angle": "Zautomatyzowane rozwiązania dla konkretnych procesów"
+    },
+    {
+      "name": "Zapier",
+      "mentions": 12,
+      "weaknesses": [
+        {"issue": "Koszty skalują się szybciej niż przychody", "count": 5, "severity": "HIGH"},
+        {"issue": "Dane jako blob, brak struktury", "count": 3, "severity": "MEDIUM"},
+        {"issue": "Boty na webhookach", "count": 2, "severity": "HIGH"}
+      ],
+      "displacement_potential": "MEDIUM",
+      "displacement_angle": "Tańsza alternatywa dla specyficznych workflow"
+    },
+    {
+      "name": "Google Analytics",
+      "mentions": 11,
+      "weaknesses": [
+        {"issue": "Last-Click attribution ignoruje górną część lejka", "count": 4, "severity": "HIGH"},
+        {"issue": "Data noise - pokazuje co, nie dlaczego", "count": 3, "severity": "HIGH"},
+        {"issue": "Brak actionable insights", "count": 3, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "MEDIUM",
+      "displacement_angle": "Analytics z lepszą atrybucją i rekomendacjami"
+    },
+    {
+      "name": "Notion",
+      "mentions": 10,
+      "weaknesses": [
+        {"issue": "Chaotyczna struktura SOP, trudne śledzenie błędów", "count": 3, "severity": "MEDIUM"},
+        {"issue": "Zbyt dużo klikania i strukturyzowania", "count": 3, "severity": "MEDIUM"},
+        {"issue": "Zbyt skomplikowane dla PM freelancerów", "count": 2, "severity": "MEDIUM"}
+      ],
+      "displacement_potential": "MEDIUM",
+      "displacement_angle": "Prostsze narzędzia do konkretnych zadań"
+    },
+    {
+      "name": "PayPal/Wise",
+      "mentions": 9,
+      "weaknesses": [
+        {"issue": "Wysokie opłaty transakcyjne", "count": 4, "severity": "HIGH"},
+        {"issue": "Losowe blokady środków", "count": 4, "severity": "HIGH"},
+        {"issue": "Brak dostępu do ACH z 3rd world", "count": 2, "severity": "HIGH"}
+      ],
+      "displacement_potential": "LOW",
+      "displacement_angle": "Ograniczone możliwości - regulacje finansowe"
+    }
+  ],
+  "weakness_patterns": [
+    {
+      "pattern": "Halucynacje AI",
+      "description": "ChatGPT/Claude/Gemini/Copilot generują błędne dane, zmyślone strony, niepoprawny kod",
+      "affected_tools": ["ChatGPT", "Claude", "Microsoft Copilot", "Gemini"],
+      "frequency": "~25% problemów",
+      "opportunity": "Walidacja danych, specjalizacja domenowa, RAG z wiarygodnymi źródłami"
+    },
+    {
+      "pattern": "Limity i koszty przy skalowaniu",
+      "description": "Narzędzia działają dobrze na małą skalę, ale koszty/limity blokują wzrost",
+      "affected_tools": ["Claude Pro", "Cursor", "Make", "Zapier", "Airtable"],
+      "frequency": "~20% problemów",
+      "opportunity": "Modele cenowe przyjazne dla skalowania, flat-rate dla power users"
+    },
+    {
+      "pattern": "Fragmentacja narzędzi",
+      "description": "Użytkownicy muszą przełączać się między wieloma narzędziami, brak integracji",
+      "affected_tools": ["ChatGPT + Canva + Midjourney", "n8n + zewnętrzne API", "Make + Google Docs"],
+      "frequency": "~15% problemów",
+      "opportunity": "Hub spinający narzędzia, workflow all-in-one"
+    },
+    {
+      "pattern": "Zbyt skomplikowane UI",
+      "description": "Enterprise tools (HubSpot, Salesforce, n8n) są overkill dla małych firm",
+      "affected_tools": ["HubSpot", "Salesforce", "Zoho", "n8n", "Notion", "Jira"],
+      "frequency": "~12% problemów",
+      "opportunity": "Proste narzędzia dla solopreneurów i małych zespołów"
+    },
+    {
+      "pattern": "Vibe Coding Trap",
+      "description": "Kod generowany przez AI działa lokalnie ale nie w produkcji, brak audytu bezpieczeństwa",
+      "affected_tools": ["Cursor", "Claude Code", "v0", "Lovable", "Windsurf"],
+      "frequency": "~10% problemów",
+      "opportunity": "Audyt kodu AI, guardrails bezpieczeństwa, edukacja"
+    }
+  ],
+  "top_displacement_opportunities": [
+    {
+      "current_tool": "HubSpot/Salesforce",
+      "target_segment": "Solopreneurzy, freelancerzy, małe firmy",
+      "pain": "Zbyt skomplikowane i drogie dla prostego CRM",
+      "opportunity": "Prosty CRM mobile-first dla JDG",
+      "displacement_score": 85
+    },
+    {
+      "current_tool": "Excel/Google Sheets",
+      "target_segment": "Małe firmy z powtarzalnymi procesami",
+      "pain": "Ręczne procesy, brak walidacji, błędy",
+      "opportunity": "Zautomatyzowane workflow dla konkretnych zadań",
+      "displacement_score": 82
+    },
+    {
+      "current_tool": "Microsoft Copilot Enterprise",
+      "target_segment": "Firmy z własnymi danymi",
+      "pain": "Halucynacje, brak kontekstu firmowego",
+      "opportunity": "AI z lepszym RAG na danych firmowych",
+      "displacement_score": 78
+    },
+    {
+      "current_tool": "ChatGPT dla leadów",
+      "target_segment": "Sales teams, agencje",
+      "pain": "Halucynacje, zmyślone kontakty",
+      "opportunity": "Walidowany lead gen z prawdziwymi danymi",
+      "displacement_score": 75
+    },
+    {
+      "current_tool": "Tradycyjne SEO tools",
+      "target_segment": "Marketingowcy, twórcy treści",
+      "pain": "Nie monitorują widoczności w AI (ChatGPT, Perplexity)",
+      "opportunity": "AI SEO / LLM visibility monitoring",
+      "displacement_score": 72
+    }
+  ]
+}

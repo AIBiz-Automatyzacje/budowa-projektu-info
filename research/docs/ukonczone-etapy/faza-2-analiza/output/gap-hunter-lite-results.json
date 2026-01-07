@@ -1,0 +1,1232 @@
+{
+  "meta": {
+    "generated": "2026-01-06T08:36:20.821Z",
+    "phase": "Gap Hunter Lite - Final Merged Results",
+    "sources": [
+      "gap-types-analysis.json (Phase 1)",
+      "competitor-map.json (Phase 2)",
+      "white-space-scoring.json (Phase 3)",
+      "community-fit.json (Pain Radar)"
+    ],
+    "total_problems_analyzed": 370,
+    "total_mvps_scored": 37
+  },
+  "executive_summary": {
+    "key_finding": "Największa szansa: nisza 'ratunkowa' dla porzuconych projektów IT (DevRescue) - łączy wysoką lukę zaufania z pustym rynkiem.",
+    "recommendations_distribution": {
+      "STRONG_GO": 7,
+      "GO": 16,
+      "CONSIDER": 13,
+      "AVOID": 1
+    },
+    "top_gap_type": "ZA_SLABA_JAKOSC",
+    "top_gap_percent": 40,
+    "avg_white_space_score": 60
+  },
+  "gap_types": {
+    "dominant_type": "ZA_SLABA_JAKOSC",
+    "dominant_percent": 40,
+    "distribution": {
+      "NIEDOSTEPNE": {
+        "count": 25,
+        "percent": 6.8
+      },
+      "BRAK_ROZWIAZANIA": {
+        "count": 45,
+        "percent": 12.2
+      },
+      "FRAGMENTACJA": {
+        "count": 19,
+        "percent": 5.1
+      },
+      "ZA_TRUDNE": {
+        "count": 40,
+        "percent": 10.8
+      },
+      "ZA_WOLNE": {
+        "count": 33,
+        "percent": 8.9
+      },
+      "ZA_SLABA_JAKOSC": {
+        "count": 148,
+        "percent": 40
+      },
+      "BRAK_ZAUFANIA": {
+        "count": 29,
+        "percent": 7.8
+      },
+      "ZA_DROGIE": {
+        "count": 31,
+        "percent": 8.4
+      }
+    },
+    "insight": "40% problemów to 'za słaba jakość' - rozwiązania istnieją ale wyniki niezadowalające. Ogromna szansa na lepsze, wyspecjalizowane narzędzia."
+  },
+  "competitor_landscape": {
+    "total_mapped": 15,
+    "top_5": [
+      {
+        "name": "ChatGPT/GPT",
+        "mentions": 95,
+        "displacement_potential": "MEDIUM"
+      },
+      {
+        "name": "Cursor",
+        "mentions": 32,
+        "displacement_potential": "LOW"
+      },
+      {
+        "name": "Make (Integromat)",
+        "mentions": 28,
+        "displacement_potential": "MEDIUM"
+      },
+      {
+        "name": "Claude/Claude Pro",
+        "mentions": 26,
+        "displacement_potential": "LOW"
+      },
+      {
+        "name": "Shopify",
+        "mentions": 24,
+        "displacement_potential": "LOW"
+      }
+    ],
+    "weakness_patterns": [
+      {
+        "pattern": "Halucynacje AI",
+        "frequency": "~25% problemów",
+        "opportunity": "Walidacja danych, specjalizacja domenowa, RAG z wiarygodnymi źródłami"
+      },
+      {
+        "pattern": "Limity i koszty przy skalowaniu",
+        "frequency": "~20% problemów",
+        "opportunity": "Modele cenowe przyjazne dla skalowania, flat-rate dla power users"
+      },
+      {
+        "pattern": "Fragmentacja narzędzi",
+        "frequency": "~15% problemów",
+        "opportunity": "Hub spinający narzędzia, workflow all-in-one"
+      },
+      {
+        "pattern": "Zbyt skomplikowane UI",
+        "frequency": "~12% problemów",
+        "opportunity": "Proste narzędzia dla solopreneurów i małych zespołów"
+      },
+      {
+        "pattern": "Vibe Coding Trap",
+        "frequency": "~10% problemów",
+        "opportunity": "Audyt kodu AI, guardrails bezpieczeństwa, edukacja"
+      }
+    ],
+    "top_displacement": [
+      {
+        "current_tool": "HubSpot/Salesforce",
+        "target_segment": "Solopreneurzy, freelancerzy, małe firmy",
+        "pain": "Zbyt skomplikowane i drogie dla prostego CRM",
+        "opportunity": "Prosty CRM mobile-first dla JDG",
+        "displacement_score": 85
+      },
+      {
+        "current_tool": "Excel/Google Sheets",
+        "target_segment": "Małe firmy z powtarzalnymi procesami",
+        "pain": "Ręczne procesy, brak walidacji, błędy",
+        "opportunity": "Zautomatyzowane workflow dla konkretnych zadań",
+        "displacement_score": 82
+      },
+      {
+        "current_tool": "Microsoft Copilot Enterprise",
+        "target_segment": "Firmy z własnymi danymi",
+        "pain": "Halucynacje, brak kontekstu firmowego",
+        "opportunity": "AI z lepszym RAG na danych firmowych",
+        "displacement_score": 78
+      }
+    ]
+  },
+  "top_opportunities": [
+    {
+      "mvp_id": "mvp_9",
+      "mvp_name": "TrustSignal - AI Search & Reputation Optimizer",
+      "category": "Marketing",
+      "target_persona": "Techniczny Solopreneur / SaaS Founder oraz Agencje Marketingowe",
+      "core_value_prop": "Spraw, by Twój produkt był polecany przez ChatGPT, Perplexity i Gemini, zamiast walczyć o umierające pozycje w Google. Monitoruj i optymalizuj, jak AI 'widzi' Twoją markę.",
+      "white_space_score": 83,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 99,
+      "combined_score": 82,
+      "gap_type_addressed": "BRAK_ROZWIAZANIA",
+      "main_competitors": [
+        "Semrush",
+        "Ahrefs",
+        "Agencje PR",
+        "ChatGPT/GPT"
+      ],
+      "consensus_spread": 14,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_24",
+      "mvp_name": "DevRescue - Platforma ratunkowa dla porzuconych projektów IT",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Zleceniodawca po traumie",
+      "core_value_prop": "Dokończymy Twój porzucony projekt w 14 dni lub zwrócimy pieniądze. Zweryfikowani programiści, escrow, gwarancja realizacji.",
+      "white_space_score": 87,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 88,
+      "combined_score": 79,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Upwork",
+        "Useme",
+        "Software house'y",
+        "Software House",
+        "Freelancerzy"
+      ],
+      "consensus_spread": 10,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_1",
+      "mvp_name": "LeadScout.io",
+      "category": "Automatyzacja",
+      "target_persona": "The Lead Hunter (Elektrycy, Budowlańcy, Handlarze)",
+      "core_value_prop": "Bądź pierwszy przy każdym zleceniu. Monitoruj dowolną stronę (OLX, Oferteo, Fixly) i otrzymuj powiadomienie SMS w 3 sekundy po pojawieniu się ogłoszenia.",
+      "white_space_score": 64,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 114,
+      "combined_score": 78,
+      "gap_type_addressed": "ZA_WOLNE",
+      "main_competitors": [
+        "Visualping",
+        "Distill.io",
+        "Brand24",
+        "VisualPing",
+        "Własne skrypty"
+      ],
+      "consensus_spread": 8,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_12",
+      "mvp_name": "SyncPilot - Stabilna synchronizacja magazynowa dla polskiego e-commerce",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Rosnący sklep (scale-up)",
+      "core_value_prop": "Synchronizacja stanów magazynowych między Subiekt GT a Twoim sklepem, która DZIAŁA. Bez rozjazdów. Bez sprzedaży niedostępnego towaru. Gwarancja stabilności lub zwrot pieniędzy.",
+      "white_space_score": 75,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 97,
+      "combined_score": 77,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "BaseLinker",
+        "Sellasist",
+        "Sellintegro",
+        "Wtyczki PrestaShop",
+        "Shopify"
+      ],
+      "consensus_spread": 12,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_27",
+      "mvp_name": "ProjectRescue.dev",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Nietechniczny Founder / Właściciel MŚP",
+      "core_value_prop": "Ratujemy niedokończone projekty IT – audyt, plan i dowiezienie albo zwrot pieniędzy.",
+      "white_space_score": 81,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 88,
+      "combined_score": 76,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Software house'y",
+        "Freelancerzy",
+        "Consulting IT"
+      ],
+      "consensus_spread": 7,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_25",
+      "mvp_name": "TrustCode / DevRescue",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Nietechniczny Founder",
+      "core_value_prop": "Bezpieczne zlecanie IT. Weryfikujemy kod, trzymamy pieniądze w depozycie i gwarantujemy, że jeśli freelancer zniknie, inny dokończy projekt w tej samej cenie.",
+      "white_space_score": 80,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 88,
+      "combined_score": 76,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Upwork",
+        "Toptal",
+        "Useme",
+        "Upwork Escrow",
+        "GitStart"
+      ],
+      "consensus_spread": 13,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_13",
+      "mvp_name": "E-com Sync Stabilizer (Audit & Fix Service)",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Skalujący się E-commerce Manager",
+      "core_value_prop": "Gwarantujemy zgodność stanów magazynowych między Subiektem, BaseLinkerem i Shopify w 7 dni, albo zwrot pieniędzy. Koniec ze sprzedawaniem towaru, którego nie masz.",
+      "white_space_score": 73,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 97,
+      "combined_score": 76,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "BaseLinker",
+        "Freelancerzy IT",
+        "Software House",
+        "Freelancerzy",
+        "Shopify"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_0",
+      "mvp_name": "LeadHunter.pl - Bot do automatycznego wyszukiwania zleceń",
+      "category": "Automatyzacja",
+      "target_persona": "Firma usługowa B2B (elektrycy, budowlańcy, freelancerzy)",
+      "core_value_prop": "Automatycznie znajduje zlecenia z Twojej branży w internecie i wysyła Ci je na maila/Slacka - bez kodowania, bez własnego serwera",
+      "white_space_score": 60,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 114,
+      "combined_score": 76,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Oferteo",
+        "Fixly",
+        "Useme",
+        "n8n",
+        "Zapier"
+      ],
+      "consensus_spread": 17,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_21",
+      "mvp_name": "AuthenticAds Marketplace",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "The E-commerce Performance Marketer",
+      "core_value_prop": "Dostarczamy wideo reklamowe, które wyglądają jak nagrane przez sąsiada, ale są zoptymalizowane pod konwersję. Znajdujemy ludzi z 'Lidlomixem', na stoku, w biurze.",
+      "white_space_score": 75,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 75,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Billo",
+        "Insense",
+        "Fiverr",
+        "Vidsy",
+        "Trend.io"
+      ],
+      "consensus_spread": 15,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_17",
+      "mvp_name": "BaseLinker Logic Booster (SaaS / Plugin)",
+      "category": "E-commerce",
+      "target_persona": "Multichannel Operator",
+      "core_value_prop": "Zautomatyzuj to, czego BaseLinker nie potrafi: dynamiczne ceny wielowalutowe, masowe opisy AI pod konkretne marketplace'y i warunkowa edycja zamówień.",
+      "white_space_score": 74,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 74,
+      "gap_type_addressed": "NIEDOSTEPNE",
+      "main_competitors": [
+        "BaseLinker (natywnie)",
+        "Własne skrypty",
+        "Własne skrypty PHP",
+        "Brak",
+        "Shopify"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_7",
+      "mvp_name": "Integration Health & Setup Manager",
+      "category": "Wdrożenia/Integracje",
+      "target_persona": "CTO / Operations Manager",
+      "core_value_prop": "Szybkie wdrożenie i ciągła kontrola nad integracjami bez konieczności budowania wszystkiego in-house.",
+      "white_space_score": 64,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 100,
+      "combined_score": 73,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Workato",
+        "Tray.io",
+        "Boomi",
+        "Datadog",
+        "Sentry"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_2",
+      "mvp_name": "ScrapBot Builder",
+      "category": "Automatyzacja",
+      "target_persona": "Freelance Automator",
+      "core_value_prop": "Proste narzędzie no-code do budowania botów scrapingowych i monitorujących, z automatycznym obejściem CAPTCHA i tanim hostingiem offline.",
+      "white_space_score": 52,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 114,
+      "combined_score": 72,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Apify",
+        "Octoparse",
+        "ParseHub",
+        "Browse AI",
+        "n8n"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_15",
+      "mvp_name": "Integration Rescue Kit",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Skalujący się e-commerce / Head of Operations",
+      "core_value_prop": "Stabilne, monitorowane integracje sprzedaży bez chaosu i ręcznej kontroli.",
+      "white_space_score": 62,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 97,
+      "combined_score": 70,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Software house'y",
+        "Freelancerzy",
+        "Agencje E-commerce",
+        "Zapier",
+        "n8n"
+      ],
+      "consensus_spread": 15,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_36",
+      "mvp_name": "CreatorOnCall - Emergency Staffing dla Eventów",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "Event Manager / Brand Manager",
+      "core_value_prop": "Znajdź zweryfikowanego twórcę UGC/content creatora na event w 24h - z gwarancją realizacji",
+      "white_space_score": 82,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 69,
+      "gap_type_addressed": "ZA_WOLNE",
+      "main_competitors": [
+        "Agencje eventowe",
+        "Fiverr",
+        "Lokalni freelancerzy",
+        "Grupy na FB",
+        "Agencje hostess"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_3",
+      "mvp_name": "AutoFlow OS",
+      "category": "Automatyzacja",
+      "target_persona": "Operacyjny manager w SMB",
+      "core_value_prop": "Zamień chaos PDF/Excel/mail w stabilny, automatyczny proces bez kodowania",
+      "white_space_score": 45,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 114,
+      "combined_score": 69,
+      "gap_type_addressed": "FRAGMENTACJA",
+      "main_competitors": [
+        "Make",
+        "Zapier",
+        "n8n",
+        "Monday.com",
+        "ClickUp"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "CONSIDER"
+    }
+  ],
+  "all_opportunities": [
+    {
+      "mvp_id": "mvp_9",
+      "mvp_name": "TrustSignal - AI Search & Reputation Optimizer",
+      "category": "Marketing",
+      "target_persona": "Techniczny Solopreneur / SaaS Founder oraz Agencje Marketingowe",
+      "core_value_prop": "Spraw, by Twój produkt był polecany przez ChatGPT, Perplexity i Gemini, zamiast walczyć o umierające pozycje w Google. Monitoruj i optymalizuj, jak AI 'widzi' Twoją markę.",
+      "white_space_score": 83,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 99,
+      "combined_score": 82,
+      "gap_type_addressed": "BRAK_ROZWIAZANIA",
+      "main_competitors": [
+        "Semrush",
+        "Ahrefs",
+        "Agencje PR",
+        "ChatGPT/GPT"
+      ],
+      "consensus_spread": 14,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_24",
+      "mvp_name": "DevRescue - Platforma ratunkowa dla porzuconych projektów IT",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Zleceniodawca po traumie",
+      "core_value_prop": "Dokończymy Twój porzucony projekt w 14 dni lub zwrócimy pieniądze. Zweryfikowani programiści, escrow, gwarancja realizacji.",
+      "white_space_score": 87,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 88,
+      "combined_score": 79,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Upwork",
+        "Useme",
+        "Software house'y",
+        "Software House",
+        "Freelancerzy"
+      ],
+      "consensus_spread": 10,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_1",
+      "mvp_name": "LeadScout.io",
+      "category": "Automatyzacja",
+      "target_persona": "The Lead Hunter (Elektrycy, Budowlańcy, Handlarze)",
+      "core_value_prop": "Bądź pierwszy przy każdym zleceniu. Monitoruj dowolną stronę (OLX, Oferteo, Fixly) i otrzymuj powiadomienie SMS w 3 sekundy po pojawieniu się ogłoszenia.",
+      "white_space_score": 64,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 114,
+      "combined_score": 78,
+      "gap_type_addressed": "ZA_WOLNE",
+      "main_competitors": [
+        "Visualping",
+        "Distill.io",
+        "Brand24",
+        "VisualPing",
+        "Własne skrypty"
+      ],
+      "consensus_spread": 8,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_12",
+      "mvp_name": "SyncPilot - Stabilna synchronizacja magazynowa dla polskiego e-commerce",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Rosnący sklep (scale-up)",
+      "core_value_prop": "Synchronizacja stanów magazynowych między Subiekt GT a Twoim sklepem, która DZIAŁA. Bez rozjazdów. Bez sprzedaży niedostępnego towaru. Gwarancja stabilności lub zwrot pieniędzy.",
+      "white_space_score": 75,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 97,
+      "combined_score": 77,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "BaseLinker",
+        "Sellasist",
+        "Sellintegro",
+        "Wtyczki PrestaShop",
+        "Shopify"
+      ],
+      "consensus_spread": 12,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_27",
+      "mvp_name": "ProjectRescue.dev",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Nietechniczny Founder / Właściciel MŚP",
+      "core_value_prop": "Ratujemy niedokończone projekty IT – audyt, plan i dowiezienie albo zwrot pieniędzy.",
+      "white_space_score": 81,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 88,
+      "combined_score": 76,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Software house'y",
+        "Freelancerzy",
+        "Consulting IT"
+      ],
+      "consensus_spread": 7,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_25",
+      "mvp_name": "TrustCode / DevRescue",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Nietechniczny Founder",
+      "core_value_prop": "Bezpieczne zlecanie IT. Weryfikujemy kod, trzymamy pieniądze w depozycie i gwarantujemy, że jeśli freelancer zniknie, inny dokończy projekt w tej samej cenie.",
+      "white_space_score": 80,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 88,
+      "combined_score": 76,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Upwork",
+        "Toptal",
+        "Useme",
+        "Upwork Escrow",
+        "GitStart"
+      ],
+      "consensus_spread": 13,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_13",
+      "mvp_name": "E-com Sync Stabilizer (Audit & Fix Service)",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Skalujący się E-commerce Manager",
+      "core_value_prop": "Gwarantujemy zgodność stanów magazynowych między Subiektem, BaseLinkerem i Shopify w 7 dni, albo zwrot pieniędzy. Koniec ze sprzedawaniem towaru, którego nie masz.",
+      "white_space_score": 73,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 97,
+      "combined_score": 76,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "BaseLinker",
+        "Freelancerzy IT",
+        "Software House",
+        "Freelancerzy",
+        "Shopify"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_0",
+      "mvp_name": "LeadHunter.pl - Bot do automatycznego wyszukiwania zleceń",
+      "category": "Automatyzacja",
+      "target_persona": "Firma usługowa B2B (elektrycy, budowlańcy, freelancerzy)",
+      "core_value_prop": "Automatycznie znajduje zlecenia z Twojej branży w internecie i wysyła Ci je na maila/Slacka - bez kodowania, bez własnego serwera",
+      "white_space_score": 60,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 114,
+      "combined_score": 76,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Oferteo",
+        "Fixly",
+        "Useme",
+        "n8n",
+        "Zapier"
+      ],
+      "consensus_spread": 17,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_21",
+      "mvp_name": "AuthenticAds Marketplace",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "The E-commerce Performance Marketer",
+      "core_value_prop": "Dostarczamy wideo reklamowe, które wyglądają jak nagrane przez sąsiada, ale są zoptymalizowane pod konwersję. Znajdujemy ludzi z 'Lidlomixem', na stoku, w biurze.",
+      "white_space_score": 75,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 75,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Billo",
+        "Insense",
+        "Fiverr",
+        "Vidsy",
+        "Trend.io"
+      ],
+      "consensus_spread": 15,
+      "recommendation": "STRONG_GO"
+    },
+    {
+      "mvp_id": "mvp_17",
+      "mvp_name": "BaseLinker Logic Booster (SaaS / Plugin)",
+      "category": "E-commerce",
+      "target_persona": "Multichannel Operator",
+      "core_value_prop": "Zautomatyzuj to, czego BaseLinker nie potrafi: dynamiczne ceny wielowalutowe, masowe opisy AI pod konkretne marketplace'y i warunkowa edycja zamówień.",
+      "white_space_score": 74,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 74,
+      "gap_type_addressed": "NIEDOSTEPNE",
+      "main_competitors": [
+        "BaseLinker (natywnie)",
+        "Własne skrypty",
+        "Własne skrypty PHP",
+        "Brak",
+        "Shopify"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_7",
+      "mvp_name": "Integration Health & Setup Manager",
+      "category": "Wdrożenia/Integracje",
+      "target_persona": "CTO / Operations Manager",
+      "core_value_prop": "Szybkie wdrożenie i ciągła kontrola nad integracjami bez konieczności budowania wszystkiego in-house.",
+      "white_space_score": 64,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 100,
+      "combined_score": 73,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Workato",
+        "Tray.io",
+        "Boomi",
+        "Datadog",
+        "Sentry"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_2",
+      "mvp_name": "ScrapBot Builder",
+      "category": "Automatyzacja",
+      "target_persona": "Freelance Automator",
+      "core_value_prop": "Proste narzędzie no-code do budowania botów scrapingowych i monitorujących, z automatycznym obejściem CAPTCHA i tanim hostingiem offline.",
+      "white_space_score": 52,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 114,
+      "combined_score": 72,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Apify",
+        "Octoparse",
+        "ParseHub",
+        "Browse AI",
+        "n8n"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_15",
+      "mvp_name": "Integration Rescue Kit",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Skalujący się e-commerce / Head of Operations",
+      "core_value_prop": "Stabilne, monitorowane integracje sprzedaży bez chaosu i ręcznej kontroli.",
+      "white_space_score": 62,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 97,
+      "combined_score": 70,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Software house'y",
+        "Freelancerzy",
+        "Agencje E-commerce",
+        "Zapier",
+        "n8n"
+      ],
+      "consensus_spread": 15,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_36",
+      "mvp_name": "CreatorOnCall - Emergency Staffing dla Eventów",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "Event Manager / Brand Manager",
+      "core_value_prop": "Znajdź zweryfikowanego twórcę UGC/content creatora na event w 24h - z gwarancją realizacji",
+      "white_space_score": 82,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 69,
+      "gap_type_addressed": "ZA_WOLNE",
+      "main_competitors": [
+        "Agencje eventowe",
+        "Fiverr",
+        "Lokalni freelancerzy",
+        "Grupy na FB",
+        "Agencje hostess"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_3",
+      "mvp_name": "AutoFlow OS",
+      "category": "Automatyzacja",
+      "target_persona": "Operacyjny manager w SMB",
+      "core_value_prop": "Zamień chaos PDF/Excel/mail w stabilny, automatyczny proces bez kodowania",
+      "white_space_score": 45,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 114,
+      "combined_score": 69,
+      "gap_type_addressed": "FRAGMENTACJA",
+      "main_competitors": [
+        "Make",
+        "Zapier",
+        "n8n",
+        "Monday.com",
+        "ClickUp"
+      ],
+      "consensus_spread": 20,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_8",
+      "mvp_name": "InfluVerify - Weryfikator Autentyczności Influencerów",
+      "category": "Marketing",
+      "target_persona": "Właściciel małego e-commerce / dropshippingu oraz Właściciel lokalnego biznesu usługowego",
+      "core_value_prop": "Sprawdź w 30 sekund czy influencer ma prawdziwych followersów, zanim zmarnujesz budżet na fake engagement",
+      "white_space_score": 55,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 99,
+      "combined_score": 68,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "HypeAuditor",
+        "Modash",
+        "Upfluence",
+        "SocialBlade"
+      ],
+      "consensus_spread": 38,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_33",
+      "mvp_name": "NativeLaunch.io",
+      "category": "Strategia/Biznes",
+      "target_persona": "Lokalny Bohater / Globalny Przegryw (E-commerce)",
+      "core_value_prop": "Przestań przepalać budżet w Niemczech/USA. Dostarczamy zweryfikowanych, natywnych twórców contentu i strategów, którzy dostosują Twój polski sukces do lokalnych realiów w 14 dni.",
+      "white_space_score": 79,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 67,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Fiverr",
+        "Upwork",
+        "Lokalne agencje",
+        "Agencje tłumaczeń",
+        "Agencje ekspansji"
+      ],
+      "consensus_spread": 12,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_16",
+      "mvp_name": "PriceSync Pro - Automatyczna aktualizacja cen wielowalutowych dla multi-marketplace",
+      "category": "E-commerce",
+      "target_persona": "Scaling E-commerce Business",
+      "core_value_prop": "Zaoszczędź 2 tygodnie miesięcznie na ręcznej aktualizacji cen. Ustaw raz marże i kursy walut - reszta dzieje się automatycznie na wszystkich platformach.",
+      "white_space_score": 59,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 67,
+      "gap_type_addressed": "ZA_WOLNE",
+      "main_competitors": [
+        "BaseLinker",
+        "Pricefx",
+        "Prisync",
+        "Dealavo",
+        "Shopify"
+      ],
+      "consensus_spread": 28,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_20",
+      "mvp_name": "ClipForge - AI Montażysta ze Storytellingiem",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "Solo Creator / Mały YouTuber",
+      "core_value_prop": "Zamień 5 godzin montażu w 15 minut - AI, które rozumie storytelling, nie tylko tnie",
+      "white_space_score": 59,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 67,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Descript",
+        "Opus Clip",
+        "CapCut",
+        "OpusClip",
+        "Munch"
+      ],
+      "consensus_spread": 30,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_10",
+      "mvp_name": "AI UGC Optimizer",
+      "category": "Marketing",
+      "target_persona": "Small Business Owner",
+      "core_value_prop": "Automatyczne generowanie i optymalizacja autentycznego UGC pod algorytmy SM i ads, bez fake contentu, z gwarancją zasięgów.",
+      "white_space_score": 53,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 99,
+      "combined_score": 67,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Canva",
+        "Jasper",
+        "Copy.ai",
+        "Arcads",
+        "Creatify"
+      ],
+      "consensus_spread": 23,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_23",
+      "mvp_name": "UGC Factory",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "E-commerce Owner / Marketing Manager",
+      "core_value_prop": "Stały dopływ autentycznych, konwertujących wideo bez koordynowania twórców.",
+      "white_space_score": 55,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 65,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Billo",
+        "Insense",
+        "Trend.io",
+        "Agencje UGC",
+        "Midjourney"
+      ],
+      "consensus_spread": 10,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_26",
+      "mvp_name": "FreelanceGuard",
+      "category": "Zlecenia/Freelance",
+      "target_persona": "Ofiara złego freelancera",
+      "core_value_prop": "Platforma weryfikująca freelancerów i gwarantująca dokończenie projektów z escrow i wsparciem post-launch.",
+      "white_space_score": 57,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 88,
+      "combined_score": 64,
+      "gap_type_addressed": "BRAK_ZAUFANIA",
+      "main_competitors": [
+        "Upwork",
+        "Useme",
+        "Fiverr"
+      ],
+      "consensus_spread": 45,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_32",
+      "mvp_name": "StrategyPilot - Diagnoza i Roadmapa dla Stuck Biznesów",
+      "category": "Strategia/Biznes",
+      "target_persona": "Właściciel e-commerce w fazie skalowania + Solopreneur bez zespołu technicznego",
+      "core_value_prop": "W 48h otrzymujesz diagnozę dlaczego Twój biznes utknął + konkretną roadmapę 90-dniową z priorytetami działań",
+      "white_space_score": 70,
+      "white_space_class": "BLUE_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 63,
+      "gap_type_addressed": "ZA_DROGIE",
+      "main_competitors": [
+        "Konsultanci",
+        "Clarity.fm",
+        "GrowthMentor",
+        "Konsultanci biznesowi",
+        "ChatGPT"
+      ],
+      "consensus_spread": 13,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_11",
+      "mvp_name": "Marketing Copilot",
+      "category": "Marketing",
+      "target_persona": "Właściciel MŚP i founder techniczny",
+      "core_value_prop": "Jedno narzędzie, które mówi co robić w marketingu, robi to razem z Tobą i pokazuje czy to działa.",
+      "white_space_score": 44,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 99,
+      "combined_score": 62,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "HubSpot",
+        "Semrush",
+        "ChatGPT",
+        "Jasper",
+        "HubSpot AI"
+      ],
+      "consensus_spread": 15,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_18",
+      "mvp_name": "AutoPrice AI",
+      "category": "E-commerce",
+      "target_persona": "Średni Sprzedawca Marketplace",
+      "core_value_prop": "Automatyczna aktualizacja cen wielowalutowych i inwentarza na wielu platformach, oszczędzająca godziny manualnej pracy i zapobiegająca stratom sprzedaży.",
+      "white_space_score": 48,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 61,
+      "gap_type_addressed": "ZA_WOLNE",
+      "main_competitors": [
+        "Prisync",
+        "Competera",
+        "BaseLinker",
+        "Dealavo",
+        "Shopify"
+      ],
+      "consensus_spread": 22,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_22",
+      "mvp_name": "AI Content Forge",
+      "category": "Content/Tworzenie tresci",
+      "target_persona": "Marketing Manager w E-commerce",
+      "core_value_prop": "Automatyczna generacja i edycja wizualów produktowych z zachowaniem realizmu i spójności, redukująca czas produkcji o 80%.",
+      "white_space_score": 48,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 61,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Midjourney",
+        "DALL-E",
+        "Canva AI",
+        "Flair.ai",
+        "Pebblely"
+      ],
+      "consensus_spread": 22,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_35",
+      "mvp_name": "PMF Sprint",
+      "category": "Strategia/Biznes",
+      "target_persona": "Solo Founder / Non-technical Founder",
+      "core_value_prop": "W 14 dni dowiedz się, czy Twój pomysł ma sens biznesowy — zanim przepalisz czas i pieniądze.",
+      "white_space_score": 64,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 60,
+      "gap_type_addressed": "ZA_WOLNE",
+      "main_competitors": [
+        "Konsultanci",
+        "Acceleratory",
+        "GrowthMentor",
+        "Akceleratory",
+        "Agencje innowacji"
+      ],
+      "consensus_spread": 15,
+      "recommendation": "GO"
+    },
+    {
+      "mvp_id": "mvp_14",
+      "mvp_name": "IntegraEase AI Connector",
+      "category": "Wdrozenia/Integracje",
+      "target_persona": "Właściciel małego e-commerce",
+      "core_value_prop": "Bez-kodowa platforma do szybkiej, stabilnej integracji e-commerce z marketplace'ami i AI, eliminująca błędy synchronizacji i limity API.",
+      "white_space_score": 41,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 97,
+      "combined_score": 60,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Make",
+        "Zapier",
+        "BaseLinker",
+        "n8n",
+        "Make (Integromat)"
+      ],
+      "consensus_spread": 38,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_37",
+      "mvp_name": "ScopeGuard / ClientFlow",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "The Chaos-Drowning Agency Owner",
+      "core_value_prop": "Centralny hub komunikacji z klientem, który eliminuje 'zaginione maile' i blokuje pracę nad zadaniami bez zaakceptowanego budżetu (Stop Scope Creep).",
+      "white_space_score": 63,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 59,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Basecamp",
+        "Monday.com",
+        "ClickUp",
+        "Email",
+        "Asana (źle używana)"
+      ],
+      "consensus_spread": 14,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_19",
+      "mvp_name": "EcomOps OS",
+      "category": "E-commerce",
+      "target_persona": "Operator e-commerce / Właściciel SMB",
+      "core_value_prop": "Jedno centrum dowodzenia dla automatyzacji, kontroli i ochrony sprzedaży multi-channel.",
+      "white_space_score": 43,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 92,
+      "combined_score": 59,
+      "gap_type_addressed": "FRAGMENTACJA",
+      "main_competitors": [
+        "BaseLinker",
+        "Sellasist",
+        "Linnworks",
+        "Lifetimo",
+        "Metapic"
+      ],
+      "consensus_spread": 22,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_34",
+      "mvp_name": "BizValidate AI",
+      "category": "Strategia/Biznes",
+      "target_persona": "Founder startupu tech/SaaS",
+      "core_value_prop": "Szybka walidacja pomysłów biznesowych za pomocą AI, bez kodowania, z automatycznym feedbackiem od potencjalnych klientów.",
+      "white_space_score": 53,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 54,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Lean Canvas tools",
+        "SurveyMonkey",
+        "Typeform",
+        "ValidatorAI",
+        "VenturusAI"
+      ],
+      "consensus_spread": 60,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_28",
+      "mvp_name": "TrackTruth - Unified Attribution Dashboard",
+      "category": "Analityka/BI",
+      "target_persona": "E-commerce Owner (Shopify/WooCommerce)",
+      "core_value_prop": "Jeden dashboard pokazujący prawdziwy ROI każdej kampanii - koniec z rozbieżnościami między Shopify, Meta i Google. Setup w 10 minut bez developera.",
+      "white_space_score": 52,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 70,
+      "combined_score": 54,
+      "gap_type_addressed": "FRAGMENTACJA",
+      "main_competitors": [
+        "Triple Whale",
+        "Northbeam",
+        "Rockerbox",
+        "Hyros",
+        "Google Analytics"
+      ],
+      "consensus_spread": 28,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_29",
+      "mvp_name": "AgencyFlow: Automated Client Reporting & Attribution",
+      "category": "Analityka/BI",
+      "target_persona": "Zestresowany Marketer Agencyjny",
+      "core_value_prop": "Połącz wszystkie konta reklamowe klienta w 3 minuty i wygeneruj raport, który udowadnia Twoje ROI, bez dotykania Excela.",
+      "white_space_score": 49,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 70,
+      "combined_score": 53,
+      "gap_type_addressed": "ZA_WOLNE",
+      "main_competitors": [
+        "AgencyAnalytics",
+        "Whatagraph",
+        "DashThis",
+        "Looker Studio",
+        "Swydo"
+      ],
+      "consensus_spread": 30,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_31",
+      "mvp_name": "TrueROI",
+      "category": "Analityka/BI",
+      "target_persona": "Właściciel e‑commerce / Marketing Manager",
+      "core_value_prop": "Jedno miejsce, które pokazuje prawdziwy zysk per kanał – bez bullshitowych atrybucji.",
+      "white_space_score": 46,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 70,
+      "combined_score": 51,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Triple Whale",
+        "Polar Analytics",
+        "Lifetimely",
+        "ProfitWell",
+        "Google Analytics"
+      ],
+      "consensus_spread": 15,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_30",
+      "mvp_name": "DataForge AI",
+      "category": "Analityka/BI",
+      "target_persona": "E-commerce Manager",
+      "core_value_prop": "Automatyczna integracja i atrybucja danych z wielu platform (e.g. Meta, Google, Shopify) z AI walidacją, eliminująca rozbieżności i oszczędzająca godziny na raportach.",
+      "white_space_score": 45,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 70,
+      "combined_score": 51,
+      "gap_type_addressed": "ZA_SLABA_JAKOSC",
+      "main_competitors": [
+        "Supermetrics",
+        "Funnel.io",
+        "Fivetran",
+        "Google Analytics",
+        "Excel/Google Sheets"
+      ],
+      "consensus_spread": 30,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_38",
+      "mvp_name": "ProjectFlow AI",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "Agency Owner",
+      "core_value_prop": "Automatyczne centralizowanie i priorytetyzacja zadań w chaotycznych workflow, redukując wypalenie o 50% poprzez AI bez inwazyjnych botów.",
+      "white_space_score": 41,
+      "white_space_class": "RED_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 48,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Asana",
+        "Monday.com",
+        "ClickUp",
+        "Motion",
+        "Notion"
+      ],
+      "consensus_spread": 35,
+      "recommendation": "CONSIDER"
+    },
+    {
+      "mvp_id": "mvp_39",
+      "mvp_name": "FlowLess",
+      "category": "Zarządzanie Projektami",
+      "target_persona": "Właściciel agencji i solopreneur",
+      "core_value_prop": "Jedno lekkie miejsce do ogarnięcia projektów bez konfiguracji.",
+      "white_space_score": 33,
+      "white_space_class": "BLOODY_OCEAN",
+      "community_fit_score": 68,
+      "combined_score": 44,
+      "gap_type_addressed": "ZA_TRUDNE",
+      "main_competitors": [
+        "Notion",
+        "Trello",
+        "Todoist",
+        "Basecamp",
+        "HubSpot"
+      ],
+      "consensus_spread": 40,
+      "recommendation": "AVOID"
+    }
+  ]
+}

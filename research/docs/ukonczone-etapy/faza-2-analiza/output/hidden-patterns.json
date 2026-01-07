@@ -1,0 +1,1609 @@
+{
+  "meta": {
+    "generated": "2026-01-05T10:59:57.006Z",
+    "step": "3.3 Hidden Patterns Detection (Multi-Model)",
+    "models_used": [
+      "anthropic/claude-opus-4.5",
+      "google/gemini-3-pro-preview",
+      "x-ai/grok-4",
+      "openai/gpt-5.2-chat"
+    ],
+    "models_count": 4,
+    "sample_size": 300,
+    "total_problems": 4003,
+    "top_categories_used": [
+      "Zlecenia/Freelance",
+      "Automatyzacja",
+      "Marketing",
+      "Wdrozenia/Integracje",
+      "E-commerce",
+      "Content/Tworzenie tresci",
+      "Strategia/Biznes",
+      "Finanse/Ksiegowosc",
+      "Zarządzanie Projektami",
+      "Analityka/BI"
+    ],
+    "total_patterns_found": 31
+  },
+  "patterns": [
+    {
+      "pattern_name": "Luka kompetencyjna founder-technik",
+      "pattern_key": "luka kompetencyjna founder-technik",
+      "consensus_score": 74,
+      "models_found": [
+        "Claude Opus 4.5",
+        "GPT-5.2"
+      ],
+      "models_count": 2,
+      "avg_affected_percentage": "24%",
+      "affected_categories": [
+        "Zlecenia/Freelance",
+        "Strategia/Biznes",
+        "Zarządzanie Projektami",
+        "Marketing",
+        "Analityka/BI"
+      ],
+      "example_problems": [
+        "Znaleźć wspólnika technicznego (programistę) do startupu flotowego",
+        "Zatrudnić CTO jako warunek otrzymania finansowania VC",
+        "Zbudować system marketingowy i markę od zera z inwestorem",
+        "Wysoki koszt walidacji pomysłu marketplace przy braku umiejętności technicznych",
+        "Jakie minimum trzeba umieć, żeby zacząć jako freelancer"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Osoby z pomysłem biznesowym nie mają umiejętności technicznych. Osoby techniczne nie umieją sprzedawać/marketingować. Obie strony szukają 'drugiej połówki' ale nie wiedzą jak ją zweryfikować ani wycenić współpracę."
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Użytkownicy często nie wiedzą, jak coś zrobić ani jak ocenić, czy ktoś robi to dobrze. To dotyczy zarówno technologii, marketingu, jak i analityki."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'technical due diligence' dla nie-techników i 'business validation' dla techników - wzajemna weryfikacja przed commitment"
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Jasne standardy i benchmarki zamiast domysłów."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Matchmaking z wbudowanym procesem walidacji - mini-projekt testowy przed pełną współpracą"
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Edukacja just-in-time + walidacja poprawności."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Co-founder Speed Dating z 2-tygodniowym paid trial - founder płaci za MVP validation, technik dostaje equity option jeśli projekt ruszy"
+        },
+        {
+          "model": "GPT-5.2",
+          "text": "Interaktywny „copilot” oceniający konfiguracje (ads, analytics, automations) i mówiący co jest źle."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Deficyt zaufania",
+      "pattern_key": "deficyt zaufania",
+      "consensus_score": 73,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "48%",
+      "affected_categories": [
+        "Zlecenia/Freelance",
+        "Automatyzacja",
+        "Marketing",
+        "Zarządzanie Projektami"
+      ],
+      "example_problems": [
+        "Błędy techniczne w aplikacji i brak wsparcia od freelancera po launchu",
+        "AI do generowania leadów tworzy duplikaty i fałszywe dane",
+        "Brak efektów w Local SEO po 6 miesiącach płacenia freelancerowi"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Użytkownicy nie ufają ani ludziom (freelancerzy, agencje, VA), ani narzędziom (AI, automatyzacje, platformy). Często pojawia się strach przed halucynacjami, niedowiezieniem projektu, brakiem odpowiedzialności po wdrożeniu. To prowadzi do mikrozarządzania, ręcznej kontroli i wypalenia."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Poczucie kontroli, przewidywalności i odpowiedzialności po drugiej stronie."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Transparentność, audytowalność, SLA, monitoring jakości i efektów."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "Platforma do pracy z freelancerami/AI z wbudowanym QA, checkpointami i mierzalnymi KPI (dowiezione vs obiecane)."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Przeciążenie czasowe",
+      "pattern_key": "przeciążenie czasowe",
+      "consensus_score": 71,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "46%",
+      "affected_categories": [
+        "Marketing",
+        "E-commerce",
+        "Zarządzanie Projektami",
+        "Content/Tworzenie tresci"
+      ],
+      "example_problems": [
+        "Manualne raportowanie kampanii zajmuje zbyt wiele czasu",
+        "Ręczne dodawanie produktów zajmuje cały dzień",
+        "Wypalenie przy edycji własnych filmów"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Wielu użytkowników nie ma problemu z wiedzą, tylko z czasem i energią. Ręczne procesy, poprawki i gaszenie pożarów wypychają pracę strategiczną."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Odzyskanie czasu bez utraty jakości i kontroli."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Automatyzacja + delegowanie z minimalnym overheadem."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "Usługa „done-for-you automation” dla MŚP: gotowe procesy + monitoring zamiast narzędzi DIY."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Chaos narzędziowy",
+      "pattern_key": "chaos narzędziowy",
+      "consensus_score": 67,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "42%",
+      "affected_categories": [
+        "Automatyzacja",
+        "Marketing",
+        "Analityka/BI",
+        "Zarządzanie Projektami"
+      ],
+      "example_problems": [
+        "Fragmentacja narzędzi do cold outreach",
+        "Fragmentacja narzędzi AI (Claude, GPT, Gemini)",
+        "Chaos operacyjny w agencji short-form"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Użytkownicy korzystają z wielu niespójnych narzędzi, arkuszy i workaroundów. Problemem nie jest brak narzędzi, lecz ich nadmiar i brak integracji, co powoduje błędy, straty czasu i kontekstu."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Jedno źródło prawdy i spójny workflow bez ciągłego przełączania kontekstu."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Konsolidacja, orchestration layer, unified interface."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "Lekki hub operacyjny, który spina narzędzia (AI, marketing, PM) w jeden proces zamiast kolejnej aplikacji."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Wypalenie prospectingowe",
+      "pattern_key": "wypalenie prospectingowe",
+      "consensus_score": 66,
+      "models_found": [
+        "Claude Opus 4.5",
+        "Grok 4"
+      ],
+      "models_count": 2,
+      "avg_affected_percentage": "16%",
+      "affected_categories": [
+        "Marketing",
+        "Zlecenia/Freelance",
+        "Strategia/Biznes",
+        "Zarządzanie Projektami"
+      ],
+      "example_problems": [
+        "Obsługa wypalenia zawodowego freelancera spowodowana prospectingiem",
+        "Niska efektywność i wypalenie zespołu sprzedażowego przy manualnym prospectingu na LinkedIn",
+        "Wypalenie tradycyjnymi metodami B2B lead generation",
+        "Czasochłonność ręcznego wyszukiwania influencerów (15h/tydzień)",
+        "Znaleźć programistę agentów AI"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Freelancerzy i małe firmy spędzają 15-30h tygodniowo na szukaniu klientów zamiast na pracy płatnej. Cold outreach ma 1% skuteczność, LinkedIn jest nasycony, a tradycyjne metody (webinary, ebooki) wymagają miesięcy pracy."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Częste poszukiwanie specyficznych umiejętności, jak programistów AI czy montażystów, z naciskiem na lokalność lub niskie koszty, prowadzi do frustracji. To wzorzec łączący zlecenia z zarządzaniem, gdzie brak odpowiednich ludzi blokuje projekty. Użytkownicy wolą freelancerów niż agencje, co wskazuje na potrzebę lepszego matchingu."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'inbound-first' modelu dla małych graczy - bycie znajdowanym zamiast szukania"
+        },
+        {
+          "model": "Grok 4",
+          "text": "Szybki i zaufany matching talentów z potrzebami projektów."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Odwrócenie modelu: zamiast outreach, budowanie 'signal presence' gdzie klienci sami przychodzą"
+        },
+        {
+          "model": "Grok 4",
+          "text": "Platformy z AI do rekomendacji na podstawie skills i recenzji."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Reverse Job Board dla freelancerów - klienci postują problemy, freelancerzy licytują rozwiązaniami. Focus na polski rynek z weryfikacją przez portfolio"
+        },
+        {
+          "model": "Grok 4",
+          "text": "Aplikacja do mikrozleceń z AI weryfikującym umiejętności poprzez testy przed matchingiem."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Kryzys Zaufania do Agencji",
+      "pattern_key": "kryzys zaufania do agencji",
+      "consensus_score": 66,
+      "models_found": [
+        "Gemini 3 Pro",
+        "Grok 4"
+      ],
+      "models_count": 2,
+      "avg_affected_percentage": "16%",
+      "affected_categories": [
+        "Marketing",
+        "Zlecenia/Freelance",
+        "Strategia/Biznes",
+        "Wdrożenia/Integracje",
+        "Zarządzanie Projektami"
+      ],
+      "example_problems": [
+        "Brak efektów w Local SEO po 6 miesiącach płacenia freelancerowi",
+        "Naprawić konfigurator zamówień po nieuczciwym wykonawcy",
+        "Znalezienie rzetelnej firmy programistycznej, która dowiezie projekt",
+        "Błędy w aplikacji i brak wsparcia od freelancera",
+        "Nieuczciwy wykonawca konfiguratora"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Klienci są zmęczeni agencjami i freelancerami, którzy obiecują wyniki, a dowożą brak efektów, słabą komunikację lub znikają po otrzymaniu zaliczki."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Użytkownicy często narzekają na nieuczciwych freelancerów, wolne odpowiedzi lub niedokończone projekty, co prowadzi do frustracji i strat finansowych. To wzorzec łączący zlecenia z wdrożeniami, gdzie brak wsparcia po launchu lub dyskryminacja kontraktorów pogarsza sytuację. Problemy te ujawniają głębszy lęk przed delegowaniem."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba transparentności, weryfikacji umiejętności przed zatrudnieniem i modelu rozliczeń opartego na dowiezionym efekcie (performance)."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Bezpieczne mechanizmy weryfikacji i gwarancji jakości w relacjach outsourcingowych."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Platformy vettingowe, usługi escrow z audytem kodu/wyników, lub narzędzia do samodzielnego audytu pracy agencji."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Budować platformy z escrow, recenzjami i automatycznymi testami projektów."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Narzędzie 'Agency Auditor' – automatyczny audyt kont reklamowych/SEO, który prostym językiem mówi klientowi, czy agencja faktycznie pracuje, czy tylko wystawia faktury."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Marketplace freelancerski z wbudowanym escrow i AI do weryfikacji jakości kodu/projektów przed płatnością."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Pułapka fragmentacji narzędzi",
+      "pattern_key": "pułapka fragmentacji narzędzi",
+      "consensus_score": 65,
+      "models_found": [
+        "Claude Opus 4.5",
+        "Grok 4"
+      ],
+      "models_count": 2,
+      "avg_affected_percentage": "15%",
+      "affected_categories": [
+        "Automatyzacja",
+        "Marketing",
+        "E-commerce",
+        "Zarządzanie Projektami",
+        "Content/Tworzenie tresci",
+        "Content/Tworzenie treści"
+      ],
+      "example_problems": [
+        "Fragmentacja narzędzi do pozyskiwania klientów (Cold Outreach)",
+        "Fragmentacja narzędzi do tworzenia treści social media",
+        "Utrata kontekstu przy przełączaniu między modelami AI",
+        "Nieefektywny proces projektowania maili (Canva -> Klaviyo)",
+        "Obsługa wypalenia freelancera spowodowana prospectingiem"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Użytkownicy używają 5-10 różnych narzędzi do jednego procesu (prospecting, tworzenie treści, zarządzanie e-commerce). Każde narzędzie robi jedną rzecz dobrze, ale razem tworzą chaos - brak integracji, utrata kontekstu, ręczne kopiowanie między kartami przeglądarki."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Problemy z wypaleniem pojawiają się przy manualnym prospectingu, edycji wideo czy zarządzaniu social media, gdzie wzrost skali powoduje zmęczenie. To łączy marketing z automatyzacją, gdzie brak delegowania lub narzędzi prowadzi do utraty efektywności. Użytkownicy szukają sposobów na outsourcing lub automatyzację, by uniknąć burnout."
+        },
+        {
+          "model": "Grok 4",
+          "text": "AI często generuje błędne dane, halucynacje lub nie radzi sobie z precyzją, co frustruje użytkowników w zadaniach jak generowanie treści czy ekstrakcja danych. To wzorzec łączący content z analityką, gdzie zaufanie do AI jest niskie. Użytkownicy tracą czas na weryfikację, co wskazuje na potrzebę bardziej niezawodnych modeli."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Użytkownicy borykają się z opóźnionymi płatnościami, wysokimi kosztami narzędzi czy niepewnymi wycenami projektów, co wpływa na stabilność biznesu. To łączy finanse z strategią, gdzie brak przewidywalności blokuje skalę. Problemy te ujawniają potrzebę lepszego zarządzania finansami w małych firmach."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Użytkownicy często pytają o minimalne wymagania, jak zacząć freelancing czy skonfigurować narzędzia, ujawniając lukę w edukacji. To łączy IT z marketingiem, gdzie brak umiejętności blokuje postęp. Problemy te wskazują na głębszą potrzebę praktycznych poradników lub mentorów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Problemy z przełączaniem między narzędziami, brak integracji i rozproszone dane powodują chaos i utratę kontekstu. To wzorzec w analityce i automatyzacji, gdzie brak centralizacji utrudnia decyzje. Użytkownicy męczą się z wieloma kartami i aplikacjami, co wskazuje na potrzebę unifikacji."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Wiele zleceń jest oznaczonych jako pilne, z deadline'ami 'na wczoraj', co powoduje stres i poszukiwanie szybkich rozwiązań. To łączy content z wdrożeniami, gdzie opóźnienia grożą stratami. Problemy te ujawniają brak planowania i potrzebę narzędzi do zarządzania kryzysowego."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba jednego miejsca prawdy (single source of truth) dla całego workflow, nie kolejnego narzędzia ale 'kleju' między istniejącymi"
+        },
+        {
+          "model": "Grok 4",
+          "text": "Zrównoważone skalowanie pracy bez utraty zdrowia psychicznego."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Niezawodne AI z wbudowaną weryfikacją faktów i błędów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Przewidywalne i zautomatyzowane zarządzanie finansami."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Dostępna edukacja i mentoring dla początkujących w tech/biznesie."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Centralne miejsce do zarządzania danymi i narzędziami."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Narzędzia do szybkiego reagowania na nagłe potrzeby bez chaosu."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Middleware/orchestrator który łączy istniejące narzędzia zamiast je zastępować, z zachowaniem kontekstu między sesjami"
+        },
+        {
+          "model": "Grok 4",
+          "text": "Rozwijać narzędzia do automatyzacji i platformy do łatwego delegowania zadań."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Budować hybrydowe systemy AI z ludzką walidacją lub lepszymi promptami."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Tworzyć narzędzia do prognozowania cashflow i automatycznych faktur."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Tworzyć kursy AI-personalizowane lub społeczności mentoringowe."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Budować all-in-one dashboardy z AI do agregacji danych."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Platformy do on-demand usług z gwarantowanym czasem realizacji."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Uniwersalny 'workflow hub' dla solopreneurów - łączy Canva, ChatGPT, CRM, email w jeden interfejs z pamięcią kontekstu i automatycznym przekazywaniem danych"
+        },
+        {
+          "model": "Grok 4",
+          "text": "Aplikacja do monitorowania workloadu z AI sugerującym outsourcing lub automatyzację zadań."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Narzędzie do weryfikacji outputu AI z bazami danych i alertami na halucynacje."
+        },
+        {
+          "model": "Grok 4",
+          "text": "SaaS do mikropożyczek na podstawie danych z integracji e-commerce, z automatyczną spłatą z przychodów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Platforma z AI-mentorem analizującym umiejętności użytkownika i sugerującym ścieżki nauki z integracją zleceń."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Super-app integrująca popularne narzędzia SaaS z AI do automatycznego raportowania i alertów."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Aplikacja do pilnych zleceń z siecią freelancerów gotowych na 24/7, z AI priorytetyzującym zadania."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Strach przed ekspozycją",
+      "pattern_key": "strach przed ekspozycją",
+      "consensus_score": 64,
+      "models_found": [
+        "Claude Opus 4.5",
+        "Grok 4"
+      ],
+      "models_count": 2,
+      "avg_affected_percentage": "14%",
+      "affected_categories": [
+        "Marketing",
+        "Content/Tworzenie tresci",
+        "Strategia/Biznes",
+        "Wdrożenia/Integracje",
+        "Automatyzacja",
+        "Analityka/BI"
+      ],
+      "example_problems": [
+        "Wstyd i lęk przed kamerą blokują marketing produktu SaaS",
+        "Strach przed oceną znajomych i rodziny powstrzymuje przed publikacją",
+        "Prokrastynacja marketingowa poprzez dopieszczanie produktu",
+        "Ekstremalna introwersja uniemożliwiająca rozmowy z użytkownikami",
+        "Brak integracji Sellintegro między Apilo a SubiektGT"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Założyciele, freelancerzy i twórcy wiedzą że powinni nagrywać wideo, pokazywać twarz, publikować - ale paraliżuje ich strach przed oceną znajomych, rodziny, lub po prostu kamerą. Prokrastynują przez 'dopieszczanie produktu'."
+        },
+        {
+          "model": "Grok 4",
+          "text": "Częste skargi na brak kompatybilności między narzędziami, takimi jak Zapier z Canva czy Baselinker z Allegro, powodują błędy i opóźnienia. To łączy automatyzację z wdrożeniami, gdzie fragmentacja narzędzi utrudnia workflow. Użytkownicy tracą czas na obejścia, co wskazuje na głębszy problem z ekosystemem SaaS."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'gradual exposure' - małych kroków które budują pewność bez traumy"
+        },
+        {
+          "model": "Grok 4",
+          "text": "Jednolity ekosystem narzędzi z bezproblemowymi integracjami."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Anonimowe lub semi-anonimowe formaty na start, stopniowe ujawnianie tożsamości gdy rośnie pewność"
+        },
+        {
+          "model": "Grok 4",
+          "text": "Tworzyć middleware lub super-aplikacje łączące popularne narzędzia."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Faceless Brand Accelerator - kurs + narzędzia do budowania marki bez pokazywania twarzy (AI avatary, voice-over, animacje), z opcją 'reveal' gdy twórca jest gotowy"
+        },
+        {
+          "model": "Grok 4",
+          "text": "AI-powered integrator, który automatycznie mapuje dane między dowolnymi SaaS bez kodowania."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Brak widoczności efektów",
+      "pattern_key": "brak widoczności efektów",
+      "consensus_score": 64,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "39%",
+      "affected_categories": [
+        "Analityka/BI",
+        "Marketing",
+        "E-commerce"
+      ],
+      "example_problems": [
+        "Brak ROI z influencerów",
+        "Brak efektów Local SEO",
+        "Data noise na dashboardach"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Użytkownicy nie widzą realnych efektów działań (marketing, influencerzy, SEO, AI). Dane są albo niepełne, albo niepowiązane z wynikiem biznesowym."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Połączenie działań z realnym wynikiem (sprzedaż, lead)."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Outcome-based analytics zamiast vanity metrics."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "Dashboard decyzyjny pokazujący „co przyniosło pieniądze” zamiast setek metryk."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Niepewny cashflow",
+      "pattern_key": "niepewny cashflow",
+      "consensus_score": 59,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "34%",
+      "affected_categories": [
+        "Finanse/Ksiegowosc",
+        "E-commerce",
+        "Strategia/Biznes"
+      ],
+      "example_problems": [
+        "Opóźnienia w płatnościach od marek",
+        "Chargebacki i friendly fraud",
+        "Gap w przepływie gotówki przy produkcji"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Problemy z płynnością finansową pojawiają się niezależnie od branży: opóźnione płatności, wysokie fee platform, chargebacki, subskrypcje."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Przewidywalność finansowa i redukcja ryzyka."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Monitoring cashflow + prewencja zamiast reakcji."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "Fintech dla MŚP: wczesne alerty cashflow + ochrona przed chargebackami i fee leakage."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Problemy delegowania",
+      "pattern_key": "problemy delegowania",
+      "consensus_score": 58,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "33%",
+      "affected_categories": [
+        "Zarządzanie Projektami",
+        "Zlecenia/Freelance"
+      ],
+      "example_problems": [
+        "Błędy VA przez złą dokumentację",
+        "Chaos onboardingowy pracowników zdalnych",
+        "Przeładowanie pracą w agencji"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Delegowanie pracy (freelancerzy, VA, zespoły zdalne) powoduje chaos, błędy i stres. Brakuje jasnych SOP, kontroli jakości i feedback loop."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Bezpieczne skalowanie pracy przez ludzi."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Procesy, checklists, automatyczna walidacja."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "System SOP + task execution z automatycznym QA dla pracy delegowanej."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Problemy skali",
+      "pattern_key": "problemy skali",
+      "consensus_score": 56,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "31%",
+      "affected_categories": [
+        "E-commerce",
+        "Automatyzacja",
+        "Analityka/BI"
+      ],
+      "example_problems": [
+        "Skrypty PMax zawodne przy 60 sklepach",
+        "Masowe wystawianie 100 tys. produktów",
+        "Ręczne monitorowanie cen konkurencji"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Rozwiązania działające przy małej skali (10 klientów, 100 produktów) załamują się przy wzroście. Skala ujawnia kruchość narzędzi, procesów i ludzi."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Stabilność i powtarzalność przy wzroście wolumenu."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Systemy projektowane scale-first, nie hacki."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "Narzędzie do e-commerce ops (pricing, listing, sync), zaprojektowane pod 10k+ SKU i multi-market."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Kruchość automatyzacji",
+      "pattern_key": "kruchość automatyzacji",
+      "consensus_score": 54,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "29%",
+      "affected_categories": [
+        "Automatyzacja",
+        "Wdrozenia/Integracje"
+      ],
+      "example_problems": [
+        "Kruchość bibliotek do automatyzacji UI",
+        "Webhooki PayPal są zawodne",
+        "Zapier nie radzi sobie z niestandardowymi danymi"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Automatyzacje często działają tylko w idealnych warunkach. Zmiana UI, danych lub skali powoduje ich awarie, co zniechęca użytkowników."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Odporność systemów na zmiany."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Error handling, fallbacki, observability."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "Platforma do budowy automatyzacji z monitoringiem błędów i auto-recovery."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Lęk decyzyjny",
+      "pattern_key": "lęk decyzyjny",
+      "consensus_score": 51,
+      "models_found": [
+        "GPT-5.2"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "26%",
+      "affected_categories": [
+        "Strategia/Biznes",
+        "Finanse/Ksiegowosc"
+      ],
+      "example_problems": [
+        "Strach przed porzuceniem bezpiecznej pracy",
+        "Ocenić wartość modelu Gemini przed zakupem",
+        "Paraliż decyzyjny przez nadmiar inspiracji"
+      ],
+      "descriptions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Użytkownicy boją się podejmować decyzje: zmiana pracy, inwestycja, wybór narzędzia. Nadmiar opcji i brak jasnych kryteriów paraliżuje działania."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "GPT-5.2",
+          "text": "Redukcja ryzyka poznawczego i jasne rekomendacje."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "GPT-5.2",
+          "text": "Decision-support systems zamiast kolejnych informacji."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "GPT-5.2",
+          "text": "AI doradca decyzyjny, który symuluje scenariusze i pokazuje konsekwencje wyborów."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Automatyzacja manualnych zadań",
+      "pattern_key": "automatyzacja manualnych zadań",
+      "consensus_score": 50,
+      "models_found": [
+        "Grok 4"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "25%",
+      "affected_categories": [
+        "Automatyzacja",
+        "E-commerce",
+        "Marketing"
+      ],
+      "example_problems": [
+        "Manualne dodawanie produktów zajmuje cały dzień",
+        "Ręczny outreach blokuje skalowanie",
+        "Ekstrakcja danych z PDF jest czasochłonna"
+      ],
+      "descriptions": [
+        {
+          "model": "Grok 4",
+          "text": "Wiele problemów dotyczy ręcznego wykonywania powtarzalnych czynności, takich jak scraping danych, edycja cen czy raportowanie, co prowadzi do frustracji i strat czasu. Użytkownicy szukają botów lub narzędzi do automatyzacji, ale napotykają na błędy lub brak integracji. To łączy e-commerce z marketingiem, gdzie skala operacji przerasta możliwości manualne."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Grok 4",
+          "text": "Potrzeba uwolnienia czasu na strategiczne zadania poprzez eliminację rutyny."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Grok 4",
+          "text": "Rozwijać narzędzia AI do niestandardowej automatyzacji z łatwą konfiguracją."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Grok 4",
+          "text": "Platforma SaaS do budowania custom botów bez kodowania, integrująca z popularnymi API jak Google Sheets czy e-commerce."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Ściana Skalowania Manualnego",
+      "pattern_key": "ściana skalowania manualnego",
+      "consensus_score": 45,
+      "models_found": [
+        "Gemini 3 Pro"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "20%",
+      "affected_categories": [
+        "E-commerce",
+        "Finanse/Ksiegowosc",
+        "Automatyzacja"
+      ],
+      "example_problems": [
+        "Manualne dodawanie produktów (20 dziennie) zajmuje cały dzień",
+        "Ręczne monitorowanie cen konkurencji jest czasochłonne",
+        "Ręczne wprowadzanie faktur do QuickBooks zajmuje zbyt wiele czasu"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Małe firmy dochodzą do momentu, gdzie ręczne procesy (kopiowanie ofert, sprawdzanie cen, faktury) blokują wzrost, ale dedykowane systemy Enterprise są za drogie lub zbyt skomplikowane."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba taniej, masowej automatyzacji prostych czynności (Bulk Actions), która działa w tle i oszczędza setki godzin."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Narzędzia typu 'Bulk Editor' lub proste boty desktopowe/chmurowe wykonujące jedną czynność masowo."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "SaaS do masowej edycji ofert na wielu marketplace'ach jednocześnie lub inteligentny scraper cen z alertami dla małych e-commerce."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Kruche Klejenie No-Code",
+      "pattern_key": "kruche klejenie no-code",
+      "consensus_score": 43,
+      "models_found": [
+        "Gemini 3 Pro"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "18%",
+      "affected_categories": [
+        "Automatyzacja",
+        "Wdrozenia/Integracje",
+        "Zarządzanie Projektami"
+      ],
+      "example_problems": [
+        "Nierozpoznawanie załączników w Gmailu przez Zapier",
+        "Brak integracji Sellintegro między Apilo a SubiektGT",
+        "Numer telefonu nie przenosi się poprawnie z GetResponse do Google Sheets w Make"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Firmy próbują łączyć różne systemy (ERP, CRM, E-mail) za pomocą prostych narzędzi (Zapier, Make), ale napotykają na bariery techniczne, limity API i błędy przy brzegowych przypadkach."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba stabilnego przepływu danych między systemami bez konieczności ciągłego naprawiania 'rozpadających się' scenariuszy."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Dedykowane, robustne integracje (middleware) dla specyficznych par popularnych w Polsce narzędzi (np. Subiekt + Baselinker + Shopify)."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Zestaw gotowych, 'kuloodpornych' wtyczek/skryptów integracyjnych dla polskiego e-commerce, które obsługują błędy lepiej niż ogólne narzędzia no-code."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Wypalenie Contentowe",
+      "pattern_key": "wypalenie contentowe",
+      "consensus_score": 41,
+      "models_found": [
+        "Gemini 3 Pro"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "16%",
+      "affected_categories": [
+        "Content/Tworzenie tresci",
+        "Marketing",
+        "Zarządzanie Projektami"
+      ],
+      "example_problems": [
+        "Wstyd i lęk przed kamerą blokują marketing produktu SaaS",
+        "Wypalenie przy edycji własnych filmów gamingowych",
+        "Fragmentacja narzędzi do tworzenia treści social media"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Presja na tworzenie dużej ilości wideo (Reels, TikTok) i bycie 'twarzą marki' paraliżuje twórców i właścicieli firm, którzy nie mają na to czasu ani umiejętności."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba tworzenia wysokiej jakości treści wideo bez osobistego zaangażowania czasowego i emocjonalnego (faceless, automated)."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Automatyzacja produkcji wideo (AI avatars, auto-editing), platformy łączące z twórcami UGC, szablony 'fill-in-the-blanks'."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Aplikacja 'Reels z niczego' – generowanie dynamicznych wideo sprzedażowych na podstawie samych zdjęć produktów i opisu, zsynchronizowanych z muzyką (bez konieczności nagrywania twarzy)."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Paraliż skali",
+      "pattern_key": "paraliż skali",
+      "consensus_score": 40,
+      "models_found": [
+        "Claude Opus 4.5"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "15%",
+      "affected_categories": [
+        "E-commerce",
+        "Automatyzacja",
+        "Wdrozenia/Integracje",
+        "Marketing"
+      ],
+      "example_problems": [
+        "Skrypty PMax są zawodne przy dużej skali (60 sklepów)",
+        "Manualne dodawanie produktów (20 dziennie) zajmuje cały dzień",
+        "Skonfigurować masowe wystawianie aukcji (100 tys. produktów)",
+        "Masowo dodać zdanie do opisów ofert bez ręcznej edycji"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "To co działało dla 10 produktów/klientów/aukcji rozpada się przy 100+. Ręczne procesy stają się niemożliwe, narzędzia mają limity, a koszt błędu rośnie wykładniczo. Dotyczy szczególnie e-commerce i agencji."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'scale-ready' rozwiązań od początku - nie MVP które trzeba przebudować, ale architektury która rośnie z biznesem"
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Bulk operations jako first-class citizen, nie dodatek. Batch processing z progress tracking i rollback"
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Bulk Operations Suite dla Baselinker/Allegro - masowa edycja opisów, cen, zdjęć z podglądem zmian, dry-run mode i automatycznym rollbackiem przy błędach"
+        }
+      ]
+    },
+    {
+      "pattern_name": "Luka Wiarygodności AI",
+      "pattern_key": "luka wiarygodności ai",
+      "consensus_score": 40,
+      "models_found": [
+        "Gemini 3 Pro"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "15%",
+      "affected_categories": [
+        "Automatyzacja",
+        "Content/Tworzenie tresci",
+        "Analityka/BI",
+        "Wdrozenia/Integracje"
+      ],
+      "example_problems": [
+        "Uzyskać rzetelne informacje od ChatGPT bez halucynacji",
+        "AI do generowania leadów tworzy duplikaty i fałszywe dane",
+        "Wygenerować wizualizację architektoniczną z zachowaniem stref (AI przesuwa budynki)"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Użytkownicy chcą używać AI, ale narzędzia zawodzą w specyficznych, precyzyjnych zadaniach (halucynacje danych, błędy w grafikach, brak kontekstu biznesowego). Istnieje przepaść między 'hype' a realną użytecznością w biznesie."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba precyzji, powtarzalności i zaufania do wyników generowanych przez automaty, a nie tylko 'kreatywnej inspiracji'."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Narzędzia typu 'Human-in-the-loop' lub wąsko wyspecjalizowane modele AI (fine-tuned) z wbudowaną weryfikacją faktów/danych."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Usługa/SaaS do weryfikacji i 'czyszczenia' outputu z LLM przed jego użyciem biznesowym (np. weryfikator leadów z AI, validator kodu SQL z AI)."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Halucynacje AI jako showstopper",
+      "pattern_key": "halucynacje ai jako showstopper",
+      "consensus_score": 39,
+      "models_found": [
+        "Claude Opus 4.5"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "14%",
+      "affected_categories": [
+        "Automatyzacja",
+        "Marketing",
+        "Analityka/BI",
+        "Content/Tworzenie tresci"
+      ],
+      "example_problems": [
+        "AI do generowania leadów tworzy duplikaty i fałszywe dane",
+        "ChatGPT nie rozumie poleceń dotyczących zmniejszania obiektów",
+        "Zmusić ChatGPT do poprawnego wyszukania danych firm bez halucynacji",
+        "Wygenerować wizualizację architektoniczną z zachowaniem stref"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "AI obiecuje automatyzację ale w praktyce wymyśla dane (REGON-y, adresy firm, ceny), ignoruje polecenia (powiększa zamiast zmniejszać), lub traci kontekst po 20 rekordach. Użytkownicy tracą zaufanie i wracają do ręcznej pracy."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'AI z guardrails' - automatyzacji która wie kiedy nie wie, i prosi o weryfikację zamiast zmyślać"
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Warstwa walidacji między AI a outputem - cross-check z zewnętrznymi źródłami, confidence scoring, human-in-the-loop dla niskiej pewności"
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Validator API dla outputów AI - sprawdza REGON w CEIDG, adresy w Google Maps, ceny w źródłach. Plugin do n8n/Make który automatycznie flaguje podejrzane dane"
+        }
+      ]
+    },
+    {
+      "pattern_name": "Śmierć przez integrację",
+      "pattern_key": "śmierć przez integrację",
+      "consensus_score": 38,
+      "models_found": [
+        "Claude Opus 4.5"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "13%",
+      "affected_categories": [
+        "Wdrozenia/Integracje",
+        "E-commerce",
+        "Automatyzacja"
+      ],
+      "example_problems": [
+        "Rozwiązać problemy z integracją Subiekt GT i WordPress (stany magazynowe)",
+        "Numer telefonu nie przenosi się poprawnie z GetResponse do Google Sheets",
+        "Notoryczne problemy z działaniem webhooków PayPal",
+        "Zintegrować Booksy i Znany Lekarz by uniknąć dublowania wizyt"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Systemy teoretycznie się integrują ale w praktyce: stany magazynowe się rozjeżdżają, numery telefonów nie przechodzą, webhooki PayPal nie działają, tłumaczenia się nie ładują. Każda integracja to tykająca bomba."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'integration health monitoring' - nie tylko setup ale ciągłe sprawdzanie czy dane płyną poprawnie"
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Proaktywny monitoring integracji z alertami przed katastrofą, nie po. Reconciliation reports między systemami"
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Integration Watchdog - monitoruje przepływ danych między popularnymi systemami (BL, Allegro, Subiekt, WooCommerce), alertuje gdy stany się rozjeżdżają, automatycznie naprawia typowe problemy"
+        }
+      ]
+    },
+    {
+      "pattern_name": "Zmęczenie Prospectingiem",
+      "pattern_key": "zmęczenie prospectingiem",
+      "consensus_score": 38,
+      "models_found": [
+        "Gemini 3 Pro"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "13%",
+      "affected_categories": [
+        "Marketing",
+        "Automatyzacja",
+        "Strategia/Biznes"
+      ],
+      "example_problems": [
+        "Obsługa wypalenia zawodowego freelancera spowodowana prospectingiem",
+        "Nieskuteczny cold email outreach (zerowa dostarczalność)",
+        "Niska efektywność zespołu sprzedażowego przy manualnym prospectingu na LinkedIn"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Tradycyjne metody pozyskiwania klientów B2B (zimne maile, LinkedIn) przestały działać lub wymagają nieludzkiego nakładu pracy, prowadząc do wypalenia handlowców."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba systemu, który dostarcza 'ciepłe' leady lub automatyzuje nawiązywanie relacji w sposób, który nie wygląda jak spam."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Hyper-personalizacja AI w dużej skali, odejście od 'spray and pray' na rzecz account-based marketingu wspieranego danymi."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Narzędzie 'Warm Intro AI' – które nie tylko wysyła maile, ale najpierw wchodzi w interakcję z treściami prospekta (lajki, komentarze) budując wstępną rozpoznawalność przed wysłaniem wiadomości."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Syndrom porzuconego freelancera",
+      "pattern_key": "syndrom porzuconego freelancera",
+      "consensus_score": 37,
+      "models_found": [
+        "Claude Opus 4.5"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "12%",
+      "affected_categories": [
+        "Zlecenia/Freelance",
+        "Wdrozenia/Integracje",
+        "E-commerce"
+      ],
+      "example_problems": [
+        "Błędy techniczne w aplikacji i brak wsparcia od freelancera po launchu",
+        "Naprawić konfigurator zamówień po nieuczciwym wykonawcy",
+        "Dokończyć sklep na Shopify",
+        "Pilna konfiguracja BL, migracji z PrestaShop"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Klienci zostają z niedokończonymi projektami, bugami po launchu, lub konfiguratorem który 'prawie działa'. Freelancer znika, nie odpowiada, lub żąda dodatkowych pieniędzy. Problem dotyczy zarówno tanich jak i drogich wykonawców."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba gwarancji ciągłości i odpowiedzialności - nie tylko wykonania, ale długoterminowego wsparcia"
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Model escrow + maintenance contract wbudowany w platformę zleceniową, z automatycznym przejęciem projektu przez backup developera"
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Platforma 'Rescue Dev' - specjalizacja w przejmowaniu porzuconych projektów z gwarancją SLA, audyt kodu + wycena naprawy w 24h"
+        }
+      ]
+    },
+    {
+      "pattern_name": "Cashflow gap",
+      "pattern_key": "cashflow gap",
+      "consensus_score": 37,
+      "models_found": [
+        "Claude Opus 4.5"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "12%",
+      "affected_categories": [
+        "Finanse/Ksiegowosc",
+        "E-commerce",
+        "Zarządzanie Projektami"
+      ],
+      "example_problems": [
+        "Gap w przepływie gotówki: konieczność opłacenia produkcji przed otrzymaniem wpłaty",
+        "Opóźnienia w płatnościach od marek (30-90 dni) zaburzają cash flow",
+        "Koszty subskrypcji wielu aplikacji sumują się do wysokich kwot",
+        "Powolny onboarding bankowy hamujący pilne płatności dla dostawców"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Pieniądze wychodzą przed przyjściem: trzeba zapłacić za produkcję przed sprzedażą, agencje płacą po 30-90 dniach, subskrypcje SaaS sumują się do tysięcy miesięcznie. Małe firmy żyją od faktury do faktury."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'financial breathing room' - elastyczności między wydatkami a przychodami"
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Mikro-finansowanie pod konkretne zamówienia/projekty, nie ogólne linie kredytowe"
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Invoice Factoring dla freelancerów PL - natychmiastowa wypłata 80% wartości faktury za 3% prowizji, integracja z popularnymi systemami fakturowania"
+        }
+      ]
+    },
+    {
+      "pattern_name": "Syndrom Zakładnika Platformy",
+      "pattern_key": "syndrom zakładnika platformy",
+      "consensus_score": 37,
+      "models_found": [
+        "Gemini 3 Pro"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "12%",
+      "affected_categories": [
+        "E-commerce",
+        "Marketing",
+        "Strategia/Biznes"
+      ],
+      "example_problems": [
+        "Drastyczny spadek marży przez wymuszone promocje Amazon",
+        "Poszukiwanie realnego dochodu na Etsy zbanowany",
+        "Skutecznie wypozycjonować wizytówki Google po zawodzie agencjami"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Przedsiębiorcy budują biznesy na platformach (Amazon, Etsy, YouTube, Google Maps), ale żyją w strachu przed banami, zmianami algorytmów lub opłatami, które niszczą marżę."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba dywersyfikacji, odzyskania kontroli nad danymi klientów i uniezależnienia się od jednego dostawcy ruchu/sprzedaży."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Narzędzia do łatwej migracji danych (cross-platform), budowania własnej listy mailingowej (owned media) z ruchu platformowego."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Automatyczny backup i migrator ofert/opinii między platformami (np. Etsy -> Shopify, Google Maps -> Własna strona) z funkcją ochrony przed banem (warm-up kont)."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Analityka bez akcji",
+      "pattern_key": "analityka bez akcji",
+      "consensus_score": 36,
+      "models_found": [
+        "Claude Opus 4.5"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "11%",
+      "affected_categories": [
+        "Analityka/BI",
+        "Marketing",
+        "E-commerce"
+      ],
+      "example_problems": [
+        "Nadmiar danych na dashboardach bez zrozumienia przyczyn",
+        "Trudność w diagnostyce przyczyn odrzucenia strony (Bounce Rate)",
+        "Brak możliwości powiązania działań influencerów z konkretnymi przychodami",
+        "Błędne decyzje marketingowe wynikające z modelu atrybucji Last-Click"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Dashboardy pokazują CO się stało (spadł ruch, wzrósł bounce rate) ale nie DLACZEGO ani CO ROBIĆ. Użytkownicy toną w danych ale nie mają insightów. Szczególnie dotyczy GA4, Meta Ads i narzędzi e-commerce."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'prescriptive analytics' - nie tylko co się stało, ale konkretne rekomendacje działań"
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "AI layer na istniejących danych który generuje 3 konkretne akcje do podjęcia, nie kolejne wykresy"
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Weekly Action Report - łączy GA4, Meta Ads, Allegro w jeden raport z 5 konkretnymi rekomendacjami typu 'Podnieś cenę produktu X o 15% - konkurencja podniosła, masz margines'"
+        }
+      ]
+    },
+    {
+      "pattern_name": "Chaos Desynchronizacji Danych",
+      "pattern_key": "chaos desynchronizacji danych",
+      "consensus_score": 36,
+      "models_found": [
+        "Gemini 3 Pro"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "11%",
+      "affected_categories": [
+        "Analityka/BI",
+        "Zarządzanie Projektami",
+        "Wdrozenia/Integracje"
+      ],
+      "example_problems": [
+        "Zintegrować Booksy i Znany Lekarz by uniknąć dublowania wizyt",
+        "Rozwiązać problemy z integracją Subiekt GT i WordPress (stany magazynowe)",
+        "Brak uniwersalnego źródła prawdy (Single Source of Truth) w firmach"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Firmy posiadają dane rozrzucone po wielu miejscach (Excel, SaaS, ERP, notatnik), co prowadzi do błędów operacyjnych, podwójnych rezerwacji i braku wiedzy o kondycji firmy."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba jednego, aktualnego widoku na stan biznesu (stany magazynowe, kalendarz, finanse) bez konieczności ręcznej synchronizacji."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Centralne dashboardy integrujące niszowe polskie systemy, proste hurtownie danych dla MŚP."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Wtyczka 'Inventory Unifier' – prosta usługa, która jest nadrzędnym 'masterem' stanów magazynowych i kalendarzy, nadpisująca dane we wszystkich podłączonych systemach w czasie rzeczywistym."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Pustka Technicznego Wspólnika",
+      "pattern_key": "pustka technicznego wspólnika",
+      "consensus_score": 35,
+      "models_found": [
+        "Gemini 3 Pro"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "10%",
+      "affected_categories": [
+        "Strategia/Biznes",
+        "Zlecenia/Freelance",
+        "Startup"
+      ],
+      "example_problems": [
+        "Znaleźć wspólnika technicznego (programistę) do startupu flotowego",
+        "Zatrudnić CTO jako warunek otrzymania finansowania VC",
+        "Wysoki koszt walidacji pomysłu marketplace przy braku umiejętności"
+      ],
+      "descriptions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Osoby z wiedzą domenową (logistyka, nieruchomości, medycyna) mają pieniądze i pomysł, ale brak im kompetencji technicznych do stworzenia produktu, a software house'y są za drogie."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Potrzeba partnerstwa technicznego lub narzędzi 'no-code', które są wystarczająco potężne, by zbudować MVP bez pisania kodu, ale prostsze niż nauka programowania."
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Usługi 'CTO as a Service' dla non-tech founderów, platformy low-code dedykowane dla konkretnych branż."
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Gemini 3 Pro",
+          "text": "Program akceleracyjny lub platforma łącząca 'Non-tech Founders' z 'Vetted Devs' za udziały (equity) + małe wynagrodzenie, z ustandaryzowanymi umowami prawnymi."
+        }
+      ]
+    },
+    {
+      "pattern_name": "Platform lock-in anxiety",
+      "pattern_key": "platform lock-in anxiety",
+      "consensus_score": 34,
+      "models_found": [
+        "Claude Opus 4.5"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "9%",
+      "affected_categories": [
+        "E-commerce",
+        "Strategia/Biznes",
+        "Finanse/Ksiegowosc"
+      ],
+      "example_problems": [
+        "Zwiększyć sprzedaż i uniezależnić się od Allegro",
+        "Drastyczny spadek marży przez wymuszone promocje Amazon",
+        "Brak możliwości odwołania się od negatywnych ocen sprzedawcy",
+        "Dodać markę własną do katalogu Allegro mimo odrzuceń"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Użytkownicy są uzależnieni od platform (Allegro, Amazon, Shopify) które zmieniają zasady, podnoszą opłaty, banują konta bez wyjaśnienia. Chcą się uniezależnić ale nie wiedzą jak, lub boją się utraty ruchu."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'platform diversification' bez utraty obecnego biznesu - migracja bez ryzyka"
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Gradual migration strategy z parallel running - własny sklep rośnie podczas gdy marketplace nadal działa"
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Allegro-to-Own migration service - buduje własny sklep, przenosi SEO juice, ustawia redirect strategy, monitoruje kiedy bezpiecznie zmniejszyć zależność od marketplace"
+        }
+      ]
+    },
+    {
+      "pattern_name": "Deadline na wczoraj",
+      "pattern_key": "deadline na wczoraj",
+      "consensus_score": 33,
+      "models_found": [
+        "Claude Opus 4.5"
+      ],
+      "models_count": 1,
+      "avg_affected_percentage": "8%",
+      "affected_categories": [
+        "Zlecenia/Freelance",
+        "Content/Tworzenie tresci",
+        "Wdrozenia/Integracje"
+      ],
+      "example_problems": [
+        "Natychmiast znaleźć prezentera do filmu (deadline minął)",
+        "Pilna konfiguracja BL, migracji z PrestaShop i fakturowania",
+        "Zmontować rolkę na Instagram dla stomatologii w szybkim terminie",
+        "Zapewnić relację z eventu w ostatniej chwili"
+      ],
+      "descriptions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Pilne zlecenia z terminem 'na wczoraj', brak prezentera w dniu eventu, konfiguracja systemu potrzebna natychmiast. Klienci zostawiają rzeczy na ostatnią chwilę i płacą premium za stres wykonawcy."
+        }
+      ],
+      "underlying_needs": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Potrzeba 'emergency response team' dla digital - jak pogotowie ale dla projektów"
+        }
+      ],
+      "solution_directions": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Premium tier z gwarantowanym czasem reakcji, pre-vetted wykonawcy na standby"
+        }
+      ],
+      "product_opportunities": [
+        {
+          "model": "Claude Opus 4.5",
+          "text": "Digital 112 - sieć freelancerów na standby z gwarantowaną reakcją 2h dla pilnych zleceń. Klient płaci 2x stawkę, freelancer dostaje bonus za dyspozycyjność"
+        }
+      ]
+    }
+  ],
+  "raw_model_responses": [
+    {
+      "model": "Claude Opus 4.5",
+      "patterns_count": 12
+    },
+    {
+      "model": "Gemini 3 Pro",
+      "patterns_count": 9
+    },
+    {
+      "model": "Grok 4",
+      "patterns_count": 10
+    },
+    {
+      "model": "GPT-5.2",
+      "patterns_count": 10
+    }
+  ]
+}

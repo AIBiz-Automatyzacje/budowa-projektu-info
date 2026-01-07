@@ -1,0 +1,831 @@
+{
+  "meta": {
+    "generated": "2026-01-06T21:58:35.761Z",
+    "total_sources": 417,
+    "unique_after_dedup": 358,
+    "top_selected": 20
+  },
+  "funnel": {
+    "problems": 4003,
+    "filtered": 1026,
+    "opportunities": 417,
+    "unique": 358,
+    "top": 20
+  },
+  "top20": [
+    {
+      "rank": 1,
+      "id": "AI_PL_20250530_006",
+      "name": "ProductBG Pro",
+      "tagline": "Specjalistyczne narzędzie AI do wymiany tła zdjęć produktowych z zachowaniem oryginalnych napisów i kształtów",
+      "pattern": "AI_GENERATOR",
+      "category": "AI/Generatory",
+      "unified_score": 97,
+      "scores_breakdown": {
+        "problem_clarity": 95,
+        "mvp_simplicity": 75,
+        "ai_leverage": 100,
+        "mobile_fit": 67,
+        "monetization": 87,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Remove.bg, Photoroom - ale problem z napisami na produktach"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Zmiana tła produktu bez zniekształcania przedmiotu",
+      "target_personas": [
+        "Sklepy e-commerce, fotografowie produktowi"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Konkretny problem e-commerce, API AI dostępne, jasny model biznesowy",
+      "tech_stack": "Next.js + Replicate API (SDXL) + Cloudinary + Stripe",
+      "monetization_model": "49 PLN za 100 zdjęć lub 199 PLN/mies unlimited",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 2,
+      "id": "reddit_Printify_007",
+      "name": "PrintifyBoost",
+      "tagline": "AI generuje mockupy, opisy SEO i listingi dla setek produktów Printify jednocześnie",
+      "pattern": "AI_GENERATOR",
+      "category": "AI/Generatory",
+      "unified_score": 97,
+      "scores_breakdown": {
+        "problem_clarity": 95,
+        "mvp_simplicity": 85,
+        "ai_leverage": 100,
+        "mobile_fit": 53,
+        "monetization": 100,
+        "competition_gap": 80,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Brak dedykowanych narzędzi AI dla Printify, ogólne generatory nie integrują się z API"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Czasochłonne ręczne tworzenie mockupów, opisów SEO i listingów dla wielu produktów",
+      "target_personas": [
+        "Sprzedawcy POD z katalogami 500+ produktów"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Jasny problem, prosta integracja API, wysokie AI leverage",
+      "tech_stack": "Next.js + Claude API + Printify API + Supabase + Stripe",
+      "monetization_model": "49 PLN/mies (500 produktów) lub 99 PLN/mies (unlimited)",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 3,
+      "id": "reddit_SmallYoutubers_095",
+      "name": "ThumbGenius",
+      "tagline": "Generuje i testuje A/B warianty miniatur YouTube używając AI, analizując trendy w danej niszy",
+      "pattern": "AI_GENERATOR",
+      "category": "AI/Generatory",
+      "unified_score": 97,
+      "scores_breakdown": {
+        "problem_clarity": 100,
+        "mvp_simplicity": 90,
+        "ai_leverage": 100,
+        "mobile_fit": 53,
+        "monetization": 100,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Thumbnail Test istnieje ale tylko do testowania, nie generuje"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Niski CTR (2%) mimo poprawy jakości wideo",
+      "target_personas": [
+        "YouTuberzy z CTR poniżej 5%"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Połączenie generowania AI z testowaniem A/B to unikalna wartość",
+      "tech_stack": "React + DALL-E 3 API + YouTube Data API + Vercel",
+      "monetization_model": "99 PLN/mies za 50 miniatur lub 19 PLN za 5 miniatur",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 4,
+      "id": "reddit_remotework_043",
+      "name": "Screenshot2Excel",
+      "tagline": "AI wyciąga dane z screenshotów i automatycznie tworzy arkusze Excel",
+      "pattern": [
+        "AI_ASSISTANT",
+        "SIMPLIFIER"
+      ],
+      "category": [
+        "AI_ASSISTANT",
+        "SIMPLIFIER"
+      ],
+      "unified_score": 96,
+      "scores_breakdown": {
+        "problem_clarity": 100,
+        "mvp_simplicity": 90,
+        "ai_leverage": 100,
+        "mobile_fit": 53,
+        "monetization": 93,
+        "competition_gap": 90,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Nanonets, Parseur - ale drogie i skomplikowane dla prostego use case"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Klienci przesyłają dane w formie zrzutów ekranu zamiast plików źródłowych",
+      "target_personas": [
+        "Freelancerzy i agencje otrzymujący dane jako obrazy"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Prosty problem, wysokie AI leverage, szybki MVP",
+      "tech_stack": "Next.js + Claude Vision API + xlsx library + Vercel",
+      "monetization_model": "39 PLN/mies (100 konwersji) lub 99 PLN/mies (unlimited)",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 5,
+      "id": "reddit_venturecapital_011",
+      "name": "DealFlow AI",
+      "tagline": "Agreguje startupy z wielu źródeł i filtruje według kryteriów funduszu VC",
+      "pattern": [
+        "AGGREGATOR",
+        "MONITOR_ALERT"
+      ],
+      "category": [
+        "AGGREGATOR",
+        "MONITOR_ALERT"
+      ],
+      "unified_score": 94,
+      "scores_breakdown": {
+        "problem_clarity": 95,
+        "mvp_simplicity": 80,
+        "ai_leverage": 90,
+        "mobile_fit": 67,
+        "monetization": 100,
+        "competition_gap": 80,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Pitchbook, Crunchbase - ale drogie i nie automatyzują sourcingu"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Nieefektywny proces ręcznego sourcingu startupów (20 firm dziennie)",
+      "target_personas": [
+        "Analitycy VC szukający 20+ startupów dziennie"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "B2B SaaS z wysokim LTV, jasny problem i ROI",
+      "tech_stack": "Python + BeautifulSoup + Claude API + PostgreSQL + React",
+      "monetization_model": "499 PLN/mies (junior) lub 999 PLN/mies (team)",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 6,
+      "id": "reddit_SocialMediaMarketing_002",
+      "name": "ContentSpark",
+      "tagline": "AI generator pomysłów na content z kalendarzem publikacji - generuje pomysły dopasowane do marki i trendy",
+      "pattern": [
+        "AI_GENERATOR",
+        "AI_ASSISTANT"
+      ],
+      "category": [
+        "AI_GENERATOR",
+        "AI_ASSISTANT"
+      ],
+      "unified_score": 94,
+      "scores_breakdown": {
+        "problem_clarity": 85,
+        "mvp_simplicity": 75,
+        "ai_leverage": 95,
+        "mobile_fit": 80,
+        "monetization": 93,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "ChatGPT jest generyczny, dedykowane narzędzia są drogie (Jasper)"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Brak pomysłów na treści i zmęczenie psychiczne wynikające z przełączania się między strategią a egzekucją",
+      "target_personas": [
+        "Solo marketerzy i małe zespoły social media"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Głównie integracja z AI i prosty UI, idealny projekt na 2-3 tygodnie",
+      "tech_stack": "React + Claude API + Airtable API + Vercel",
+      "monetization_model": "39 PLN/mies za 100 pomysłów, 99 PLN/mies unlimited + kalendarz",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 7,
+      "id": "reddit_partneredyoutube_049",
+      "name": "YouTubeAutoPilot",
+      "tagline": "Generuje opisy SEO, tagi i miniatury na podstawie transkrypcji wideo używając AI",
+      "pattern": [
+        "AI_GENERATOR",
+        "AI_ASSISTANT",
+        "SIMPLIFIER",
+        "AGGREGATOR"
+      ],
+      "category": [
+        "AI_GENERATOR",
+        "AI_ASSISTANT",
+        "SIMPLIFIER",
+        "AGGREGATOR"
+      ],
+      "unified_score": 94,
+      "scores_breakdown": {
+        "problem_clarity": 90,
+        "mvp_simplicity": 85,
+        "ai_leverage": 100,
+        "mobile_fit": 40,
+        "monetization": 93,
+        "competition_gap": 80,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "TubeBuddy i VidIQ mają niektóre funkcje, ale nie full automation"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Zarządzanie kanałem zajmuje 70% czasu (miniatury, opisy, administracja)",
+      "target_personas": [
+        "YouTuberzy publikujący regularnie"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "AI może zautomatyzować 80% pracy administracyjnej",
+      "tech_stack": "Next.js + Claude API + YouTube API + DALL-E 3",
+      "monetization_model": "149 PLN/mies za 30 wideo miesięcznie",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 8,
+      "id": "reddit_thread_090",
+      "name": "IdeaValidator",
+      "tagline": "Wizard który przeprowadza przez proces walidacji pomysłu w 48h używając landing pages i paid ads",
+      "pattern": [
+        "SIMPLIFIER",
+        "AI_ASSISTANT"
+      ],
+      "category": [
+        "SIMPLIFIER",
+        "AI_ASSISTANT"
+      ],
+      "unified_score": 94,
+      "scores_breakdown": {
+        "problem_clarity": 100,
+        "mvp_simplicity": 90,
+        "ai_leverage": 75,
+        "mobile_fit": 33,
+        "monetization": 100,
+        "competition_gap": 90,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Są kursy i poradniki, ale brak narzędzia które prowadzi krok po kroku"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Strata lat na budowanie produktów, których nikt nie chce, z powodu braku szybkiej i skutecznej walidacji pomysłów",
+      "target_personas": [
+        "Indie hackerzy i początkujący founderzy"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Prosty wizard z integracjami to idealne MVP dla low-code",
+      "tech_stack": "Next.js + Framer + Facebook Ads API + Stripe",
+      "monetization_model": "199 PLN za walidację jednego pomysłu",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 9,
+      "id": "reddit_influencermarketing_006",
+      "name": "Influencer Outreach AI",
+      "tagline": "AI automatyzuje personalizowane wiadomości do influencerów i śledzi odpowiedzi",
+      "pattern": [
+        "AI_ASSISTANT",
+        "SIMPLIFIER"
+      ],
+      "category": [
+        "AI_ASSISTANT",
+        "SIMPLIFIER"
+      ],
+      "unified_score": 94,
+      "scores_breakdown": {
+        "problem_clarity": 90,
+        "mvp_simplicity": 85,
+        "ai_leverage": 95,
+        "mobile_fit": 67,
+        "monetization": 93,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Upfluence, AspireIQ - ale drogie i skomplikowane dla małych firm"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Ręczny outreach i śledzenie w arkuszach blokuje skalowanie kampanii",
+      "target_personas": [
+        "Małe brandy e-commerce skalujące influencer marketing"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "AI personalizacja daje przewagę, prosty MVP z API",
+      "tech_stack": "Next.js + Claude API + Instagram API + Airtable API",
+      "monetization_model": "79 PLN/mies (50 wiadomości) lub 199 PLN/mies (200 wiadomości)",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 10,
+      "id": "reddit_FulfillmentByAmazon_072",
+      "name": "PPC Copilot",
+      "tagline": "AI asystent który analizuje kampanie Amazon PPC i sugeruje konkretne optymalizacje w prostym języku",
+      "pattern": [
+        "AI_ASSISTANT",
+        "SIMPLIFIER"
+      ],
+      "category": [
+        "AI_ASSISTANT",
+        "SIMPLIFIER"
+      ],
+      "unified_score": 94,
+      "scores_breakdown": {
+        "problem_clarity": 90,
+        "mvp_simplicity": 80,
+        "ai_leverage": 90,
+        "mobile_fit": 67,
+        "monetization": 93,
+        "competition_gap": 80,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Istnieją narzędzia jak Helium10, ale są skomplikowane dla początkujących"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Stres i brak umiejętności w zarządzaniu kampaniami PPC",
+      "target_personas": [
+        "Sprzedawcy Amazon FBA bez doświadczenia w PPC"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "AI może uprościć skomplikowane dane PPC do prostych rekomendacji",
+      "tech_stack": "Next.js + Claude API + Amazon Ads API + Supabase",
+      "monetization_model": "149 PLN/mies za analizę do 10 kampanii",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 11,
+      "id": "reddit_tiktokads_001",
+      "name": "TikTok Ads Spy",
+      "tagline": "Monitoruje reklamy konkurencji na TikTok i wysyła alerty o nowych kreacjach i trendach",
+      "pattern": [
+        "MONITOR_ALERT",
+        "AGGREGATOR"
+      ],
+      "category": [
+        "MONITOR_ALERT",
+        "AGGREGATOR"
+      ],
+      "unified_score": 93,
+      "scores_breakdown": {
+        "problem_clarity": 85,
+        "mvp_simplicity": 70,
+        "ai_leverage": 75,
+        "mobile_fit": 80,
+        "monetization": 93,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "AdSpy, BigSpy - ale słabe pokrycie TikTok i wysokie ceny"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Brak narzędzi do śledzenia i analizy reklam konkurencji na TikTok w czasie rzeczywistym",
+      "target_personas": [
+        "E-commerce marketerzy prowadzący kampanie TikTok Ads"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Niszowy problem z jasną grupą docelową gotową płacić",
+      "tech_stack": "Python + Playwright + PostgreSQL + SendGrid + React dashboard",
+      "monetization_model": "99 PLN/mies (10 konkurentów) lub 199 PLN/mies (50 konkurentów)",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 12,
+      "id": "reddit_ChatGPTPro_009",
+      "name": "AI Hub",
+      "tagline": "Jedna subskrypcja dająca dostęp do wielu modeli AI (GPT, Claude, Gemini) w jednym interfejsie",
+      "pattern": "AGGREGATOR",
+      "category": "Agregatory",
+      "unified_score": 93,
+      "scores_breakdown": {
+        "problem_clarity": 85,
+        "mvp_simplicity": 75,
+        "ai_leverage": 90,
+        "mobile_fit": 73,
+        "monetization": 93,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Poe, Perplexity - ale ograniczone modele i funkcje"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Zarządzanie wieloma subskrypcjami AI jest kosztowne i nieefektywne",
+      "target_personas": [
+        "Profesjonaliści używający wielu AI tools"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Rosnący problem, jasny value prop, recurring revenue",
+      "tech_stack": "Next.js + Multiple AI APIs + Stripe + Redis for caching",
+      "monetization_model": "149 PLN/mies za dostęp do 5 modeli AI",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 13,
+      "id": "reddit_remotejobs_001",
+      "name": "Remote Onboarding Kit",
+      "tagline": "Gotowe szablony i checklisty do onboardingu zdalnego z integracją Slack/Teams",
+      "pattern": [
+        "TEMPLATE_PACK",
+        "SIMPLIFIER",
+        "AGGREGATOR"
+      ],
+      "category": [
+        "TEMPLATE_PACK",
+        "SIMPLIFIER",
+        "AGGREGATOR"
+      ],
+      "unified_score": 92,
+      "scores_breakdown": {
+        "problem_clarity": 90,
+        "mvp_simplicity": 95,
+        "ai_leverage": 60,
+        "mobile_fit": 67,
+        "monetization": 87,
+        "competition_gap": 80,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "BambooHR, Rippling - ale są drogie i skomplikowane dla małych firm"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Chaotyczny proces onboardingu pracowników zdalnych",
+      "target_personas": [
+        "HR i menedżerowie w firmach remote-first"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Prosty produkt info, można zbudować w 2 tygodnie",
+      "tech_stack": "Notion API + Zapier + Next.js + Stripe",
+      "monetization_model": "199 PLN jednorazowo lub 49 PLN/mies z updateami",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 14,
+      "id": "reddit_thread_003",
+      "name": "ReviewRadar",
+      "tagline": "Automatycznie zbiera i analizuje recenzje konkurencji z wielu platform, generując raporty z insights",
+      "pattern": "AGGREGATOR",
+      "category": "Agregatory",
+      "unified_score": 92,
+      "scores_breakdown": {
+        "problem_clarity": 95,
+        "mvp_simplicity": 80,
+        "ai_leverage": 85,
+        "mobile_fit": 53,
+        "monetization": 93,
+        "competition_gap": 80,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Istnieją ogólne narzędzia scrapingowe, ale nie dedykowane do analizy recenzji"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Ręczne zbieranie recenzji z platform takich jak G2, Capterra i Shopify w celu analizy konkurencji zajmuje godziny",
+      "target_personas": [
+        "Product managerowie i marketerzy B2B"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Scraping + AI analysis to idealne połączenie dla low-code dev",
+      "tech_stack": "Python + Scrapy + Claude API + PostgreSQL + FastAPI",
+      "monetization_model": "299 PLN/mies za monitoring 5 konkurentów",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 15,
+      "id": "reddit_thread_106",
+      "name": "AI Visibility Optimizer",
+      "tagline": "Analizuje content i sugeruje optymalizacje aby marka pojawiała się w odpowiedziach AI",
+      "pattern": [
+        "AI_ASSISTANT",
+        "MONITOR_ALERT",
+        "SIMPLIFIER"
+      ],
+      "category": [
+        "AI_ASSISTANT",
+        "MONITOR_ALERT",
+        "SIMPLIFIER"
+      ],
+      "unified_score": 92,
+      "scores_breakdown": {
+        "problem_clarity": 85,
+        "mvp_simplicity": 75,
+        "ai_leverage": 95,
+        "mobile_fit": 33,
+        "monetization": 87,
+        "competition_gap": 100,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Brak dedykowanych narzędzi do optymalizacji pod AI"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Marki i firmy nie są widoczne w odpowiedziach generowanych przez modele AI (ChatGPT, Perplexity), tracąc ruch",
+      "target_personas": [
+        "SEO specjaliści i content marketerzy"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Nowa nisza gdzie AI może analizować jak AI czyta content",
+      "tech_stack": "Python + OpenAI API + BeautifulSoup + FastAPI",
+      "monetization_model": "499 PLN/mies za analizę domeny",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 16,
+      "id": "AA_20251023_050",
+      "name": "Comment Catcher",
+      "tagline": "Narzędzie, które monitoruje Twoje strony i kampanie na Facebooku 24/7 i wysyła natychmiastowe powiadomienie (na Slack, Discord, SMS) o każdym nowym komentarzu.",
+      "pattern": "MONITOR_ALERT",
+      "category": "Monitory/Alerty",
+      "unified_score": 89,
+      "scores_breakdown": {
+        "problem_clarity": 90,
+        "mvp_simplicity": 90,
+        "ai_leverage": 40,
+        "mobile_fit": 93,
+        "monetization": 67,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Duże kombajny do zarządzania social media (Agorapulse, Sprout Social) mają tę funkcję, ale są drogie i skomplikowane. Brakuje prostego, taniego i dedykowanego narzędzia, które robi tylko to."
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Agencje i właściciele firm tracą klientów i psują wizerunek, ponieważ nie odpowiadają na komentarze na Facebooku (szczególnie pod reklamami) wystarczająco szybko.",
+      "target_personas": [
+        "Social media managerowie, agencje marketingowe, właściciele firm aktywnie reklamujących się na Facebooku."
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "To idealny projekt dla low-code developera. Niezwykle prosty technicznie do zbudowania MVP, rozwiązuje realny problem, a model biznesowy jest łatwy do wdrożenia. Doskonały 'mikro-SaaS'.",
+      "tech_stack": "Make.com jako silnik (Webhook FB -> Router -> Notyfikacja) + Softr.io lub Carrd (dla strony z logowaniem i konfiguracją) + Stripe (dla płatności).",
+      "monetization_model": "Prosta subskrypcja: 29 PLN/miesiąc za monitorowanie do 3 stron. Niska cena za rozwiązanie jednego, konkretnego problemu.",
+      "source": "lowcode",
+      "model_count": 4,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 17,
+      "id": "YT_20250929_020",
+      "name": "ThumbCTR AI",
+      "tagline": "Generator miniatur YouTube z AI - analizuje najlepsze miniatury w twojej niszy i generuje warianty A/B do testów",
+      "pattern": "AI_GENERATOR",
+      "category": "AI/Generatory",
+      "unified_score": 87,
+      "scores_breakdown": {
+        "problem_clarity": 90,
+        "mvp_simplicity": 85,
+        "ai_leverage": 100,
+        "mobile_fit": 67,
+        "monetization": 100,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "ThumbnailTest, Canva - ale bez AI optymalizacji pod CTR"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Poprawić klikalność miniatur (CTR), które są nudne",
+      "target_personas": [
+        "YouTuberzy chcący zwiększyć views"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Połączenie YouTube Analytics API z generowaniem obrazów",
+      "tech_stack": "Next.js + DALL-E 3 API + YouTube Data API + Vercel",
+      "monetization_model": "79 PLN/mies za 50 miniatur lub 9 PLN/szt",
+      "source": "lowcode",
+      "model_count": 3,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 18,
+      "id": "smm_20251118_004",
+      "name": "ReelsAutoCut",
+      "tagline": "Automatyczny montażysta rolek używający AI do cięcia, dodawania napisów i muzyki w kilka kliknięć",
+      "pattern": [
+        "SIMPLIFIER",
+        "AI_GENERATOR"
+      ],
+      "category": [
+        "SIMPLIFIER",
+        "AI_GENERATOR"
+      ],
+      "unified_score": 87,
+      "scores_breakdown": {
+        "problem_clarity": 85,
+        "mvp_simplicity": 75,
+        "ai_leverage": 90,
+        "mobile_fit": 93,
+        "monetization": 87,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "CapCut i inne wymagają manualnej pracy, brak full-auto"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Zlecić montaż rolek z powodu bólu fizycznego",
+      "target_personas": [
+        "content creatorzy publikujący regularnie"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "AI może zautomatyzować 80% pracy montażowej, duży rynek",
+      "tech_stack": "React + Remotion + Whisper API + Replicate API",
+      "monetization_model": "99 PLN/mies za 30 rolek lub 9 PLN/rolka",
+      "source": "lowcode",
+      "model_count": 3,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 19,
+      "id": "reddit_email_007",
+      "name": "InboxAI Tagger",
+      "tagline": "AI automatycznie taguje emaile i tworzy szkice odpowiedzi. Uczy się z Twoich wzorców.",
+      "pattern": "AI_ASSISTANT",
+      "category": "AI/Asystenci",
+      "unified_score": 87,
+      "scores_breakdown": {
+        "problem_clarity": 90,
+        "mvp_simplicity": 75,
+        "ai_leverage": 100,
+        "mobile_fit": 80,
+        "monetization": 100,
+        "competition_gap": 70,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "Superhuman, Spark Mail ale są ogólne, nie uczą się wzorców użytkownika"
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Przeciążenie skrzynki email (10k+ rocznie) wymagające inteligentnego tagowania",
+      "target_personas": [
+        "Konsultanci, agencje otrzymujące >50 emaili dziennie"
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "AI może nauczyć się stylu tagowania użytkownika, duży problem",
+      "tech_stack": "Chrome Extension + Claude API + Gmail API + Supabase",
+      "monetization_model": "$29/mies lub $290/rok",
+      "source": "lowcode",
+      "model_count": 3,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    },
+    {
+      "rank": 20,
+      "id": "reddit_socialmedia_001",
+      "name": "DM Pilot",
+      "tagline": "Asystent AI, który autonomicznie prowadzi rozmowy sprzedażowe w wiadomościach prywatnych (DM) na Instagramie i Facebooku, kwalifikuje leady i odpowiada na pytania 24/7.",
+      "pattern": "AI_ASSISTANT",
+      "category": "AI/Asystenci",
+      "unified_score": 87,
+      "scores_breakdown": {
+        "problem_clarity": 95,
+        "mvp_simplicity": 70,
+        "ai_leverage": 95,
+        "mobile_fit": 100,
+        "monetization": 93,
+        "competition_gap": 50,
+        "white_space": null,
+        "community_fit": null
+      },
+      "gap_type": null,
+      "competitors": [
+        "ManyChat jest głównym konkurentem, ale często wymaga skomplikowanej konfiguracji. Luka leży w stworzeniu bardziej autonomicznego, 'inteligentniejszego' agenta, który wymaga minimalnego setupu."
+      ],
+      "displacement_potential": null,
+      "problem_quote": "Manualna obsługa DM na social media przez wirtualnych asystentów jest droga, wolna i prowadzi do utraty sprzedaży.",
+      "target_personas": [
+        "Właściciele e-commerce, twórcy i coachowie sprzedający przez social media."
+      ],
+      "budget_range": null,
+      "hidden_patterns": null,
+      "mvp_description": "Idealne dla low-code, ponieważ platformy takie jak Voiceflow/Botpress pozwalają na tworzenie zaawansowanych chatbotów bez pisania kodu. Wartość leży w projektowaniu konwersacji i promptach, a nie w infrastrukturze.",
+      "tech_stack": "Voiceflow lub Botpress (do budowy logiki chatbota) + OpenAI API (dla inteligencji) + Meta API (do integracji z DM).",
+      "monetization_model": "Subskrypcja miesięczna, np. 199 PLN/miesiąc (zastępuje ułamek etatu VA).",
+      "source": "lowcode",
+      "model_count": 3,
+      "classification": "EXCELLENT",
+      "pps_score": null
+    }
+  ]
+}

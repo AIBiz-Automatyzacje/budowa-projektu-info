@@ -1,0 +1,1382 @@
+{
+  "meta": {
+    "generated": "2026-01-05T11:41:57.184Z",
+    "step": "4b. Solution Discovery (bez kontekstu społeczności)",
+    "models_used": [
+      "anthropic/claude-opus-4.5",
+      "google/gemini-3-pro-preview",
+      "x-ai/grok-4",
+      "openai/gpt-5.2-chat"
+    ],
+    "models_count": 4,
+    "total_solutions": 39,
+    "input_categories": 10,
+    "input_patterns": 12
+  },
+  "meta_insights": [
+    {
+      "model": "Claude Opus 4.5",
+      "insight": "Analiza ujawnia fundamentalny paradoks polskiego rynku: firmy mają dostęp do setek narzędzi, ale cierpią na 'paralysis by choice' i brak zaufania. Największe możliwości leżą nie w budowaniu kolejnych narzędzi, ale w tworzeniu 'warstw zaufania' (weryfikacja, escrow, transparentność) i 'kleju' łączącego istniejące rozwiązania. Cross-cutting patterns pokazują, że problemy emocjonalne (strach przed ekspozycją, wypalenie, brak zaufania) są równie ważne jak techniczne - rozwiązania które je adresują mają potencjał na wyższą retencję i willingness-to-pay."
+    },
+    {
+      "model": "Gemini 3 Pro",
+      "insight": "Analiza wskazuje na fundamentalny 'kryzys zaufania' i 'paraliż decyzyjny' w polskim sektorze MŚP. Użytkownicy nie szukają kolejnych narzędzi z tysiącem funkcji, lecz rozwiązań, które dają poczucie bezpieczeństwa (weryfikacja, gwarancja efektu) i zdejmują z nich ciężar operacyjny (automatyzacja 'done-for-you'). Największy potencjał leży w produktach, które działają jako 'klej' między istniejącymi systemami lub usuwają czynnik ludzki z powtarzalnych, stresujących procesów."
+    },
+    {
+      "model": "Grok 4",
+      "insight": "Analizując dane, zauważyłem, że cross-cutting patterns jak deficyt zaufania i przeciążenie czasowe dominują w wielu kategoriach, wskazując na potrzebę rozwiązań budujących pewność i efektywność. Problemy są często emocjonalne (wypalenie, strach) obok operacyjnych, co sugeruje potencjał dla AI-pomocnych narzędzi no-code. Rynek jest konkurencyjny, ale nisze w polskich małych firmach oferują szanse na szybką adopcję poprzez fokus na lokalnych bólach jak niestabilność dochodów."
+    },
+    {
+      "model": "GPT-5.2",
+      "insight": "Najsilniejsze bóle są związane nie z brakiem narzędzi, ale z brakiem zaufania, czasu i przewidywalności. Produkty, które wygrywają, to te które upraszczają, dają kontrolę i pokazują realny efekt biznesowy. Największy potencjał mają rozwiązania będące „klejem” między ludźmi, procesami i istniejącymi narzędziami."
+    }
+  ],
+  "solutions_by_potential": [
+    {
+      "name": "TrustPay (Escrow dla Agencji)",
+      "problem_solved": "Kryzys Zaufania do Agencji (PPS 66) + Brak widoczności efektów (PPS 64)",
+      "description": "Platforma pośrednicząca w płatnościach B2B, która uwalnia środki dla agencji/freelancera dopiero po osiągnięciu zdefiniowanych KPI (np. podpięcie API do Google Analytics/CRM). Klient wpłaca pieniądze do 'depozytu', wykonawca widzi, że środki są zabezpieczone, ale otrzymuje je po dowiezieniu wyniku.",
+      "target_audience": "Małe firmy zlecające marketing/SEO oraz uczciwe agencje chcące wyróżnić się gwarancją.",
+      "business_model": "Prowizja od transakcji (np. 3-5%) pokrywana po połowie lub przez jedną ze stron.",
+      "market_potential": 9,
+      "differentiation": "Większość platform (Useme) skupia się na przekazaniu praw autorskich/fakturze. TrustPay skupia się na weryfikacji EFEKTU (performance) przed wypłatą.",
+      "mvp_scope": "Prosty system Escrow, integracja z GA4/Meta Ads do automatycznego potwierdzania leadów/ruchu, ręczne zatwierdzanie kamieni milowych.",
+      "risks": [
+        "Spory o interpretację 'dowiezienia' wyniku",
+        "Opór agencji przed modelem 'success fee'"
+      ],
+      "proposed_by": "Gemini 3 Pro",
+      "rank": 1
+    },
+    {
+      "name": "IntrovertCreator AI",
+      "problem_solved": "Strach przed ekspozycją (PPS 64) + Content/Tworzenie treści (PPS 77)",
+      "description": "Narzędzie do tworzenia wideo B2B bez pokazywania twarzy ('Faceless Channels'), ale z zachowaniem ludzkiego charakteru. Wykorzystuje stocki, animacje tekstu i wysokiej jakości polskie AI voiceovers, aby zamienić wpis na blogu/LinkedIn w dynamiczne wideo na TikToka/Reels.",
+      "target_audience": "Eksperci, programiści, właściciele firm, którzy chcą budować markę osobistą, ale nienawidzą kamery.",
+      "business_model": "SaaS (kredyty na generowanie minut wideo).",
+      "market_potential": 9,
+      "differentiation": "Skupienie na polskim języku (naturalna intonacja) i estetyce B2B/Edukacyjnej, a nie rozrywkowej.",
+      "mvp_scope": "Konwerter Tekst -> Wideo (slajdy + voiceover + napisy), biblioteka B-roll.",
+      "risks": [
+        "Szybki rozwój darmowych narzędzi (CapCut, Canva)",
+        "Zalew niskiej jakości treści AI (spam)"
+      ],
+      "proposed_by": "Gemini 3 Pro",
+      "rank": 2
+    },
+    {
+      "name": "TrustVault Freelance",
+      "problem_solved": "Deficyt zaufania i kryzys zaufania do agencji, powodujący strach przed niedowiezieniem projektów w kategoriach Zlecenia/Freelance, Automatyzacja i Marketing",
+      "description": "Marketplace dla freelancerów z wbudowanym systemem escrow, gdzie płatności są uwalniane po weryfikacji milestone'ów przez AI i recenzje. Oferuje gwarancje zwrotu pieniędzy i automatyczne raporty postępu. Użytkownicy mogą testować freelancerów przez małe zadania przed dużym projektem.",
+      "target_audience": "Małe firmy i przedsiębiorcy zlecający prace freelancerom lub agencjom",
+      "business_model": "Marketplace z prowizją od transakcji (10-15%)",
+      "market_potential": 9,
+      "differentiation": "AI-pomocna weryfikacja jakości pracy w czasie rzeczywistym, w odróżnieniu od Upwork, który nie oferuje gwarancji po launchu",
+      "mvp_scope": "System escrow, profile z recenzjami, AI checker milestone'ów, integracja płatności",
+      "risks": [
+        "Wysokie koszty obsługi sporów i zwrotów",
+        "Trudności w skalowaniu AI do różnych typów projektów",
+        "Konkurencja od ustalonych platform jak Fiverr"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 3
+    },
+    {
+      "name": "InboundFlow Gen",
+      "problem_solved": "Wypalenie prospectingowe i niską efektywność cold outreach w Marketingu, Zleceniach/Freelance i Strategii/Biznes",
+      "description": "AI narzędzie do generowania inbound leadów poprzez optymalizację profili LinkedIn i treści, przyciągające klientów zamiast aktywnego szukania. Analizuje trendy i sugeruje treści, które pozycjonują użytkownika jako eksperta. Śledzi konwersje i automatyzuje follow-upy.",
+      "target_audience": "Freelancerzy i małe agencje spędzające godziny na prospectingu",
+      "business_model": "SaaS z tiered pricing opartym na liczbie leadów",
+      "market_potential": 9,
+      "differentiation": "Fokus na inbound-first dla małych graczy z AI personalizacją, w przeciwieństwie do outbound-heavy narzędzi jak Hunter.io",
+      "mvp_scope": "Optymalizator profilu LinkedIn, generator treści AI, tracker leadów inbound",
+      "risks": [
+        "Zmiany algorytmów LinkedIn zmniejszające efektywność",
+        "Nasycony rynek lead gen",
+        "Ryzyko spamu i banów na platformach"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 4
+    },
+    {
+      "name": "TrustDeal",
+      "problem_solved": "Deficyt zaufania i kryzys zaufania do freelancerów i agencji – klienci boją się niedowiezionych projektów i znikających wykonawców.",
+      "description": "Platforma escrow + milestone management dla usług B2B. Klient płaci za etapy, pieniądze są uwalniane tylko po zaakceptowaniu dowiezionego efektu, z jasnymi kryteriami jakości.",
+      "target_audience": "Małe firmy, startupy, freelancerzy, agencje usługowe",
+      "business_model": "Marketplace + prowizja od transakcji",
+      "market_potential": 9,
+      "differentiation": "Skupienie na efektach (outcome-based), a nie czasie pracy; proste milestone’y zamiast ciężkiego project managementu.",
+      "mvp_scope": "Escrow płatności, definiowanie milestone’ów, akceptacja/odrzucenie etapu, podstawowy system sporów",
+      "risks": [
+        "problemy prawne i regulacyjne",
+        "wolne tempo adopcji po stronie klientów"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 5
+    },
+    {
+      "name": "InboundHub",
+      "problem_solved": "Wypalenie prospectingowe i niska skuteczność cold outreachu.",
+      "description": "Proste narzędzie inbound-first: landing + SEO + lead magnet + automatyczna dystrybucja treści, aby klienci sami trafiali do freelancera lub firmy.",
+      "target_audience": "Freelancerzy, mikroagencje, B2B SaaS",
+      "business_model": "SaaS subskrypcyjny",
+      "market_potential": 9,
+      "differentiation": "Gotowe, prekonfigurowane ścieżki inbound zamiast skomplikowanych systemów marketing automation.",
+      "mvp_scope": "Landing builder, prosty CMS, formularze leadów, integracja z e-mailem",
+      "risks": [
+        "konkurencja narzędzi no-code",
+        "oczekiwanie natychmiastowych efektów SEO"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 6
+    },
+    {
+      "name": "ROIStory",
+      "problem_solved": "Brak widoczności efektów działań marketingowych i brak powiązania z ROI.",
+      "description": "Narzędzie łączące dane marketingowe z realnym wynikiem biznesowym (lead, sprzedaż, LTV) w prostych narracyjnych raportach.",
+      "target_audience": "Właściciele firm, marketerzy, agencje",
+      "business_model": "SaaS",
+      "market_potential": 9,
+      "differentiation": "Raporty w formie historii biznesowej, a nie technicznych dashboardów.",
+      "mvp_scope": "Integracja z Google Ads, Meta, CRM; podstawowe raporty ROI",
+      "risks": [
+        "problemy z jakością danych",
+        "długi onboarding klientów"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 7
+    },
+    {
+      "name": "TrustProof",
+      "problem_solved": "Kryzys zaufania do agencji i freelancerów - klienci nie wiedzą jak zweryfikować kompetencje przed zatrudnieniem, a freelancerzy nie mogą udowodnić swojej jakości. Dotyka kategorii: Zlecenia/Freelance, Marketing, Wdrożenia/Integracje.",
+      "description": "System weryfikacji i escrow dla usług B2B. Freelancer/agencja przechodzi weryfikację kompetencji (portfolio review, test techniczny, referencje). Klient płaci na escrow, środki uwalniane po milestone'ach z automatycznym systemem dispute resolution. Każdy projekt buduje publiczny 'trust score'.",
+      "target_audience": "Firmy szukające freelancerów/agencji (marketing, dev, design) oraz freelancerzy premium chcący się wyróżnić",
+      "business_model": "Prowizja 5-8% od transakcji przez escrow + subskrypcja premium dla freelancerów (weryfikacja, badge, priorytet)",
+      "market_potential": 8,
+      "differentiation": "Useme/Upwork nie weryfikują realnie kompetencji - tylko zbierają opinie. TrustProof robi 'technical due diligence' przed pierwszym zleceniem + escrow z milestone'ami daje bezpieczeństwo obu stronom.",
+      "mvp_scope": "Prosty escrow (Stripe Connect), formularz weryfikacji z ręcznym review, system milestone'ów, podstawowy profil z badge'em 'Verified'. Start z jedną niszą (np. programiści WordPress).",
+      "risks": [
+        "Chicken-egg problem - potrzeba freelancerów i klientów jednocześnie",
+        "Wysokie koszty weryfikacji przy skalowaniu",
+        "Freelancerzy mogą omijać platformę po pierwszym zleceniu"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 8
+    },
+    {
+      "name": "QuickBooks Polski",
+      "problem_solved": "Strach przed urzędem i chaos w papierach - przedsiębiorcy toną w papierologii i boją się błędów podatkowych. Dotyka: Finanse/Księgowość, Automatyzacja.",
+      "description": "Uproszczona księgowość dla mikrofirm która 'myśli po polsku'. Skan faktury → automatyczne księgowanie → przypomnienia o terminach ZUS/US → miesięczny raport 'ile możesz wypłacić'. Zero żargonu księgowego, wszystko w prostym języku.",
+      "target_audience": "Jednoosobowe działalności i mikrofirmy (do 5 osób) bez księgowego, szczególnie freelancerzy i usługi",
+      "business_model": "SaaS 49-149 PLN/msc, droższy plan z automatycznym wysyłaniem JPK i deklaracji",
+      "market_potential": 8,
+      "differentiation": "inFakt/wFirma są dla księgowych - pełne funkcji których mikrofirma nie potrzebuje. QuickBooks Polski to 'księgowość dla nie-księgowych' z AI asystentem który tłumaczy co trzeba zrobić i kiedy.",
+      "mvp_scope": "OCR faktur (gotowe API), prosty dashboard przychodów/kosztów, kalendarz terminów ZUS/US z push notyfikacjami, miesięczny email 'stan Twojej firmy'.",
+      "risks": [
+        "Bardzo silna konkurencja (inFakt, wFirma, Fakturownia)",
+        "Przepisy się zmieniają - wymaga ciągłej aktualizacji",
+        "Użytkownicy mogą bać się zaufać automatyce w podatkach"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 9
+    },
+    {
+      "name": "SOP Creator AI",
+      "problem_solved": "Problemy delegowania (PPS 58) + Przeciążenie czasowe (PPS 71)",
+      "description": "Narzędzie typu 'Record & Forget'. Przedsiębiorca nagrywa ekran wykonując zadanie (np. wystawianie faktury), a AI automatycznie tworzy z tego dokumentację (SOP), listę kroków (checklistę) i wideo-instruktaż dla Wirtualnej Asystentki lub nowego pracownika.",
+      "target_audience": "Founderzy, Solopreneurzy skalujący zespół, Managerowie e-commerce.",
+      "business_model": "SaaS (miesięczna subskrypcja) + Freemium (do 3 procedur).",
+      "market_potential": 8,
+      "differentiation": "Konkurencja (Loom) tylko nagrywa. To narzędzie zamienia nagranie w ustrukturyzowany proces operacyjny gotowy do delegowania.",
+      "mvp_scope": "Wtyczka do przeglądarki nagrywająca ekran + transkrypcja AI (Whisper) + formatowanie do PDF/Notion.",
+      "risks": [
+        "Konkurencja ze strony Loom (jeśli dodadzą tę funkcję)",
+        "Halucynacje AI przy opisywaniu skomplikowanych kroków"
+      ],
+      "proposed_by": "Gemini 3 Pro",
+      "rank": 10
+    },
+    {
+      "name": "InboundPackager",
+      "problem_solved": "Wypalenie prospectingowe (PPS 66) + Zlecenia/Freelance (PPS 87)",
+      "description": "Kreator 'Produktów Usługowych' dla freelancerów. Zamiast wysyłać CV i oferty, freelancer tworzy gotowy 'produkt' (np. 'Audyt SEO w 48h' za 500 PLN) ze stroną sprzedażową, checkoutem i automatycznym onboardingiem klienta. Narzędzie zamienia usługę w e-commerce.",
+      "target_audience": "Freelancerzy, konsultanci, małe agencje zmęczone cold mailingiem.",
+      "business_model": "SaaS (hosting landing page'a) + % od sprzedaży (model Stripe).",
+      "market_potential": 8,
+      "differentiation": "Skupienie na polskim rynku (integracja z BLIK, Przelewy24, Fakturownia) i gotowe szablony 'produktów' pod popularne usługi.",
+      "mvp_scope": "Kreator prostych landing page, integracja płatności (Stripe/Tpay), automatyczna wysyłka briefu po zakupie.",
+      "risks": [
+        "Konkurencja z Gumroad (ale bariera językowa/fakturowa)",
+        "Freelancerzy mogą nie umieć marketingować swoich produktów"
+      ],
+      "proposed_by": "Gemini 3 Pro",
+      "rank": 11
+    },
+    {
+      "name": "AllegroReturnOS",
+      "problem_solved": "E-commerce (PPS 78) + Przeciążenie czasowe (PPS 71)",
+      "description": "Zautomatyzowany system obsługi zwrotów i reklamacji dedykowany pod Allegro/polski e-commerce. Klient sam klika powód zwrotu w portalu, system generuje etykietę, a po odebraniu paczki automatycznie zleca zwrot środków i korektę faktury w systemie księgowym.",
+      "target_audience": "Sprzedawcy Allegro/E-commerce (średnia skala: 100-1000 zamówień miesięcznie).",
+      "business_model": "SaaS (tiered pricing zależny od liczby zwrotów).",
+      "market_potential": 8,
+      "differentiation": "Głęboka integracja z lokalnymi graczami (Allegro, InPost, wFirma/iFirma), której nie mają globalne giganty.",
+      "mvp_scope": "Portal dla klienta końcowego, integracja Allegro API, podstawowy status trackingu.",
+      "risks": [
+        "Allegro może wdrożyć to natywnie",
+        "Wąska nisza (tylko Polska/Allegro)"
+      ],
+      "proposed_by": "Gemini 3 Pro",
+      "rank": 12
+    },
+    {
+      "name": "TechMatch Bridge",
+      "problem_solved": "Luka kompetencyjna founder-technik, gdzie founderzy biznesowi nie mają umiejętności technicznych, a technicy nie umieją sprzedawać, dotykająca kategorii jak Zlecenia/Freelance, Strategia/Biznes i Marketing",
+      "description": "Platforma matchingowa łącząca founderów biznesowych z ekspertami technicznymi poprzez weryfikowane profile i wzajemne oceny. Użytkownicy przechodzą przez szybki proces due diligence z AI-pomocą w wycenie współpracy i standardowych umowach. Zapewnia narzędzia do wspólnego prototypowania pomysłów bez zobowiązań.",
+      "target_audience": "Founderzy startupów i małe firmy szukające partnerów technicznych lub biznesowych",
+      "business_model": "Freemium z opłatami za premium matching i umowy",
+      "market_potential": 8,
+      "differentiation": "Wbudowana AI do weryfikacji umiejętności i benchmarków, w przeciwieństwie do ogólnych platform jak LinkedIn, skupia się na wzajemnej walidacji przed commitmentem",
+      "mvp_scope": "Profilowanie użytkowników, algorytm matchingowy, podstawowa AI do due diligence, szablony umów",
+      "risks": [
+        "Niska adopcja jeśli brak krytycznej masy użytkowników",
+        "Ryzyko sporów prawnych przy wycenach współpracy",
+        "Konkurencja od istniejących sieci networkingowych"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 13
+    },
+    {
+      "name": "TimeReclaim AI",
+      "problem_solved": "Przeciążenie czasowe i wypalenie prospectingowe, gdzie ręczne procesy pochłaniają czas w Marketingu, E-commerce i Content/Tworzenie treści",
+      "description": "AI narzędzie automatyzujące rutynowe zadania jak raportowanie kampanii, edycję treści i prospecting na LinkedIn. Analizuje workflow użytkownika i sugeruje personalizowane automatyzacje no-code. Odzyskuje czas poprzez integrację z istniejącymi narzędziami i alerty o efektywności.",
+      "target_audience": "Freelancerzy i małe firmy z ograniczonym czasem na operacje codzienne",
+      "business_model": "SaaS z miesięczną subskrypcją",
+      "market_potential": 8,
+      "differentiation": "Skupienie na odzyskiwaniu czasu bez utraty kontroli, z AI uczącym się od użytkownika, w przeciwieństwie do ogólnych narzędzi jak Zapier",
+      "mvp_scope": "Integracje z popularnymi narzędziami (Google Sheets, LinkedIn), AI sugerujące automatyzacje, dashboard czasu zaoszczędzonego",
+      "risks": [
+        "Zależność od jakości integracji API",
+        "'Słomiany zapał' użytkowników przy wdrażaniu",
+        "Ryzyko błędów AI prowadzących do utraty zaufania"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 14
+    },
+    {
+      "name": "PerfPay Agency",
+      "problem_solved": "Kryzys zaufania do agencji i brak efektów w Marketingu, Zleceniach/Freelance i Wdrożeniach/Integracjach",
+      "description": "Marketplace agencji z modelem performance-based, gdzie płatności zależą od dowiezionych KPI (np. leady, sprzedaż). Oferuje weryfikację agencji przez AI i escrow na wyniki. Klienci definiują cele, a platforma monitoruje postępy.",
+      "target_audience": "Małe firmy rozczarowane tradycyjnymi agencjami marketingowymi",
+      "business_model": "Marketplace z prowizją od sukcesu (success fee)",
+      "market_potential": 8,
+      "differentiation": "Rozliczenia oparte wyłącznie na efektach z AI monitoringiem, w odróżnieniu od stałych opłat agencji",
+      "mvp_scope": "Profilowanie agencji, definiowanie KPI, system escrow, dashboard wyników",
+      "risks": [
+        "Trudności w definiowaniu mierzalnych KPI",
+        "Agencje unikające ryzyka performance",
+        "Konkurencja od platform jak Upwork"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 15
+    },
+    {
+      "name": "CashGuard Predict",
+      "problem_solved": "Niepewny cashflow i opóźnienia płatności w Finanse/Księgowość, E-commerce i Strategii/Biznes",
+      "description": "AI predyktor cashflow analizujący dane finansowe i prognozujący ryzyka jak chargebacki czy opóźnienia. Integruje z księgowością i sugeruje działania (np. przypomnienia płatności). Zapewnia alerty i scenariusze 'co jeśli'.",
+      "target_audience": "Właściciele e-commerce i freelancerzy z niestabilnymi przychodami",
+      "business_model": "SaaS z miesięczną opłatą",
+      "market_potential": 8,
+      "differentiation": "Predykcje z AI uwzględniające polskie regulacje, w odróżnieniu od ogólnych narzędzi jak QuickBooks",
+      "mvp_scope": "Integracja z popularnymi systemami księgowymi, AI predyktor, alerty email",
+      "risks": [
+        "Zmiany w przepisach finansowych psujące predykcje",
+        "Zależność od dokładności danych użytkownika",
+        "Konkurencja od narzędzi jak inFakt"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 16
+    },
+    {
+      "name": "CoFounderCheck",
+      "problem_solved": "Luka kompetencyjna founder–technik i brak sposobu na weryfikację potencjalnych wspólników.",
+      "description": "Narzędzie do wzajemnej walidacji founderów i techników: checklisty kompetencji, mini-audyty pomysłów, testy dopasowania i symulacje współpracy.",
+      "target_audience": "Founderzy non-tech, programiści, przyszli wspólnicy startupów",
+      "business_model": "SaaS + płatne raporty jednorazowe",
+      "market_potential": 8,
+      "differentiation": "Standaryzowana, obiektywna weryfikacja zamiast rozmów „na czuja”.",
+      "mvp_scope": "Profile użytkowników, checklisty kompetencji, automatyczny raport dopasowania",
+      "risks": [
+        "trudność w standaryzacji kompetencji",
+        "problem z masą krytyczną użytkowników"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 17
+    },
+    {
+      "name": "ToolChaosKiller",
+      "problem_solved": "Chaos narzędziowy i fragmentacja workflow między wieloma aplikacjami.",
+      "description": "Lekki „klej” integracyjny: jedno miejsce, które agreguje zadania, dane i statusy z wielu narzędzi (CRM, marketing, PM).",
+      "target_audience": "Małe firmy, agencje, zespoły zdalne",
+      "business_model": "SaaS",
+      "market_potential": 8,
+      "differentiation": "Skupienie na widoczności i kontekście, a nie na zastępowaniu istniejących narzędzi.",
+      "mvp_scope": "Integracje z 3–4 popularnymi narzędziami, wspólny dashboard, statusy",
+      "risks": [
+        "ograniczenia API zewnętrznych narzędzi",
+        "porównania do Zapier/Make"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 18
+    },
+    {
+      "name": "AutoOps",
+      "problem_solved": "Przeciążenie czasowe i ręczne procesy operacyjne w małych firmach.",
+      "description": "Biblioteka gotowych automatyzacji (playbooks) dla najczęstszych procesów: raporty, faktury, onboarding, e-commerce.",
+      "target_audience": "Małe firmy, e-commerce, agencje",
+      "business_model": "SaaS + marketplace szablonów",
+      "market_potential": 8,
+      "differentiation": "Gotowe do użycia scenariusze zamiast pustego edytora automatyzacji.",
+      "mvp_scope": "10–15 gotowych automatyzacji, konfigurator, logi błędów",
+      "risks": [
+        "różnorodność procesów u klientów",
+        "utrzymanie jakości automatyzacji"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 19
+    },
+    {
+      "name": "CashflowGuard",
+      "problem_solved": "Niepewny cashflow, opóźnione płatności i chaos finansowy.",
+      "description": "Lekki system do prognozowania cashflow, przypomnień o płatnościach i symulacji „co jeśli”.",
+      "target_audience": "Małe firmy, freelancerzy, e-commerce",
+      "business_model": "SaaS",
+      "market_potential": 8,
+      "differentiation": "Skupienie na przewidywalności, a nie pełnej księgowości.",
+      "mvp_scope": "Prognoza cashflow, import faktur, alerty płatności",
+      "risks": [
+        "konkurencja narzędzi finansowych",
+        "zależność od danych wejściowych"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 20
+    },
+    {
+      "name": "FlowGlue",
+      "problem_solved": "Chaos narzędziowy i pułapka fragmentacji - użytkownicy mają 5-10 narzędzi które nie gadają ze sobą, tracą czas na kopiowanie między kartami. Dotyka: Automatyzacja, Marketing, E-commerce, Zarządzanie Projektami.",
+      "description": "AI-powered 'middleware' który łączy popularne narzędzia w jeden workflow. Zamiast budować integracje od zera (jak Zapier), FlowGlue analizuje co użytkownik robi i proponuje gotowe 'przepływy' dla jego stack'u. Focus na polskich narzędziach (Fakturownia, BaseLinker, inFakt) + globalne.",
+      "target_audience": "Małe firmy i solopreneurzy używający 5+ narzędzi, którzy nie mają czasu na konfigurację Zapiera",
+      "business_model": "Freemium - 3 workflow za darmo, potem 99-299 PLN/msc za nielimitowane + premium integracje",
+      "market_potential": 7,
+      "differentiation": "Zapier/Make wymagają budowania od zera. FlowGlue daje gotowe 'recipes' dla polskiego rynku (BaseLinker→Fakturownia→inFakt) i AI który podpowiada co zautomatyzować na podstawie analizy użycia.",
+      "mvp_scope": "5 najpopularniejszych integracji polskich narzędzi, prosty wizard 'co chcesz połączyć', 10 gotowych templates, podstawowy monitoring błędów.",
+      "risks": [
+        "Zależność od API zewnętrznych narzędzi (mogą się zmienić)",
+        "Zapier ma ogromną przewagę w integracje",
+        "Trudność w utrzymaniu jakości przy wielu integracjach"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 21
+    },
+    {
+      "name": "ProofBoard",
+      "problem_solved": "Brak widoczności efektów - firmy płacą za marketing/SEO/influencerów ale nie widzą połączenia z realną sprzedażą. Dotyka: Marketing, Analityka/BI, E-commerce.",
+      "description": "Dashboard który łączy wydatki marketingowe z realną sprzedażą w jednym widoku. Integruje się z reklamami (Meta, Google), CRM, e-commerce (Shopify, WooCommerce, BaseLinker) i pokazuje 'ten influencer → te zamówienia → ten przychód'. Prosty jak Excel, ale automatyczny.",
+      "target_audience": "Właściciele e-commerce i małe firmy wydające 5-50k PLN/msc na marketing, którzy nie mają analityka",
+      "business_model": "SaaS 199-499 PLN/msc w zależności od liczby integracji i wolumenu danych",
+      "market_potential": 7,
+      "differentiation": "Google Analytics jest za skomplikowane. Dedykowane narzędzia (Triple Whale) są drogie i po angielsku. ProofBoard to 'jeden dashboard dla polskiego e-commerce' z prostym językiem ('ten post przyniósł 15 zamówień').",
+      "mvp_scope": "Integracja z Meta Ads + Shopify/WooCommerce, prosty dashboard z 3 metrykami (wydatki, przychody, ROI), tygodniowy email z podsumowaniem.",
+      "risks": [
+        "Problemy z attribution (iOS privacy, ad blockers)",
+        "Konkurencja z darmowym GA4",
+        "Wymaga dużo integracji żeby być użytecznym"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 22
+    },
+    {
+      "name": "InboundMe",
+      "problem_solved": "Wypalenie prospectingowe - freelancerzy spędzają 15-30h/tyg na szukaniu klientów zamiast na pracy. Cold outreach ma 1% skuteczność. Dotyka: Zlecenia/Freelance, Marketing, Strategia/Biznes.",
+      "description": "System 'reverse job board' gdzie to klienci szukają freelancerów. Freelancer tworzy profil z case studies i cenami, system go promuje w Google/LinkedIn na frazy typu 'programista WordPress Kraków'. Klient wypełnia brief, system matchuje z 3 freelancerami.",
+      "target_audience": "Freelancerzy z 2+ lat doświadczenia, którzy chcą przestać cold-mailować i być znajdowani",
+      "business_model": "Subskrypcja dla freelancerów 149-349 PLN/msc (SEO profilu, priorytet w matchingu) + prowizja 10% od pierwszego zlecenia przez platformę",
+      "market_potential": 7,
+      "differentiation": "Useme/Upwork to 'race to the bottom' cenowy. InboundMe pozycjonuje freelancerów jako ekspertów (własna strona SEO, case studies) i przyciąga klientów szukających jakości, nie najniższej ceny.",
+      "mvp_scope": "Generator prostej strony-wizytówki zoptymalizowanej pod SEO, formularz briefu dla klientów, ręczny matching przez założyciela, 50 freelancerów w jednej niszy na start.",
+      "risks": [
+        "SEO wymaga miesięcy żeby zadziałać",
+        "Freelancerzy mogą nie chcieć płacić z góry",
+        "Trudno konkurować z personal brandingiem na LinkedIn"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 23
+    },
+    {
+      "name": "AIGuardrail",
+      "problem_solved": "Deficyt zaufania do AI - firmy boją się halucynacji i błędów AI w krytycznych procesach (leady, content, dane). Dotyka: Automatyzacja, Marketing, Content/Tworzenie treści.",
+      "description": "Warstwa weryfikacji dla outputów AI w biznesie. Podłączasz swoje workflow z ChatGPT/Claude, AIGuardrail sprawdza outputy przed użyciem: fact-checking linków, weryfikacja danych firmowych, wykrywanie halucynacji, zgodność z brand voice. Flaguje problemy do ludzkiego review.",
+      "target_audience": "Firmy używające AI do generowania treści, leadów, raportów - które nie mogą sobie pozwolić na błędy",
+      "business_model": "SaaS 199-599 PLN/msc w zależności od liczby sprawdzeń, pay-per-check dla małych wolumenów",
+      "market_potential": 7,
+      "differentiation": "Narzędzia AI nie mają wbudowanej weryfikacji. AIGuardrail to 'QA dla AI' - nie zastępuje człowieka, ale redukuje czas review o 80% flagując tylko problematyczne outputy.",
+      "mvp_scope": "Plugin do ChatGPT/API wrapper, 3 typy checków (linki, dane firmowe, spójność), prosty dashboard z flagami, integracja z Slack dla alertów.",
+      "risks": [
+        "Sam może halucynować (AI sprawdzające AI)",
+        "Trudno zdefiniować 'błąd' uniwersalnie",
+        "Użytkownicy mogą ufać za bardzo i przestać sprawdzać"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 24
+    },
+    {
+      "name": "TechMatch Validator",
+      "problem_solved": "Luka kompetencyjna founder-technik (PPS 74) + Strategia/Biznes (PPS 75)",
+      "description": "Usługa 'Technical Due Diligence' dla nietechnicznych founderów. Zanim wydasz 50k na software house, platforma łączy Cię z niezależnym Senior Dev'em (zweryfikowanym), który w 60 minut ocenia wykonalność, realny koszt i ryzyka Twojego pomysłu.",
+      "target_audience": "Nietechniczni założyciele startupów, MŚP planujące wdrożenia IT.",
+      "business_model": "Marketplace usług konsultingowych (stała opłata za sesję walidacyjną, np. 500 PLN, platforma bierze 20%).",
+      "market_potential": 7,
+      "differentiation": "Brak konfliktu interesów – ekspert oceniający nie będzie wykonawcą projektu (zakaz upsellingu). Czysta weryfikacja.",
+      "mvp_scope": "Prosty landing page, baza 10 zweryfikowanych CTO/Senior Devów, kalendarz do rezerwacji.",
+      "risks": [
+        "Trudność w zbudowaniu podaży (eksperci mają wysokie stawki godzinowe)",
+        "Odpowiedzialność prawna za błędną ocenę"
+      ],
+      "proposed_by": "Gemini 3 Pro",
+      "rank": 25
+    },
+    {
+      "name": "ContextGlue (Omni-Clipboard)",
+      "problem_solved": "Pułapka fragmentacji narzędzi (PPS 65) + Chaos narzędziowy (PPS 67)",
+      "description": "Pasek boczny/nakładka na przeglądarkę, która jest 'wspólnym schowkiem' dla wszystkich narzędzi AI i SaaS. Pozwala przenieść wygenerowany tekst z ChatGPT bezpośrednio do Canvy, Gmaila czy LinkedIna bez utraty formatowania i kontekstu, z możliwością szybkiej edycji w locie.",
+      "target_audience": "Twórcy contentu, marketerzy, osoby pracujące na wielu oknach.",
+      "business_model": "Freemium (podstawowy schowek) -> Premium (historia, szablony, team sync).",
+      "market_potential": 7,
+      "differentiation": "Działa 'nad' narzędziami, a nie jako kolejne narzędzie. Rozwiązuje problem 'kopiuj-wklej' między niekompatybilnymi systemami.",
+      "mvp_scope": "Rozszerzenie Chrome, historia schowka, proste makra tekstowe.",
+      "risks": [
+        "Zależność od zmian w API przeglądarek (Chrome Manifest V3)",
+        "Nawyki użytkowników (trudno zmienić przyzwyczajenia Ctrl+C/V)"
+      ],
+      "proposed_by": "Gemini 3 Pro",
+      "rank": 26
+    },
+    {
+      "name": "ToolGlue Hub",
+      "problem_solved": "Chaos narzędziowy i pułapka fragmentacji narzędzi, powodująca utratę kontekstu w Automatyzacji, Marketingu i Analityce/BI",
+      "description": "No-code integrator łączący istniejące narzędzia w jeden dashboard z automatycznymi workflowami. Użytkownicy budują customowe huby, gdzie dane płyną bez ręcznego kopiowania, z AI wykrywającym błędy integracji. Zapewnia single source of truth dla całego procesu biznesowego.",
+      "target_audience": "Małe firmy używające wielu narzędzi SaaS bez integracji",
+      "business_model": "Freemium SaaS z płatnymi zaawansowanymi integracjami",
+      "market_potential": 7,
+      "differentiation": "Prosty interfejs no-code z AI do wykrywania chaosu, skupiony na małych firmach, w odróżnieniu od enterprise-focused jak MuleSoft",
+      "mvp_scope": "Integracje z 5-10 popularnymi narzędziami (e.g., Google Analytics, Slack), builder workflow, dashboard centralny",
+      "risks": [
+        "Zmiany API w narzędziach trzecich psujące integracje",
+        "Konkurencja od Zapier i Make",
+        "Trudności w skalowaniu dla złożonych setupów"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 27
+    },
+    {
+      "name": "ExposureEase Coach",
+      "problem_solved": "Strach przed ekspozycją blokujący content creation w Marketingu, Content/Tworzenie treści i Strategii/Biznes",
+      "description": "AI coach stopniowo budujący pewność w tworzeniu treści wideo poprzez małe zadania, szablony i feedback. Zaczyna od tekstu, przechodzi do audio, potem wideo z edycją AI usuwającą błędy. Śledzi postępy i motywuje nagrodami.",
+      "target_audience": "Introwertyczni founderzy i twórcy unikający kamery",
+      "business_model": "SaaS z subskrypcją i dodatkowymi coaching session",
+      "market_potential": 7,
+      "differentiation": "Gradual exposure z AI wsparciem psychologicznym, w odróżnieniu od narzędzi edycyjnych jak CapCut",
+      "mvp_scope": "Szablony zadań, AI edytor wideo, tracker postępów, podstawowy feedback",
+      "risks": [
+        "Niska retencja jeśli zadania zbyt trudne",
+        "Brak ekspertyzy psychologicznej w AI",
+        "Konkurencja od narzędzi contentowych AI"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 28
+    },
+    {
+      "name": "ImpactTrack Analytics",
+      "problem_solved": "Brak widoczności efektów i data noise w Analityce/BI, Marketingu i E-commerce",
+      "description": "Narzędzie łączące dane z różnych źródeł w prosty dashboard pokazujący realny ROI (np. od influencera do sprzedaży). AI filtruje noise i łączy działania z wynikami biznesowymi. Generuje automatyczne raporty z actionable insights.",
+      "target_audience": "Małe firmy bez zaawansowanych analityków",
+      "business_model": "SaaS z płatnością za integracje",
+      "market_potential": 7,
+      "differentiation": "Proste połączenie z biznesowymi wynikami, nie tylko metrykami, w odróżnieniu od Google Analytics",
+      "mvp_scope": "Integracje z 3-5 źródłami (e.g., Google Ads, Shopify), AI filtr noise, dashboard ROI",
+      "risks": [
+        "Problemy z jakością danych klientów",
+        "Wysoki próg techniczny integracji",
+        "Konkurencja od narzędzi BI jak Tableau"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 29
+    },
+    {
+      "name": "DelegatePro SOP",
+      "problem_solved": "Problemy delegowania i chaos w Zarządzaniu Projektami oraz Zleceniach/Freelance",
+      "description": "No-code builder SOP (standard operating procedures) z AI generującym instrukcje i checklisty dla delegowania zadań. Integruje z narzędziami projektowymi i śledzi wykonanie z feedback loop. Pomaga w onboarding i kontroli jakości bez mikrozarządzania.",
+      "target_audience": "Liderzy małych zespołów i agencji delegujących pracę zdalną",
+      "business_model": "Freemium SaaS z płatnymi szablonami premium",
+      "market_potential": 7,
+      "differentiation": "AI-generowane SOP z automatycznym feedback, skupione na małych firmach, w odróżnieniu od enterprise jak Asana",
+      "mvp_scope": "Builder SOP, integracja z Trello/Slack, tracker wykonania, AI generator instrukcji",
+      "risks": [
+        "Opór pracowników przed nowymi procesami",
+        "Trudności w AI generującym precyzyjne SOP",
+        "Konkurencja od narzędzi PM"
+      ],
+      "proposed_by": "Grok 4",
+      "rank": 30
+    },
+    {
+      "name": "SafeDelegate",
+      "problem_solved": "Problemy delegowania pracy i chaos przy współpracy z VA i freelancerami.",
+      "description": "Proste narzędzie do tworzenia SOP, checklist jakości i feedback loopów przy delegowaniu zadań.",
+      "target_audience": "Founderzy, agencje, e-commerce",
+      "business_model": "SaaS freemium",
+      "market_potential": 7,
+      "differentiation": "Bardzo prosty UX – delegowanie bez wdrażania pełnego PM.",
+      "mvp_scope": "Szablony SOP, checklisty, komentarze i feedback",
+      "risks": [
+        "postrzeganie jako „kolejne narzędzie PM”",
+        "niska dyscyplina zespołów"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 31
+    },
+    {
+      "name": "GradualExposure",
+      "problem_solved": "Strach przed ekspozycją i blokada przed publikacją treści wideo.",
+      "description": "Aplikacja prowadząca użytkownika przez małe kroki ekspozycji: od prywatnych nagrań po publikację, z feedbackiem AI.",
+      "target_audience": "Founderzy, freelancerzy, twórcy",
+      "business_model": "Subskrypcja",
+      "market_potential": 7,
+      "differentiation": "Psychologiczne podejście „step by step”, a nie narzędzie do masowej produkcji contentu.",
+      "mvp_scope": "Nagrywanie wideo, prywatne archiwum, feedback AI",
+      "risks": [
+        "trudność w monetyzacji",
+        "postrzeganie jako produkt „soft skills”"
+      ],
+      "proposed_by": "GPT-5.2",
+      "rank": 32
+    },
+    {
+      "name": "CoFounderMatch.pl",
+      "problem_solved": "Luka kompetencyjna founder-technik - osoby z pomysłem nie znajdują CTO, technicy nie umieją walidować biznesu. Obie strony nie wiedzą jak się wycenić i zweryfikować. Dotyka: Zlecenia/Freelance, Strategia/Biznes.",
+      "description": "Platforma matchingu współzałożycieli z wbudowaną weryfikacją obu stron. Biznesowcy przechodzą test walidacji pomysłu (czy rozmawiał z klientami? ma traction?). Technicy - test kompetencji. Algorytm łączy na podstawie komplementarności + 'chemistry call' z moderatorem.",
+      "target_audience": "Aspirujący założyciele startupów w Polsce - zarówno technicy szukający biznesowego partnera, jak i biznesowcy szukający CTO",
+      "business_model": "Freemium profil + płatny matching (499 PLN za 3 dopasowania z weryfikacją) + premium 'speed dating' events (199 PLN/event)",
+      "market_potential": 6,
+      "differentiation": "LinkedIn/FB grupy to chaos bez weryfikacji. CoFounderMatch weryfikuje OBU stron (nie tylko techniczne CV ale też 'czy ten biznesowiec umie sprzedawać?') i daje strukturę do rozmów o equity/współpracy.",
+      "mvp_scope": "Landing page z formularzem aplikacyjnym, ręczny matching przez założyciela (concierge MVP), prosty test walidacji pomysłu (5 pytań), szablon 'co-founder agreement'.",
+      "risks": [
+        "Bardzo mały rynek w Polsce (może setki osób rocznie)",
+        "Trudno zmierzyć sukces (czy match zadziałał?)",
+        "Ludzie mogą się łączyć poza platformą po pierwszym kontakcie"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 33
+    },
+    {
+      "name": "DelegatePilot",
+      "problem_solved": "Problemy delegowania - przekazywanie pracy VA/freelancerom kończy się chaosem przez brak SOP i feedback loop. Dotyka: Zarządzanie Projektami, Zlecenia/Freelance, Automatyzacja.",
+      "description": "Narzędzie do tworzenia i zarządzania SOP (Standard Operating Procedures) z wbudowanym trackingiem wykonania. Nagrywasz Loom jak robisz zadanie → AI generuje SOP z checklistą → VA wykonuje z checklistą → system śledzi błędy i sugeruje poprawki do SOP.",
+      "target_audience": "Solopreneurzy i małe zespoły (2-10 osób) zatrudniające VA lub freelancerów do powtarzalnych zadań",
+      "business_model": "Freemium - 5 SOP za darmo, potem 79-199 PLN/msc za nielimitowane + AI features",
+      "market_potential": 6,
+      "differentiation": "Notion/Slite to dokumentacja bez kontekstu wykonania. DelegatePilot łączy SOP z realnym trackingiem (kto, kiedy, ile błędów) i AI który uczy się z błędów żeby poprawiać instrukcje.",
+      "mvp_scope": "Integracja z Loom (import transkrypcji), AI generujący checklistę z nagrania, prosty tracker wykonania zadań, dashboard błędów.",
+      "risks": [
+        "Wymaga zmiany nawyków użytkowników",
+        "Notion ma już templates do SOP",
+        "Mały rynek ludzi świadomie budujących SOP"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 34
+    },
+    {
+      "name": "PriceShield",
+      "problem_solved": "Niepewny cashflow i chargebacki - e-commerce traci pieniądze na friendly fraud i opóźnionych płatnościach. Dotyka: E-commerce, Finanse/Księgowość.",
+      "description": "System ochrony przed chargebackami i fraudem dla polskiego e-commerce. Analizuje zamówienia przed wysyłką (scoring ryzyka), automatycznie zbiera dowody do dispute'ów, integruje się z BaseLinker/Shopify. Dla zamówień high-risk sugeruje płatność z góry.",
+      "target_audience": "Sklepy e-commerce z GMV 100k+ PLN/msc, szczególnie te z wysokim % chargebacków (elektronika, moda)",
+      "business_model": "SaaS 299-999 PLN/msc w zależności od wolumenu + success fee 20% od wygranych dispute'ów",
+      "market_potential": 6,
+      "differentiation": "Globalne rozwiązania (Signifyd, Riskified) są drogie i nie rozumieją polskiego rynku (BLIK, płatności za pobraniem). PriceShield jest zbudowany dla polskich realiów i integruje się z lokalnymi platformami.",
+      "mvp_scope": "Integracja z BaseLinker, prosty scoring ryzyka (3 reguły), automatyczne zbieranie dowodów (tracking, zdjęcia paczki), template odpowiedzi na chargeback.",
+      "risks": [
+        "Wymaga dużo danych żeby scoring był dokładny",
+        "Banki/PayU mogą nie akceptować automatycznych dispute'ów",
+        "Mały rynek świadomych problemu"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 35
+    },
+    {
+      "name": "BriefGenius",
+      "problem_solved": "Kryzys zaufania + problemy delegowania - projekty failują bo brief był niejasny, oczekiwania rozmyte, scope się rozjeżdża. Dotyka: Zlecenia/Freelance, Zarządzanie Projektami, Marketing.",
+      "description": "AI-powered generator briefów projektowych. Klient odpowiada na pytania w konwersacji (chatbot), system generuje profesjonalny brief z scope, timeline, budżetem i kryteriami sukcesu. Obie strony podpisują cyfrowo. Tracking zmian scope w trakcie projektu.",
+      "target_audience": "Firmy zlecające projekty (marketing, dev, design) oraz freelancerzy/agencje chcące profesjonalizować proces",
+      "business_model": "Freemium - 3 briefy/msc za darmo, potem 79 PLN/msc dla freelancerów, 199 PLN/msc dla agencji (white-label)",
+      "market_potential": 6,
+      "differentiation": "Google Docs/Notion to puste szablony. BriefGenius prowadzi przez proces, zadaje właściwe pytania, wykrywa niejasności ('co znaczy nowoczesny design?') i tworzy dokument który chroni obie strony.",
+      "mvp_scope": "Chatbot zbierający wymagania (10 pytań), generator PDF z briefem, prosty e-podpis, 3 szablony (strona www, kampania, logo).",
+      "risks": [
+        "Ludzie mogą nie chcieć płacić za 'dokument'",
+        "Wymaga edukacji rynku o wartości dobrego briefu",
+        "Łatwe do skopiowania przez konkurencję"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 36
+    },
+    {
+      "name": "CashflowRadar",
+      "problem_solved": "Niepewny cashflow (PPS 59) + Finanse/Księgowość (PPS 74)",
+      "description": "Bardzo prosta nakładka na konto bankowe/fakturownię, która pokazuje tylko jedną rzecz: 'Ile realnie będziesz miał pieniędzy za 30 dni'. Uwzględnia terminy płatności faktur (historyczne opóźnienia klientów) i stałe koszty. Żadnej księgowości, tylko predykcja płynności.",
+      "target_audience": "Mikroprzedsiębiorcy, małe agencje żyjące 'od faktury do faktury'.",
+      "business_model": "SaaS (niski abonament, np. 29 PLN/mc).",
+      "market_potential": 6,
+      "differentiation": "Księgowość patrzy wstecz, to narzędzie patrzy w przód. Prostota – jeden wykres zamiast tabeli Excela.",
+      "mvp_scope": "Import CSV z banku/fakturowni, ręczne dodawanie kosztów stałych, prosty wykres liniowy.",
+      "risks": [
+        "Regulacje PSD2 (dostęp do danych bankowych jest trudny technicznie)",
+        "Konkurencja ze strony banków (funkcje w aplikacjach)"
+      ],
+      "proposed_by": "Gemini 3 Pro",
+      "rank": 37
+    },
+    {
+      "name": "CameraCoach",
+      "problem_solved": "Strach przed ekspozycją - założyciele i twórcy wiedzą że powinni nagrywać wideo ale paraliżuje ich lęk przed kamerą i oceną. Dotyka: Marketing, Content/Tworzenie treści, Strategia/Biznes.",
+      "description": "Aplikacja do stopniowego oswajania się z kamerą przez codzienne mikro-ćwiczenia. Dzień 1: nagraj 10 sekund do siebie. Dzień 7: nagraj 30 sekund i wyślij do AI na feedback. Dzień 30: opublikuj pierwszy post. Gamifikacja + społeczność ludzi na tej samej drodze.",
+      "target_audience": "Introwertycy-przedsiębiorcy, eksperci którzy chcą budować personal brand ale boją się wideo",
+      "business_model": "Freemium - podstawowe ćwiczenia za darmo, premium 49 PLN/msc za AI feedback, zaawansowane ścieżki, społeczność",
+      "market_potential": 5,
+      "differentiation": "Kursy 'jak nagrywać wideo' uczą techniki, nie radzą sobie ze strachem. CameraCoach to 'terapia ekspozycyjna' w formie aplikacji - małe kroki, bez presji publikacji, z wsparciem społeczności.",
+      "mvp_scope": "30-dniowy challenge w formie emaili/SMS, prosta aplikacja do nagrywania z timerem, podstawowy AI feedback na dykcję/tempo, grupa na Discord.",
+      "risks": [
+        "Trudno zmierzyć ROI dla użytkownika",
+        "Wysoki churn po 30 dniach",
+        "Może być postrzegane jako 'self-help' nie biznesowe narzędzie"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 38
+    },
+    {
+      "name": "ScaleTest",
+      "problem_solved": "Problemy skali - rozwiązania działające przy małej skali załamują się przy wzroście (60 sklepów, 100k produktów). Dotyka: E-commerce, Automatyzacja, Analityka/BI.",
+      "description": "Narzędzie do stress-testowania procesów e-commerce przed skalowaniem. Symulujesz 10x obecny wolumen (zamówienia, produkty, zwroty) i widzisz gdzie się załamie: które integracje padną, gdzie będą wąskie gardła, ile to będzie kosztować. Raport z rekomendacjami.",
+      "target_audience": "Sklepy e-commerce przed skalowaniem (Black Friday, ekspansja, inwestycja) - GMV 500k-5M PLN/msc",
+      "business_model": "Jednorazowy audyt 2999-9999 PLN + opcjonalny retainer na monitoring 499 PLN/msc",
+      "market_potential": 5,
+      "differentiation": "Agencje e-commerce robią audyty ręcznie i drogo. ScaleTest automatyzuje symulację i daje konkretne liczby ('przy 10x zamówień Twój BaseLinker padnie po 2h').",
+      "mvp_scope": "Integracja z BaseLinker/Shopify, symulacja 3 scenariuszy (zamówienia, produkty, zwroty), automatyczny raport PDF z wąskimi gardłami, 5 rekomendacji.",
+      "risks": [
+        "Bardzo niszowy rynek (firmy przed skalowaniem)",
+        "Trudno symulować wszystkie edge cases",
+        "Jednorazowa usługa = trudny recurring revenue"
+      ],
+      "proposed_by": "Claude Opus 4.5",
+      "rank": 39
+    }
+  ],
+  "solutions_by_theme": {
+    "inne": [
+      {
+        "name": "TrustPay (Escrow dla Agencji)",
+        "problem_solved": "Kryzys Zaufania do Agencji (PPS 66) + Brak widoczności efektów (PPS 64)",
+        "description": "Platforma pośrednicząca w płatnościach B2B, która uwalnia środki dla agencji/freelancera dopiero po osiągnięciu zdefiniowanych KPI (np. podpięcie API do Google Analytics/CRM). Klient wpłaca pieniądze do 'depozytu', wykonawca widzi, że środki są zabezpieczone, ale otrzymuje je po dowiezieniu wyniku.",
+        "target_audience": "Małe firmy zlecające marketing/SEO oraz uczciwe agencje chcące wyróżnić się gwarancją.",
+        "business_model": "Prowizja od transakcji (np. 3-5%) pokrywana po połowie lub przez jedną ze stron.",
+        "market_potential": 9,
+        "differentiation": "Większość platform (Useme) skupia się na przekazaniu praw autorskich/fakturze. TrustPay skupia się na weryfikacji EFEKTU (performance) przed wypłatą.",
+        "mvp_scope": "Prosty system Escrow, integracja z GA4/Meta Ads do automatycznego potwierdzania leadów/ruchu, ręczne zatwierdzanie kamieni milowych.",
+        "risks": [
+          "Spory o interpretację 'dowiezienia' wyniku",
+          "Opór agencji przed modelem 'success fee'"
+        ],
+        "proposed_by": "Gemini 3 Pro",
+        "rank": 1
+      },
+      {
+        "name": "IntrovertCreator AI",
+        "problem_solved": "Strach przed ekspozycją (PPS 64) + Content/Tworzenie treści (PPS 77)",
+        "description": "Narzędzie do tworzenia wideo B2B bez pokazywania twarzy ('Faceless Channels'), ale z zachowaniem ludzkiego charakteru. Wykorzystuje stocki, animacje tekstu i wysokiej jakości polskie AI voiceovers, aby zamienić wpis na blogu/LinkedIn w dynamiczne wideo na TikToka/Reels.",
+        "target_audience": "Eksperci, programiści, właściciele firm, którzy chcą budować markę osobistą, ale nienawidzą kamery.",
+        "business_model": "SaaS (kredyty na generowanie minut wideo).",
+        "market_potential": 9,
+        "differentiation": "Skupienie na polskim języku (naturalna intonacja) i estetyce B2B/Edukacyjnej, a nie rozrywkowej.",
+        "mvp_scope": "Konwerter Tekst -> Wideo (slajdy + voiceover + napisy), biblioteka B-roll.",
+        "risks": [
+          "Szybki rozwój darmowych narzędzi (CapCut, Canva)",
+          "Zalew niskiej jakości treści AI (spam)"
+        ],
+        "proposed_by": "Gemini 3 Pro",
+        "rank": 2
+      },
+      {
+        "name": "InboundFlow Gen",
+        "problem_solved": "Wypalenie prospectingowe i niską efektywność cold outreach w Marketingu, Zleceniach/Freelance i Strategii/Biznes",
+        "description": "AI narzędzie do generowania inbound leadów poprzez optymalizację profili LinkedIn i treści, przyciągające klientów zamiast aktywnego szukania. Analizuje trendy i sugeruje treści, które pozycjonują użytkownika jako eksperta. Śledzi konwersje i automatyzuje follow-upy.",
+        "target_audience": "Freelancerzy i małe agencje spędzające godziny na prospectingu",
+        "business_model": "SaaS z tiered pricing opartym na liczbie leadów",
+        "market_potential": 9,
+        "differentiation": "Fokus na inbound-first dla małych graczy z AI personalizacją, w przeciwieństwie do outbound-heavy narzędzi jak Hunter.io",
+        "mvp_scope": "Optymalizator profilu LinkedIn, generator treści AI, tracker leadów inbound",
+        "risks": [
+          "Zmiany algorytmów LinkedIn zmniejszające efektywność",
+          "Nasycony rynek lead gen",
+          "Ryzyko spamu i banów na platformach"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 4
+      },
+      {
+        "name": "TrustDeal",
+        "problem_solved": "Deficyt zaufania i kryzys zaufania do freelancerów i agencji – klienci boją się niedowiezionych projektów i znikających wykonawców.",
+        "description": "Platforma escrow + milestone management dla usług B2B. Klient płaci za etapy, pieniądze są uwalniane tylko po zaakceptowaniu dowiezionego efektu, z jasnymi kryteriami jakości.",
+        "target_audience": "Małe firmy, startupy, freelancerzy, agencje usługowe",
+        "business_model": "Marketplace + prowizja od transakcji",
+        "market_potential": 9,
+        "differentiation": "Skupienie na efektach (outcome-based), a nie czasie pracy; proste milestone’y zamiast ciężkiego project managementu.",
+        "mvp_scope": "Escrow płatności, definiowanie milestone’ów, akceptacja/odrzucenie etapu, podstawowy system sporów",
+        "risks": [
+          "problemy prawne i regulacyjne",
+          "wolne tempo adopcji po stronie klientów"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 5
+      },
+      {
+        "name": "InboundHub",
+        "problem_solved": "Wypalenie prospectingowe i niska skuteczność cold outreachu.",
+        "description": "Proste narzędzie inbound-first: landing + SEO + lead magnet + automatyczna dystrybucja treści, aby klienci sami trafiali do freelancera lub firmy.",
+        "target_audience": "Freelancerzy, mikroagencje, B2B SaaS",
+        "business_model": "SaaS subskrypcyjny",
+        "market_potential": 9,
+        "differentiation": "Gotowe, prekonfigurowane ścieżki inbound zamiast skomplikowanych systemów marketing automation.",
+        "mvp_scope": "Landing builder, prosty CMS, formularze leadów, integracja z e-mailem",
+        "risks": [
+          "konkurencja narzędzi no-code",
+          "oczekiwanie natychmiastowych efektów SEO"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 6
+      },
+      {
+        "name": "ROIStory",
+        "problem_solved": "Brak widoczności efektów działań marketingowych i brak powiązania z ROI.",
+        "description": "Narzędzie łączące dane marketingowe z realnym wynikiem biznesowym (lead, sprzedaż, LTV) w prostych narracyjnych raportach.",
+        "target_audience": "Właściciele firm, marketerzy, agencje",
+        "business_model": "SaaS",
+        "market_potential": 9,
+        "differentiation": "Raporty w formie historii biznesowej, a nie technicznych dashboardów.",
+        "mvp_scope": "Integracja z Google Ads, Meta, CRM; podstawowe raporty ROI",
+        "risks": [
+          "problemy z jakością danych",
+          "długi onboarding klientów"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 7
+      },
+      {
+        "name": "TrustProof",
+        "problem_solved": "Kryzys zaufania do agencji i freelancerów - klienci nie wiedzą jak zweryfikować kompetencje przed zatrudnieniem, a freelancerzy nie mogą udowodnić swojej jakości. Dotyka kategorii: Zlecenia/Freelance, Marketing, Wdrożenia/Integracje.",
+        "description": "System weryfikacji i escrow dla usług B2B. Freelancer/agencja przechodzi weryfikację kompetencji (portfolio review, test techniczny, referencje). Klient płaci na escrow, środki uwalniane po milestone'ach z automatycznym systemem dispute resolution. Każdy projekt buduje publiczny 'trust score'.",
+        "target_audience": "Firmy szukające freelancerów/agencji (marketing, dev, design) oraz freelancerzy premium chcący się wyróżnić",
+        "business_model": "Prowizja 5-8% od transakcji przez escrow + subskrypcja premium dla freelancerów (weryfikacja, badge, priorytet)",
+        "market_potential": 8,
+        "differentiation": "Useme/Upwork nie weryfikują realnie kompetencji - tylko zbierają opinie. TrustProof robi 'technical due diligence' przed pierwszym zleceniem + escrow z milestone'ami daje bezpieczeństwo obu stronom.",
+        "mvp_scope": "Prosty escrow (Stripe Connect), formularz weryfikacji z ręcznym review, system milestone'ów, podstawowy profil z badge'em 'Verified'. Start z jedną niszą (np. programiści WordPress).",
+        "risks": [
+          "Chicken-egg problem - potrzeba freelancerów i klientów jednocześnie",
+          "Wysokie koszty weryfikacji przy skalowaniu",
+          "Freelancerzy mogą omijać platformę po pierwszym zleceniu"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 8
+      },
+      {
+        "name": "QuickBooks Polski",
+        "problem_solved": "Strach przed urzędem i chaos w papierach - przedsiębiorcy toną w papierologii i boją się błędów podatkowych. Dotyka: Finanse/Księgowość, Automatyzacja.",
+        "description": "Uproszczona księgowość dla mikrofirm która 'myśli po polsku'. Skan faktury → automatyczne księgowanie → przypomnienia o terminach ZUS/US → miesięczny raport 'ile możesz wypłacić'. Zero żargonu księgowego, wszystko w prostym języku.",
+        "target_audience": "Jednoosobowe działalności i mikrofirmy (do 5 osób) bez księgowego, szczególnie freelancerzy i usługi",
+        "business_model": "SaaS 49-149 PLN/msc, droższy plan z automatycznym wysyłaniem JPK i deklaracji",
+        "market_potential": 8,
+        "differentiation": "inFakt/wFirma są dla księgowych - pełne funkcji których mikrofirma nie potrzebuje. QuickBooks Polski to 'księgowość dla nie-księgowych' z AI asystentem który tłumaczy co trzeba zrobić i kiedy.",
+        "mvp_scope": "OCR faktur (gotowe API), prosty dashboard przychodów/kosztów, kalendarz terminów ZUS/US z push notyfikacjami, miesięczny email 'stan Twojej firmy'.",
+        "risks": [
+          "Bardzo silna konkurencja (inFakt, wFirma, Fakturownia)",
+          "Przepisy się zmieniają - wymaga ciągłej aktualizacji",
+          "Użytkownicy mogą bać się zaufać automatyce w podatkach"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 9
+      },
+      {
+        "name": "SOP Creator AI",
+        "problem_solved": "Problemy delegowania (PPS 58) + Przeciążenie czasowe (PPS 71)",
+        "description": "Narzędzie typu 'Record & Forget'. Przedsiębiorca nagrywa ekran wykonując zadanie (np. wystawianie faktury), a AI automatycznie tworzy z tego dokumentację (SOP), listę kroków (checklistę) i wideo-instruktaż dla Wirtualnej Asystentki lub nowego pracownika.",
+        "target_audience": "Founderzy, Solopreneurzy skalujący zespół, Managerowie e-commerce.",
+        "business_model": "SaaS (miesięczna subskrypcja) + Freemium (do 3 procedur).",
+        "market_potential": 8,
+        "differentiation": "Konkurencja (Loom) tylko nagrywa. To narzędzie zamienia nagranie w ustrukturyzowany proces operacyjny gotowy do delegowania.",
+        "mvp_scope": "Wtyczka do przeglądarki nagrywająca ekran + transkrypcja AI (Whisper) + formatowanie do PDF/Notion.",
+        "risks": [
+          "Konkurencja ze strony Loom (jeśli dodadzą tę funkcję)",
+          "Halucynacje AI przy opisywaniu skomplikowanych kroków"
+        ],
+        "proposed_by": "Gemini 3 Pro",
+        "rank": 10
+      },
+      {
+        "name": "InboundPackager",
+        "problem_solved": "Wypalenie prospectingowe (PPS 66) + Zlecenia/Freelance (PPS 87)",
+        "description": "Kreator 'Produktów Usługowych' dla freelancerów. Zamiast wysyłać CV i oferty, freelancer tworzy gotowy 'produkt' (np. 'Audyt SEO w 48h' za 500 PLN) ze stroną sprzedażową, checkoutem i automatycznym onboardingiem klienta. Narzędzie zamienia usługę w e-commerce.",
+        "target_audience": "Freelancerzy, konsultanci, małe agencje zmęczone cold mailingiem.",
+        "business_model": "SaaS (hosting landing page'a) + % od sprzedaży (model Stripe).",
+        "market_potential": 8,
+        "differentiation": "Skupienie na polskim rynku (integracja z BLIK, Przelewy24, Fakturownia) i gotowe szablony 'produktów' pod popularne usługi.",
+        "mvp_scope": "Kreator prostych landing page, integracja płatności (Stripe/Tpay), automatyczna wysyłka briefu po zakupie.",
+        "risks": [
+          "Konkurencja z Gumroad (ale bariera językowa/fakturowa)",
+          "Freelancerzy mogą nie umieć marketingować swoich produktów"
+        ],
+        "proposed_by": "Gemini 3 Pro",
+        "rank": 11
+      },
+      {
+        "name": "AllegroReturnOS",
+        "problem_solved": "E-commerce (PPS 78) + Przeciążenie czasowe (PPS 71)",
+        "description": "Zautomatyzowany system obsługi zwrotów i reklamacji dedykowany pod Allegro/polski e-commerce. Klient sam klika powód zwrotu w portalu, system generuje etykietę, a po odebraniu paczki automatycznie zleca zwrot środków i korektę faktury w systemie księgowym.",
+        "target_audience": "Sprzedawcy Allegro/E-commerce (średnia skala: 100-1000 zamówień miesięcznie).",
+        "business_model": "SaaS (tiered pricing zależny od liczby zwrotów).",
+        "market_potential": 8,
+        "differentiation": "Głęboka integracja z lokalnymi graczami (Allegro, InPost, wFirma/iFirma), której nie mają globalne giganty.",
+        "mvp_scope": "Portal dla klienta końcowego, integracja Allegro API, podstawowy status trackingu.",
+        "risks": [
+          "Allegro może wdrożyć to natywnie",
+          "Wąska nisza (tylko Polska/Allegro)"
+        ],
+        "proposed_by": "Gemini 3 Pro",
+        "rank": 12
+      },
+      {
+        "name": "PerfPay Agency",
+        "problem_solved": "Kryzys zaufania do agencji i brak efektów w Marketingu, Zleceniach/Freelance i Wdrożeniach/Integracjach",
+        "description": "Marketplace agencji z modelem performance-based, gdzie płatności zależą od dowiezionych KPI (np. leady, sprzedaż). Oferuje weryfikację agencji przez AI i escrow na wyniki. Klienci definiują cele, a platforma monitoruje postępy.",
+        "target_audience": "Małe firmy rozczarowane tradycyjnymi agencjami marketingowymi",
+        "business_model": "Marketplace z prowizją od sukcesu (success fee)",
+        "market_potential": 8,
+        "differentiation": "Rozliczenia oparte wyłącznie na efektach z AI monitoringiem, w odróżnieniu od stałych opłat agencji",
+        "mvp_scope": "Profilowanie agencji, definiowanie KPI, system escrow, dashboard wyników",
+        "risks": [
+          "Trudności w definiowaniu mierzalnych KPI",
+          "Agencje unikające ryzyka performance",
+          "Konkurencja od platform jak Upwork"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 15
+      },
+      {
+        "name": "CashGuard Predict",
+        "problem_solved": "Niepewny cashflow i opóźnienia płatności w Finanse/Księgowość, E-commerce i Strategii/Biznes",
+        "description": "AI predyktor cashflow analizujący dane finansowe i prognozujący ryzyka jak chargebacki czy opóźnienia. Integruje z księgowością i sugeruje działania (np. przypomnienia płatności). Zapewnia alerty i scenariusze 'co jeśli'.",
+        "target_audience": "Właściciele e-commerce i freelancerzy z niestabilnymi przychodami",
+        "business_model": "SaaS z miesięczną opłatą",
+        "market_potential": 8,
+        "differentiation": "Predykcje z AI uwzględniające polskie regulacje, w odróżnieniu od ogólnych narzędzi jak QuickBooks",
+        "mvp_scope": "Integracja z popularnymi systemami księgowymi, AI predyktor, alerty email",
+        "risks": [
+          "Zmiany w przepisach finansowych psujące predykcje",
+          "Zależność od dokładności danych użytkownika",
+          "Konkurencja od narzędzi jak inFakt"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 16
+      },
+      {
+        "name": "CoFounderCheck",
+        "problem_solved": "Luka kompetencyjna founder–technik i brak sposobu na weryfikację potencjalnych wspólników.",
+        "description": "Narzędzie do wzajemnej walidacji founderów i techników: checklisty kompetencji, mini-audyty pomysłów, testy dopasowania i symulacje współpracy.",
+        "target_audience": "Founderzy non-tech, programiści, przyszli wspólnicy startupów",
+        "business_model": "SaaS + płatne raporty jednorazowe",
+        "market_potential": 8,
+        "differentiation": "Standaryzowana, obiektywna weryfikacja zamiast rozmów „na czuja”.",
+        "mvp_scope": "Profile użytkowników, checklisty kompetencji, automatyczny raport dopasowania",
+        "risks": [
+          "trudność w standaryzacji kompetencji",
+          "problem z masą krytyczną użytkowników"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 17
+      },
+      {
+        "name": "ToolChaosKiller",
+        "problem_solved": "Chaos narzędziowy i fragmentacja workflow między wieloma aplikacjami.",
+        "description": "Lekki „klej” integracyjny: jedno miejsce, które agreguje zadania, dane i statusy z wielu narzędzi (CRM, marketing, PM).",
+        "target_audience": "Małe firmy, agencje, zespoły zdalne",
+        "business_model": "SaaS",
+        "market_potential": 8,
+        "differentiation": "Skupienie na widoczności i kontekście, a nie na zastępowaniu istniejących narzędzi.",
+        "mvp_scope": "Integracje z 3–4 popularnymi narzędziami, wspólny dashboard, statusy",
+        "risks": [
+          "ograniczenia API zewnętrznych narzędzi",
+          "porównania do Zapier/Make"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 18
+      },
+      {
+        "name": "AutoOps",
+        "problem_solved": "Przeciążenie czasowe i ręczne procesy operacyjne w małych firmach.",
+        "description": "Biblioteka gotowych automatyzacji (playbooks) dla najczęstszych procesów: raporty, faktury, onboarding, e-commerce.",
+        "target_audience": "Małe firmy, e-commerce, agencje",
+        "business_model": "SaaS + marketplace szablonów",
+        "market_potential": 8,
+        "differentiation": "Gotowe do użycia scenariusze zamiast pustego edytora automatyzacji.",
+        "mvp_scope": "10–15 gotowych automatyzacji, konfigurator, logi błędów",
+        "risks": [
+          "różnorodność procesów u klientów",
+          "utrzymanie jakości automatyzacji"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 19
+      },
+      {
+        "name": "CashflowGuard",
+        "problem_solved": "Niepewny cashflow, opóźnione płatności i chaos finansowy.",
+        "description": "Lekki system do prognozowania cashflow, przypomnień o płatnościach i symulacji „co jeśli”.",
+        "target_audience": "Małe firmy, freelancerzy, e-commerce",
+        "business_model": "SaaS",
+        "market_potential": 8,
+        "differentiation": "Skupienie na przewidywalności, a nie pełnej księgowości.",
+        "mvp_scope": "Prognoza cashflow, import faktur, alerty płatności",
+        "risks": [
+          "konkurencja narzędzi finansowych",
+          "zależność od danych wejściowych"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 20
+      },
+      {
+        "name": "FlowGlue",
+        "problem_solved": "Chaos narzędziowy i pułapka fragmentacji - użytkownicy mają 5-10 narzędzi które nie gadają ze sobą, tracą czas na kopiowanie między kartami. Dotyka: Automatyzacja, Marketing, E-commerce, Zarządzanie Projektami.",
+        "description": "AI-powered 'middleware' który łączy popularne narzędzia w jeden workflow. Zamiast budować integracje od zera (jak Zapier), FlowGlue analizuje co użytkownik robi i proponuje gotowe 'przepływy' dla jego stack'u. Focus na polskich narzędziach (Fakturownia, BaseLinker, inFakt) + globalne.",
+        "target_audience": "Małe firmy i solopreneurzy używający 5+ narzędzi, którzy nie mają czasu na konfigurację Zapiera",
+        "business_model": "Freemium - 3 workflow za darmo, potem 99-299 PLN/msc za nielimitowane + premium integracje",
+        "market_potential": 7,
+        "differentiation": "Zapier/Make wymagają budowania od zera. FlowGlue daje gotowe 'recipes' dla polskiego rynku (BaseLinker→Fakturownia→inFakt) i AI który podpowiada co zautomatyzować na podstawie analizy użycia.",
+        "mvp_scope": "5 najpopularniejszych integracji polskich narzędzi, prosty wizard 'co chcesz połączyć', 10 gotowych templates, podstawowy monitoring błędów.",
+        "risks": [
+          "Zależność od API zewnętrznych narzędzi (mogą się zmienić)",
+          "Zapier ma ogromną przewagę w integracje",
+          "Trudność w utrzymaniu jakości przy wielu integracjach"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 21
+      },
+      {
+        "name": "ProofBoard",
+        "problem_solved": "Brak widoczności efektów - firmy płacą za marketing/SEO/influencerów ale nie widzą połączenia z realną sprzedażą. Dotyka: Marketing, Analityka/BI, E-commerce.",
+        "description": "Dashboard który łączy wydatki marketingowe z realną sprzedażą w jednym widoku. Integruje się z reklamami (Meta, Google), CRM, e-commerce (Shopify, WooCommerce, BaseLinker) i pokazuje 'ten influencer → te zamówienia → ten przychód'. Prosty jak Excel, ale automatyczny.",
+        "target_audience": "Właściciele e-commerce i małe firmy wydające 5-50k PLN/msc na marketing, którzy nie mają analityka",
+        "business_model": "SaaS 199-499 PLN/msc w zależności od liczby integracji i wolumenu danych",
+        "market_potential": 7,
+        "differentiation": "Google Analytics jest za skomplikowane. Dedykowane narzędzia (Triple Whale) są drogie i po angielsku. ProofBoard to 'jeden dashboard dla polskiego e-commerce' z prostym językiem ('ten post przyniósł 15 zamówień').",
+        "mvp_scope": "Integracja z Meta Ads + Shopify/WooCommerce, prosty dashboard z 3 metrykami (wydatki, przychody, ROI), tygodniowy email z podsumowaniem.",
+        "risks": [
+          "Problemy z attribution (iOS privacy, ad blockers)",
+          "Konkurencja z darmowym GA4",
+          "Wymaga dużo integracji żeby być użytecznym"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 22
+      },
+      {
+        "name": "InboundMe",
+        "problem_solved": "Wypalenie prospectingowe - freelancerzy spędzają 15-30h/tyg na szukaniu klientów zamiast na pracy. Cold outreach ma 1% skuteczność. Dotyka: Zlecenia/Freelance, Marketing, Strategia/Biznes.",
+        "description": "System 'reverse job board' gdzie to klienci szukają freelancerów. Freelancer tworzy profil z case studies i cenami, system go promuje w Google/LinkedIn na frazy typu 'programista WordPress Kraków'. Klient wypełnia brief, system matchuje z 3 freelancerami.",
+        "target_audience": "Freelancerzy z 2+ lat doświadczenia, którzy chcą przestać cold-mailować i być znajdowani",
+        "business_model": "Subskrypcja dla freelancerów 149-349 PLN/msc (SEO profilu, priorytet w matchingu) + prowizja 10% od pierwszego zlecenia przez platformę",
+        "market_potential": 7,
+        "differentiation": "Useme/Upwork to 'race to the bottom' cenowy. InboundMe pozycjonuje freelancerów jako ekspertów (własna strona SEO, case studies) i przyciąga klientów szukających jakości, nie najniższej ceny.",
+        "mvp_scope": "Generator prostej strony-wizytówki zoptymalizowanej pod SEO, formularz briefu dla klientów, ręczny matching przez założyciela, 50 freelancerów w jednej niszy na start.",
+        "risks": [
+          "SEO wymaga miesięcy żeby zadziałać",
+          "Freelancerzy mogą nie chcieć płacić z góry",
+          "Trudno konkurować z personal brandingiem na LinkedIn"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 23
+      },
+      {
+        "name": "AIGuardrail",
+        "problem_solved": "Deficyt zaufania do AI - firmy boją się halucynacji i błędów AI w krytycznych procesach (leady, content, dane). Dotyka: Automatyzacja, Marketing, Content/Tworzenie treści.",
+        "description": "Warstwa weryfikacji dla outputów AI w biznesie. Podłączasz swoje workflow z ChatGPT/Claude, AIGuardrail sprawdza outputy przed użyciem: fact-checking linków, weryfikacja danych firmowych, wykrywanie halucynacji, zgodność z brand voice. Flaguje problemy do ludzkiego review.",
+        "target_audience": "Firmy używające AI do generowania treści, leadów, raportów - które nie mogą sobie pozwolić na błędy",
+        "business_model": "SaaS 199-599 PLN/msc w zależności od liczby sprawdzeń, pay-per-check dla małych wolumenów",
+        "market_potential": 7,
+        "differentiation": "Narzędzia AI nie mają wbudowanej weryfikacji. AIGuardrail to 'QA dla AI' - nie zastępuje człowieka, ale redukuje czas review o 80% flagując tylko problematyczne outputy.",
+        "mvp_scope": "Plugin do ChatGPT/API wrapper, 3 typy checków (linki, dane firmowe, spójność), prosty dashboard z flagami, integracja z Slack dla alertów.",
+        "risks": [
+          "Sam może halucynować (AI sprawdzające AI)",
+          "Trudno zdefiniować 'błąd' uniwersalnie",
+          "Użytkownicy mogą ufać za bardzo i przestać sprawdzać"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 24
+      },
+      {
+        "name": "ContextGlue (Omni-Clipboard)",
+        "problem_solved": "Pułapka fragmentacji narzędzi (PPS 65) + Chaos narzędziowy (PPS 67)",
+        "description": "Pasek boczny/nakładka na przeglądarkę, która jest 'wspólnym schowkiem' dla wszystkich narzędzi AI i SaaS. Pozwala przenieść wygenerowany tekst z ChatGPT bezpośrednio do Canvy, Gmaila czy LinkedIna bez utraty formatowania i kontekstu, z możliwością szybkiej edycji w locie.",
+        "target_audience": "Twórcy contentu, marketerzy, osoby pracujące na wielu oknach.",
+        "business_model": "Freemium (podstawowy schowek) -> Premium (historia, szablony, team sync).",
+        "market_potential": 7,
+        "differentiation": "Działa 'nad' narzędziami, a nie jako kolejne narzędzie. Rozwiązuje problem 'kopiuj-wklej' między niekompatybilnymi systemami.",
+        "mvp_scope": "Rozszerzenie Chrome, historia schowka, proste makra tekstowe.",
+        "risks": [
+          "Zależność od zmian w API przeglądarek (Chrome Manifest V3)",
+          "Nawyki użytkowników (trudno zmienić przyzwyczajenia Ctrl+C/V)"
+        ],
+        "proposed_by": "Gemini 3 Pro",
+        "rank": 26
+      },
+      {
+        "name": "ToolGlue Hub",
+        "problem_solved": "Chaos narzędziowy i pułapka fragmentacji narzędzi, powodująca utratę kontekstu w Automatyzacji, Marketingu i Analityce/BI",
+        "description": "No-code integrator łączący istniejące narzędzia w jeden dashboard z automatycznymi workflowami. Użytkownicy budują customowe huby, gdzie dane płyną bez ręcznego kopiowania, z AI wykrywającym błędy integracji. Zapewnia single source of truth dla całego procesu biznesowego.",
+        "target_audience": "Małe firmy używające wielu narzędzi SaaS bez integracji",
+        "business_model": "Freemium SaaS z płatnymi zaawansowanymi integracjami",
+        "market_potential": 7,
+        "differentiation": "Prosty interfejs no-code z AI do wykrywania chaosu, skupiony na małych firmach, w odróżnieniu od enterprise-focused jak MuleSoft",
+        "mvp_scope": "Integracje z 5-10 popularnymi narzędziami (e.g., Google Analytics, Slack), builder workflow, dashboard centralny",
+        "risks": [
+          "Zmiany API w narzędziach trzecich psujące integracje",
+          "Konkurencja od Zapier i Make",
+          "Trudności w skalowaniu dla złożonych setupów"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 27
+      },
+      {
+        "name": "ExposureEase Coach",
+        "problem_solved": "Strach przed ekspozycją blokujący content creation w Marketingu, Content/Tworzenie treści i Strategii/Biznes",
+        "description": "AI coach stopniowo budujący pewność w tworzeniu treści wideo poprzez małe zadania, szablony i feedback. Zaczyna od tekstu, przechodzi do audio, potem wideo z edycją AI usuwającą błędy. Śledzi postępy i motywuje nagrodami.",
+        "target_audience": "Introwertyczni founderzy i twórcy unikający kamery",
+        "business_model": "SaaS z subskrypcją i dodatkowymi coaching session",
+        "market_potential": 7,
+        "differentiation": "Gradual exposure z AI wsparciem psychologicznym, w odróżnieniu od narzędzi edycyjnych jak CapCut",
+        "mvp_scope": "Szablony zadań, AI edytor wideo, tracker postępów, podstawowy feedback",
+        "risks": [
+          "Niska retencja jeśli zadania zbyt trudne",
+          "Brak ekspertyzy psychologicznej w AI",
+          "Konkurencja od narzędzi contentowych AI"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 28
+      },
+      {
+        "name": "DelegatePro SOP",
+        "problem_solved": "Problemy delegowania i chaos w Zarządzaniu Projektami oraz Zleceniach/Freelance",
+        "description": "No-code builder SOP (standard operating procedures) z AI generującym instrukcje i checklisty dla delegowania zadań. Integruje z narzędziami projektowymi i śledzi wykonanie z feedback loop. Pomaga w onboarding i kontroli jakości bez mikrozarządzania.",
+        "target_audience": "Liderzy małych zespołów i agencji delegujących pracę zdalną",
+        "business_model": "Freemium SaaS z płatnymi szablonami premium",
+        "market_potential": 7,
+        "differentiation": "AI-generowane SOP z automatycznym feedback, skupione na małych firmach, w odróżnieniu od enterprise jak Asana",
+        "mvp_scope": "Builder SOP, integracja z Trello/Slack, tracker wykonania, AI generator instrukcji",
+        "risks": [
+          "Opór pracowników przed nowymi procesami",
+          "Trudności w AI generującym precyzyjne SOP",
+          "Konkurencja od narzędzi PM"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 30
+      },
+      {
+        "name": "SafeDelegate",
+        "problem_solved": "Problemy delegowania pracy i chaos przy współpracy z VA i freelancerami.",
+        "description": "Proste narzędzie do tworzenia SOP, checklist jakości i feedback loopów przy delegowaniu zadań.",
+        "target_audience": "Founderzy, agencje, e-commerce",
+        "business_model": "SaaS freemium",
+        "market_potential": 7,
+        "differentiation": "Bardzo prosty UX – delegowanie bez wdrażania pełnego PM.",
+        "mvp_scope": "Szablony SOP, checklisty, komentarze i feedback",
+        "risks": [
+          "postrzeganie jako „kolejne narzędzie PM”",
+          "niska dyscyplina zespołów"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 31
+      },
+      {
+        "name": "GradualExposure",
+        "problem_solved": "Strach przed ekspozycją i blokada przed publikacją treści wideo.",
+        "description": "Aplikacja prowadząca użytkownika przez małe kroki ekspozycji: od prywatnych nagrań po publikację, z feedbackiem AI.",
+        "target_audience": "Founderzy, freelancerzy, twórcy",
+        "business_model": "Subskrypcja",
+        "market_potential": 7,
+        "differentiation": "Psychologiczne podejście „step by step”, a nie narzędzie do masowej produkcji contentu.",
+        "mvp_scope": "Nagrywanie wideo, prywatne archiwum, feedback AI",
+        "risks": [
+          "trudność w monetyzacji",
+          "postrzeganie jako produkt „soft skills”"
+        ],
+        "proposed_by": "GPT-5.2",
+        "rank": 32
+      },
+      {
+        "name": "DelegatePilot",
+        "problem_solved": "Problemy delegowania - przekazywanie pracy VA/freelancerom kończy się chaosem przez brak SOP i feedback loop. Dotyka: Zarządzanie Projektami, Zlecenia/Freelance, Automatyzacja.",
+        "description": "Narzędzie do tworzenia i zarządzania SOP (Standard Operating Procedures) z wbudowanym trackingiem wykonania. Nagrywasz Loom jak robisz zadanie → AI generuje SOP z checklistą → VA wykonuje z checklistą → system śledzi błędy i sugeruje poprawki do SOP.",
+        "target_audience": "Solopreneurzy i małe zespoły (2-10 osób) zatrudniające VA lub freelancerów do powtarzalnych zadań",
+        "business_model": "Freemium - 5 SOP za darmo, potem 79-199 PLN/msc za nielimitowane + AI features",
+        "market_potential": 6,
+        "differentiation": "Notion/Slite to dokumentacja bez kontekstu wykonania. DelegatePilot łączy SOP z realnym trackingiem (kto, kiedy, ile błędów) i AI który uczy się z błędów żeby poprawiać instrukcje.",
+        "mvp_scope": "Integracja z Loom (import transkrypcji), AI generujący checklistę z nagrania, prosty tracker wykonania zadań, dashboard błędów.",
+        "risks": [
+          "Wymaga zmiany nawyków użytkowników",
+          "Notion ma już templates do SOP",
+          "Mały rynek ludzi świadomie budujących SOP"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 34
+      },
+      {
+        "name": "PriceShield",
+        "problem_solved": "Niepewny cashflow i chargebacki - e-commerce traci pieniądze na friendly fraud i opóźnionych płatnościach. Dotyka: E-commerce, Finanse/Księgowość.",
+        "description": "System ochrony przed chargebackami i fraudem dla polskiego e-commerce. Analizuje zamówienia przed wysyłką (scoring ryzyka), automatycznie zbiera dowody do dispute'ów, integruje się z BaseLinker/Shopify. Dla zamówień high-risk sugeruje płatność z góry.",
+        "target_audience": "Sklepy e-commerce z GMV 100k+ PLN/msc, szczególnie te z wysokim % chargebacków (elektronika, moda)",
+        "business_model": "SaaS 299-999 PLN/msc w zależności od wolumenu + success fee 20% od wygranych dispute'ów",
+        "market_potential": 6,
+        "differentiation": "Globalne rozwiązania (Signifyd, Riskified) są drogie i nie rozumieją polskiego rynku (BLIK, płatności za pobraniem). PriceShield jest zbudowany dla polskich realiów i integruje się z lokalnymi platformami.",
+        "mvp_scope": "Integracja z BaseLinker, prosty scoring ryzyka (3 reguły), automatyczne zbieranie dowodów (tracking, zdjęcia paczki), template odpowiedzi na chargeback.",
+        "risks": [
+          "Wymaga dużo danych żeby scoring był dokładny",
+          "Banki/PayU mogą nie akceptować automatycznych dispute'ów",
+          "Mały rynek świadomych problemu"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 35
+      },
+      {
+        "name": "BriefGenius",
+        "problem_solved": "Kryzys zaufania + problemy delegowania - projekty failują bo brief był niejasny, oczekiwania rozmyte, scope się rozjeżdża. Dotyka: Zlecenia/Freelance, Zarządzanie Projektami, Marketing.",
+        "description": "AI-powered generator briefów projektowych. Klient odpowiada na pytania w konwersacji (chatbot), system generuje profesjonalny brief z scope, timeline, budżetem i kryteriami sukcesu. Obie strony podpisują cyfrowo. Tracking zmian scope w trakcie projektu.",
+        "target_audience": "Firmy zlecające projekty (marketing, dev, design) oraz freelancerzy/agencje chcące profesjonalizować proces",
+        "business_model": "Freemium - 3 briefy/msc za darmo, potem 79 PLN/msc dla freelancerów, 199 PLN/msc dla agencji (white-label)",
+        "market_potential": 6,
+        "differentiation": "Google Docs/Notion to puste szablony. BriefGenius prowadzi przez proces, zadaje właściwe pytania, wykrywa niejasności ('co znaczy nowoczesny design?') i tworzy dokument który chroni obie strony.",
+        "mvp_scope": "Chatbot zbierający wymagania (10 pytań), generator PDF z briefem, prosty e-podpis, 3 szablony (strona www, kampania, logo).",
+        "risks": [
+          "Ludzie mogą nie chcieć płacić za 'dokument'",
+          "Wymaga edukacji rynku o wartości dobrego briefu",
+          "Łatwe do skopiowania przez konkurencję"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 36
+      },
+      {
+        "name": "CashflowRadar",
+        "problem_solved": "Niepewny cashflow (PPS 59) + Finanse/Księgowość (PPS 74)",
+        "description": "Bardzo prosta nakładka na konto bankowe/fakturownię, która pokazuje tylko jedną rzecz: 'Ile realnie będziesz miał pieniędzy za 30 dni'. Uwzględnia terminy płatności faktur (historyczne opóźnienia klientów) i stałe koszty. Żadnej księgowości, tylko predykcja płynności.",
+        "target_audience": "Mikroprzedsiębiorcy, małe agencje żyjące 'od faktury do faktury'.",
+        "business_model": "SaaS (niski abonament, np. 29 PLN/mc).",
+        "market_potential": 6,
+        "differentiation": "Księgowość patrzy wstecz, to narzędzie patrzy w przód. Prostota – jeden wykres zamiast tabeli Excela.",
+        "mvp_scope": "Import CSV z banku/fakturowni, ręczne dodawanie kosztów stałych, prosty wykres liniowy.",
+        "risks": [
+          "Regulacje PSD2 (dostęp do danych bankowych jest trudny technicznie)",
+          "Konkurencja ze strony banków (funkcje w aplikacjach)"
+        ],
+        "proposed_by": "Gemini 3 Pro",
+        "rank": 37
+      },
+      {
+        "name": "CameraCoach",
+        "problem_solved": "Strach przed ekspozycją - założyciele i twórcy wiedzą że powinni nagrywać wideo ale paraliżuje ich lęk przed kamerą i oceną. Dotyka: Marketing, Content/Tworzenie treści, Strategia/Biznes.",
+        "description": "Aplikacja do stopniowego oswajania się z kamerą przez codzienne mikro-ćwiczenia. Dzień 1: nagraj 10 sekund do siebie. Dzień 7: nagraj 30 sekund i wyślij do AI na feedback. Dzień 30: opublikuj pierwszy post. Gamifikacja + społeczność ludzi na tej samej drodze.",
+        "target_audience": "Introwertycy-przedsiębiorcy, eksperci którzy chcą budować personal brand ale boją się wideo",
+        "business_model": "Freemium - podstawowe ćwiczenia za darmo, premium 49 PLN/msc za AI feedback, zaawansowane ścieżki, społeczność",
+        "market_potential": 5,
+        "differentiation": "Kursy 'jak nagrywać wideo' uczą techniki, nie radzą sobie ze strachem. CameraCoach to 'terapia ekspozycyjna' w formie aplikacji - małe kroki, bez presji publikacji, z wsparciem społeczności.",
+        "mvp_scope": "30-dniowy challenge w formie emaili/SMS, prosta aplikacja do nagrywania z timerem, podstawowy AI feedback na dykcję/tempo, grupa na Discord.",
+        "risks": [
+          "Trudno zmierzyć ROI dla użytkownika",
+          "Wysoki churn po 30 dniach",
+          "Może być postrzegane jako 'self-help' nie biznesowe narzędzie"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 38
+      },
+      {
+        "name": "ScaleTest",
+        "problem_solved": "Problemy skali - rozwiązania działające przy małej skali załamują się przy wzroście (60 sklepów, 100k produktów). Dotyka: E-commerce, Automatyzacja, Analityka/BI.",
+        "description": "Narzędzie do stress-testowania procesów e-commerce przed skalowaniem. Symulujesz 10x obecny wolumen (zamówienia, produkty, zwroty) i widzisz gdzie się załamie: które integracje padną, gdzie będą wąskie gardła, ile to będzie kosztować. Raport z rekomendacjami.",
+        "target_audience": "Sklepy e-commerce przed skalowaniem (Black Friday, ekspansja, inwestycja) - GMV 500k-5M PLN/msc",
+        "business_model": "Jednorazowy audyt 2999-9999 PLN + opcjonalny retainer na monitoring 499 PLN/msc",
+        "market_potential": 5,
+        "differentiation": "Agencje e-commerce robią audyty ręcznie i drogo. ScaleTest automatyzuje symulację i daje konkretne liczby ('przy 10x zamówień Twój BaseLinker padnie po 2h').",
+        "mvp_scope": "Integracja z BaseLinker/Shopify, symulacja 3 scenariuszy (zamówienia, produkty, zwroty), automatyczny raport PDF z wąskimi gardłami, 5 rekomendacji.",
+        "risks": [
+          "Bardzo niszowy rynek (firmy przed skalowaniem)",
+          "Trudno symulować wszystkie edge cases",
+          "Jednorazowa usługa = trudny recurring revenue"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 39
+      }
+    ],
+    "freelance/zlecenia": [
+      {
+        "name": "TrustVault Freelance",
+        "problem_solved": "Deficyt zaufania i kryzys zaufania do agencji, powodujący strach przed niedowiezieniem projektów w kategoriach Zlecenia/Freelance, Automatyzacja i Marketing",
+        "description": "Marketplace dla freelancerów z wbudowanym systemem escrow, gdzie płatności są uwalniane po weryfikacji milestone'ów przez AI i recenzje. Oferuje gwarancje zwrotu pieniędzy i automatyczne raporty postępu. Użytkownicy mogą testować freelancerów przez małe zadania przed dużym projektem.",
+        "target_audience": "Małe firmy i przedsiębiorcy zlecający prace freelancerom lub agencjom",
+        "business_model": "Marketplace z prowizją od transakcji (10-15%)",
+        "market_potential": 9,
+        "differentiation": "AI-pomocna weryfikacja jakości pracy w czasie rzeczywistym, w odróżnieniu od Upwork, który nie oferuje gwarancji po launchu",
+        "mvp_scope": "System escrow, profile z recenzjami, AI checker milestone'ów, integracja płatności",
+        "risks": [
+          "Wysokie koszty obsługi sporów i zwrotów",
+          "Trudności w skalowaniu AI do różnych typów projektów",
+          "Konkurencja od ustalonych platform jak Fiverr"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 3
+      },
+      {
+        "name": "TechMatch Bridge",
+        "problem_solved": "Luka kompetencyjna founder-technik, gdzie founderzy biznesowi nie mają umiejętności technicznych, a technicy nie umieją sprzedawać, dotykająca kategorii jak Zlecenia/Freelance, Strategia/Biznes i Marketing",
+        "description": "Platforma matchingowa łącząca founderów biznesowych z ekspertami technicznymi poprzez weryfikowane profile i wzajemne oceny. Użytkownicy przechodzą przez szybki proces due diligence z AI-pomocą w wycenie współpracy i standardowych umowach. Zapewnia narzędzia do wspólnego prototypowania pomysłów bez zobowiązań.",
+        "target_audience": "Founderzy startupów i małe firmy szukające partnerów technicznych lub biznesowych",
+        "business_model": "Freemium z opłatami za premium matching i umowy",
+        "market_potential": 8,
+        "differentiation": "Wbudowana AI do weryfikacji umiejętności i benchmarków, w przeciwieństwie do ogólnych platform jak LinkedIn, skupia się na wzajemnej walidacji przed commitmentem",
+        "mvp_scope": "Profilowanie użytkowników, algorytm matchingowy, podstawowa AI do due diligence, szablony umów",
+        "risks": [
+          "Niska adopcja jeśli brak krytycznej masy użytkowników",
+          "Ryzyko sporów prawnych przy wycenach współpracy",
+          "Konkurencja od istniejących sieci networkingowych"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 13
+      },
+      {
+        "name": "TechMatch Validator",
+        "problem_solved": "Luka kompetencyjna founder-technik (PPS 74) + Strategia/Biznes (PPS 75)",
+        "description": "Usługa 'Technical Due Diligence' dla nietechnicznych founderów. Zanim wydasz 50k na software house, platforma łączy Cię z niezależnym Senior Dev'em (zweryfikowanym), który w 60 minut ocenia wykonalność, realny koszt i ryzyka Twojego pomysłu.",
+        "target_audience": "Nietechniczni założyciele startupów, MŚP planujące wdrożenia IT.",
+        "business_model": "Marketplace usług konsultingowych (stała opłata za sesję walidacyjną, np. 500 PLN, platforma bierze 20%).",
+        "market_potential": 7,
+        "differentiation": "Brak konfliktu interesów – ekspert oceniający nie będzie wykonawcą projektu (zakaz upsellingu). Czysta weryfikacja.",
+        "mvp_scope": "Prosty landing page, baza 10 zweryfikowanych CTO/Senior Devów, kalendarz do rezerwacji.",
+        "risks": [
+          "Trudność w zbudowaniu podaży (eksperci mają wysokie stawki godzinowe)",
+          "Odpowiedzialność prawna za błędną ocenę"
+        ],
+        "proposed_by": "Gemini 3 Pro",
+        "rank": 25
+      },
+      {
+        "name": "CoFounderMatch.pl",
+        "problem_solved": "Luka kompetencyjna founder-technik - osoby z pomysłem nie znajdują CTO, technicy nie umieją walidować biznesu. Obie strony nie wiedzą jak się wycenić i zweryfikować. Dotyka: Zlecenia/Freelance, Strategia/Biznes.",
+        "description": "Platforma matchingu współzałożycieli z wbudowaną weryfikacją obu stron. Biznesowcy przechodzą test walidacji pomysłu (czy rozmawiał z klientami? ma traction?). Technicy - test kompetencji. Algorytm łączy na podstawie komplementarności + 'chemistry call' z moderatorem.",
+        "target_audience": "Aspirujący założyciele startupów w Polsce - zarówno technicy szukający biznesowego partnera, jak i biznesowcy szukający CTO",
+        "business_model": "Freemium profil + płatny matching (499 PLN za 3 dopasowania z weryfikacją) + premium 'speed dating' events (199 PLN/event)",
+        "market_potential": 6,
+        "differentiation": "LinkedIn/FB grupy to chaos bez weryfikacji. CoFounderMatch weryfikuje OBU stron (nie tylko techniczne CV ale też 'czy ten biznesowiec umie sprzedawać?') i daje strukturę do rozmów o equity/współpracy.",
+        "mvp_scope": "Landing page z formularzem aplikacyjnym, ręczny matching przez założyciela (concierge MVP), prosty test walidacji pomysłu (5 pytań), szablon 'co-founder agreement'.",
+        "risks": [
+          "Bardzo mały rynek w Polsce (może setki osób rocznie)",
+          "Trudno zmierzyć sukces (czy match zadziałał?)",
+          "Ludzie mogą się łączyć poza platformą po pierwszym kontakcie"
+        ],
+        "proposed_by": "Claude Opus 4.5",
+        "rank": 33
+      }
+    ],
+    "produktywność": [
+      {
+        "name": "TimeReclaim AI",
+        "problem_solved": "Przeciążenie czasowe i wypalenie prospectingowe, gdzie ręczne procesy pochłaniają czas w Marketingu, E-commerce i Content/Tworzenie treści",
+        "description": "AI narzędzie automatyzujące rutynowe zadania jak raportowanie kampanii, edycję treści i prospecting na LinkedIn. Analizuje workflow użytkownika i sugeruje personalizowane automatyzacje no-code. Odzyskuje czas poprzez integrację z istniejącymi narzędziami i alerty o efektywności.",
+        "target_audience": "Freelancerzy i małe firmy z ograniczonym czasem na operacje codzienne",
+        "business_model": "SaaS z miesięczną subskrypcją",
+        "market_potential": 8,
+        "differentiation": "Skupienie na odzyskiwaniu czasu bez utraty kontroli, z AI uczącym się od użytkownika, w przeciwieństwie do ogólnych narzędzi jak Zapier",
+        "mvp_scope": "Integracje z popularnymi narzędziami (Google Sheets, LinkedIn), AI sugerujące automatyzacje, dashboard czasu zaoszczędzonego",
+        "risks": [
+          "Zależność od jakości integracji API",
+          "'Słomiany zapał' użytkowników przy wdrażaniu",
+          "Ryzyko błędów AI prowadzących do utraty zaufania"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 14
+      }
+    ],
+    "analityka": [
+      {
+        "name": "ImpactTrack Analytics",
+        "problem_solved": "Brak widoczności efektów i data noise w Analityce/BI, Marketingu i E-commerce",
+        "description": "Narzędzie łączące dane z różnych źródeł w prosty dashboard pokazujący realny ROI (np. od influencera do sprzedaży). AI filtruje noise i łączy działania z wynikami biznesowymi. Generuje automatyczne raporty z actionable insights.",
+        "target_audience": "Małe firmy bez zaawansowanych analityków",
+        "business_model": "SaaS z płatnością za integracje",
+        "market_potential": 7,
+        "differentiation": "Proste połączenie z biznesowymi wynikami, nie tylko metrykami, w odróżnieniu od Google Analytics",
+        "mvp_scope": "Integracje z 3-5 źródłami (e.g., Google Ads, Shopify), AI filtr noise, dashboard ROI",
+        "risks": [
+          "Problemy z jakością danych klientów",
+          "Wysoki próg techniczny integracji",
+          "Konkurencja od narzędzi BI jak Tableau"
+        ],
+        "proposed_by": "Grok 4",
+        "rank": 29
+      }
+    ]
+  },
+  "theme_summary": [
+    {
+      "theme": "inne",
+      "count": 33,
+      "avg_potential": 7.5,
+      "top_solution": "TrustPay (Escrow dla Agencji)"
+    },
+    {
+      "theme": "freelance/zlecenia",
+      "count": 4,
+      "avg_potential": 7.5,
+      "top_solution": "TrustVault Freelance"
+    },
+    {
+      "theme": "produktywność",
+      "count": 1,
+      "avg_potential": 8,
+      "top_solution": "TimeReclaim AI"
+    },
+    {
+      "theme": "analityka",
+      "count": 1,
+      "avg_potential": 7,
+      "top_solution": "ImpactTrack Analytics"
+    }
+  ],
+  "raw_model_responses": [
+    {
+      "model": "Claude Opus 4.5",
+      "solutions_count": 12
+    },
+    {
+      "model": "Gemini 3 Pro",
+      "solutions_count": 8
+    },
+    {
+      "model": "Grok 4",
+      "solutions_count": 10
+    },
+    {
+      "model": "GPT-5.2",
+      "solutions_count": 9
+    }
+  ]
+}
